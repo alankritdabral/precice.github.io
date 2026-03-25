@@ -42,6 +42,10 @@ jobs:
           name: site
           path: website/_site
           if-no-files-found: error
+      - run: | 
+          ls -lf
+          du -sh website/_site
+          ls -lf website/_site
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
