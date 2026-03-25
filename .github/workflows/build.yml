@@ -45,6 +45,8 @@ jobs:
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
-          source-dir: ./website/_site/
-          preview-branch: gh-pages
-          qr-code: true
+            source-dir: website/_site
+            preview-branch: gh-pages
+            umbrella-dir: chapter/pr-preview
+            pages-base-path: chapter
+            qr-code: true
