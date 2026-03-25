@@ -42,3 +42,9 @@ jobs:
           name: site
           path: website/_site
           if-no-files-found: error
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./website/_site/
+          preview-branch: gh-pages
+          qr-code: true
