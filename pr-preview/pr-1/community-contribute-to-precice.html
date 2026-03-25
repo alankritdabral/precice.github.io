@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="keywords" content=" contribute, develop">
+<meta name="theme-color" content="#0A76BB">
+<meta name="msapplication-square310x310logo" content="images/icon-310x310.png">
+
+<title>Contribute to preCICE | preCICE - The Coupling Library</title>
+<link rel="alternate" type="application/rss+xml" title="" href="https://precice.org/feed.xml">
+
+<!-- OpenGraph metadata -->
+<meta property="og:title" content="Contribute to preCICE" />
+<meta property="og:site_name" content="preCICE.org" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://precice.org/community-contribute-to-precice.html" />
+<meta property="og:image" content="https://precice.org/images/icon-310x310.png" />
+<meta property="og:description" content="preCICE is an open-source coupling library and ecosystem for general partitioned multi-physics and multi-scale simulations, including surface and volume coupling.">
+
+<!-- Twitter Card metadata -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Contribute to preCICE" />
+<meta name="twitter:description" content="preCICE is an open-source coupling library and ecosystem for general partitioned multi-physics and multi-scale simulations, including surface and volume coupling.">
+<meta name="twitter:image" content="https://precice.org/images/icon-310x310.png" />
+
+<!-- Canonical link -->
+<link rel="canonical" href="https://precice.org/community-contribute-to-precice" >
+
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/syntax.css">
+<link rel="icon" sizes="192x192" href="images/icon.png">
+<link rel="apple-touch-icon" sizes="310x310" href="images/icon-310x310.png">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<!-- Bootstrap -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Local CSS -->
+<link rel="stylesheet" href="css/modern-business.css">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/customstyles-precice.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<link rel="stylesheet" href="css/bookcover.css">
+<!-- Color styles -->
+<link rel="stylesheet" href="css/theme-precice.css">
+<!-- Styling for landing page -->
+
+
+<!-- Jquery, Ajax -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<!-- Anchor.js -->
+<script src="https://cdn.jsdelivr.net/npm/anchor-js@4.2.0/anchor.min.js" integrity="sha256-m1eTvwEHwmsw4+XKF7BshClVJEPwTVycveNl0CS0Mkk=" crossorigin="anonymous"></script>
+
+<!-- Bootstrap JavaScript (requires jquery) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Local JS -->
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<!-- Algolia search -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.20.1/moment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+
+<!-- QR code for printed pages -->
+<script defer src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var qrDiv = document.createElement("div");
+    qrDiv.id = "print-qr-code";
+    var qr = qrcode(0, "M");
+    qr.addData("https://precice.org/community-contribute-to-precice.html");
+    qr.make();
+    qrDiv.innerHTML = qr.createImgTag(3, 0);
+    document.body.appendChild(qrDiv);
+  });
+</script>
+<style>
+  #print-qr-code {
+    display: none;
+  }
+  @media print {
+    #print-qr-code {
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+    }
+  }
+</style>
+
+<!-- Plausible Analytics -->
+<script async defer data-domain="precice.org" src="https://plausible.io/js/plausible.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    <script>
+        // wrap tables into a div to make them scrollable on small viewports
+        // https://getbootstrap.com/docs/3.4/css/#tables-responsive
+        $(document).ready(function() {
+            $('table').addClass('table');
+            $('table').wrap('<div class="table-responsive"></div>');
+        });
+    </script>
+    
+</head>
+<body>
+    <header>
+        <!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" aria-label="Main">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand no-icon" href="https://precice.org">
+            <span class="navbar-brand-icon">
+            <img class="navbar-brand-text" src="images/preCICE_text_28px.svg" alt="preCICE"></span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                
+                <!-- entries without drop-downs appear here -->
+
+                
+                
+
+                
+                
+                
+                
+                
+                <li><a href="quickstart.html">Quickstart</a></li>
+                
+                
+                
+                
+                
+                <li><a href="docs.html">Docs</a></li>
+                
+                
+                
+                
+                
+                <li><a href="tutorials.html">Tutorials</a></li>
+                
+                
+                
+                
+                
+                <li class="active"><a href="community.html">Community</a></li>
+                
+                
+                
+                
+                
+                <li><a href="https://precice.discourse.group/c/news" target="_blank" rel="noopener">Blog</a></li>
+                
+                
+                
+                
+                
+                <li><a href="about.html">About</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <div id="search-input"></div>
+                        <div id="search-results"></div>
+                        <script>
+const algoliaSearch = instantsearch({
+  appId: 'LIT6P0EW26',
+  apiKey: '760ed6be3e165d08b4a798ac4aa82fe4',
+  indexName: 'jekyll',
+  searchFunction: function(helper) {          // hide search result in init query
+    var searchResults = $('#search-results');
+    if (helper.state.query === '') {
+      searchResults.hide();
+      return;
+    }
+    helper.search();
+    searchResults.show();
+  }
+});
+
+const hitTemplate = function(hit) {
+  let date = '';
+  if (hit.date) {
+    date = moment.unix(hit.date).format('MMM D, YYYY');
+  }
+
+  let url = `${hit.url}#${hit.anchor}`;
+
+  const title = hit._highlightResult.title.value;
+
+  let breadcrumbs = '';
+  if (hit._highlightResult.headings) {
+    breadcrumbs = hit._highlightResult.headings.map(match => {
+      return `<span class="result-breadcrumb">${match.value}</span>`
+    }).join(' > ')
+  }
+
+  const content = hit._highlightResult.html.value;
+
+  return `
+    <div class="result-item">
+    <h2><a class="result-link" href="${url}">${title}</a></h2>
+    <a href="${url}" class="result-breadcrumbs">${breadcrumbs}</a>
+    <div class="result-snippet">${content}</div>
+    </div>
+  `;
+}
+
+algoliaSearch.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '#search-input',
+    placeholder: 'Search (' + (/Mac|iPhone|iPad/.test(navigator.platform) ? '⌘K' : 'Ctrl+K') + ')',
+    poweredBy: true, // This is required if you're on the free Community plan
+    magnifier: false,
+    autofocus: false,
+    searchOnEnterKeyPressOnly: false,
+    reset: true
+  })
+);
+
+algoliaSearch.addWidget(
+  instantsearch.widgets.hits({
+    container: '#search-results',
+    templates: {
+      item: hitTemplate
+    }
+  })
+);
+
+algoliaSearch.start();
+
+// Patch the style of the search input bar generated by the above script
+// The equivalent CSS is below, however, including <style> in <body> is against the W3C commandments
+// Chrome and Firefox had baby called scope, but it didn't make it
+// https://stackoverflow.com/questions/2830296/using-style-tags-in-the-body-with-other-html
+var elem = document.querySelector('.ais-search-box--powered-by');
+elem.style.marginTop = '-15px';
+elem.style.paddingRight = '5px';
+
+var elem = document.querySelector('.nav li a.ais-search-box--powered-by-link');
+elem.style.padding = '0';
+elem.style.backgroundColor = 'transparent';
+elem.style.display = "inline-block";
+
+var elem = document.querySelector('.ais-search-box--input');
+elem.style.paddingLeft = '10px';
+elem.style.borderColor = '#0A76BB';
+
+var elem = document.querySelector('.ais-search-box');
+elem.style.padding = '.5em';
+elem.style.marginBottom = '0px';
+elem.style.marginLeft = '10px';
+elem.style.marginTop = '0px';
+elem.style.width = '20em';
+elem.style.fontSize = '0.8em';
+elem.style.height = '50px';
+elem.style.boxSizing = 'border-box';
+
+/*<style type="text/css">
+.ais-search-box--powered-by {
+  margin-top: -15px;
+  padding-right: 5px;
+}
+.nav li a.ais-search-box--powered-by-link {
+  padding: 0;
+  background-color: transparent;
+  display: inline-block;
+}
+.ais-search-box--input {
+  padding-left: 10px;
+  border-color: #0A76BB;
+}
+.ais-search-box {
+  padding: .5em;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-top: 0px;
+  width: 20em;
+  font-size: 0.8em;
+  box-sizing: border-box;
+  height: 50px;
+}
+</style>*/
+
+// some hacky JS to hide the search results until we move to docsearch (which is a true autocomplete-type search)
+document.addEventListener('mouseup', function(e) {
+  var results = document.getElementById('search-results');
+  if (!results.contains(e.target)) {
+    results.style.display = 'none';
+  }
+});
+document.addEventListener('mouseup', function(e) {
+  var input = document.getElementById('search-input');
+  var results = document.getElementById('search-results');
+  if (input.contains(e.target)) {
+    results.style.display = 'block';
+  }
+});
+
+// Cmd+K / Ctrl+K keyboard shortcut to focus search, Escape to dismiss
+document.addEventListener('keydown', function(e) {
+  var isMac = /Mac|iPhone|iPad|iPod/.test(navigator.platform);
+  if ((isMac ? e.metaKey : e.ctrlKey) && e.key === 'k') {
+    e.preventDefault();
+    var input = document.querySelector('.ais-search-box--input');
+    if (input) {
+      input.focus();
+      input.select();
+    }
+  }
+
+  if (e.key === 'Escape' || e.keyCode === 27) {
+    var results = document.getElementById('search-results');
+    var inputContainer = document.getElementById('search-input');
+    var activeElement = document.activeElement;
+
+    if (results) {
+      results.style.display = 'none';
+    }
+
+    if (inputContainer && inputContainer.contains(activeElement)) {
+      activeElement.blur();
+    } else if (results && results.contains(activeElement)) {
+      var algoliaInput = document.querySelector('#search-input .ais-search-box--input');
+      if (algoliaInput) {
+        algoliaInput.focus();
+      } else {
+        activeElement.blur();
+      }
+    }
+  }
+});
+
+</script>
+                    </div>
+                    <!--end search-->
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://precice.discourse.group" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Join the discourse community"><i class="fab fa-discourse"></i></a>
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://github.com/precice" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Star precice/precice on GitHub"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://www.linkedin.com/company/precice" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <!-- rel="me" required by Mastodon for verification -->
+                    <a rel="me noopener noreferrer" class="no-icon nav-external" href="https://fosstodon.org/@precice" target="_blank" data-show-count="false" aria-label="Follow us on Mastodon"><i class="fab fa-mastodon"></i></a>
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://www.youtube.com/c/preCICECoupling/" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Subscribe on Youtube"><i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+          <!-- News banner -->
+          
+
+
+
+    </header>
+    <div class="container" style="margin-bottom:50px">
+        
+        <div class="row">
+          <div class="col-md-3" id="tg-sb-sidebar">
+            
+
+<nav aria-label="Community">
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">Community </li>
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Overview & news" href="community.html">Overview & news</a>
+  </li>
+  
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Current events" href="#">Current events</a>
+    <ul>
+      
+      
+      
+      <li><a title="ECCOMAS WCCM 2026" href="eccomas-wccm-2026.html">ECCOMAS WCCM 2026</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Online training 2026" href="precice-online-training-2026-oct.html">Online training 2026</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2027" href="precice-workshop-2027.html">Workshop 2027</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="preCICE workshops" href="#">preCICE workshops</a>
+    <ul>
+      
+      
+      
+      <li><a title="Overview" href="precice-workshop.html">Overview</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2027" href="precice-workshop-2027.html">Workshop 2027</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2025" href="precice-workshop-2025.html">Workshop 2025</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2024" href="precice-workshop-2024.html">Workshop 2024</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2023" href="precice-workshop-2023.html">Workshop 2023</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2022" href="precice-workshop-2022.html">Workshop 2022</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2021" href="precice-workshop-2021.html">Workshop 2021</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2020" href="precice-workshop-2020.html">Workshop 2020</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Organizing" href="precice-workshop-organizing.html">Organizing</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Further events" href="#">Further events</a>
+    <ul>
+      
+      
+      
+      <li><a title="Online training 2026" href="precice-online-training-2026-oct.html">Online training 2026</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS WCCM 2026" href="eccomas-wccm-2026.html">ECCOMAS WCCM 2026</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS Coupled Problems 2025" href="eccomas-coupled-2025.html">ECCOMAS Coupled Problems 2025</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="iacm WCCM 2024" href="iacm-wccm-2024.html">iacm WCCM 2024</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS Coupled Problems 2023" href="eccomas-coupled-2023.html">ECCOMAS Coupled Problems 2023</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS Congress 2022" href="eccomas-congress-2022.html">ECCOMAS Congress 2022</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS Coupled Problems 2021" href="eccomas-coupled-2021.html">ECCOMAS Coupled Problems 2021</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS WCCM 2020" href="community-events-wccm-eccomas-2020.html">ECCOMAS WCCM 2020</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS Coupled Problems 2019" href="eccomas-coupled-2019.html">ECCOMAS Coupled Problems 2019</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS ECCM-ECFD 2018" href="eccomas-eccm-ecfd-2018.html">ECCOMAS ECCM-ECFD 2018</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Support preCICE" href="community-support-precice.html">Support preCICE</a>
+  </li>
+  
+  
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Training" href="community-training.html">Training</a>
+  </li>
+  
+  
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Stories" href="community-projects.html">Stories</a>
+  </li>
+  
+  
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Contributors" href="community-contributors.html">Contributors</a>
+  </li>
+  
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Contribute" href="#">Contribute</a>
+    <ul>
+      
+      
+      
+      <li  class="active"  ><a title="Contribute to preCICE" href="community-contribute-to-precice.html">Contribute to preCICE</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Open projects" href="community-contribute-open-projects.html">Open projects</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Adapter guidelines" href="community-guidelines-adapters.html">Adapter guidelines</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Application case guidelines" href="community-guidelines-application-cases.html">Application case guidelines</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Example - OpenFOAM adapter" href="community-guidelines-adapters-openfoam.html">Example - OpenFOAM adapter</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Example - OpenDiHu adapter" href="community-guidelines-adapters-opendihu.html">Example - OpenDiHu adapter</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Example - ISSM adapter" href="community-guidelines-adapters-issm.html">Example - ISSM adapter</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Example - DuMux adapter" href="community-guidelines-adapters-dumux.html">Example - DuMux adapter</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Community channels" href="community-channels.html">Community channels</a>
+  </li>
+  
+  
+  
+  
+  
+  <!-- if you aren't using the accordion, uncomment this block:
+  <p class="external">
+  <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+  </p>
+  -->
+</ul>
+</nav>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+          </div>
+          <main class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Contribute to preCICE</h1>
+</div>
+
+
+
+<div class="post-content">
+
+    
+
+    <div class="row">
+        <div class="col-md-9 col-sm-8">
+          
+          <nav aria-label="table of contents">
+          
+          
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+    $('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers:  'h2,h3,h4'  });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+          
+          </nav>
+          
+        </div>
+
+        <div class="col-md-3 col-sm-4">
+          
+          <aside>
+            
+                <div class="text-right">
+                    <a target="_blank" rel="noopener" href="https://github.com/precice/precice.github.io/edit/master/content/community/contribute/community-contribute-to-precice.md" class="btn btn-default githubEditButton" role="button"><i class="fab fa-github fa-lg"></i> Edit me</a>
+                </div>
+            
+            <div class="text-right">
+              <small>Updated 25 Mar 26</small>
+            </div>
+          </aside>
+          
+        </div>
+    </div>
+
+   <p>Do you enjoy improving whatever you can? Did you find a bug in preCICE or one of the adapters? Have you developed a new simulation that could serve as a tutorial? We can use your help!</p>
+
+<p style="text-align: center">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oPorUPZA9XE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</p>
+
+<h2 id="talk-about-your-work">Talk about your work</h2>
+
+<p>We are very interested to know how you use preCICE, and we are regularly looking for contributions to the <a href="precice-workshop.html">preCICE Workshop</a>, as well as to invited sessions in broader conferences. We are also interested to know if you are talking about preCICE in other conferences: Don’t forget to mention preCICE by name in your abstract, so that we can find your talk when we are also attending the respective conference.</p>
+
+<p>If you are contributing a talk to a workshop or session we organize, following these guidelines will help us a lot to follow your talk and understand how we can help you:</p>
+
+<ul>
+  <li>Address an interdisciplinary audience: explain the general application first - probably nobody else in the room is working on something similar</li>
+  <li>Show a figure clarifying the domains coupled and the data exchanged (as you would explain it to a friend)</li>
+  <li>Show the <a href="tooling-config-visualization.html">configuration visualization</a></li>
+  <li>Mention the preCICE and solver versions, as well as platform information (HPC cluster / laptop, Ubuntu/other)</li>
+  <li>Clarify if you modified any adapters/preCICE itself, and where the modifications might be available. Mention any challenges you had to work around.</li>
+  <li>Aim for few slow-paced slides, use the opportunity for backup slides</li>
+</ul>
+
+<p>And hey! You have already worked with preCICE, so you can definitely contribute something in the following ways, if you have the time! 🤗</p>
+
+<h2 id="contributing-documentation">Contributing documentation</h2>
+
+<p>You (yes, you) have already found something that can be improved in this website:
+maybe an unclear part, maybe a broken link, maybe even a small typo.
+Click the <code class="language-plaintext highlighter-rouge">Edit me</code> button at the top of the respective page to see
+the source file of the page. You can then click <code class="language-plaintext highlighter-rouge">Edit this file</code>
+and submit your changes as a <a href="https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests">Pull Request on GitHub</a>.
+Don’t worry: you cannot break anything! We will review your suggestions
+and merge them as soon as possible.</p>
+
+<p>These pages are written in <a href="https://guides.github.com/features/mastering-markdown/">Markdown</a> (a very easy language)
+and we also have a <a href="docs-meta-cheatsheet.html">cheatsheet</a> specifically for this website.</p>
+
+<h2 id="reporting-issues">Reporting issues</h2>
+
+<p>After discussing a problem in one of our <a href="community-channels.html">community channels</a>, we may conclude that this is a bug
+we should fix, or a nice feature we could add. In that case, we will ask you to <a href="https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue">create a GitHub issue</a>.</p>
+
+<p>We keep each issue in the repository that contains the respective code, mainly:</p>
+
+<ul>
+  <li><a href="https://github.com/precice/precice/issues"><code class="language-plaintext highlighter-rouge">precice/precice</code></a></li>
+  <li><a href="https://github.com/precice/tutorials/issues"><code class="language-plaintext highlighter-rouge">precice/tutorials</code></a></li>
+  <li>adapters</li>
+</ul>
+
+<p>Please follow the issue template of each repository and provide as much information as possible, in particular the
+affected versions, error logs, and configuration files involved. However, it would also help if you select the files you upload
+and avoid sending complete simulation cases via cloud services.</p>
+
+<p>In any case, you can use <a href="https://guides.github.com/features/mastering-markdown/">Markdown</a> to format your message
+and in particular your code/log snippets.</p>
+
+<h2 id="testing-upcoming-versions">Testing upcoming versions</h2>
+
+<p>When we try to fix an issue or to offer new functionality, we contribute and discuss in Pull Requests.
+You can help us test the new features by <a href="https://precice.discourse.group/t/i-was-asked-to-try-a-pull-request-how-can-i-do-that/38">trying a pull request</a>.</p>
+
+<p>You can also use preCICE from the <a href="https://github.com/precice/precice/tree/develop/">develop branch</a> and report anything suspicious before we release it.</p>
+
+<h2 id="contributing-tutorials">Contributing tutorials</h2>
+
+<p>After working on your new simulation case, you may want to share it with the community to use as a starting point,
+or to demonstrate a new feature. We welcome contributions to our <a href="https://github.com/precice/tutorials/">tutorials repository</a>
+and we will discuss it with you over a few <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/reviewing-proposed-changes-in-a-pull-request">review</a> iterations.
+If you roughly follow the guidelines in this section, your contribution could be merged very quickly. Since we aim to maintain and update all tutorials, it is important for us that every tutorial merged follows the same structure and conventions.</p>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square"></i> <b>Tip:</b> 
+Get in touch with us early and we will be very happy to help you with every step! Open a first draft Pull Request on GitHub and we can together bring it into a fitting shape.
+</div>
+
+<p>First time working with Git? Watch a <a href="https://missing.csail.mit.edu/2020/version-control/">lecture on Git</a>.</p>
+
+<h3 id="what-to-contribute-and-where">What to contribute and where?</h3>
+
+<p>Your case may already fit into one of the existing tutorials. If not, feel free to start a new one! A new case typically needs a new preCICE configuration file.</p>
+
+<p>Contribute only the files necessary for running the tutorial (no results or user-specific files). You can check this by looking at the “Files changed” tab on GitHub.</p>
+
+<p>If there is already a <code class="language-plaintext highlighter-rouge">precice-config.xml</code> for the case you are simulating, please use the same one (or contribute changes to that). We want that all solvers that can simulate a given case use the same preCICE configuration file.</p>
+
+<h3 id="structure-of-a-tutorial">Structure of a tutorial</h3>
+
+<p>Our tutorials generally follow a file structure similar to this:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- &lt;tutorial&gt;/                     <span class="c"># e.g. perpendicular-flap/</span>
+  - README.md                     <span class="c"># description of the case</span>
+  - precice.config.xml            <span class="c"># a works-with-all preCICE configuration file</span>
+  - clean-tutorial.sh             <span class="c"># a symbolic link (see ../tools/)</span>
+  - &lt;participant1-solver1&gt;/       <span class="c"># e.g. fluid-openfoam/</span>
+    - run.sh                      <span class="c"># a short script to run the solver1 case</span>
+    - clean.sh                    <span class="c"># a short script to clean the solver1 case</span>
+    - &lt;the solver1 files&gt;
+  - &lt;participant2-solver2&gt;/       <span class="c"># e.g. solid-dealii/</span>
+    - run.sh
+    - clean.sh
+    - &lt;the solver2 files&gt;
+</code></pre></div></div>
+
+<p>Other files you may encounter are the following:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- &lt;tutorial&gt;/                     
+  - &lt;visualization scripts&gt;       <span class="c"># gnuplot or simple Python scripts</span>
+  - images/                       <span class="c"># any images used by the documentation</span>
+  - solver-&lt;code&gt;/                <span class="c"># any configurable, tutorial-specific code, e.g., solver-fenics</span>
+  - reference-results/            <span class="c"># results from different case combinations, used for regression tests</span>
+    - &lt;case_combination&gt;.tar.gz   <span class="c"># Git LFS objects, generated from GitHub Actions</span>
+</code></pre></div></div>
+
+<h3 id="the-runsh-scripts">The run.sh scripts</h3>
+
+<p>Each run script must be executable for a default case without any arguments. Optional arguments can include <code class="language-plaintext highlighter-rouge">-parallel</code>, or anything that triggers a special case. Such a uniform interface not only makes the workflow more predictable, but it also facilitates automation, avoiding special cases.</p>
+
+<p>These scripts should generally be very short and not include too much automation that would obfuscate the main steps. Remember: The tutorials serve as examples to copy from and extend, most often by replacing one participant with another.</p>
+
+<p>There are several helper scripts and functions in <code class="language-plaintext highlighter-rouge">tools/</code>; using these will make your scripts simpler.</p>
+
+<h3 id="tutorial-specific-codes">Tutorial-specific codes</h3>
+
+<p>In case a tutorial-specific code example is needed for this tutorial, and this can be reused among participants, add that in <code class="language-plaintext highlighter-rouge">solver-&lt;code&gt;/</code>. See, for example, the <a href="https://github.com/precice/tutorials/tree/develop/partitioned-heat-conduction">partitioned heat conduction tutorial</a>.</p>
+
+<p>You don’t need to have a participant-specific configuration file in a participant case (even though that would be nice). Instead, you can hard-code the configuration of each participant in the code and select the respective participant via a command-line argument. A case-specific <code class="language-plaintext highlighter-rouge">run.sh</code> that provides the participant as command-line argument is enough.</p>
+
+<p>If you write any output, it would be very helpful to keep it tidy (e.g., in a dedicated <code class="language-plaintext highlighter-rouge">output/</code> directory).</p>
+
+<h3 id="the-readme-file">The README file</h3>
+
+<p>In the <code class="language-plaintext highlighter-rouge">README.md</code> file, following the general structure of the existing tutorials, document:</p>
+
+<ul>
+  <li>the scenario setup,</li>
+  <li>the dependencies,</li>
+  <li>how to run the tutorial,</li>
+  <li>how to visualize the results, and</li>
+  <li>an example picture or video of the results.</li>
+  <li>Don’t forget to adapt the <code class="language-plaintext highlighter-rouge">permalink:</code> field in the beginning of the file.</li>
+</ul>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> 
+If you add a complete new tutorial case, the case also needs to be added to the <a href="https://github.com/precice/precice.github.io/blob/master/_data/sidebars/tutorial_sidebar.yml">tutorials sidebar</a> on the <a href="tutorials.html">tutorials website section</a>. Please open a pull request to the <a href="https://github.com/precice/precice.github.io">website repository</a>. Please note that we will only merge this one with the next release of the tutorials, such that the list of tutorial cases on the website does not deviate from the list of released tutorial cases.
+</div>
+
+<h3 id="naming-conventions">Naming conventions</h3>
+
+<ul>
+  <li>Directories use <code class="language-plaintext highlighter-rouge">-</code> to separate words, not <code class="language-plaintext highlighter-rouge">_</code>, and only use lowercase.
+    <ul>
+      <li>We use <code class="language-plaintext highlighter-rouge">_</code> for separating case combinations, e.g., in the reference results: <code class="language-plaintext highlighter-rouge">fluid-openfoam_solid-calculix.tar.gz</code>.</li>
+    </ul>
+  </li>
+  <li>Data and mesh names should start with uppercase and use <code class="language-plaintext highlighter-rouge">-</code> as separator.</li>
+  <li>Data names are in singular, e.g. <code class="language-plaintext highlighter-rouge">Stress</code>, <code class="language-plaintext highlighter-rouge">Heat-Flux</code>.</li>
+  <li>Mesh names start with the participant/domain name, e.g. <code class="language-plaintext highlighter-rouge">Fluid-Mesh</code>.</li>
+  <li>Mesh names of participants with multiple interfaces contain the interface in the mesh name, e.g. <code class="language-plaintext highlighter-rouge">Fluid-Upstream-Mesh</code>. For meshes on which it is important to distinguish between face centers and face nodes, the modifier comes at the end, e.g. <code class="language-plaintext highlighter-rouge">Fluid-Upstream-Mesh-Centers</code>.</li>
+  <li>Watchpoint names should be describing the point, not be a generic name.</li>
+  <li>Images need to be named as <code class="language-plaintext highlighter-rouge">tutorials-&lt;tutorial&gt;-&lt;image&gt;.png</code> to be correctly displayed on the website. You can then refer to them as <code class="language-plaintext highlighter-rouge">![title](images/tutorials-&lt;tutorial&gt;-&lt;image&gt;.png)</code>. Subdirectories are not allowed.</li>
+</ul>
+
+<h3 id="open-a-pull-request">Open a pull request</h3>
+
+<p>Start a draft <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request">pull request</a> early on, so that people know that someone is working on this. In the description, gradually include everything we may need to review and run your tutorial:</p>
+
+<ul>
+  <li>Why is this case a good fit for our tutorials? What is different from other tutorials?</li>
+  <li>How did you create the setup? Do we need any additional tools?</li>
+  <li>Which versions of preCICE, adapters, and solvers have you tried?</li>
+  <li>If it is a solver we don’t already support, how can we get it?</li>
+  <li>How should the results look like? A screenshot would be very helpful.</li>
+</ul>
+
+<h3 id="optional-help-us-with-some-checks">Optional: Help us with some checks</h3>
+
+<p>There are a few technical things to take care of before we can merge your contribution. If you find any of these steps to be complicated, we will be happy to directly edit your branch to apply them.</p>
+
+<p>Clean-up the files: remove commented-out code, remove scripts that are not needed, add case-specific files in a <code class="language-plaintext highlighter-rouge">.gitignore</code>.</p>
+
+<p>Install <code class="language-plaintext highlighter-rouge">pre-commit</code> and enable it in the repositories you plan to contribute to with <code class="language-plaintext highlighter-rouge">pre-commit install</code>. It automatically ensures consistent formatting and best practices before you even commit changes. You can also run these checks yourself on all files using <code class="language-plaintext highlighter-rouge">pre-commit run -va</code></p>
+
+<p>We automate many checks with <a href="https://github.com/features/actions">GitHub actions</a>, which you will see running at the bottom of each pull request. Using <code class="language-plaintext highlighter-rouge">pre-commit</code> yourself saves you some unnecessary trouble.</p>
+
+<h3 id="adding-a-new-tutorial-to-the-website">Adding a new tutorial to the website</h3>
+
+<p>The content of the tutorials is sourced from the develop branch of the tutorials repository, which is specified in the <code class="language-plaintext highlighter-rouge">.gitmodules</code> file of the website repository. Hence, in general, anything merged to develop in the tutorials appears on the website. Consider putting some <code class="language-plaintext highlighter-rouge">note</code> <a href="docs-meta-cheatsheet.html#alerts">alert box</a> on top of your new tutorial page to describe any unreleased requirements.</p>
+
+<p><em>New</em> tutorials will not directly appear on the website, but they need some additional steps. After merging to the tutorials develop, open a pull request with the following changes in the <a href="https://github.com/precice/precice.github.io">website repository</a> (<a href="https://github.com/precice/precice.github.io/pull/275">example</a>):</p>
+
+<ol>
+  <li>Trigger the <a href="https://github.com/precice/precice.github.io/actions/workflows/update-submodules.yml">update submodules workflow</a> and, after it completes, create a new branch and pull request (this may also happen automatically, or someone from the preCICE team may have to do it for you).</li>
+  <li>Edit the <a href="https://github.com/precice/precice.github.io/blob/master/_config.yml"><code class="language-plaintext highlighter-rouge">_config.yml</code> file</a> to append the directory name of your tutorial under <code class="language-plaintext highlighter-rouge">subprojects:</code>.</li>
+  <li>Edit the <a href="https://github.com/precice/precice.github.io/blob/master/_data/sidebars/tutorial_sidebar.yml">tutorials sidebar</a> to add your tutorial permalink (defined in the heading of the <code class="language-plaintext highlighter-rouge">README.md</code> you created) to a fitting place, next to a similar tutorial.</li>
+  <li>Edit the <a href="https://github.com/precice/precice.github.io/blob/master/content/tutorials/tutorials.md">tutorials landing page</a> to add your tutorial to the overview.</li>
+</ol>
+
+<p>After your PR gets reviewed, approved, and merged, the website will be built automatically, and your tutorial will appear online in a couple of minutes.</p>
+
+<h2 id="sharing-a-simulation-case">Sharing a simulation case</h2>
+
+<p>Did you create a nice simulation case that could be useful for more people, but is not simple enough to serve as a tutorial, or you don’t want to invest any more time shaping it into a tutorial? You can alternatively share it in the <a href="https://precice.discourse.group/c/community-projects/11">community projects</a> category of our forum.</p>
+
+<h2 id="contributing-code">Contributing code</h2>
+
+<p>You can pick up issues that you would like to work on from any repository you like. You may be particularly interested in the <a href="https://github.com/precice/precice/labels/good%20first%20issue">good first issues</a> and we definitely need help in the <a href="https://github.com/precice/precice/labels/help%20wanted">help wanted issues</a>. The same labels exist in every repository.</p>
+
+<p>Look for <a href="https://github.com/precice/precice/blob/develop/docs/CONTRIBUTING.md">contributing guidelines</a> in each repository. The <a href="dev-docs-overview.html">developer documentation</a> will also be useful.</p>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square"></i> <b>Tip:</b> 
+Read on our <a href="fundamentals-roadmap.html">Roadmap</a> what is already in our to-do list before starting to write large parts of code.
+</div>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square"></i> <b>Tip:</b> 
+There are <a href="community-guidelines-adapters.html">guidelines for adapters</a> and <a href="community-guidelines-application-cases.html">guidelines for application cases</a>.
+</div>
+
+<h2 id="helping-other-users">Helping other users</h2>
+
+<p>We would really appreciate it if you followed our <a href="community-channels.html">community channels</a> and joined us in answering questions.
+It is often much easier than you think!</p>
+
+<p>If you want to help there, then you may also want bookmark and visit the forum and/or chatroom regularly. You can also try to answer some of the <a href="https://precice.discourse.group/search?expanded=true&amp;q=status%3Aunsolved%20order%3Alatest">still unanswered forum questions</a>. There is a special place in our hearts for users that help each other! 🤗</p>
+
+
+    
+
+
+
+<!-- Breadcrumb metadata -->
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "@type": "ListItem",
+  "position": 1,
+  "name": "Community",
+  "item": "https://precice.org/community.html"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,{
+  "@type": "ListItem",
+  "position": 2,
+  "name": "Contribute to preCICE",
+  "item": "https://precice.org/community-contribute-to-precice.html"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+]}
+</script>
+
+
+</div>
+
+
+          </main>
+        </div>
+        
+    </div>
+    <footer class="background-dark">
+  <div class="container">
+
+
+    <div class="row equal">
+      <div class="col-md-4" style="background:white;border-radius:1rem;padding:0 3rem;margin:0 auto 50px auto;">
+        <h2> The preCICE newsletter </h2>
+        <script charset="utf-8" type="text/javascript" src="https://js.mailercloud.com/form/form.js"></script>
+<script>
+(function() {
+  mcform.create({
+    formId: "V3dEdUAzMTQ0NkAwMDAwMA==",
+    targetElement: "form_element_id"
+  })
+})();
+</script>
+
+        </div>
+    </div>
+
+
+    <div class="row equal text-center">
+      <div class="col-md-4">
+        <nav aria-label="Footer left">
+          <ul class="list-unstyled">
+            <li>
+              <a href="fundamentals-literature-guide.html">Cite preCICE</a>
+            </li>
+            <li>
+              <a href="community-contribute-to-precice.html">Contribute</a>
+            </li>
+            <li>
+              <a href="community-support-precice.html">Get support</a>
+            </li>
+            <li>
+              <a href="community-training.html">Get training</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-md-4">
+        <nav aria-label="Footer right">
+          <ul class="list-unstyled">
+            <li>
+              <a class="no-icon" href="https://precice.discourse.group">Forum on Discourse</a>
+            </li>
+            <li>
+              <a class="no-icon" href="https://github.com/precice">preCICE on GitHub</a>
+            </li>
+            <li>
+              <a href="fundamentals-license.html">License</a>
+            </li>
+            <li>
+              <a href="about.html">Impressum / Legal</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-md-4">
+        <p>
+        <a class="no-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+          <img alt="This work is licensed under a Creative Commons Attribution 4.0 International License." src="images/licensebutton-by-40_88x31.png" />
+        </a>
+        </p>
+        <p>
+        Page last updated: Mar 25, 2026<br>
+        Site last updated: Mar 25, 2026
+        </p>
+        <p>
+        <i class="fas fa-shield-halved" aria-hidden="true"></i> This website does not use cookies
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="/js/copy-code.js"></script>
+</footer>
+
+
+
+</body>
+
+</html>
