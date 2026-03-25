@@ -39,12 +39,7 @@ jobs:
         with:
           bundler-cache: true
 
-      - name: Install dependencies
-        working-directory: website
-        run: bundle install
-
       - name: Build site
-        working-directory: website
         env:
           JEKYLL_ENV: production
         run: bundle exec jekyll build
@@ -53,12 +48,12 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: site
-          path: website/_site
+          path: _site
           if-no-files-found: error
 
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
-          source-dir: website/_site
+          source-dir: _site
           preview-branch: gh-pages
           qr-code: true
