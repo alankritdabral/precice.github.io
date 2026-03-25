@@ -1,56 +1,64 @@
 name: Build the website
+
 on:
   workflow_dispatch:
   pull_request:
   merge_group:
+
 permissions:
   contents: write
+
 jobs:
   pre-commit:
     name: pre-commit checks
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+
       - name: Setup python
         uses: actions/setup-python@v6
         with:
           python-version: "3.x"
+
       - name: Run pre-commit
         uses: pre-commit/action@v3.0.1
 
   build:
     needs: pre-commit
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
           submodules: true
           lfs: false
-          # path: website
-      - uses: ruby/setup-ruby@v1
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-          working-directory: website
+
+      - name: Install dependencies
+        working-directory: website
+        run: bundle install
+
       - name: Build site
         working-directory: website
         env:
           JEKYLL_ENV: production
         run: bundle exec jekyll build
+
       - name: Upload site
         uses: actions/upload-artifact@v7
         with:
           name: site
           path: website/_site
           if-no-files-found: error
-      - name: Move build to root
-        run: |
-          rm -rf _site
-          cp -r website/_site ./_site
 
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
-          source-dir: _site
+          source-dir: website/_site
           preview-branch: gh-pages
           qr-code: true
