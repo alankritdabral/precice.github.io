@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="A hands-on introduction to preCICE, recommended for new users that want to learn how to couple their own codes and beyond.">
+
+<meta name="keywords" content=" workshop, teaching, support, api, implicit coupling, tools, data mapping, training">
+<meta name="theme-color" content="#0A76BB">
+<meta name="msapplication-square310x310logo" content="images/icon-310x310.png">
+
+<title>preCICE training | preCICE - The Coupling Library</title>
+<link rel="alternate" type="application/rss+xml" title="" href="https://precice.org/feed.xml">
+
+<!-- OpenGraph metadata -->
+<meta property="og:title" content="preCICE training" />
+<meta property="og:site_name" content="preCICE.org" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://precice.org/community-training.html" />
+<meta property="og:image" content="https://precice.org/images/icon-310x310.png" />
+<meta property="og:description" content="A hands-on introduction to preCICE, recommended for new users that want to learn how to couple their own codes and beyond.">
+
+<!-- Twitter Card metadata -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="preCICE training" />
+<meta name="twitter:description" content="A hands-on introduction to preCICE, recommended for new users that want to learn how to couple their own codes and beyond.">
+<meta name="twitter:image" content="https://precice.org/images/icon-310x310.png" />
+
+<!-- Canonical link -->
+<link rel="canonical" href="https://precice.org/community-training" >
+
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/syntax.css">
+<link rel="icon" sizes="192x192" href="images/icon.png">
+<link rel="apple-touch-icon" sizes="310x310" href="images/icon-310x310.png">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<!-- Bootstrap -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Local CSS -->
+<link rel="stylesheet" href="css/modern-business.css">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/customstyles-precice.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<link rel="stylesheet" href="css/bookcover.css">
+<!-- Color styles -->
+<link rel="stylesheet" href="css/theme-precice.css">
+<!-- Styling for landing page -->
+
+
+<!-- Jquery, Ajax -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<!-- Anchor.js -->
+<script src="https://cdn.jsdelivr.net/npm/anchor-js@4.2.0/anchor.min.js" integrity="sha256-m1eTvwEHwmsw4+XKF7BshClVJEPwTVycveNl0CS0Mkk=" crossorigin="anonymous"></script>
+
+<!-- Bootstrap JavaScript (requires jquery) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Local JS -->
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<!-- Algolia search -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.20.1/moment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+
+<!-- QR code for printed pages -->
+<script defer src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var qrDiv = document.createElement("div");
+    qrDiv.id = "print-qr-code";
+    var qr = qrcode(0, "M");
+    qr.addData("https://precice.org/community-training.html");
+    qr.make();
+    qrDiv.innerHTML = qr.createImgTag(3, 0);
+    document.body.appendChild(qrDiv);
+  });
+</script>
+<style>
+  #print-qr-code {
+    display: none;
+  }
+  @media print {
+    #print-qr-code {
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+    }
+  }
+</style>
+
+<!-- Plausible Analytics -->
+<script async defer data-domain="precice.org" src="https://plausible.io/js/plausible.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    <script>
+        // wrap tables into a div to make them scrollable on small viewports
+        // https://getbootstrap.com/docs/3.4/css/#tables-responsive
+        $(document).ready(function() {
+            $('table').addClass('table');
+            $('table').wrap('<div class="table-responsive"></div>');
+        });
+    </script>
+    
+</head>
+<body>
+    <header>
+        <!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" aria-label="Main">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand no-icon" href="https://precice.org">
+            <span class="navbar-brand-icon">
+            <img class="navbar-brand-text" src="images/preCICE_text_28px.svg" alt="preCICE"></span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                
+                <!-- entries without drop-downs appear here -->
+
+                
+                
+
+                
+                
+                
+                
+                
+                <li><a href="quickstart.html">Quickstart</a></li>
+                
+                
+                
+                
+                
+                <li><a href="docs.html">Docs</a></li>
+                
+                
+                
+                
+                
+                <li><a href="tutorials.html">Tutorials</a></li>
+                
+                
+                
+                
+                
+                <li class="active"><a href="community.html">Community</a></li>
+                
+                
+                
+                
+                
+                <li><a href="https://precice.discourse.group/c/news" target="_blank" rel="noopener">Blog</a></li>
+                
+                
+                
+                
+                
+                <li><a href="about.html">About</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <div id="search-input"></div>
+                        <div id="search-results"></div>
+                        <script>
+const algoliaSearch = instantsearch({
+  appId: 'LIT6P0EW26',
+  apiKey: '760ed6be3e165d08b4a798ac4aa82fe4',
+  indexName: 'jekyll',
+  searchFunction: function(helper) {          // hide search result in init query
+    var searchResults = $('#search-results');
+    if (helper.state.query === '') {
+      searchResults.hide();
+      return;
+    }
+    helper.search();
+    searchResults.show();
+  }
+});
+
+const hitTemplate = function(hit) {
+  let date = '';
+  if (hit.date) {
+    date = moment.unix(hit.date).format('MMM D, YYYY');
+  }
+
+  let url = `${hit.url}#${hit.anchor}`;
+
+  const title = hit._highlightResult.title.value;
+
+  let breadcrumbs = '';
+  if (hit._highlightResult.headings) {
+    breadcrumbs = hit._highlightResult.headings.map(match => {
+      return `<span class="result-breadcrumb">${match.value}</span>`
+    }).join(' > ')
+  }
+
+  const content = hit._highlightResult.html.value;
+
+  return `
+    <div class="result-item">
+    <h2><a class="result-link" href="${url}">${title}</a></h2>
+    <a href="${url}" class="result-breadcrumbs">${breadcrumbs}</a>
+    <div class="result-snippet">${content}</div>
+    </div>
+  `;
+}
+
+algoliaSearch.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '#search-input',
+    placeholder: 'Search (' + (/Mac|iPhone|iPad/.test(navigator.platform) ? '⌘K' : 'Ctrl+K') + ')',
+    poweredBy: true, // This is required if you're on the free Community plan
+    magnifier: false,
+    autofocus: false,
+    searchOnEnterKeyPressOnly: false,
+    reset: true
+  })
+);
+
+algoliaSearch.addWidget(
+  instantsearch.widgets.hits({
+    container: '#search-results',
+    templates: {
+      item: hitTemplate
+    }
+  })
+);
+
+algoliaSearch.start();
+
+// Patch the style of the search input bar generated by the above script
+// The equivalent CSS is below, however, including <style> in <body> is against the W3C commandments
+// Chrome and Firefox had baby called scope, but it didn't make it
+// https://stackoverflow.com/questions/2830296/using-style-tags-in-the-body-with-other-html
+var elem = document.querySelector('.ais-search-box--powered-by');
+elem.style.marginTop = '-15px';
+elem.style.paddingRight = '5px';
+
+var elem = document.querySelector('.nav li a.ais-search-box--powered-by-link');
+elem.style.padding = '0';
+elem.style.backgroundColor = 'transparent';
+elem.style.display = "inline-block";
+
+var elem = document.querySelector('.ais-search-box--input');
+elem.style.paddingLeft = '10px';
+elem.style.borderColor = '#0A76BB';
+
+var elem = document.querySelector('.ais-search-box');
+elem.style.padding = '.5em';
+elem.style.marginBottom = '0px';
+elem.style.marginLeft = '10px';
+elem.style.marginTop = '0px';
+elem.style.width = '20em';
+elem.style.fontSize = '0.8em';
+elem.style.height = '50px';
+elem.style.boxSizing = 'border-box';
+
+/*<style type="text/css">
+.ais-search-box--powered-by {
+  margin-top: -15px;
+  padding-right: 5px;
+}
+.nav li a.ais-search-box--powered-by-link {
+  padding: 0;
+  background-color: transparent;
+  display: inline-block;
+}
+.ais-search-box--input {
+  padding-left: 10px;
+  border-color: #0A76BB;
+}
+.ais-search-box {
+  padding: .5em;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-top: 0px;
+  width: 20em;
+  font-size: 0.8em;
+  box-sizing: border-box;
+  height: 50px;
+}
+</style>*/
+
+// some hacky JS to hide the search results until we move to docsearch (which is a true autocomplete-type search)
+document.addEventListener('mouseup', function(e) {
+  var results = document.getElementById('search-results');
+  if (!results.contains(e.target)) {
+    results.style.display = 'none';
+  }
+});
+document.addEventListener('mouseup', function(e) {
+  var input = document.getElementById('search-input');
+  var results = document.getElementById('search-results');
+  if (input.contains(e.target)) {
+    results.style.display = 'block';
+  }
+});
+
+// Cmd+K / Ctrl+K keyboard shortcut to focus search, Escape to dismiss
+document.addEventListener('keydown', function(e) {
+  var isMac = /Mac|iPhone|iPad|iPod/.test(navigator.platform);
+  if ((isMac ? e.metaKey : e.ctrlKey) && e.key === 'k') {
+    e.preventDefault();
+    var input = document.querySelector('.ais-search-box--input');
+    if (input) {
+      input.focus();
+      input.select();
+    }
+  }
+
+  if (e.key === 'Escape' || e.keyCode === 27) {
+    var results = document.getElementById('search-results');
+    var inputContainer = document.getElementById('search-input');
+    var activeElement = document.activeElement;
+
+    if (results) {
+      results.style.display = 'none';
+    }
+
+    if (inputContainer && inputContainer.contains(activeElement)) {
+      activeElement.blur();
+    } else if (results && results.contains(activeElement)) {
+      var algoliaInput = document.querySelector('#search-input .ais-search-box--input');
+      if (algoliaInput) {
+        algoliaInput.focus();
+      } else {
+        activeElement.blur();
+      }
+    }
+  }
+});
+
+</script>
+                    </div>
+                    <!--end search-->
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://precice.discourse.group" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Join the discourse community"><i class="fab fa-discourse"></i></a>
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://github.com/precice" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Star precice/precice on GitHub"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://www.linkedin.com/company/precice" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <!-- rel="me" required by Mastodon for verification -->
+                    <a rel="me noopener noreferrer" class="no-icon nav-external" href="https://fosstodon.org/@precice" target="_blank" data-show-count="false" aria-label="Follow us on Mastodon"><i class="fab fa-mastodon"></i></a>
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://www.youtube.com/c/preCICECoupling/" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Subscribe on Youtube"><i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+          <!-- News banner -->
+          
+
+
+
+    </header>
+    <div class="container" style="margin-bottom:50px">
+        
+        <div class="row">
+          <div class="col-md-3" id="tg-sb-sidebar">
+            
+
+<nav aria-label="Community">
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">Community </li>
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Overview & news" href="community.html">Overview & news</a>
+  </li>
+  
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Current events" href="#">Current events</a>
+    <ul>
+      
+      
+      
+      <li><a title="ECCOMAS WCCM 2026" href="eccomas-wccm-2026.html">ECCOMAS WCCM 2026</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Online training 2026" href="precice-online-training-2026-oct.html">Online training 2026</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2027" href="precice-workshop-2027.html">Workshop 2027</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="preCICE workshops" href="#">preCICE workshops</a>
+    <ul>
+      
+      
+      
+      <li><a title="Overview" href="precice-workshop.html">Overview</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2027" href="precice-workshop-2027.html">Workshop 2027</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2025" href="precice-workshop-2025.html">Workshop 2025</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2024" href="precice-workshop-2024.html">Workshop 2024</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2023" href="precice-workshop-2023.html">Workshop 2023</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2022" href="precice-workshop-2022.html">Workshop 2022</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2021" href="precice-workshop-2021.html">Workshop 2021</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2020" href="precice-workshop-2020.html">Workshop 2020</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Organizing" href="precice-workshop-organizing.html">Organizing</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Further events" href="#">Further events</a>
+    <ul>
+      
+      
+      
+      <li><a title="Online training 2026" href="precice-online-training-2026-oct.html">Online training 2026</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS WCCM 2026" href="eccomas-wccm-2026.html">ECCOMAS WCCM 2026</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS Coupled Problems 2025" href="eccomas-coupled-2025.html">ECCOMAS Coupled Problems 2025</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="iacm WCCM 2024" href="iacm-wccm-2024.html">iacm WCCM 2024</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS Coupled Problems 2023" href="eccomas-coupled-2023.html">ECCOMAS Coupled Problems 2023</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS Congress 2022" href="eccomas-congress-2022.html">ECCOMAS Congress 2022</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS Coupled Problems 2021" href="eccomas-coupled-2021.html">ECCOMAS Coupled Problems 2021</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS WCCM 2020" href="community-events-wccm-eccomas-2020.html">ECCOMAS WCCM 2020</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS Coupled Problems 2019" href="eccomas-coupled-2019.html">ECCOMAS Coupled Problems 2019</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS ECCM-ECFD 2018" href="eccomas-eccm-ecfd-2018.html">ECCOMAS ECCM-ECFD 2018</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Support preCICE" href="community-support-precice.html">Support preCICE</a>
+  </li>
+  
+  
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li class="active">
+    <a title="Training" href="community-training.html">Training</a>
+  </li>
+  
+  
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Stories" href="community-projects.html">Stories</a>
+  </li>
+  
+  
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Contributors" href="community-contributors.html">Contributors</a>
+  </li>
+  
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Contribute" href="#">Contribute</a>
+    <ul>
+      
+      
+      
+      <li><a title="Contribute to preCICE" href="community-contribute-to-precice.html">Contribute to preCICE</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Open projects" href="community-contribute-open-projects.html">Open projects</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Adapter guidelines" href="community-guidelines-adapters.html">Adapter guidelines</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Application case guidelines" href="community-guidelines-application-cases.html">Application case guidelines</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Example - OpenFOAM adapter" href="community-guidelines-adapters-openfoam.html">Example - OpenFOAM adapter</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Example - OpenDiHu adapter" href="community-guidelines-adapters-opendihu.html">Example - OpenDiHu adapter</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Example - ISSM adapter" href="community-guidelines-adapters-issm.html">Example - ISSM adapter</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Example - DuMux adapter" href="community-guidelines-adapters-dumux.html">Example - DuMux adapter</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Community channels" href="community-channels.html">Community channels</a>
+  </li>
+  
+  
+  
+  
+  
+  <!-- if you aren't using the accordion, uncomment this block:
+  <p class="external">
+  <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+  </p>
+  -->
+</ul>
+</nav>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+          </div>
+          <main class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">preCICE training</h1>
+</div>
+
+
+
+<div class="post-content">
+
+    
+    <div class="summary">
+        <!-- https://github.com/jekyll/jekyll/issues/3571 -->
+        A hands-on introduction to preCICE, recommended for new users that want to learn how to couple their own codes and beyond.
+
+    </div>
+    
+
+    <div class="row">
+        <div class="col-md-9 col-sm-8">
+          
+          <nav aria-label="table of contents">
+          
+          
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+    $('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers:  'h2,h3,h4'  });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+          
+          </nav>
+          
+        </div>
+
+        <div class="col-md-3 col-sm-4">
+          
+          <aside>
+            
+                <div class="text-right">
+                    <a target="_blank" rel="noopener" href="https://github.com/precice/precice.github.io/edit/master/content/community/community-training.md" class="btn btn-default githubEditButton" role="button"><i class="fab fa-github fa-lg"></i> Edit me</a>
+                </div>
+            
+            <div class="text-right">
+              <small>Updated 26 Mar 26</small>
+            </div>
+          </aside>
+          
+        </div>
+    </div>
+
+   <h2 id="about-the-course">About the course</h2>
+
+<p>Since 2020, we have been developing a dedicated training course on preCICE. Originally conceptualized for beginners, more and more content for advanced users has been added. We regularly give the complete course at the <a href="https://precice.org/community.html">preCICE workshops</a> and parts of it at various different occasions (for example as a <a href="https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=77168">minitutorial at SIAM CSE 2023</a>. We also offer to give private and bespoke versions of the course through the <a href="community-support-precice.html">preCICE support program</a>. Please note that the material of the course (besides community-contributed modules) is not distributed with a FOSS license, in contrast to almost everything else we do.</p>
+
+<h2 id="teaching-concept">Teaching concept</h2>
+
+<p>The course is organized in separate modules, which can be combined in various different ways. Each module typically takes 120 to 150 minutes to complete. We start each module with a short presentation explaining some background and giving an overview of the tasks. Then, students work on the tasks in a hands-on fashion, individually or in groups. Questions are answered individually by typically several instructors. We close each module by discussing solution approaches and open problems all together. We recommend using the <a href="installation-vm.html">preCICE Demo Virtual Machine</a> to follow the tasks. The actual course material is tailored to the needs of each event and distributed via download links.</p>
+
+<h2 id="content">Content</h2>
+
+<p>The course currently consists of four modules. Several more will follow.</p>
+
+<h3 id="basics">Basics</h3>
+
+<p>We couple two simple Python codes, discussing the basic methods of the preCICE API.</p>
+
+<p><img src="images/training/training-basics.png" alt="Basics training: Configuration" /></p>
+
+<h3 id="tools">Tools</h3>
+
+<p>We take a tour over available tools to configure, understand, and post-process preCICE simulations. More specifically, we have a look at the preCICE logger, config visualizer, mesh exports, and watchpoints of preCICE. We also discuss common tips for visualizing partitioned simulations in ParaView.</p>
+
+<p><img src="images/training/training-tools.png" alt="Basics training: Tools" /></p>
+
+<h3 id="implicit-coupling">Implicit coupling</h3>
+
+<p>We use a conjugate heat transfer scenario coupling OpenFOAM with Nutils to study implicit coupling, including acceleration methods.</p>
+
+<p><img src="images/training/training-implicit-coupling.png" alt="Basics training: Implicit coupling" /></p>
+
+<h3 id="data-mapping">Data mapping</h3>
+
+<p>We explore aspects of accuracy and efficiency in data mapping, using <a href="tooling-aste.html">ASTE</a>.</p>
+
+<p><img src="images/training/training-mapping.png" alt="Basics training: Mapping" /></p>
+
+<h3 id="workflow-for-fsi-simulations">Workflow for FSI simulations</h3>
+
+<p>In this <a href="https://github.com/precice/community-training/tree/main/fsi-workflow">community-contributed part of the course</a>, we are going step by step through the process of creating a fluid-structure interaction simulation coupling CalculiX and OpenFOAM. We start by creating the meshes for both solvers, using FreeCAD and snappyHexMesh. We then setup and run single-physics simulations, before we couple them.</p>
+
+<p><img src="images/training/training-fsi.png" alt="Application training: FSI workflow" /></p>
+
+<h3 id="parallelization-and-hpc-workflows">Parallelization and HPC workflows</h3>
+
+<p>We parallelize the same Python codes used in the Basics module, we analyze the performance-related events, run partitioned simulations in parallel on SLURM-enabled systems, and look deeper into common performance-related pitfalls.</p>
+
+<p><img src="images/training/training-hpc.png" alt="HPC training: Tracing" /></p>
+
+<h2 id="how-to-prepare">How to prepare?</h2>
+
+<p>On the technical side, the training course involves multiple components of the preCICE ecosystem, as well as third-party solvers and pre- and post-processing tools.
+Most of these tools work best (or only) on a Linux system.
+You can either (a) use a prepared system image that we provide (e.g., in a virtual machine), or (b) install the dependencies directly on your system.
+To reduce system-related friction during the training, we recommend starting with option (a).</p>
+
+<div class="alert alert-warning" role="alert"><i class="fas fa-exclamation-triangle"></i> <b>Important:</b> 
+At the end, verify your installation, and contact us as soon as possible regarding any issues.
+Find verification instructions at the end of each section.
+</div>
+
+<h3 id="provided-system">Provided system</h3>
+
+<p>We have prepared a modified Ubuntu image that includes all the tools we will use (different from the demo VM).
+With the training instructions, you will receive a URL with an up-to-date image for the specific training.
+With this <code class="language-plaintext highlighter-rouge">.iso</code> file, you can either:</p>
+
+<ul>
+  <li>prepare a virtual machin (VM), e.g., using <a href="https://www.virtualbox.org/">VirtualBox</a></li>
+  <li>create a bootable USB stick, e.g., using <a href="https://etcher.balena.io/">Etcher</a>, and use your system directly</li>
+</ul>
+
+<p>In both cases, you can either install the modified Ubuntu image, or try a live session, without any permanent changes (or result file saves) to your system.
+Get the smoothest experience by installing the image in a VM, so that your changes are saved between sessions, and you can at the same time access your host OS.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> 
+At the moment, this modified Ubuntu image is only available for Intel/AMD x86-64 CPUs.
+In our on-site trainings, some prepared USB sticks are provided.
+These should work on any laptop with an x86-64 CPU, as long as you have the rights to boot from USB. In particular, these do not work on Apple Silicon systems.
+</div>
+
+<p>Configure the VM with these settings:</p>
+
+<ul>
+  <li>At least 8GB of RAM (the system will not load with 4GB in the “try” mode).</li>
+  <li>Ideally, four logical CPU cores (one is also fine).</li>
+  <li>At least 64MB of video RAM (more -&gt; smoother graphics).</li>
+  <li>At least 25GB of storage.</li>
+</ul>
+
+<p>For VirtualBox, find these settings under the <code class="language-plaintext highlighter-rouge">System</code>, <code class="language-plaintext highlighter-rouge">Display</code>, and <code class="language-plaintext highlighter-rouge">Storage</code> categories.</p>
+
+<p>Further important settings:</p>
+
+<ul>
+  <li>The OpenFOAM adapter is installed under <code class="language-plaintext highlighter-rouge">~/OpenFOAM/ubuntu-v2406</code>. If you install (not “try” in a live session), move that directory to your user: <code class="language-plaintext highlighter-rouge">cd ~/OpenFOAM/ &amp;&amp; mv ubuntu-v2406/ $USER-v2406</code>.</li>
+  <li>Set your keyboard layout: In the Ubuntu applications menu, type “keyboard layout”. Select “Add input source”. Remove the default one.</li>
+</ul>
+
+<p><strong>Optional:</strong> If you choose to install the image in a VM, you probably want to better integrate it with your host system. For VirtualBox, you need to <a href="https://www.virtualbox.org/manual/ch04.html">install the Guest Additions</a> and set up a <a href="https://www.virtualbox.org/manual/ch04.html#sharedfolders">shared folder</a>:</p>
+
+<ol>
+  <li>Devices &gt; Insert Guest Additions CD Image</li>
+  <li>Navigate to the CD</li>
+  <li>Execute <code class="language-plaintext highlighter-rouge">autorun.sh</code> and give your password</li>
+  <li>It automatically installs the Guest Additions. Press Enter to exit at the end.</li>
+  <li>Set up a shared folder: Devices &gt; Shared Folders &gt; Shared Folders settings… &gt; Add</li>
+  <li>Folder Path: folder in your host system</li>
+  <li>Mount point: Where to find the folder in the VM system. For example, <code class="language-plaintext highlighter-rouge">/mnt/training</code>.</li>
+  <li>Select “Auto-mount” and “Make Permanent”</li>
+  <li>Inside the VM, execute <code class="language-plaintext highlighter-rouge">sudo adduser $USER vboxsf</code></li>
+  <li>Restart the VM</li>
+</ol>
+
+<p>To check your installation, run the <a href="tutorials-elastic-tube-1d.html">1D elastic tube tutorial</a> (Python solvers) inside the VM.</p>
+
+<div class="alert alert-warning" role="alert"><i class="fas fa-exclamation-triangle"></i> <b>Important:</b> 
+If you use a bootable USB, make sure to select trying a live session, and not installing (or take care that you do not remove your data).
+If you have <a href="https://en.wikipedia.org/wiki/UEFI#Secure_Boot">secure boot</a> enabled, this will need to be turned off to boot this unsigned OS.
+In case you use Windows with <a href="https://en.wikipedia.org/wiki/BitLocker">BitLocker</a> enabled, you will not be able to boot on Windows while secure boot is disabled (BitLocker will be asking for the decryption key).
+Remember to switch secure boot on again to be able to use your system as before.
+Do not remove the USB during a live session.
+</div>
+
+<h3 id="individual-dependencies">Individual dependencies</h3>
+
+<p>In case you prefer to install everything on your system, you will need the following:</p>
+
+<ul>
+  <li><a href="installation-overview.html">preCICE</a> (check with running <code class="language-plaintext highlighter-rouge">precice-version</code> in a terminal)</li>
+  <li><a href="installation-bindings-python.html">preCICE Python bindings</a>:
+    <ul>
+      <li>Create a virtual environment: <code class="language-plaintext highlighter-rouge">python3 -m venv .venv &amp;&amp; source .venv/bin/activate</code>. As long as the environment is active, you will see <code class="language-plaintext highlighter-rouge">(venv)</code> before your command prompt. You need to activate the venv in new terminal windows.</li>
+      <li>Install the bindings: <code class="language-plaintext highlighter-rouge">pip3 install pyprecice</code> (check with running <code class="language-plaintext highlighter-rouge">import precice</code> in a Python interpreter)</li>
+    </ul>
+  </li>
+  <li>matplotlib and numpy v1.x: In the same virtual environment, run <code class="language-plaintext highlighter-rouge">pip3 install matplotlib numpy==1.26.4</code></li>
+  <li><a href="https://www.paraview.org/">ParaView</a> (visualization, used in most modules apart from the basics)</li>
+</ul>
+
+<p>The tools module also needs (all optional):</p>
+
+<ul>
+  <li><a href="tooling-config-visualization.html">preCICE config visualizer</a> (check with running <code class="language-plaintext highlighter-rouge">precice-config-visualizer --help</code>)
+    <ul>
+      <li>Optionally, install the <code class="language-plaintext highlighter-rouge">precice-config-visualizer-gui</code> as well.</li>
+    </ul>
+  </li>
+  <li><a href="http://gnuplot.info/">gnuplot</a> (check with <code class="language-plaintext highlighter-rouge">gnuplot --help</code>)</li>
+</ul>
+
+<p>The implicit coupling module also needs:</p>
+
+<ul>
+  <li>OpenFOAM (openfoam.com): See the <a href="quickstart.html">Quickstart</a> page (check with running <code class="language-plaintext highlighter-rouge">buoyantPimpleFoam -help</code>)</li>
+  <li><a href="adapter-openfoam-get.html">OpenFOAM-preCICE</a> (check with running the Quickstart tutorial)</li>
+  <li>Nutils (installed automatically when running)</li>
+</ul>
+
+<p>The mapping module also needs:</p>
+
+<ul>
+  <li><a href="tooling-aste.html">ASTE</a> (check by running <code class="language-plaintext highlighter-rouge">./precice-aste-run --help</code> from the ASTE build directory)</li>
+</ul>
+
+<p>The FSI workflow module also needs:</p>
+
+<ul>
+  <li>OpenFOAM (openfoam.com): See the <a href="quickstart.html">Quickstart</a> page (check with running <code class="language-plaintext highlighter-rouge">pimpleFoam -help</code>)</li>
+  <li><a href="adapter-openfoam-get.html">OpenFOAM-preCICE</a> (check with running the Quickstart tutorial)</li>
+  <li>CalculiX and the <a href="https://precice.org/adapter-calculix-overview.html">CalculiX adapter</a> (check by running <code class="language-plaintext highlighter-rouge">ccx_preCICE</code>)</li>
+  <li><a href="https://www.freecad.org/">FreeCAD</a> 0.21 or later (check by starting the GUI)</li>
+  <li><a href="https://github.com/calculix/ccx2paraview">ccx2paraview</a> (<code class="language-plaintext highlighter-rouge">pip3 install ccx2paraview</code>, check by starting a Python terminal and executing <code class="language-plaintext highlighter-rouge">import ccx2paraview</code>)</li>
+  <li><a href="https://pypi.org/project/PyFoam/">PyFoam</a> (<code class="language-plaintext highlighter-rouge">pip3 install pyfoam</code>, check by running <code class="language-plaintext highlighter-rouge">pyFoamPlotWatcher.py --help</code>)</li>
+</ul>
+
+
+    
+
+
+
+<!-- Breadcrumb metadata -->
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "@type": "ListItem",
+  "position": 1,
+  "name": "Community",
+  "item": "https://precice.org/community.html"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,{
+  "@type": "ListItem",
+  "position": 2,
+  "name": "Training",
+  "item": "https://precice.org/community-training.html"
+}
+
+
+
+]}
+</script>
+
+
+</div>
+
+
+          </main>
+        </div>
+        
+    </div>
+    <footer class="background-dark">
+  <div class="container">
+
+
+    <div class="row equal">
+      <div class="col-md-4" style="background:white;border-radius:1rem;padding:0 3rem;margin:0 auto 50px auto;">
+        <h2> The preCICE newsletter </h2>
+        <script charset="utf-8" type="text/javascript" src="https://js.mailercloud.com/form/form.js"></script>
+<script>
+(function() {
+  mcform.create({
+    formId: "V3dEdUAzMTQ0NkAwMDAwMA==",
+    targetElement: "form_element_id"
+  })
+})();
+</script>
+
+        </div>
+    </div>
+
+
+    <div class="row equal text-center">
+      <div class="col-md-4">
+        <nav aria-label="Footer left">
+          <ul class="list-unstyled">
+            <li>
+              <a href="fundamentals-literature-guide.html">Cite preCICE</a>
+            </li>
+            <li>
+              <a href="community-contribute-to-precice.html">Contribute</a>
+            </li>
+            <li>
+              <a href="community-support-precice.html">Get support</a>
+            </li>
+            <li>
+              <a href="community-training.html">Get training</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-md-4">
+        <nav aria-label="Footer right">
+          <ul class="list-unstyled">
+            <li>
+              <a class="no-icon" href="https://precice.discourse.group">Forum on Discourse</a>
+            </li>
+            <li>
+              <a class="no-icon" href="https://github.com/precice">preCICE on GitHub</a>
+            </li>
+            <li>
+              <a href="fundamentals-license.html">License</a>
+            </li>
+            <li>
+              <a href="about.html">Impressum / Legal</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-md-4">
+        <p>
+        <a class="no-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+          <img alt="This work is licensed under a Creative Commons Attribution 4.0 International License." src="images/licensebutton-by-40_88x31.png" />
+        </a>
+        </p>
+        <p>
+        Page last updated: Mar 26, 2026<br>
+        Site last updated: Mar 26, 2026
+        </p>
+        <p>
+        <i class="fas fa-shield-halved" aria-hidden="true"></i> This website does not use cookies
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="/js/copy-code.js"></script>
+</footer>
+
+
+
+</body>
+
+</html>
