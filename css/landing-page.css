@@ -423,3 +423,15 @@ div.logo-holder > img {
 [data-theme="dark"] .btn:hover {
   background-color: #475569;
 }
+
+.logo-dark {
+  display: none;
+}
+
+[data-theme="dark"] .logo-light {
+  display: none;
+}
+
+[data-theme="dark"] .logo-dark {
+  display: inline;
+}
