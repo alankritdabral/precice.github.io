@@ -1,30 +1,36 @@
-const toggleBtn = document.getElementById("theme-toggle");
-const icon = document.getElementById("theme-icon");
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.getElementById("theme-toggle");
+  const icon = document.getElementById("theme-icon");
 
-// Load saved theme
-const savedTheme = localStorage.getItem("theme");
+  function updateIcon(theme) {
+    icon.className = theme === "dark" ? "fas fa-sun" : "fas fa-moon";
+  }
 
-if (savedTheme) {
-  document.documentElement.setAttribute("data-theme", savedTheme);
-  updateIcon(savedTheme);
-} else {
-  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const defaultTheme = prefersDark ? "dark" : "light";
-  document.documentElement.setAttribute("data-theme", defaultTheme);
-  updateIcon(defaultTheme);
-}
-toggleBtn.addEventListener("click", (e) => {
-  e.preventDefault();
+  // Load saved theme
+  const savedTheme = localStorage.getItem("theme");
 
-  let currentTheme = document.documentElement.getAttribute("data-theme");
-  let newTheme = currentTheme === "dark" ? "light" : "dark";
+  if (savedTheme) {
+    document.documentElement.setAttribute("data-theme", savedTheme);
+    updateIcon(savedTheme);
+  } else {
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const defaultTheme = prefersDark ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", defaultTheme);
+    updateIcon(defaultTheme);
+  }
 
-  document.documentElement.setAttribute("data-theme", newTheme);
-  localStorage.setItem("theme", newTheme);
+  // Toggle click
+  if (toggleBtn) {
+    toggleBtn.addEventListener("click", (e) => {
+      e.preventDefault();
 
-  updateIcon(newTheme);
+      let currentTheme = document.documentElement.getAttribute("data-theme");
+      let newTheme = currentTheme === "dark" ? "light" : "dark";
+
+      document.documentElement.setAttribute("data-theme", newTheme);
+      localStorage.setItem("theme", newTheme);
+
+      updateIcon(newTheme);
+    });
+  }
 });
-
-function updateIcon(theme) {
-  icon.className = theme === "dark" ? "fas fa-sun" : "fas fa-moon";
-}
