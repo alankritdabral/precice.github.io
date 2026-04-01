@@ -1257,3 +1257,179 @@ h4.panel-title {
   padding: 16px 0;
   text-align: center;
 }
+
+/* =========================
+   DARK THEME (DOCS + UI)
+   ========================= */
+
+[data-theme="dark"] {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+/* Callouts */
+[data-theme="dark"] .bs-callout {
+  background-color: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .bs-callout-default { border-left-color: #94a3b8; }
+[data-theme="dark"] .bs-callout-primary { border-left-color: #60a5fa; }
+[data-theme="dark"] .bs-callout-success { border-left-color: #4ade80; }
+[data-theme="dark"] .bs-callout-danger  { border-left-color: #f87171; }
+[data-theme="dark"] .bs-callout-warning { border-left-color: #facc15; }
+[data-theme="dark"] .bs-callout-info    { border-left-color: #22d3ee; }
+
+[data-theme="dark"] .bs-callout h4 {
+  color: inherit;
+}
+
+/* Breadcrumb */
+[data-theme="dark"] .breadcrumb li,
+[data-theme="dark"] .breadcrumb > .active {
+  color: #94a3b8 !important;
+}
+
+/* Tables */
+[data-theme="dark"] table {
+  border-color: #334155;
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] table > thead > tr > th {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  border-bottom: 2px solid #334155;
+}
+
+[data-theme="dark"] table > tbody > tr:nth-of-type(odd) {
+  background-color: #020617;
+}
+
+[data-theme="dark"] table > tbody > tr > td {
+  border-top: 1px solid #334155;
+}
+
+/* Table states */
+[data-theme="dark"] tr.success { background-color: rgba(34,197,94,0.15) !important; }
+[data-theme="dark"] tr.info    { background-color: rgba(59,130,246,0.15) !important; }
+[data-theme="dark"] tr.warning { background-color: rgba(234,179,8,0.15) !important; }
+[data-theme="dark"] tr.danger  { background-color: rgba(239,68,68,0.15) !important; }
+
+/* Sidebar navigation */
+[data-theme="dark"] .nav a {
+  color: #cbd5f5;
+}
+
+[data-theme="dark"] .nav li a {
+  background-color: #1e293b;
+}
+
+[data-theme="dark"] .nav ul li a {
+  background-color: #020617;
+}
+
+[data-theme="dark"] .nav a:hover,
+[data-theme="dark"] .nav li.active > a {
+  background-color: #334155;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .nav > li.active > a {
+  background-color: #2563eb;
+}
+
+/* TOC */
+[data-theme="dark"] div#toc ul {
+  background-color: #1e293b;
+  color: #cbd5f5;
+}
+
+/* Tabs */
+[data-theme="dark"] .tab-content {
+  background-color: #020617;
+}
+
+/* Alerts */
+[data-theme="dark"] .alert {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .alert-warning {
+  color: #facc15;
+}
+
+/* Code */
+[data-theme="dark"] code,
+[data-theme="dark"] pre {
+  background-color: #020617;
+  color: #e2e8f0;
+}
+
+/* Boxes / panels */
+[data-theme="dark"] .box {
+  background-color: #1e293b;
+  border-color: #475569;
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .box:hover {
+  background-color: #334155;
+}
+
+/* Forms / inputs */
+[data-theme="dark"] .faq-search-input,
+[data-theme="dark"] .faq-search-select {
+  background-color: #020617;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+
+/* FAQ text */
+[data-theme="dark"] .faq-meta-text,
+[data-theme="dark"] .faq-stats-text,
+[data-theme="dark"] .faq-empty-state {
+  color: #94a3b8;
+}
+
+/* Footer */
+[data-theme="dark"] .footerMeta {
+  background-color: #1e293b;
+  color: #cbd5f5;
+}
+
+/* Horizontal rules */
+[data-theme="dark"] hr {
+  background: #334155;
+}
+
+[data-theme="dark"] hr.shaded {
+  background: #020617;
+}
+
+/* Misc text */
+[data-theme="dark"] .summary {
+  color: #cbd5f5;
+  border-left-color: #f87171;
+}
+
+[data-theme="dark"] .endpoint {
+  background-color: #020617;
+  color: #cbd5f5;
+}
+
+/* Labels */
+[data-theme="dark"] span.label.label-default {
+  background-color: #475569;
+}
+
+[data-theme="dark"] span.label.label-primary {
+  background-color: #f59e0b;
+}
+
+/* External links */
+[data-theme="dark"] a:not(.no-icon)[href^="http"]::after {
+  color: #94a3b8;
+}
