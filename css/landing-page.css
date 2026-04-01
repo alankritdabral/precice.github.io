@@ -329,3 +329,97 @@ div.logo-holder > img {
     line-clamp: 4;
   }
 }
+/* =========================
+   DARK THEME OVERRIDES
+   ========================= */
+
+[data-theme="dark"] {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+/* General text */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6,
+[data-theme="dark"] p,
+[data-theme="dark"] a {
+  color: #e2e8f0;
+}
+
+/* Banner */
+[data-theme="dark"] .banner {
+  color: #e2e8f0;
+}
+
+/* Adapter cards */
+[data-theme="dark"] a.adapter,
+[data-theme="dark"] .adapter p {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] a.adapter > div.panel-primary {
+  border-color: rgba(59,130,246, 0.6);
+}
+
+[data-theme="dark"] a.adapter:hover > div.panel-primary {
+  background-color: rgba(59,130,246, 0.15);
+}
+
+/* Panels / cards */
+[data-theme="dark"] .panel,
+[data-theme="dark"] .news-card {
+  background-color: #1e293b;
+  border-color: #334155;
+  color: #e2e8f0;
+}
+
+/* News section */
+[data-theme="dark"] #latest-news {
+  background-color: #020617 !important;
+}
+
+[data-theme="dark"] .news-card a.news-link {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .news-card h4 {
+  color: #f1f5f9;
+}
+
+/* Quotes */
+[data-theme="dark"] p.quote,
+[data-theme="dark"] p.quote a {
+  color: #cbd5f5;
+}
+
+[data-theme="dark"] p.quote a:hover {
+  color: #ffffff;
+}
+
+/* Logos */
+[data-theme="dark"] .logo,
+[data-theme="dark"] .logo > div,
+[data-theme="dark"] .logo > p {
+  color: #cbd5f5;
+  opacity: 0.7;
+}
+
+/* GitHub link */
+[data-theme="dark"] .github-link {
+  color: #cbd5f5;
+}
+
+/* Buttons (optional polish) */
+[data-theme="dark"] .btn {
+  background-color: #334155;
+  color: #e2e8f0;
+  border-color: #475569;
+}
+
+[data-theme="dark"] .btn:hover {
+  background-color: #475569;
+}

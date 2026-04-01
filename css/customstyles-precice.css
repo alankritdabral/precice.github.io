@@ -412,3 +412,140 @@ div.highlighter-rouge:hover .copy-code-btn {
     color: white;
     border-color: #28a745;
 }
+
+/* =========================
+   DARK THEME (GLOBAL STYLES)
+   ========================= */
+
+[data-theme="dark"] body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+/* Navbar */
+[data-theme="dark"] .navbar {
+  background-color: #020617;
+  border-color: #1e293b;
+}
+
+[data-theme="dark"] .nav > li > a {
+  color: #cbd5f5;
+}
+
+[data-theme="dark"] .nav > li > a:hover {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+/* Brand */
+[data-theme="dark"] .navbar-brand-text {
+  color: #e2e8f0;
+}
+
+/* Panels */
+[data-theme="dark"] .panel,
+[data-theme="dark"] .panel-precice {
+  background-color: #1e293b;
+  border-color: #334155;
+  color: #e2e8f0;
+}
+
+/* Headings */
+[data-theme="dark"] h2.page-header {
+  border-bottom: 1px solid #334155;
+}
+
+/* Links */
+[data-theme="dark"] a {
+  color: #93c5fd;
+}
+
+[data-theme="dark"] a:hover {
+  color: #bfdbfe;
+}
+
+/* Code blocks */
+[data-theme="dark"] pre,
+[data-theme="dark"] code {
+  background-color: #020617;
+  color: #e2e8f0;
+}
+
+/* Search results dropdown */
+[data-theme="dark"] #search-demo-container div#search-results {
+  background-color: #1e293b;
+  border-color: #334155;
+  box-shadow: 2px 3px 8px rgba(0,0,0,0.6);
+}
+
+[data-theme="dark"] .result-item {
+  border-top: 1px solid #334155;
+}
+
+[data-theme="dark"] .result-link .ais-Highlight {
+  color: #facc15;
+}
+
+[data-theme="dark"] .result-breadcrumb,
+[data-theme="dark"] .result-snippet {
+  color: #cbd5f5;
+}
+
+/* Dev list (contributors) */
+[data-theme="dark"] .devlist {
+  border-color: #334155;
+}
+
+[data-theme="dark"] ul.devlist > li {
+  border-top: 1px solid #334155;
+}
+
+[data-theme="dark"] .devlist > li .devlist-img > img {
+  border-color: #475569;
+}
+
+/* Workshop / cards */
+[data-theme="dark"] .workshop-event {
+  background-color: #1e293b;
+  border-color: #334155;
+}
+
+/* Tabs (mobile) */
+[data-theme="dark"] div.tab-content {
+  background-color: #020617;
+}
+
+/* Copy button */
+[data-theme="dark"] .copy-code-btn {
+  background-color: #1e293b;
+  color: #cbd5f5;
+  border-color: #475569;
+}
+
+[data-theme="dark"] .copy-code-btn:hover {
+  background-color: #334155;
+  color: #ffffff;
+}
+
+/* Tables */
+[data-theme="dark"] .table {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .table > thead > tr > th {
+  border-color: #334155;
+}
+
+[data-theme="dark"] .table > tbody > tr > td {
+  border-color: #334155;
+}
+
+/* Sidebar */
+[data-theme="dark"] #tg-sb-sidebar {
+  background-color: transparent;
+}
+
+/* Details toggle arrows */
+[data-theme="dark"] details > summary::after {
+  color: #cbd5f5;
+}
