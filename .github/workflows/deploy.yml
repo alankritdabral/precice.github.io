@@ -99,6 +99,8 @@ jobs:
 
       - name: Assemble website
         run: |
+          mkdir -p main-website/public/doxygen/develop
+          mkdir -p main-website/public/doxygen/main
           mv website/_site main-website/public
           mv develop/docs/source-code-documentation/html main-website/public/doxygen/develop
           mv main/docs/source-code-documentation/html main-website/public/doxygen/main
