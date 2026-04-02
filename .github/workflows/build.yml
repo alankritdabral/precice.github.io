@@ -52,5 +52,5 @@ jobs:
         with:
           source-dir: website/_site
           preview-branch: gh-pages
-          umbrella-dir: pr-preview
+          umbrella-dir: pr-preview/pr-${{ github.event.number }}
           qr-code: true
