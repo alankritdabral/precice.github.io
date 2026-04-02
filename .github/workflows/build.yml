@@ -43,11 +43,13 @@ jobs:
           path: website/_site
           if-no-files-found: error
       - name: Current Directory
-        run: pwd
+        run : 
+          pwd
+          ls -la
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
-            source-dir: website/_site
+            source-dir: _site
             preview-branch: gh-pages
             umbrella-dir: chapter/pr-preview
             pages-base-path: chapter
