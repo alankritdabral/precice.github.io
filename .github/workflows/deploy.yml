@@ -6,6 +6,9 @@ on:
     branches:
       - master
 
+permissions:
+    contents: write
+
 concurrency:
   group: website-deploy
   cancel-in-progress: false # wait
@@ -96,9 +99,9 @@ jobs:
 
       - name: Assemble website
         run: |
-          mv website/_site public
-          mv develop/docs/source-code-documentation/html public/doxygen/develop
-          mv main/docs/source-code-documentation/html public/doxygen/main
+          mv website/_site main-website/public
+          mv develop/docs/source-code-documentation/html main-website/public/doxygen/develop
+          mv main/docs/source-code-documentation/html main-website/public/doxygen/main
 
       - name: List website files
         run: find public
@@ -106,5 +109,6 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.JEKYLL_PAT }}
-          publish_dir: ./public
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./main-website/public
+          keep_files: true
