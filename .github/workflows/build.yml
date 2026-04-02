@@ -22,15 +22,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout at root (for git + deploy actions)
-      - name: Checkout (root)
+      - name: Checkout (root) # Checkout at root (for git + deploy actions)
         uses: actions/checkout@v4
-      # Second checkout into /website (for build)
-      - name: Checkout (website folder)
+      - name: Checkout (website folder) # Second checkout into /website (for build)
         uses: actions/checkout@v4
         with:
           path: website
           submodules: true
+          lfs: false
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
@@ -41,7 +40,7 @@ jobs:
           JEKYLL_ENV: production
         run: bundle exec jekyll build
       - name: Upload site
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: site
           path: website/_site
