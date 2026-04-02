@@ -99,9 +99,9 @@ jobs:
 
       - name: Assemble website
         run: |
-          mv website/_site public
-          mv develop/docs/source-code-documentation/html public/doxygen/develop
-          mv main/docs/source-code-documentation/html public/doxygen/main
+          mv website/_site main-website/public
+          mv develop/docs/source-code-documentation/html main-website/public/doxygen/develop
+          mv main/docs/source-code-documentation/html main-website/public/doxygen/main
 
       - name: List website files
         run: find public
@@ -110,5 +110,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./main-website/public
           keep_files: true
