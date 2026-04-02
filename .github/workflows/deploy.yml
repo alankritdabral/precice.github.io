@@ -106,7 +106,7 @@ jobs:
           mv main/docs/source-code-documentation/html main-website/public/doxygen/main
 
       - name: List website files
-        run: find public
+        run: find main-website/public
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
