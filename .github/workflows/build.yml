@@ -36,16 +36,12 @@ jobs:
         env:
           JEKYLL_ENV: production
         run: bundle exec jekyll build
-      - name: Upload site
-        uses: actions/upload-artifact@v7
-        with:
-          name: site
-          path: website/_site
-          if-no-files-found: error
       - name: Current Directory
         run : 
           pwd
           ls -la
+          ls -la website
+          ls -lf
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
@@ -54,3 +50,9 @@ jobs:
             umbrella-dir: chapter/pr-preview
             pages-base-path: chapter
             qr-code: true
+      - name: Upload site
+        uses: actions/upload-artifact@v7
+        with:
+          name: site
+          path: website/_site
+          if-no-files-found: error
