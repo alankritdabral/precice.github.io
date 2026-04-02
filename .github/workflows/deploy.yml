@@ -6,9 +6,6 @@ on:
     branches:
       - master
 
-permissions:
-    contents: write
-
 concurrency:
   group: website-deploy
   cancel-in-progress: false # wait
@@ -109,6 +106,5 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.JEKYLL_PAT }}
           publish_dir: ./public
-          keep_files: true
