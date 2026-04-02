@@ -26,7 +26,6 @@ jobs:
         with:
           submodules: true
           lfs: false
-          path: website
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
