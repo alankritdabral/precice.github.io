@@ -29,9 +29,7 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-          working-directory: website
       - name: Build site
-        working-directory: website
         env:
           JEKYLL_ENV: production
         run: bundle exec jekyll build
@@ -42,12 +40,12 @@ jobs:
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
-          source-dir: website/_site
+          source-dir: _site
           preview-branch: gh-pages
           qr-code: true
       - name: Upload site
         uses: actions/upload-artifact@v7
         with:
           name: site
-          path: website/_site
+          path: _site
           if-no-files-found: error
