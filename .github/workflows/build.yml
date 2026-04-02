@@ -39,6 +39,7 @@ jobs:
       - name: Current Directory
         run : 
           pwd
+          cd ..
           ls -la
           ls -la website
           ls -lf
