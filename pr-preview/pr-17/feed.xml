@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title></title>
+        <description>preCICE is an open-source coupling library and ecosystem for general partitioned multi-physics and multi-scale simulations, including surface and volume coupling.</description>
+        <link>https://precice.org/</link>
+        <atom:link href="https://precice.org/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sat, 04 Apr 2026 09:25:55 +0000</pubDate>
+        <lastBuildDate>Sat, 04 Apr 2026 09:25:55 +0000</lastBuildDate>
+        <generator>Jekyll v4.4.1</generator>
+        
+    </channel>
+</rss>
