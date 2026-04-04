@@ -1,4 +1,5 @@
 name: Build and deploy the website
+
 on:
   workflow_dispatch:
   workflow_call:
@@ -6,9 +7,12 @@ on:
     branches:
       - master
 
+permissions:
+  contents: write
+
 concurrency:
   group: website-deploy
-  cancel-in-progress: false # wait
+  cancel-in-progress: false
 
 jobs:
   pre-commit:
@@ -16,16 +20,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+
       - name: Setup python
         uses: actions/setup-python@v6
         with:
-         python-version: '3.x'
+          python-version: '3.x'
+
       - name: Run pre-commit
         uses: pre-commit/action@v3.0.1
 
   build-deploy:
     needs: pre-commit
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout website
         uses: actions/checkout@v6
@@ -33,7 +40,7 @@ jobs:
           submodules: true
           lfs: false
           path: website
-          fetch-depth: 0 # full history required to determine last edit
+          fetch-depth: 0
 
       - name: Fetch - precice develop
         uses: actions/checkout@v6
@@ -58,15 +65,16 @@ jobs:
           sudo apt-get -yyq update
           sudo apt-get -yyq install graphviz plantuml
 
-          # Install latest doxygen binary
           mkdir doxygen
-          curl -sL https://github.com/doxygen/doxygen/releases/download/Release_1_14_0/doxygen-1.14.0.linux.bin.tar.gz | tar -xz --strip-components=1 -C doxygen
-          readlink -f doxygen/bin >> $GITHUB_PATH
+          curl -sL https://github.com/doxygen/doxygen/releases/download/Release_1_14_0/doxygen-1.14.0.linux.bin.tar.gz \
+            | tar -xz --strip-components=1 -C doxygen
+
+          echo "$(pwd)/doxygen/bin" >> $GITHUB_PATH
 
       - name: Check doxygen version
         run: doxygen --version
 
-      - name: Setup ruby
+      - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
@@ -76,11 +84,15 @@ jobs:
         working-directory: website
         run: git submodule foreach --recursive "git fetch --unshallow --all 2>/dev/null || git fetch --all"
 
-      - name: Build website
+      - name: Build Jekyll site
         working-directory: website
         env:
           JEKYLL_ENV: production
         run: bundle exec jekyll build
+
+      - name: Verify Jekyll output
+        run: |
+          ls -la website/_site || (echo "Jekyll build failed" && exit 1)
 
       - name: Build doxygen - develop
         working-directory: develop
@@ -96,15 +108,23 @@ jobs:
 
       - name: Assemble website
         run: |
-          mv website/_site public
-          mv develop/docs/source-code-documentation/html public/doxygen/develop
-          mv main/docs/source-code-documentation/html public/doxygen/main
+          mkdir -p main/main-website/public
+          mkdir -p main/main-website/public/doxygen/develop
+          mkdir -p main/main-website/public/doxygen/main
 
-      - name: List website files
-        run: find public
+          # Copy Jekyll output (NOT move)
+          cp -r website/_site/* main/main-website/public/
 
-      - name: Deploy
+          # Copy doxygen outputs
+          cp -r develop/docs/source-code-documentation/html/* main/main-website/public/doxygen/develop/
+          cp -r main/docs/source-code-documentation/html/* main/main-website/public/doxygen/main/
+
+      - name: List final website files
+        run: find main/main-website/public
+
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.JEKYLL_PAT }}
-          publish_dir: ./public
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./main/main-website/public
+          keep_files: true
