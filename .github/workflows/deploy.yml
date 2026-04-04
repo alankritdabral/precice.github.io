@@ -127,4 +127,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./main/main-website/public
-          keep_files: false
+          keep_files: true
