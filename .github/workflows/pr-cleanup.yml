@@ -12,18 +12,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
         with:
           ref: gh-pages
 
       - name: Remove preview folder
         run: |
-          rm -rf pr-${{ github.event.number }}
+          TARGET="pr-preview/pr-${{ github.event.number }}"
+          if [ -d "$TARGET" ]; then
+            rm -rf "$TARGET"
+            echo "Deleted $TARGET"
+          else
+            echo "Preview folder not found"
+          fi
 
       - name: Commit & push
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add .
+
+          git add pr-preview || true
           git commit -m "Remove preview for PR #${{ github.event.number }}" || echo "No changes"
           git push
