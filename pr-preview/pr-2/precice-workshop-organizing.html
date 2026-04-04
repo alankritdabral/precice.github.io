@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="keywords" content=" precice workshop, workshop">
+<meta name="theme-color" content="#0A76BB">
+<meta name="msapplication-square310x310logo" content="images/icon-310x310.png">
+
+<title>Organizing a preCICE workshop | preCICE - The Coupling Library</title>
+<link rel="alternate" type="application/rss+xml" title="" href="https://precice.org/feed.xml">
+
+<!-- OpenGraph metadata -->
+<meta property="og:title" content="Organizing a preCICE workshop" />
+<meta property="og:site_name" content="preCICE.org" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://precice.org/precice-workshop-organizing.html" />
+<meta property="og:image" content="https://precice.org/images/icon-310x310.png" />
+<meta property="og:description" content="preCICE is an open-source coupling library and ecosystem for general partitioned multi-physics and multi-scale simulations, including surface and volume coupling.">
+
+<!-- Twitter Card metadata -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Organizing a preCICE workshop" />
+<meta name="twitter:description" content="preCICE is an open-source coupling library and ecosystem for general partitioned multi-physics and multi-scale simulations, including surface and volume coupling.">
+<meta name="twitter:image" content="https://precice.org/images/icon-310x310.png" />
+
+<!-- Canonical link -->
+<link rel="canonical" href="https://precice.org/precice-workshop-organizing" >
+
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/syntax.css">
+<link rel="icon" sizes="192x192" href="images/icon.png">
+<link rel="apple-touch-icon" sizes="310x310" href="images/icon-310x310.png">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<!-- Bootstrap -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Local CSS -->
+<link rel="stylesheet" href="css/modern-business.css">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/customstyles-precice.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<link rel="stylesheet" href="css/bookcover.css">
+<!-- Color styles -->
+<link rel="stylesheet" href="css/theme-precice.css">
+<!-- Styling for landing page -->
+
+
+<!-- Jquery, Ajax -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<!-- Anchor.js -->
+<script src="https://cdn.jsdelivr.net/npm/anchor-js@4.2.0/anchor.min.js" integrity="sha256-m1eTvwEHwmsw4+XKF7BshClVJEPwTVycveNl0CS0Mkk=" crossorigin="anonymous"></script>
+
+<!-- Bootstrap JavaScript (requires jquery) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Local JS -->
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<!-- Algolia search -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.20.1/moment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+
+<!-- QR code for printed pages -->
+<script defer src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var qrDiv = document.createElement("div");
+    qrDiv.id = "print-qr-code";
+    var qr = qrcode(0, "M");
+    qr.addData("https://precice.org/precice-workshop-organizing.html");
+    qr.make();
+    qrDiv.innerHTML = qr.createImgTag(3, 0);
+    document.body.appendChild(qrDiv);
+  });
+</script>
+<style>
+  #print-qr-code {
+    display: none;
+  }
+  @media print {
+    #print-qr-code {
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+    }
+  }
+</style>
+
+<!-- Plausible Analytics -->
+<script async defer data-domain="precice.org" src="https://plausible.io/js/plausible.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    <script>
+        // wrap tables into a div to make them scrollable on small viewports
+        // https://getbootstrap.com/docs/3.4/css/#tables-responsive
+        $(document).ready(function() {
+            $('table').addClass('table');
+            $('table').wrap('<div class="table-responsive"></div>');
+        });
+    </script>
+    
+</head>
+<body>
+    <header>
+        <!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" aria-label="Main">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand no-icon" href="https://precice.org">
+            <span class="navbar-brand-icon">
+            <img class="navbar-brand-text" src="images/preCICE_text_28px.svg" alt="preCICE"></span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                
+                <!-- entries without drop-downs appear here -->
+
+                
+                
+
+                
+                
+                
+                
+                
+                <li><a href="quickstart.html">Quickstart</a></li>
+                
+                
+                
+                
+                
+                <li><a href="docs.html">Docs</a></li>
+                
+                
+                
+                
+                
+                <li><a href="tutorials.html">Tutorials</a></li>
+                
+                
+                
+                
+                
+                <li class="active"><a href="community.html">Community</a></li>
+                
+                
+                
+                
+                
+                <li><a href="https://precice.discourse.group/c/news" target="_blank" rel="noopener">Blog</a></li>
+                
+                
+                
+                
+                
+                <li><a href="about.html">About</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <div id="search-input"></div>
+                        <div id="search-results"></div>
+                        <script>
+const algoliaSearch = instantsearch({
+  appId: 'LIT6P0EW26',
+  apiKey: '760ed6be3e165d08b4a798ac4aa82fe4',
+  indexName: 'jekyll',
+  searchFunction: function(helper) {          // hide search result in init query
+    var searchResults = $('#search-results');
+    if (helper.state.query === '') {
+      searchResults.hide();
+      return;
+    }
+    helper.search();
+    searchResults.show();
+  }
+});
+
+const hitTemplate = function(hit) {
+  let date = '';
+  if (hit.date) {
+    date = moment.unix(hit.date).format('MMM D, YYYY');
+  }
+
+  let url = `${hit.url}#${hit.anchor}`;
+
+  const title = hit._highlightResult.title.value;
+
+  let breadcrumbs = '';
+  if (hit._highlightResult.headings) {
+    breadcrumbs = hit._highlightResult.headings.map(match => {
+      return `<span class="result-breadcrumb">${match.value}</span>`
+    }).join(' > ')
+  }
+
+  const content = hit._highlightResult.html.value;
+
+  return `
+    <div class="result-item">
+    <h2><a class="result-link" href="${url}">${title}</a></h2>
+    <a href="${url}" class="result-breadcrumbs">${breadcrumbs}</a>
+    <div class="result-snippet">${content}</div>
+    </div>
+  `;
+}
+
+algoliaSearch.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '#search-input',
+    placeholder: 'Search (' + (/Mac|iPhone|iPad/.test(navigator.platform) ? '⌘K' : 'Ctrl+K') + ')',
+    poweredBy: true, // This is required if you're on the free Community plan
+    magnifier: false,
+    autofocus: false,
+    searchOnEnterKeyPressOnly: false,
+    reset: true
+  })
+);
+
+algoliaSearch.addWidget(
+  instantsearch.widgets.hits({
+    container: '#search-results',
+    templates: {
+      item: hitTemplate
+    }
+  })
+);
+
+algoliaSearch.start();
+
+// Patch the style of the search input bar generated by the above script
+// The equivalent CSS is below, however, including <style> in <body> is against the W3C commandments
+// Chrome and Firefox had baby called scope, but it didn't make it
+// https://stackoverflow.com/questions/2830296/using-style-tags-in-the-body-with-other-html
+var elem = document.querySelector('.ais-search-box--powered-by');
+elem.style.marginTop = '-15px';
+elem.style.paddingRight = '5px';
+
+var elem = document.querySelector('.nav li a.ais-search-box--powered-by-link');
+elem.style.padding = '0';
+elem.style.backgroundColor = 'transparent';
+elem.style.display = "inline-block";
+
+var elem = document.querySelector('.ais-search-box--input');
+elem.style.paddingLeft = '10px';
+elem.style.borderColor = '#0A76BB';
+
+var elem = document.querySelector('.ais-search-box');
+elem.style.padding = '.5em';
+elem.style.marginBottom = '0px';
+elem.style.marginLeft = '10px';
+elem.style.marginTop = '0px';
+elem.style.width = '20em';
+elem.style.fontSize = '0.8em';
+elem.style.height = '50px';
+elem.style.boxSizing = 'border-box';
+
+/*<style type="text/css">
+.ais-search-box--powered-by {
+  margin-top: -15px;
+  padding-right: 5px;
+}
+.nav li a.ais-search-box--powered-by-link {
+  padding: 0;
+  background-color: transparent;
+  display: inline-block;
+}
+.ais-search-box--input {
+  padding-left: 10px;
+  border-color: #0A76BB;
+}
+.ais-search-box {
+  padding: .5em;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-top: 0px;
+  width: 20em;
+  font-size: 0.8em;
+  box-sizing: border-box;
+  height: 50px;
+}
+</style>*/
+
+// some hacky JS to hide the search results until we move to docsearch (which is a true autocomplete-type search)
+document.addEventListener('mouseup', function(e) {
+  var results = document.getElementById('search-results');
+  if (!results.contains(e.target)) {
+    results.style.display = 'none';
+  }
+});
+document.addEventListener('mouseup', function(e) {
+  var input = document.getElementById('search-input');
+  var results = document.getElementById('search-results');
+  if (input.contains(e.target)) {
+    results.style.display = 'block';
+  }
+});
+
+// Cmd+K / Ctrl+K keyboard shortcut to focus search, Escape to dismiss
+document.addEventListener('keydown', function(e) {
+  var isMac = /Mac|iPhone|iPad|iPod/.test(navigator.platform);
+  if ((isMac ? e.metaKey : e.ctrlKey) && e.key === 'k') {
+    e.preventDefault();
+    var input = document.querySelector('.ais-search-box--input');
+    if (input) {
+      input.focus();
+      input.select();
+    }
+  }
+
+  if (e.key === 'Escape' || e.keyCode === 27) {
+    var results = document.getElementById('search-results');
+    var inputContainer = document.getElementById('search-input');
+    var activeElement = document.activeElement;
+
+    if (results) {
+      results.style.display = 'none';
+    }
+
+    if (inputContainer && inputContainer.contains(activeElement)) {
+      activeElement.blur();
+    } else if (results && results.contains(activeElement)) {
+      var algoliaInput = document.querySelector('#search-input .ais-search-box--input');
+      if (algoliaInput) {
+        algoliaInput.focus();
+      } else {
+        activeElement.blur();
+      }
+    }
+  }
+});
+
+</script>
+                    </div>
+                    <!--end search-->
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://precice.discourse.group" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Join the discourse community"><i class="fab fa-discourse"></i></a>
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://github.com/precice" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Star precice/precice on GitHub"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://www.linkedin.com/company/precice" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <!-- rel="me" required by Mastodon for verification -->
+                    <a rel="me noopener noreferrer" class="no-icon nav-external" href="https://fosstodon.org/@precice" target="_blank" data-show-count="false" aria-label="Follow us on Mastodon"><i class="fab fa-mastodon"></i></a>
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://www.youtube.com/c/preCICECoupling/" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Subscribe on Youtube"><i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+          <!-- News banner -->
+          
+
+
+
+    </header>
+    <div class="container" style="margin-bottom:50px">
+        
+        <div class="row">
+          <div class="col-md-3" id="tg-sb-sidebar">
+            
+
+<nav aria-label="Community">
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">Community </li>
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Overview & news" href="community.html">Overview & news</a>
+  </li>
+  
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Current events" href="#">Current events</a>
+    <ul>
+      
+      
+      
+      <li><a title="ECCOMAS WCCM 2026" href="eccomas-wccm-2026.html">ECCOMAS WCCM 2026</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Online training 2026" href="precice-online-training-2026-oct.html">Online training 2026</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2027" href="precice-workshop-2027.html">Workshop 2027</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="preCICE workshops" href="#">preCICE workshops</a>
+    <ul>
+      
+      
+      
+      <li><a title="Overview" href="precice-workshop.html">Overview</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2027" href="precice-workshop-2027.html">Workshop 2027</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2025" href="precice-workshop-2025.html">Workshop 2025</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2024" href="precice-workshop-2024.html">Workshop 2024</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2023" href="precice-workshop-2023.html">Workshop 2023</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2022" href="precice-workshop-2022.html">Workshop 2022</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2021" href="precice-workshop-2021.html">Workshop 2021</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2020" href="precice-workshop-2020.html">Workshop 2020</a></li>
+      
+      
+      
+      
+      
+      
+      <li  class="active"  ><a title="Organizing" href="precice-workshop-organizing.html">Organizing</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Further events" href="#">Further events</a>
+    <ul>
+      
+      
+      
+      <li><a title="Online training 2026" href="precice-online-training-2026-oct.html">Online training 2026</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS WCCM 2026" href="eccomas-wccm-2026.html">ECCOMAS WCCM 2026</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS Coupled Problems 2025" href="eccomas-coupled-2025.html">ECCOMAS Coupled Problems 2025</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="iacm WCCM 2024" href="iacm-wccm-2024.html">iacm WCCM 2024</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS Coupled Problems 2023" href="eccomas-coupled-2023.html">ECCOMAS Coupled Problems 2023</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS Congress 2022" href="eccomas-congress-2022.html">ECCOMAS Congress 2022</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS Coupled Problems 2021" href="eccomas-coupled-2021.html">ECCOMAS Coupled Problems 2021</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS WCCM 2020" href="community-events-wccm-eccomas-2020.html">ECCOMAS WCCM 2020</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS Coupled Problems 2019" href="eccomas-coupled-2019.html">ECCOMAS Coupled Problems 2019</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS ECCM-ECFD 2018" href="eccomas-eccm-ecfd-2018.html">ECCOMAS ECCM-ECFD 2018</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Support preCICE" href="community-support-precice.html">Support preCICE</a>
+  </li>
+  
+  
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Training" href="community-training.html">Training</a>
+  </li>
+  
+  
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Stories" href="community-projects.html">Stories</a>
+  </li>
+  
+  
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Contributors" href="community-contributors.html">Contributors</a>
+  </li>
+  
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Contribute" href="#">Contribute</a>
+    <ul>
+      
+      
+      
+      <li><a title="Contribute to preCICE" href="community-contribute-to-precice.html">Contribute to preCICE</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Open projects" href="community-contribute-open-projects.html">Open projects</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Adapter guidelines" href="community-guidelines-adapters.html">Adapter guidelines</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Application case guidelines" href="community-guidelines-application-cases.html">Application case guidelines</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Example - OpenFOAM adapter" href="community-guidelines-adapters-openfoam.html">Example - OpenFOAM adapter</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Example - OpenDiHu adapter" href="community-guidelines-adapters-opendihu.html">Example - OpenDiHu adapter</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Example - ISSM adapter" href="community-guidelines-adapters-issm.html">Example - ISSM adapter</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Example - DuMux adapter" href="community-guidelines-adapters-dumux.html">Example - DuMux adapter</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Community channels" href="community-channels.html">Community channels</a>
+  </li>
+  
+  
+  
+  
+  
+  <!-- if you aren't using the accordion, uncomment this block:
+  <p class="external">
+  <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+  </p>
+  -->
+</ul>
+</nav>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+          </div>
+          <main class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Organizing a preCICE workshop</h1>
+</div>
+
+
+
+<div class="post-content">
+
+    
+
+    <div class="row">
+        <div class="col-md-9 col-sm-8">
+          
+          <nav aria-label="table of contents">
+          
+          
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+    $('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers:  'h2,h3,h4'  });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+          
+          </nav>
+          
+        </div>
+
+        <div class="col-md-3 col-sm-4">
+          
+          <aside>
+            
+                <div class="text-right">
+                    <a target="_blank" rel="noopener" href="https://github.com/precice/precice.github.io/edit/master/content/community/workshops/precice-workshop-organizing.md" class="btn btn-default githubEditButton" role="button"><i class="fab fa-github fa-lg"></i> Edit me</a>
+                </div>
+            
+            <div class="text-right">
+              <small>Updated 04 Apr 26</small>
+            </div>
+          </aside>
+          
+        </div>
+    </div>
+
+   <p>While the preCICE workshop lasts a week, it takes several months of preparation to make it successful. In this preparation, the complete preCICE team plays an active role, while the event management role rotates, to integrate different perspectives and to distribute the load. In cases where this makes sense, we organize the workshop together with local user groups, opening further networking opportunities for the community.</p>
+
+<p>In this page, we document common steps and lessons learned, aiming to make onboarding of new organizers easier. Besides, who remembers what material the registration desk needed last year, if we cannot even remember what we had for lunch?</p>
+
+<p>We have also published our experiences and recommendations together with the <a href="https://espressomd.org/">ESPResSo</a> and <a href="https://dumux.org/">DuMux</a> teams:</p>
+
+<div class="row">
+<div class="col-md-10 col-md-offset-1">
+  <div class="panel panel-primary panel-precice">
+    <div class="panel-heading-precice">
+      <strong>Organizing software community workshops: Experiences from three independent simulation software projects</strong>
+    </div>
+    <div class="panel-body">
+      <p>
+        <em>Jean-Noël Grad, and Gerasimos Chourdakis, and Bernd Flemisch, and Christian Holm, and Leon Keim, and Benjamin Uekermann, and Rudolf Weeber</em>,
+        Electronic Communications of the EASST,
+        Volume 85,
+        ,
+        2025.
+      </p>
+      <a href="https://doi.org/10.14279/eceasst.v85.2700">Publisher's site</a>&nbsp;&nbsp;
+      <a href="assets/organizing-workshops.bib">Download BibTeX &nbsp;<i class="fas fa-download"></i></a>
+    </div>
+  </div>
+</div>
+</div>
+
+<h2 id="first-urgent-steps">First urgent steps</h2>
+
+<p>Do these steps as soon as possible, as other major steps depend on them.</p>
+
+<h3 id="set-and-advertise-a-date">Set and advertise a date</h3>
+
+<p>Decide on a place and date before the previous year’s workshop, so that this can be announced to the current participants.</p>
+
+<p>Factors that typically contribute to a date decision:</p>
+
+<ul>
+  <li>Venue availability</li>
+  <li>Lecture-free periods</li>
+  <li>School holidays</li>
+  <li>Overlap with other related conferences (check, e.g., ECCOMAS, IACM, SIAM)</li>
+</ul>
+
+<p>Once finalized, a “save the date” entry should be listed immediately on:</p>
+
+<ul>
+  <li>the preCICE website (news banner, community overview, first dummy page of the workshop)</li>
+  <li>the preCICE forum</li>
+  <li>the social media platforms that preCICE is active on</li>
+</ul>
+
+<h3 id="find-a-venue">Find a venue</h3>
+
+<p>If not at the same time as the date announcement, decide on a venue, and book rooms as soon as possible after that. Depending on the local workflows and availability, room booking requests might need to be done more than six months ahead, so aim to book at least the main room at the time that the venue is decided.</p>
+
+<p>Typical room requirements:</p>
+
+<ul>
+  <li>Fitting around 50 people (but not much larger than that)</li>
+  <li>For the hands-on training course and the user support sessions: easy access at every seat, (collaborative) working surface, enough power sockets, stable internet connection</li>
+  <li>For the talks: good acoustics and visibility, recording infrastructure</li>
+  <li>For the world café: (standing) tables, placed far from each other, isolated from noisy areas of the building</li>
+  <li>For the catering: ideally next to the rooms, isolated, standing</li>
+</ul>
+
+<p>With “recording infrastructure”, we mean infrastructure to capture the speaker audio+video, slides, and an additional microphone in separate stream (a meeting camera system is typically not fitting the purpose). We can provide specialized hardware to do the mixing of these channels into what you later see as recordings on YouTube, if this is not already available in the room.</p>
+
+<p>The rooms for the training and the talks are typically different, even if the schedule is typically structured as a single track. The catering and the world café can typically use the same room and tables, but reusing the collaborative working room for the world café is also fine.</p>
+
+<h3 id="define-financing-scheme">Define financing scheme</h3>
+
+<p>Typically, the workshop is co-funded by participation fees. An important dependency for subsequent steps is which entity can collect and process such participation fees. This might be an association supporting scientific activities, an event management unit of a university, or an external company. The setup should allow to model an income to reinvest into maintaining preCICE.</p>
+
+<p>Multiple types of tickets are typically defined:</p>
+
+<ul>
+  <li>early -vs- late registration</li>
+  <li>full price -vs- discount for academia</li>
+  <li>training course included -vs- only main part of the workshop</li>
+</ul>
+
+<p>In addition, free registration is accounted for:</p>
+
+<ul>
+  <li>holders of a <a href="community-support-precice.html#2-support-license">support license</a></li>
+  <li>invited speakers</li>
+  <li>organizers (if possible)</li>
+  <li>special cases</li>
+</ul>
+
+<p>Finally, account for a number of travel grants (at least for the invited speakers), if possible.</p>
+
+<h3 id="set-milestones">Set milestones</h3>
+
+<p>Set clear responsible persons for each task, and track progress in a collaborative project board.</p>
+
+<p>Important dates to set:</p>
+
+<ul>
+  <li>“save the date” announcement: one year ahead</li>
+  <li>call for contributions (needs a form): open six months ahead. An early call mainly acts as advertisement and helps participants that need a visa application to travel.</li>
+  <li>open registration (needs a form): the earlier the better, and useful as a concrete action when advertising.</li>
+  <li>abstract submission deadline and contribution acceptance: the earlier the better, typically before the early-bird registration deadline. Aim for 3-4 months before the workshop, to facilitate the visa process. The contribution acceptance can be as short as one week after the deadline.</li>
+  <li>early-bird registration deadline: important for estimating the number of participants, driven by the catering requirements.</li>
+  <li>request catering offers: typically 3-4 months before the workshop.</li>
+  <li>reserve tables for the workshop dinner: typically 3-4 months before the workshop.</li>
+  <li>late registration deadline: typically 2-3 weeks before the workshop, to give an accurate number of participants to the caterer.</li>
+</ul>
+
+<h2 id="registration-infrastructure">Registration infrastructure</h2>
+
+<p>Two forms are mainly needed, and it is easier if they are decoupled: an abstract submission form, and a registration form.</p>
+
+<p>The abstract submission form should collect:</p>
+
+<ul>
+  <li>Kind of contribution (talk or poster, if offered)</li>
+  <li>Presenter</li>
+  <li>Authors</li>
+  <li>Affiliations</li>
+  <li>Webpage (optional)</li>
+  <li>GitHub handle (optional)</li>
+  <li>Contact email</li>
+  <li>Title</li>
+  <li>Abstract (plain text, max 1500 chars including spaces)</li>
+  <li>A disclaimer that, if accepted and the presenter registers, this information is going to appear on the website</li>
+</ul>
+
+<p>This form can be implemented in any survey tool. Live access to the data by the preCICE team would be helpful, to understand where further advertising might be needed.</p>
+
+<p>The registration form should collect:</p>
+
+<ul>
+  <li>Name</li>
+  <li>Affiliation</li>
+  <li>Billing address and ticket type/price (depending on the financial setup)
+    <ul>
+      <li>Organization or person</li>
+      <li>Internal routing information (institute, project)</li>
+      <li>Email for the invoice</li>
+      <li>VAT ID</li>
+      <li>Academic discount / Normal price</li>
+    </ul>
+  </li>
+  <li>Contact email</li>
+  <li>Whether an invitation is required for visa purposes</li>
+  <li>Dates/modules that one plans to attend:
+    <ul>
+      <li>Training course</li>
+      <li>Main workshop</li>
+      <li>Dinner</li>
+      <li>User support session (if the only event of the day)</li>
+      <li>Potential other social events</li>
+    </ul>
+  </li>
+  <li>Dietary restrictions</li>
+  <li>Permission to include contact details in a participants list distributed to the participants</li>
+  <li>A disclaimer that photos are going to be taken on site and will be used for advertising</li>
+  <li>Potential questions of interest for the workshop (particular topics of interest, goals)</li>
+</ul>
+
+<p>This form is typically implemented by the local organizers. Payments including invoices or receipts could be part of the process or separate.</p>
+
+<p>After submitting either form, the applicant should get an automatic confirmation (feature not available in some tools, e.g., Nextcloud), which includes information on how to pay the registration fee.</p>
+
+<p>On-site registration is typically not planned or advertised, but can be handled in small numbers.</p>
+
+<h2 id="advertising">Advertising</h2>
+
+<p>Advertising the workshop happens mainly in three phases:
+when the date is fixed, when the call for contributions is open, and when the registration deadline is approaching.
+Surveys from previous workshops showed that most participants find about the workshop via collaborators (including forwarded emails) or simply on the website.
+Therefore, targeted emails and an early announcement on the website (including the news banner) are crucial.</p>
+
+<p>Further places where we typically advertise are:</p>
+
+<ul>
+  <li>preCICE channels:
+    <ul>
+      <li>forum</li>
+      <li>chatroom</li>
+      <li><a href="https://precice.org/community-channels.html">social media</a></li>
+      <li>newsletter</li>
+    </ul>
+  </li>
+  <li>Local communities:
+    <ul>
+      <li><a href="https://www.cs.cit.tum.de/sccs/weiterfuehrende-informationen/quartl/">Quartl</a></li>
+      <li><a href="https://www.simtech.uni-stuttgart.de/communication/">SimTech</a></li>
+    </ul>
+  </li>
+  <li>Event calendars:
+    <ul>
+      <li><a href="https://foss.events/">FOSS Events</a></li>
+      <li><a href="https://veranstaltungen.hpc-in-deutschland.de/">Gauß-Allianz’s HPC calendar</a></li>
+      <li><a href="https://cfd-online.com/Events/">CFD Online Events Calendar</a></li>
+      <li>LinkedIn event</li>
+    </ul>
+  </li>
+  <li>News and mailing lists:
+    <ul>
+      <li><a href="https://na-digest.coecis.cornell.edu/na-digest-html/">NADigest</a></li>
+      <li><a href="https://www.cfd-online.com/Forum/news.cgi/form/0">CFD Online News</a></li>
+      <li><a href="https://www.nafems.org/mynafems/submitnews/">NAFEMS News</a> and <a href="https://www.nafems.org/events/industry-events/">events</a></li>
+      <li><a href="https://lists.mcs.anl.gov/mailman/listinfo/hpc-announce">HPC Announce</a></li>
+      <li><a href="https://www.listserv.dfn.de/sympa/subscribe/nhr-announcements">NHR Announcements</a></li>
+      <li>Mailing lists of collaborating projects</li>
+    </ul>
+  </li>
+  <li>Other communities:
+    <ul>
+      <li><a href="https://www.cfd-online.com/Forums/main/259965-precice-workshop-conference-sessions.html">CFD Online forum</a></li>
+      <li><a href="https://calculix.discourse.group/">CalculiX forum</a></li>
+      <li><a href="https://fenicsproject.discourse.group/">FEniCS forum</a></li>
+      <li>Reddit <a href="https://www.reddit.com/r/CFD/">r/cfd</a></li>
+    </ul>
+  </li>
+  <li>Personal posts on LinkedIn and in the following groups:
+    <ul>
+      <li><a href="https://www.linkedin.com/groups/9073912/">preCICE</a></li>
+      <li><a href="https://www.linkedin.com/groups/1920608/">OpenFOAM</a></li>
+      <li><a href="https://www.linkedin.com/groups/87791/">HPC</a></li>
+      <li><a href="https://www.linkedin.com/groups/66032/?lipi=urn%3Ali%3Apage%3Ad_flagship3_groups_index%3BzXis%2BeD7QbaLqV6CHaM8PQ%3D%3D">Computational Fluid Dynamics</a></li>
+      <li><a href="https://www.linkedin.com/groups/2195717/?lipi=urn%3Ali%3Apage%3Ad_flagship3_groups_index%3BzXis%2BeD7QbaLqV6CHaM8PQ%3D%3D">Fluid-Structure Interaction</a></li>
+      <li><a href="https://www.linkedin.com/groups/84748/?lipi=urn%3Ali%3Apage%3Ad_flagship3_groups_index%3BzXis%2BeD7QbaLqV6CHaM8PQ%3D%3D">NAFEMS Community</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="reviewing-contributions">Reviewing contributions</h2>
+
+<p>After collecting all contributions in a list, add comments for each:</p>
+
+<ul>
+  <li>Does the contribution clearly fit the workshop?</li>
+  <li>What is the novelty from a preCICE perspective?</li>
+  <li>Is it best suited for a talk or a poster?</li>
+  <li>Further comments</li>
+</ul>
+
+<p>Given that talk slots are limited, we prioritize talks that are potentially interesting to a wider audience and are already concrete enough.
+Vision talks in new directions might also be fitting.
+Technical topics, or early work that can profit from extensive discussion, are better suited for posters.</p>
+
+<p>After a decision is made, send official confirmation/rejection emails to the contributors.
+For talks, ask about time restrictions for scheduling the talk.
+For posters, include information about:</p>
+
+<ul>
+  <li>What size and orientation is possible? A0 poster boards fitting either orientation is typically the default.</li>
+  <li>Is there a template to follow? Default would be no.</li>
+  <li>When should the posters be hanged, and until when do they have to be taken down?</li>
+  <li>Is there a local printing option? Who should they send a poster to and until when? What is the cost (typically free)?</li>
+</ul>
+
+<p>For both talks and posters, remind contributors that they need to register separately.</p>
+
+<p>Ideally, publish the list of accepted talks and posters (unscheduled) and ask contributors to confirm their details.</p>
+
+<h2 id="scheduling">Scheduling</h2>
+
+<p>Prepare the schedule in two phases:</p>
+
+<ol>
+  <li>Preliminary schedule: Mainly includes starting and ending dates/times, and overall sessions.
+Main purpose: Get an idea of what this event is about, request travel funding, and plan traveling.
+The details can change later.</li>
+  <li>Detailed schedule: As soon as talks are accepted and time restrictions settled.</li>
+</ol>
+
+<p>Elements to mention in the detailed schedule:</p>
+
+<ol>
+  <li>Catering offerings: This is important information for the caterer and for the travel reimbursement.
+Add an “Arrival and coffee” option in the morning.
+This typically leads to two coffee breaks and one lunch per day.</li>
+  <li>Schedule buffers: Lunch should be at least 1h and coffee breaks at least 30min.</li>
+  <li>Course components can split between sessions or even days, but each session should be allocated at least 90min (ideally 120min). Especially in the beginning, account for some time for setup or resolving installation issues.</li>
+  <li>Don’t forget to schedule the group photo, any interaction components (e.g., world café), and any evening activities (formal and informal dinner).</li>
+</ol>
+
+<h2 id="tasks-to-delegate">Tasks to delegate</h2>
+
+<p>There are a few minor non-local tasks, which can be easily distributed to others within the organization team:</p>
+
+<ul>
+  <li>Preparing and announcing feedback form. Ideally, participants can fill out the feedback form already during the last day of the workshop.</li>
+  <li>Ordering and preparing swag.</li>
+  <li>Managing the word café (collecting topcis, introducing the concept, keeping the time)</li>
+</ul>
+
+
+    
+
+
+
+<!-- Breadcrumb metadata -->
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "@type": "ListItem",
+  "position": 1,
+  "name": "Community",
+  "item": "https://precice.org/community.html"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,{
+  "@type": "ListItem",
+  "position": 2,
+  "name": "Organizing",
+  "item": "https://precice.org/precice-workshop-organizing.html"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]}
+</script>
+
+
+</div>
+
+
+          </main>
+        </div>
+        
+    </div>
+    <footer class="background-dark">
+  <div class="container">
+
+
+    <div class="row equal">
+      <div class="col-md-4" style="background:white;border-radius:1rem;padding:0 3rem;margin:0 auto 50px auto;">
+        <h2> The preCICE newsletter </h2>
+        <script charset="utf-8" type="text/javascript" src="https://js.mailercloud.com/form/form.js"></script>
+<script>
+(function() {
+  mcform.create({
+    formId: "V3dEdUAzMTQ0NkAwMDAwMA==",
+    targetElement: "form_element_id"
+  })
+})();
+</script>
+
+        </div>
+    </div>
+
+
+    <div class="row equal text-center">
+      <div class="col-md-4">
+        <nav aria-label="Footer left">
+          <ul class="list-unstyled">
+            <li>
+              <a href="fundamentals-literature-guide.html">Cite preCICE</a>
+            </li>
+            <li>
+              <a href="community-contribute-to-precice.html">Contribute</a>
+            </li>
+            <li>
+              <a href="community-support-precice.html">Get support</a>
+            </li>
+            <li>
+              <a href="community-training.html">Get training</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-md-4">
+        <nav aria-label="Footer right">
+          <ul class="list-unstyled">
+            <li>
+              <a class="no-icon" href="https://precice.discourse.group">Forum on Discourse</a>
+            </li>
+            <li>
+              <a class="no-icon" href="https://github.com/precice">preCICE on GitHub</a>
+            </li>
+            <li>
+              <a href="fundamentals-license.html">License</a>
+            </li>
+            <li>
+              <a href="about.html">Impressum / Legal</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-md-4">
+        <p>
+        <a class="no-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+          <img alt="This work is licensed under a Creative Commons Attribution 4.0 International License." src="images/licensebutton-by-40_88x31.png" />
+        </a>
+        </p>
+        <p>
+        Page last updated: Apr 4, 2026<br>
+        Site last updated: Apr 4, 2026
+        </p>
+        <p>
+        <i class="fas fa-shield-halved" aria-hidden="true"></i> This website does not use cookies
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="/js/copy-code.js"></script>
+</footer>
+
+
+
+</body>
+
+</html>
