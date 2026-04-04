@@ -1,0 +1,190 @@
+<map id="src/mapping/config/MappingConfiguration.hpp" name="src/mapping/config/MappingConfiguration.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1181,5,1379,45"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/header/string.html" title=" " alt="" coords="461,929,520,955"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1181,32,714,54,463,72,360,83,282,96,233,103,184,104,96,107,60,113,32,128,22,139,14,153,8,193,8,797,10,814,15,828,33,848,60,863,94,879,123,890,163,899,260,916,448,935,447,940,260,921,162,905,122,895,92,884,58,868,29,852,10,831,5,815,3,797,3,192,9,151,18,136,29,124,58,108,95,101,184,99,233,97,281,91,360,78,463,67,713,48,1181,27"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/header/vector.html" title=" " alt="" coords="1215,563,1278,588"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1283,46,1283,193,1283,430,1280,463,1274,496,1258,551,1253,549,1269,495,1275,463,1277,430,1277,193,1277,46"/>
+<area shape="rect" id="Node000004" href="$Logger_8hpp.html" title=" " alt="" coords="581,563,726,588"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1181,31,1001,37,782,49,574,68,489,81,425,96,364,110,312,123,291,133,275,146,265,166,261,193,261,430,263,441,269,452,292,473,327,492,370,509,471,538,568,558,567,563,469,543,368,514,324,497,289,477,265,455,258,443,256,430,256,192,260,164,271,143,288,128,310,118,363,105,423,91,488,75,573,63,782,44,1000,32,1181,26"/>
+<area shape="rect" id="Node000031" href="$CoarseGrainingMapping_8hpp.html" title=" " alt="" coords="976,101,1243,126"/>
+<area shape="poly" id="edge16_Node000001_Node000031" title=" " alt="" coords="1244,48,1145,97,1143,92,1241,43"/>
+<area shape="rect" id="Node000032" href="$Mapping_8hpp.html" title=" " alt="" coords="2422,181,2589,207"/>
+<area shape="poly" id="edge107_Node000001_Node000032" title=" " alt="" coords="1318,43,1402,91,1429,114,1441,123,1458,131,1514,142,1609,152,1875,168,2409,188,2408,193,1875,173,1609,157,1513,147,1457,136,1438,127,1426,118,1398,96,1315,48"/>
+<area shape="rect" id="Node000035" href="$mapping_2SharedPointer_8hpp.html" title=" " alt="" coords="1369,343,1570,368"/>
+<area shape="poly" id="edge108_Node000001_Node000035" title=" " alt="" coords="1306,44,1329,66,1351,92,1391,155,1423,222,1464,328,1459,330,1418,224,1386,158,1347,95,1325,69,1302,48"/>
+<area shape="rect" id="Node000058" href="$mesh_2SharedPointer_8hpp.html" title=" " alt="" coords="1489,563,1629,588"/>
+<area shape="poly" id="edge110_Node000001_Node000058" title=" " alt="" coords="1292,45,1318,109,1329,150,1333,193,1333,276,1339,323,1355,367,1379,408,1409,446,1441,480,1474,510,1531,553,1528,557,1470,514,1437,484,1405,450,1375,411,1351,369,1334,324,1328,276,1328,193,1324,151,1313,110,1287,47"/>
+<area shape="rect" id="Node000083" href="$MappingConfigurationTypes_8hpp.html" title=" " alt="" coords="1469,93,1739,133"/>
+<area shape="poly" id="edge109_Node000001_Node000083" title=" " alt="" coords="1352,43,1521,87,1519,92,1350,48"/>
+<area shape="rect" id="Node000084" href="$XMLTag_8hpp.html" title=" " alt="" coords="648,416,776,441"/>
+<area shape="poly" id="edge111_Node000001_Node000084" title=" " alt="" coords="1181,36,941,56,653,89,521,111,412,136,370,149,338,164,318,178,312,193,312,276,314,288,321,299,345,321,382,342,429,360,535,391,635,412,634,417,534,396,427,365,380,347,342,326,316,302,309,290,307,276,307,192,314,175,335,159,368,144,410,131,520,106,652,84,940,51,1181,31"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="647,590,614,645,600,682,595,721,595,797,593,823,587,843,562,883,543,905,521,923,518,919,539,901,558,880,582,841,588,822,589,797,589,720,595,680,610,642,642,587"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/header/memory.html" title=" " alt="" coords="1288,636,1365,661"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="726,583,746,585,1275,640,1274,645,745,591,726,588"/>
+<area shape="rect" id="Node000006" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/header/string_view.html" title=" " alt="" coords="1425,929,1522,955"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="727,584,833,604,950,633,1049,665,1125,693,1198,728,1287,780,1336,815,1383,852,1454,918,1451,922,1380,856,1333,819,1284,785,1195,733,1123,698,1047,670,949,639,832,609,726,589"/>
+<area shape="rect" id="Node000007" href="$LogMacros_8hpp.html" title=" " alt="" coords="817,636,937,661"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="690,585,829,629,827,634,689,591"/>
+<area shape="rect" id="Node000008" href="$Exceptions_8hpp.html" title=" " alt="" coords="794,709,966,735"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="880,662,882,696,876,696,875,662"/>
+<area shape="rect" id="Node000011" href="$fmt_8hpp.html" title=" " alt="" coords="1115,856,1221,881"/>
+<area shape="poly" id="edge9_Node000007_Node000011" title=" " alt="" coords="904,659,942,679,980,707,1004,734,1017,758,1031,781,1054,806,1089,830,1125,848,1123,853,1086,834,1050,810,1027,784,1013,760,999,737,977,711,939,684,902,664"/>
+<area shape="rect" id="Node000024" href="$Tracer_8hpp.html" title=" " alt="" coords="630,709,770,735"/>
+<area shape="poly" id="edge12_Node000007_Node000024" title=" " alt="" coords="850,664,742,707,740,702,848,659"/>
+<area shape="rect" id="Node000025" href="$ArgumentFormatter_8hpp.html" title=" " alt="" coords="1063,783,1273,808"/>
+<area shape="poly" id="edge14_Node000007_Node000025" title=" " alt="" coords="919,659,980,679,1045,707,1100,740,1145,772,1142,776,1097,744,1043,712,978,684,917,664"/>
+<area shape="poly" id="edge10_Node000011_Node000002" title=" " alt="" coords="1115,878,534,939,533,934,1115,873"/>
+<area shape="poly" id="edge11_Node000011_Node000006" title=" " alt="" coords="1218,879,1412,924,1411,929,1216,884"/>
+<area shape="poly" id="edge13_Node000024_Node000004" title=" " alt="" coords="694,710,659,602,664,600,699,708"/>
+<area shape="poly" id="edge15_Node000025_Node000011" title=" " alt="" coords="1171,808,1171,842,1165,842,1165,808"/>
+<area shape="poly" id="edge17_Node000031_Node000002" title=" " alt="" coords="1031,129,776,174,615,209,452,252,301,303,234,332,175,362,127,394,90,428,67,464,61,482,59,501,59,797,61,816,68,831,78,842,91,850,168,879,242,905,319,922,390,932,448,937,447,942,390,937,318,927,241,910,166,884,89,855,74,846,63,834,56,818,53,797,53,501,55,481,62,462,86,425,123,390,173,358,232,327,299,298,451,247,614,204,775,169,1030,123"/>
+<area shape="poly" id="edge18_Node000031_Node000003" title=" " alt="" coords="1129,124,1159,148,1193,182,1220,224,1229,248,1232,273,1232,430,1236,494,1244,549,1239,550,1231,495,1227,430,1227,273,1224,249,1216,227,1189,185,1155,152,1125,128"/>
+<area shape="poly" id="edge19_Node000031_Node000004" title=" " alt="" coords="1026,129,958,142,876,162,788,190,698,227,611,275,571,303,533,334,499,368,469,405,444,446,424,490,420,511,426,527,439,541,458,552,510,566,567,572,567,577,509,571,456,557,436,545,421,530,415,511,419,489,439,443,465,402,495,364,530,330,568,298,609,270,696,222,786,185,875,157,956,137,1025,123"/>
+<area shape="poly" id="edge20_Node000031_Node000032" title=" " alt="" coords="1243,120,1413,131,2408,185,2408,190,1413,136,1243,126"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="2862,709,2954,735"/>
+<area shape="poly" id="edge21_Node000032_Node000015" title=" " alt="" coords="2589,195,2878,207,3061,218,3249,234,3423,255,3569,281,3625,296,3668,313,3696,332,3704,343,3707,354,3707,577,3700,592,3681,606,3616,630,3520,652,3406,672,3161,701,2968,719,2968,714,3161,696,3405,666,3519,647,3614,625,3679,601,3696,589,3701,576,3701,354,3699,345,3693,336,3666,318,3624,301,3567,286,3422,260,3248,239,3061,224,2877,212,2589,200"/>
+<area shape="rect" id="Node000033" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/header/iosfwd.html" title=" " alt="" coords="3072,563,3136,588"/>
+<area shape="poly" id="edge22_Node000032_Node000033" title=" " alt="" coords="2589,192,2701,194,2826,202,2886,210,2939,220,2984,234,3015,253,3045,285,3068,323,3085,364,3096,407,3107,488,3108,549,3103,549,3102,488,3091,408,3080,366,3063,325,3041,288,3012,257,2981,239,2938,225,2885,215,2825,207,2700,199,2589,197"/>
+<area shape="rect" id="Node000034" href="$MappingDataCache_8hpp.html" title=" " alt="" coords="2799,255,3001,295"/>
+<area shape="poly" id="edge23_Node000032_Node000034" title=" " alt="" coords="2563,204,2793,249,2792,255,2562,209"/>
+<area shape="rect" id="Node000036" href="$Mesh_8hpp.html" title=" " alt="" coords="2188,343,2313,368"/>
+<area shape="poly" id="edge99_Node000032_Node000036" title=" " alt="" coords="2488,209,2282,338,2279,333,2486,204"/>
+<area shape="poly" id="edge100_Node000032_Node000058" title=" " alt="" coords="2425,209,2282,235,2095,276,1992,304,1888,337,1785,375,1686,418,1631,447,1611,464,1589,491,1574,520,1565,550,1560,549,1569,518,1584,488,1607,461,1628,443,1684,414,1783,370,1886,332,1991,299,2093,271,2281,229,2425,204"/>
+<area shape="rect" id="Node000078" href="$span_8hpp.html" title=" " alt="" coords="3322,489,3454,515"/>
+<area shape="poly" id="edge101_Node000032_Node000078" title=" " alt="" coords="2589,195,2760,202,2964,213,3143,230,3207,240,3244,252,3274,275,3299,302,3322,333,3340,364,3368,426,3384,475,3379,477,3363,428,3336,367,3317,335,3295,306,3270,279,3241,257,3206,245,3143,235,2963,218,2760,207,2589,200"/>
+<area shape="poly" id="edge24_Node000034_Node000015" title=" " alt="" coords="3002,282,3098,302,3147,319,3193,340,3226,357,3252,373,3271,394,3277,427,3277,577,3275,590,3268,602,3243,624,3206,645,3161,663,3060,692,2968,713,2967,707,3059,687,3159,658,3204,640,3240,620,3264,599,3270,588,3272,576,3272,428,3266,397,3249,377,3223,362,3191,345,3145,323,3096,307,3001,287"/>
+<area shape="poly" id="edge25_Node000034_Node000035" title=" " alt="" coords="2798,284,1584,350,1583,345,2798,279"/>
+<area shape="poly" id="edge27_Node000034_Node000036" title=" " alt="" coords="2799,291,2327,347,2327,342,2798,286"/>
+<area shape="rect" id="Node000050" href="$impl_2Types_8hpp.html" title=" " alt="" coords="2367,709,2537,735"/>
+<area shape="poly" id="edge97_Node000034_Node000050" title=" " alt="" coords="2937,293,3020,344,3067,378,3111,417,3146,459,3168,502,3172,524,3171,546,3164,568,3150,590,3120,608,3065,626,2904,660,2716,689,2551,711,2550,706,2715,684,2903,654,3064,620,3118,603,3146,586,3159,566,3166,545,3167,525,3163,504,3142,461,3107,421,3064,382,3017,348,2934,297"/>
+<area shape="rect" id="Node000059" href="$Sample_8hpp.html" title=" " alt="" coords="2256,636,2389,661"/>
+<area shape="poly" id="edge98_Node000034_Node000059" title=" " alt="" coords="2901,296,2894,340,2880,398,2856,460,2839,490,2818,516,2780,550,2745,567,2655,591,2590,608,2523,623,2403,641,2403,636,2522,617,2589,603,2654,585,2743,562,2777,545,2814,513,2834,487,2851,458,2875,396,2889,339,2896,295"/>
+<area shape="poly" id="edge26_Node000035_Node000005" title=" " alt="" coords="1473,368,1474,408,1470,465,1456,529,1444,561,1427,590,1402,615,1373,633,1370,628,1399,611,1423,586,1439,558,1451,528,1465,464,1469,407,1468,368"/>
+<area shape="poly" id="edge33_Node000036_Node000002" title=" " alt="" coords="2188,361,1265,382,741,400,548,409,435,419,378,422,320,420,215,413,172,416,154,421,139,429,126,440,117,456,111,476,109,501,109,796,112,809,119,821,147,844,189,865,240,883,352,913,448,931,447,937,351,918,239,888,187,870,144,848,115,824,107,811,104,797,104,501,106,475,112,454,122,437,135,425,152,416,171,411,215,407,321,414,378,417,434,413,548,404,741,394,1265,377,2188,355"/>
+<area shape="poly" id="edge35_Node000036_Node000003" title=" " alt="" coords="2188,361,2090,366,1965,376,1825,393,1686,419,1569,451,1456,490,1285,559,1283,555,1454,485,1568,446,1685,413,1824,388,1964,371,2090,361,2188,356"/>
+<area shape="poly" id="edge36_Node000036_Node000004" title=" " alt="" coords="2188,360,1365,380,904,398,736,408,636,419,574,427,522,433,500,439,479,450,458,467,438,491,431,508,433,522,443,534,460,544,510,559,567,567,567,572,509,564,458,549,440,538,428,524,425,507,434,488,454,463,476,445,498,434,521,428,573,422,636,413,735,402,904,392,1365,375,2188,355"/>
+<area shape="poly" id="edge34_Node000036_Node000006" title=" " alt="" coords="2314,357,2620,376,2822,392,3026,413,3249,437,3346,454,3467,487,3557,510,3593,527,3630,561,3645,582,3653,601,3656,647,3656,797,3650,808,3635,819,3578,837,3489,853,3373,867,3078,891,2729,910,2363,924,2017,933,1536,943,1536,937,2017,928,2363,919,2728,905,3077,886,3372,862,3488,847,3576,831,3632,814,3646,805,3651,796,3651,647,3648,602,3641,584,3626,564,3590,532,3555,515,3466,492,3345,459,3248,443,3025,419,2821,397,2620,381,2313,362"/>
+<area shape="poly" id="edge28_Node000036_Node000015" title=" " alt="" coords="2314,354,2465,357,2658,366,2845,384,2921,397,2978,413,3055,445,3091,462,3122,480,3146,502,3161,527,3163,556,3150,589,3133,613,3113,634,3066,668,3015,692,2968,709,2966,704,3013,688,3063,663,3110,630,3129,610,3146,587,3158,555,3156,529,3142,505,3119,485,3088,466,3053,449,2976,419,2920,402,2844,389,2658,371,2465,363,2314,360"/>
+<area shape="poly" id="edge30_Node000036_Node000033" title=" " alt="" coords="2314,354,2458,357,2640,365,2816,383,2887,397,2940,414,2988,443,3031,480,3065,518,3091,550,3086,553,3061,521,3027,483,2985,447,2938,418,2885,402,2815,388,2640,371,2458,362,2314,359"/>
+<area shape="rect" id="Node000021" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/header/deque.html" title=" " alt="" coords="2181,416,2243,441"/>
+<area shape="poly" id="edge29_Node000036_Node000021" title=" " alt="" coords="2247,370,2227,405,2222,403,2242,367"/>
+<area shape="rect" id="Node000037" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/header/list.html" title=" " alt="" coords="2268,416,2311,441"/>
+<area shape="poly" id="edge31_Node000036_Node000037" title=" " alt="" coords="2259,367,2279,403,2274,405,2255,370"/>
+<area shape="rect" id="Node000022" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/header/map.html" title=" " alt="" coords="368,563,419,588"/>
+<area shape="poly" id="edge32_Node000036_Node000022" title=" " alt="" coords="2188,361,1235,386,724,404,556,412,485,419,458,432,440,446,425,464,410,490,400,520,396,549,391,548,395,519,406,488,421,461,436,442,456,427,483,413,556,406,723,398,1235,381,2188,355"/>
+<area shape="rect" id="Node000038" href="$BoundingBox_8hpp.html" title=" " alt="" coords="2021,489,2197,515"/>
+<area shape="poly" id="edge37_Node000036_Node000038" title=" " alt="" coords="2202,370,2161,388,2142,401,2126,417,2114,446,2110,476,2105,475,2109,444,2122,415,2138,397,2158,384,2200,366"/>
+<area shape="rect" id="Node000039" href="$Vertex_8hpp.html" title=" " alt="" coords="1998,636,2130,661"/>
+<area shape="poly" id="edge82_Node000036_Node000039" title=" " alt="" coords="2225,370,2195,389,2182,402,2172,417,2168,427,2169,436,2180,450,2197,466,2212,488,2217,519,2208,544,2190,567,2166,590,2136,614,2104,632,2102,628,2133,609,2162,586,2186,563,2203,542,2211,519,2207,490,2193,470,2176,454,2164,437,2163,427,2167,415,2178,399,2192,385,2222,366"/>
+<area shape="poly" id="edge83_Node000036_Node000050" title=" " alt="" coords="2314,358,2443,370,2597,394,2671,411,2736,432,2787,457,2805,472,2818,488,2829,511,2832,532,2830,553,2822,572,2809,590,2792,606,2748,636,2695,660,2638,681,2529,709,2528,704,2636,676,2693,655,2746,631,2789,602,2805,586,2817,569,2825,551,2827,533,2824,512,2814,491,2801,476,2784,462,2734,437,2670,416,2596,399,2442,375,2313,363"/>
+<area shape="rect" id="Node000043" href="$assertion_8hpp.html" title=" " alt="" coords="1787,709,1930,735"/>
+<area shape="poly" id="edge96_Node000036_Node000043" title=" " alt="" coords="2188,362,2113,367,2031,378,1957,394,1930,405,1911,418,1887,449,1870,485,1859,524,1853,563,1851,638,1857,696,1852,696,1846,639,1847,563,1853,523,1865,483,1882,446,1908,414,1927,400,1956,389,2030,372,2113,362,2188,356"/>
+<area shape="rect" id="Node000055" href="$Data_8hpp.html" title=" " alt="" coords="1673,489,1794,515"/>
+<area shape="poly" id="edge52_Node000036_Node000055" title=" " alt="" coords="2188,363,1985,381,1885,397,1844,407,1815,418,1795,431,1778,447,1750,480,1746,476,1774,443,1792,427,1812,414,1843,402,1884,392,1985,376,2187,357"/>
+<area shape="poly" id="edge69_Node000036_Node000058" title=" " alt="" coords="2188,361,2105,366,2001,376,1888,393,1775,419,1690,444,1656,462,1616,491,1591,521,1572,551,1568,549,1586,517,1613,487,1653,457,1688,439,1774,413,1887,388,2000,371,2104,361,2188,356"/>
+<area shape="rect" id="Node000066" href="$Edge_8hpp.html" title=" " alt="" coords="2520,563,2643,588"/>
+<area shape="poly" id="edge63_Node000036_Node000066" title=" " alt="" coords="2314,357,2385,362,2463,373,2531,389,2557,401,2575,414,2586,430,2593,447,2599,483,2597,519,2591,549,2586,549,2592,519,2593,483,2588,448,2581,432,2571,418,2555,405,2530,394,2462,378,2385,368,2313,362"/>
+<area shape="rect" id="Node000067" href="$Tetrahedron_8hpp.html" title=" " alt="" coords="2329,563,2495,588"/>
+<area shape="poly" id="edge70_Node000036_Node000067" title=" " alt="" coords="2314,357,2380,364,2451,374,2512,391,2535,401,2551,414,2562,435,2562,456,2552,477,2537,497,2494,531,2449,558,2447,554,2491,527,2533,493,2548,474,2556,455,2557,436,2547,418,2533,406,2510,396,2449,379,2379,369,2313,363"/>
+<area shape="rect" id="Node000069" href="$Triangle_8hpp.html" title=" " alt="" coords="2663,489,2804,515"/>
+<area shape="poly" id="edge75_Node000036_Node000069" title=" " alt="" coords="2314,359,2494,379,2582,394,2645,414,2687,443,2719,477,2715,480,2684,447,2643,418,2581,399,2493,384,2313,364"/>
+<area shape="rect" id="Node000072" href="$Index_8hpp.html" title=" " alt="" coords="1921,416,2047,441"/>
+<area shape="poly" id="edge84_Node000036_Node000072" title=" " alt="" coords="2209,371,2041,415,2040,410,2207,365"/>
+<area shape="rect" id="Node000075" href="$ManageUniqueIDs_8hpp.html" title=" " alt="" coords="2335,416,2537,441"/>
+<area shape="poly" id="edge95_Node000036_Node000075" title=" " alt="" coords="2281,366,2394,409,2392,413,2279,371"/>
+<area shape="poly" id="edge40_Node000038_Node000003" title=" " alt="" coords="2021,510,1651,532,1449,548,1292,566,1291,560,1448,543,1650,527,2021,505"/>
+<area shape="poly" id="edge41_Node000038_Node000004" title=" " alt="" coords="2021,510,1401,536,791,565,740,569,740,564,791,560,1400,530,2021,504"/>
+<area shape="poly" id="edge38_Node000038_Node000015" title=" " alt="" coords="2198,504,2323,511,2468,522,2603,538,2658,548,2700,560,2758,590,2812,627,2857,665,2890,697,2886,701,2854,669,2809,631,2756,594,2698,565,2657,553,2602,543,2467,527,2323,516,2197,509"/>
+<area shape="poly" id="edge39_Node000038_Node000033" title=" " alt="" coords="2198,507,3059,568,3058,573,2197,512"/>
+<area shape="poly" id="edge42_Node000038_Node000039" title=" " alt="" coords="2093,517,2069,537,2050,564,2047,578,2047,594,2055,623,2050,624,2042,594,2042,578,2046,562,2065,533,2089,513"/>
+<area shape="poly" id="edge43_Node000039_Node000015" title=" " alt="" coords="2130,653,2848,713,2848,718,2130,658"/>
+<area shape="rect" id="Node000016" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/header/algorithm.html" title=" " alt="" coords="1677,709,1763,735"/>
+<area shape="poly" id="edge44_Node000039_Node000016" title=" " alt="" coords="2009,664,1777,712,1776,707,2008,659"/>
+<area shape="rect" id="Node000020" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/header/array.html" title=" " alt="" coords="2601,709,2657,735"/>
+<area shape="poly" id="edge45_Node000039_Node000020" title=" " alt="" coords="2131,655,2550,707,2588,712,2588,717,2549,712,2130,660"/>
+<area shape="rect" id="Node000041" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/header/utility.html" title=" " alt="" coords="1571,709,1631,735"/>
+<area shape="poly" id="edge46_Node000039_Node000041" title=" " alt="" coords="1998,662,1666,712,1646,715,1645,710,1665,707,1998,657"/>
+<area shape="poly" id="edge47_Node000039_Node000050" title=" " alt="" coords="2127,659,2376,704,2376,709,2126,664"/>
+<area shape="poly" id="edge48_Node000039_Node000043" title=" " alt="" coords="2032,664,1906,707,1904,702,2030,659"/>
+<area shape="poly" id="edge49_Node000043_Node000006" title=" " alt="" coords="1840,737,1507,925,1504,920,1837,732"/>
+<area shape="poly" id="edge50_Node000043_Node000011" title=" " alt="" coords="1804,737,1235,856,1234,851,1803,732"/>
+<area shape="poly" id="edge51_Node000043_Node000025" title=" " alt="" coords="1788,736,1775,737,1513,765,1286,786,1286,781,1513,760,1774,732,1787,731"/>
+<area shape="poly" id="edge55_Node000055_Node000002" title=" " alt="" coords="1726,517,1692,553,1668,573,1643,590,1573,620,1454,661,1123,762,534,931,532,926,1122,757,1452,656,1572,615,1640,586,1665,569,1688,549,1722,513"/>
+<area shape="poly" id="edge58_Node000055_Node000004" title=" " alt="" coords="1673,509,1300,531,791,565,740,569,739,564,790,560,1300,526,1672,504"/>
+<area shape="poly" id="edge53_Node000055_Node000015" title=" " alt="" coords="1794,504,2284,531,2531,547,2656,560,2880,700,2877,704,2654,565,2531,552,2284,536,1794,509"/>
+<area shape="poly" id="edge59_Node000055_Node000050" title=" " alt="" coords="1746,513,1777,544,1823,584,1879,626,1942,659,2019,678,2127,694,2353,713,2353,718,2126,699,2018,684,1940,664,1877,630,1819,589,1773,548,1742,517"/>
+<area shape="rect" id="Node000056" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/header/initializer_list.html" title=" " alt="" coords="1302,563,1413,588"/>
+<area shape="poly" id="edge54_Node000055_Node000056" title=" " alt="" coords="1673,517,1426,564,1425,559,1672,512"/>
+<area shape="poly" id="edge56_Node000055_Node000058" title=" " alt="" coords="1706,517,1601,560,1599,555,1704,512"/>
+<area shape="poly" id="edge60_Node000055_Node000059" title=" " alt="" coords="1774,512,2049,585,2254,631,2252,636,2047,591,1773,517"/>
+<area shape="poly" id="edge57_Node000058_Node000005" title=" " alt="" coords="1522,591,1378,635,1376,629,1521,585"/>
+<area shape="poly" id="edge61_Node000059_Node000015" title=" " alt="" coords="2390,655,2849,711,2848,716,2389,661"/>
+<area shape="poly" id="edge62_Node000059_Node000043" title=" " alt="" coords="2256,663,1944,710,1943,705,2255,658"/>
+<area shape="poly" id="edge64_Node000066_Node000015" title=" " alt="" coords="2606,586,2764,659,2867,702,2865,707,2762,664,2604,591"/>
+<area shape="poly" id="edge66_Node000066_Node000039" title=" " alt="" coords="2520,589,2508,591,2144,640,2144,634,2508,585,2519,584"/>
+<area shape="poly" id="edge65_Node000066_Node000020" title=" " alt="" coords="2588,588,2624,695,2619,697,2583,589"/>
+<area shape="poly" id="edge67_Node000066_Node000050" title=" " alt="" coords="2566,590,2539,611,2511,638,2487,669,2467,699,2463,696,2483,666,2507,634,2536,607,2563,586"/>
+<area shape="poly" id="edge68_Node000066_Node000043" title=" " alt="" coords="2520,589,2358,616,2245,639,2218,651,2190,664,2127,681,2062,695,1944,714,1943,709,2061,690,2125,676,2188,659,2216,646,2243,633,2357,611,2519,584"/>
+<area shape="poly" id="edge72_Node000067_Node000039" title=" " alt="" coords="2357,591,2134,636,2133,631,2356,585"/>
+<area shape="poly" id="edge71_Node000067_Node000020" title=" " alt="" coords="2431,586,2602,699,2599,704,2428,590"/>
+<area shape="poly" id="edge73_Node000067_Node000050" title=" " alt="" coords="2418,588,2448,695,2443,697,2413,589"/>
+<area shape="poly" id="edge74_Node000067_Node000043" title=" " alt="" coords="2364,591,2287,611,2201,638,2173,651,2144,664,2041,691,1944,710,1943,705,2039,686,2142,659,2170,647,2199,634,2286,606,2363,585"/>
+<area shape="poly" id="edge76_Node000069_Node000015" title=" " alt="" coords="2761,513,2796,531,2836,558,2874,592,2904,635,2912,666,2913,695,2908,695,2907,666,2899,637,2870,596,2832,562,2793,536,2759,517"/>
+<area shape="poly" id="edge77_Node000069_Node000016" title=" " alt="" coords="2663,512,2479,531,2369,546,2259,565,2212,577,2165,591,2048,612,1997,622,1933,639,1837,672,1758,706,1756,701,1835,667,1931,633,1996,617,2047,607,2163,585,2211,572,2258,560,2368,541,2479,526,2662,506"/>
+<area shape="poly" id="edge78_Node000069_Node000020" title=" " alt="" coords="2755,513,2775,527,2794,545,2805,566,2806,577,2802,589,2776,628,2741,661,2704,687,2670,706,2667,701,2701,682,2738,657,2772,625,2798,587,2800,577,2800,567,2789,548,2772,531,2752,517"/>
+<area shape="poly" id="edge80_Node000069_Node000050" title=" " alt="" coords="2726,517,2696,551,2656,590,2566,656,2487,705,2484,700,2563,652,2653,586,2692,547,2722,513"/>
+<area shape="poly" id="edge81_Node000069_Node000043" title=" " alt="" coords="2663,510,2503,528,2410,544,2318,565,2289,578,2259,591,2183,607,2122,611,2061,617,2027,625,1988,638,1930,669,1884,703,1881,698,1928,665,1986,634,2026,620,2060,612,2121,606,2182,601,2258,585,2287,573,2317,560,2409,538,2503,522,2662,505"/>
+<area shape="poly" id="edge79_Node000069_Node000066" title=" " alt="" coords="2710,517,2619,559,2617,554,2708,512"/>
+<area shape="poly" id="edge86_Node000072_Node000003" title=" " alt="" coords="1921,442,1780,463,1615,492,1455,526,1292,565,1291,560,1454,520,1614,487,1779,458,1920,436"/>
+<area shape="poly" id="edge87_Node000072_Node000004" title=" " alt="" coords="1920,433,1706,435,1414,444,1124,461,1004,475,914,492,889,503,864,517,788,543,717,562,716,557,787,538,862,512,886,499,913,487,1003,470,1123,456,1414,438,1706,430,1920,427"/>
+<area shape="poly" id="edge85_Node000072_Node000005" title=" " alt="" coords="1962,444,1808,517,1727,557,1690,574,1642,591,1572,610,1501,625,1380,644,1379,639,1500,619,1571,604,1641,585,1688,569,1724,553,1806,512,1959,439"/>
+<area shape="poly" id="edge88_Node000072_Node000038" title=" " alt="" coords="2005,439,2078,480,2076,485,2003,444"/>
+<area shape="poly" id="edge93_Node000072_Node000039" title=" " alt="" coords="1990,441,2012,514,2040,587,2055,622,2050,624,2035,589,2007,516,1985,442"/>
+<area shape="poly" id="edge94_Node000072_Node000050" title=" " alt="" coords="1982,442,1970,483,1959,542,1958,573,1962,605,1972,634,1988,659,2005,669,2036,677,2131,692,2353,712,2353,718,2130,698,2035,682,2003,673,1985,663,1967,636,1957,606,1953,573,1954,541,1964,482,1977,441"/>
+<area shape="poly" id="edge90_Node000072_Node000058" title=" " alt="" coords="1921,435,1864,440,1798,450,1729,467,1663,492,1616,521,1580,555,1576,551,1613,517,1660,487,1727,462,1797,445,1863,435,1920,430"/>
+<area shape="poly" id="edge89_Node000072_Node000066" title=" " alt="" coords="2042,439,2262,487,2528,556,2527,561,2261,492,2040,444"/>
+<area shape="poly" id="edge91_Node000072_Node000067" title=" " alt="" coords="2036,439,2118,459,2210,487,2300,521,2376,554,2374,559,2298,526,2208,492,2117,464,2035,444"/>
+<area shape="poly" id="edge92_Node000072_Node000069" title=" " alt="" coords="2048,433,2649,490,2649,495,2048,439"/>
+<area shape="poly" id="edge102_Node000078_Node000020" title=" " alt="" coords="3373,517,3317,552,3244,590,3165,621,3083,647,2920,685,2775,708,2672,720,2671,715,2775,703,2919,680,3081,642,3163,616,3242,586,3314,548,3370,513"/>
+<area shape="rect" id="Node000079" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/header/cstddef.html" title=" " alt="" coords="3363,563,3434,588"/>
+<area shape="poly" id="edge103_Node000078_Node000079" title=" " alt="" coords="3392,515,3398,549,3392,550,3387,515"/>
+<area shape="rect" id="Node000080" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/header/cstdint.html" title=" " alt="" coords="3459,563,3525,588"/>
+<area shape="poly" id="edge104_Node000078_Node000080" title=" " alt="" coords="3406,512,3465,552,3462,557,3403,517"/>
+<area shape="rect" id="Node000081" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/header/cstring.html" title=" " alt="" coords="3549,563,3616,588"/>
+<area shape="poly" id="edge105_Node000078_Node000081" title=" " alt="" coords="3420,512,3539,555,3537,560,3418,517"/>
+<area shape="rect" id="Node000082" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/header/type_traits.html" title=" " alt="" coords="2059,563,2151,588"/>
+<area shape="poly" id="edge106_Node000078_Node000082" title=" " alt="" coords="3322,510,2166,573,2166,568,3322,504"/>
+<area shape="poly" id="edge116_Node000084_Node000002" title=" " alt="" coords="648,437,522,452,377,478,312,496,259,518,239,531,223,544,214,559,211,574,211,796,218,832,236,861,264,884,299,902,338,916,377,925,448,935,447,941,376,930,336,921,297,907,261,888,232,864,213,834,205,797,205,574,209,557,219,541,235,526,256,513,310,491,376,472,521,446,647,432"/>
+<area shape="poly" id="edge118_Node000084_Node000003" title=" " alt="" coords="777,432,977,451,1077,467,1148,487,1172,500,1194,517,1230,550,1226,554,1191,521,1169,505,1146,492,1076,472,976,457,776,437"/>
+<area shape="poly" id="edge119_Node000084_Node000004" title=" " alt="" coords="707,443,682,490,662,550,657,548,678,488,703,440"/>
+<area shape="poly" id="edge114_Node000084_Node000005" title=" " alt="" coords="777,432,955,452,1042,468,1104,487,1137,510,1157,534,1176,560,1206,586,1245,610,1285,628,1283,633,1243,614,1202,590,1172,563,1153,537,1133,513,1102,492,1041,473,954,457,776,438"/>
+<area shape="poly" id="edge112_Node000084_Node000015" title=" " alt="" coords="776,428,1227,431,1890,440,2221,447,2507,457,2716,470,2782,478,2817,487,2861,515,2889,546,2908,585,2925,635,2928,667,2921,697,2916,696,2922,667,2920,637,2903,587,2885,549,2858,519,2815,492,2781,483,2716,476,2506,463,2220,453,1890,445,1227,436,776,433"/>
+<area shape="poly" id="edge113_Node000084_Node000022" title=" " alt="" coords="648,440,528,460,474,474,438,492,425,504,415,519,402,550,397,548,411,516,421,500,434,487,472,469,527,455,647,435"/>
+<area shape="rect" id="Node000049" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/header/optional.html" title=" " alt="" coords="448,489,523,515"/>
+<area shape="poly" id="edge115_Node000084_Node000049" title=" " alt="" coords="676,444,536,488,534,483,675,439"/>
+<area shape="rect" id="Node000085" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/header/variant.html" title=" " alt="" coords="547,489,615,515"/>
+<area shape="poly" id="edge117_Node000084_Node000085" title=" " alt="" coords="692,444,616,485,613,480,690,439"/>
+<area shape="rect" id="Node000086" href="$ConfigParser_8hpp.html" title=" " alt="" coords="691,489,850,515"/>
+<area shape="poly" id="edge120_Node000084_Node000086" title=" " alt="" coords="717,440,747,478,743,481,713,443"/>
+<area shape="rect" id="Node000087" href="$XMLAttribute_8hpp.html" title=" " alt="" coords="925,489,1091,515"/>
+<area shape="poly" id="edge127_Node000084_Node000087" title=" " alt="" coords="760,439,947,483,946,489,759,444"/>
+<area shape="poly" id="edge123_Node000086_Node000002" title=" " alt="" coords="692,517,593,536,552,550,524,565,507,583,498,601,494,621,493,647,493,797,493,916,488,916,488,797,488,647,489,621,493,599,503,580,521,561,550,545,592,531,691,512"/>
+<area shape="poly" id="edge124_Node000086_Node000003" title=" " alt="" coords="848,512,1202,565,1201,570,847,517"/>
+<area shape="poly" id="edge125_Node000086_Node000004" title=" " alt="" coords="753,517,686,558,683,553,750,512"/>
+<area shape="poly" id="edge122_Node000086_Node000005" title=" " alt="" coords="772,515,774,551,781,570,792,586,817,597,864,607,998,623,1275,642,1274,648,998,629,863,612,816,602,789,590,776,572,769,552,767,515"/>
+<area shape="poly" id="edge121_Node000086_Node000022" title=" " alt="" coords="711,517,433,569,432,564,710,512"/>
+<area shape="poly" id="edge126_Node000086_Node000084" title=" " alt="" coords="766,491,736,453,740,450,770,488"/>
+<area shape="poly" id="edge133_Node000087_Node000002" title=" " alt="" coords="925,512,713,534,620,549,588,557,571,565,554,582,546,600,544,647,544,797,540,831,531,864,507,918,502,916,526,862,535,830,539,797,539,647,541,599,550,580,568,560,587,552,619,544,712,529,925,507"/>
+<area shape="poly" id="edge136_Node000087_Node000003" title=" " alt="" coords="1047,512,1203,558,1201,563,1046,517"/>
+<area shape="poly" id="edge137_Node000087_Node000004" title=" " alt="" coords="952,517,725,563,724,557,950,512"/>
+<area shape="poly" id="edge131_Node000087_Node000022" title=" " alt="" coords="925,516,433,572,432,567,925,510"/>
+<area shape="poly" id="edge128_Node000087_Node000016" title=" " alt="" coords="1016,514,1058,593,1085,634,1109,659,1156,678,1219,690,1291,698,1370,701,1525,702,1644,707,1664,709,1663,715,1644,712,1524,707,1370,706,1291,703,1218,696,1155,683,1107,664,1081,637,1054,595,1011,516"/>
+<area shape="poly" id="edge135_Node000087_Node000041" title=" " alt="" coords="1010,515,1012,545,1018,584,1033,626,1044,644,1059,659,1086,670,1135,680,1276,697,1558,716,1558,721,1276,702,1134,685,1084,675,1056,664,1040,647,1028,628,1013,586,1006,545,1005,515"/>
+<area shape="poly" id="edge138_Node000087_Node000043" title=" " alt="" coords="1024,513,1064,543,1125,584,1198,626,1277,659,1348,679,1410,691,1466,697,1519,699,1631,699,1697,701,1774,707,1773,712,1697,706,1631,704,1519,704,1466,703,1410,697,1347,684,1275,664,1196,630,1122,589,1061,548,1020,517"/>
+<area shape="poly" id="edge130_Node000087_Node000056" title=" " alt="" coords="1065,512,1289,558,1288,563,1064,517"/>
+<area shape="poly" id="edge134_Node000087_Node000082" title=" " alt="" coords="1091,506,2046,567,2046,573,1091,511"/>
+<area shape="rect" id="Node000088" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/header/exception.html" title=" " alt="" coords="802,563,889,588"/>
+<area shape="poly" id="edge129_Node000087_Node000088" title=" " alt="" coords="983,517,886,559,883,555,981,512"/>
+<area shape="rect" id="Node000017" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/header/sstream.html" title=" " alt="" coords="913,563,988,588"/>
+<area shape="poly" id="edge132_Node000087_Node000017" title=" " alt="" coords="1001,517,971,554,967,550,996,513"/>
+</map>

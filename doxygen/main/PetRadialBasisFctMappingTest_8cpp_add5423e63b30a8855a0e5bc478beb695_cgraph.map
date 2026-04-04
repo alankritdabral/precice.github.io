@@ -1,0 +1,24 @@
+<map id="PRECICE_TEST_SETUP" name="PRECICE_TEST_SETUP">
+<area shape="rect" id="Node000001" title="Test with a homogeneous distribution of mesh among ranks." alt="" coords="5,127,171,153"/>
+<area shape="rect" id="Node000002" href="$PetRadialBasisFctMappingTest_8cpp.html#aa7669e1df52fca7b42839a0fd234e995" title=" " alt="" coords="219,127,337,153"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,137,205,137,205,143,171,143"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1mesh_1_1Mesh.html#a6e3fec22b430b35daccd92ef560d2c87" title="Create only data for vertex." alt="" coords="411,5,567,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="291,125,331,91,384,55,399,48,401,53,387,60,334,95,294,129"/>
+<area shape="rect" id="Node000005" href="$PetRadialBasisFctMappingTest_8cpp.html#abe9a39799512d3777b5369d9a52fab13" title=" " alt="" coords="414,70,565,95"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="319,125,385,105,420,96,422,101,386,111,321,130"/>
+<area shape="rect" id="Node000008" href="$classprecice_1_1mesh_1_1Data.html#aac567292457ed1e5bb4f8014e1542f0a" title="Returns the ID of the data set (supposed to be unique)." alt="" coords="413,120,565,160"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="337,137,399,137,399,143,337,143"/>
+<area shape="rect" id="Node000009" href="$namespaceprecice_1_1testing.html#a08533fd83bad3d7f27ea7f4a35a14aa4" title=" " alt="" coords="385,185,593,210"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="321,150,386,169,422,179,420,184,385,175,319,155"/>
+<area shape="rect" id="Node000011" href="$classprecice_1_1mesh_1_1Data.html#abbb07782ab096a0560666638a618fb17" title="Returns a reference to the data values." alt="" coords="413,235,565,275"/>
+<area shape="poly" id="edge11_Node000002_Node000011" title=" " alt="" coords="294,151,334,185,387,220,402,227,400,232,384,225,331,189,291,155"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1mesh_1_1Mesh.html#aceb3eabb4f8e40a44d5d1c2822ba7b56" title="Allows access to all data." alt="" coords="669,5,825,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="567,23,655,23,655,28,567,28"/>
+<area shape="rect" id="Node000006" href="$PetRadialBasisFctMappingTest_8cpp.html#a091feb1893c75899e59fa939e678debe" title=" " alt="" coords="685,70,809,95"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="565,80,671,80,671,85,565,85"/>
+<area shape="rect" id="Node000007" href="$PartitionOfUnityMappingTest_8cpp.html#a091feb1893c75899e59fa939e678debe" title=" " alt="" coords="900,70,1024,95"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="809,80,886,80,886,85,809,85"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="927,72,920,62,923,52,938,46,962,43,992,47,1003,56,1000,60,990,52,962,49,939,51,927,56,925,61,931,68"/>
+<area shape="rect" id="Node000010" href="$classprecice_1_1utils_1_1ManageUniqueIDs.html#a02be264c279698ae293587b6576088b5" title=" " alt="" coords="641,177,852,217"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="594,195,628,195,628,200,594,200"/>
+</map>

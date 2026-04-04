@@ -1,0 +1,40 @@
+<map id="precice::acceleration::impl::ParallelMatrixOperations::multiply" name="precice::acceleration::impl::ParallelMatrixOperations::multiply">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,269,233,324"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1acceleration_1_1impl_1_1ParallelMatrixOperations.html#a3ea43dc55eee6d44fc016d3105ecac84" title=" " alt="" coords="281,120,509,175"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,267,330,179,333,184,172,272"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1acceleration_1_1impl_1_1ParallelMatrixOperations.html#a7ebbbddd1e1cc4640edea200c34c9f97" title="Multiplies matrices based on a SAXPY&#45;like block&#45;wise computation with a rectangular result matrix of ..." alt="" coords="281,269,509,324"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="233,294,268,294,268,299,233,299"/>
+<area shape="rect" id="Node000007" href="$classprecice_1_1utils_1_1IntraComm.html#ad45fca6e5adf1b476ddb74f3f53e750c" title="Intra&#45;participant communication." alt="" coords="571,426,758,466"/>
+<area shape="poly" id="edge20_Node000001_Node000007" title=" " alt="" coords="234,321,282,333,397,354,448,364,510,385,535,398,558,412,578,419,576,424,556,416,532,403,508,390,446,369,396,359,281,338,233,327"/>
+<area shape="rect" id="Node000014" href="$classprecice_1_1acceleration_1_1impl_1_1ParallelMatrixOperations.html#a0bdbf69f0e0c233893ca79d2f8a64035" title=" " alt="" coords="281,41,509,96"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="135,268,193,188,233,144,280,105,287,101,290,105,283,109,237,147,197,191,139,271"/>
+<area shape="rect" id="Node000017" href="$classprecice_1_1utils_1_1IntraComm.html#a946589c66048ff3058ffa078d54b6073" title="True if this process is running in parallel." alt="" coords="302,399,489,439"/>
+<area shape="poly" id="edge21_Node000001_Node000017" title=" " alt="" coords="170,322,282,378,319,392,317,397,280,383,167,327"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1utils_1_1IntraComm.html#a2c2aa5e2fd6cc26797b7fdee0b0b25ac" title="Current rank." alt="" coords="571,55,758,95"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="498,117,575,96,577,102,499,122"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1utils_1_1IntraComm.html#a288038e87868e4078aed49436aa20264" title="Number of ranks. This includes ranks from both participants, e.g. minimal size is 2." alt="" coords="571,119,758,159"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="509,141,557,140,558,145,509,147"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1utils_1_1IntraComm.html#a557db722e7bfe5d237d0e7ed51851a44" title="Returns an iterable range over salve ranks [1, _size)" alt="" coords="571,247,758,287"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="509,282,557,276,558,282,510,287"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="481,322,511,341,527,360,535,378,543,395,559,412,567,417,564,421,556,416,539,398,530,380,523,363,508,345,478,326"/>
+<area shape="rect" id="Node000008" href="$classprecice_1_1utils_1_1IntraComm.html#a3e69605ac1a3f9f8c82471ba52624f5d" title="True if this process is running the primary rank." alt="" coords="571,362,758,402"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="483,321,589,355,587,360,481,327"/>
+<area shape="rect" id="Node000009" href="$classprecice_1_1utils_1_1IntraComm.html#abde303b11e46851ae65dca65ef06daad" title="True if this process is running a secondary rank." alt="" coords="571,183,758,223"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="464,267,556,233,581,225,582,230,558,238,466,272"/>
+<area shape="rect" id="Node000010" href="$classprecice_1_1utils_1_1IntraComm.html#ae428ead3ae2209f974fdc35d5d7d41c4" title=" " alt="" coords="820,183,1007,223"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="510,312,571,317,637,317,705,311,771,297,802,284,831,268,880,230,883,235,834,272,804,289,773,302,706,317,638,323,571,322,510,318"/>
+<area shape="rect" id="Node000011" href="$classprecice_1_1span.html#ab25ca07a93bfa334622507c2c22b1034" title=" " alt="" coords="1055,109,1207,135"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="960,181,1054,144,1074,136,1076,142,1056,148,962,186"/>
+<area shape="rect" id="Node000012" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/copy.html#" title=" " alt="" coords="1090,159,1171,184"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="1007,187,1076,177,1077,182,1007,192"/>
+<area shape="rect" id="Node000013" href="$classprecice_1_1span.html#ab86c14ec7bc7475d3ddb21d400e93121" title=" " alt="" coords="1061,208,1201,233"/>
+<area shape="poly" id="edge12_Node000010_Node000013" title=" " alt="" coords="1007,208,1047,211,1047,217,1007,213"/>
+<area shape="poly" id="edge19_Node000014_Node000003" title=" " alt="" coords="509,69,558,70,557,75,509,74"/>
+<area shape="rect" id="Node000015" href="$classprecice_1_1utils_1_1IntraComm.html#a38ad54bcb1c09b6eba4097465b80fb08" title=" " alt="" coords="557,5,772,31"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="509,45,583,31,584,36,510,50"/>
+<area shape="rect" id="Node000016" href="$classprecice_1_1utils_1_1IntraComm.html#a1181baf395fd7e41bb0f922e3c3334cf" title=" " alt="" coords="820,111,1007,151"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="735,28,773,41,828,70,876,101,873,105,826,74,771,46,733,33"/>
+<area shape="poly" id="edge16_Node000016_Node000011" title=" " alt="" coords="1007,125,1041,123,1041,129,1007,130"/>
+<area shape="poly" id="edge17_Node000016_Node000012" title=" " alt="" coords="1007,146,1077,159,1076,164,1006,151"/>
+<area shape="poly" id="edge18_Node000016_Node000013" title=" " alt="" coords="963,149,1008,169,1056,193,1077,201,1075,206,1054,198,1006,174,961,154"/>
+</map>

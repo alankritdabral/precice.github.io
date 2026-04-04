@@ -1,0 +1,35 @@
+<map id="precice::mapping::PetRadialBasisFctMapping::bgPreallocationMatrixA" name="precice::mapping::PetRadialBasisFctMapping::bgPreallocationMatrixA">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,283,248,337"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/data.html#" title=" " alt="" coords="334,5,462,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,282,156,230,189,164,235,97,263,66,295,40,320,27,322,32,297,44,267,70,239,100,194,167,160,232,140,284"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="301,55,495,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,281,163,239,197,187,242,135,294,90,308,83,311,88,298,95,245,138,202,190,167,242,144,284"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1mesh_1_1Vertex.html#ad90010710b36c06a40ec09922c1b0fce" title="Returns the coordinates of the vertex." alt="" coords="317,105,479,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="149,280,211,217,251,184,295,154,307,148,310,153,297,159,254,188,215,221,153,284"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1mesh_1_1Vertex.html#af8dde044af9038a763b37340c03cc44d" title="Globally unique index." alt="" coords="317,169,479,209"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="173,280,230,249,295,218,314,211,316,216,297,223,233,254,175,285"/>
+<area shape="rect" id="Node000007" href="$classprecice_1_1mapping_1_1PetRadialBasisFctMapping.html#a57321de13955eea1acff5f2137c321d8" title="name of the rbf mapping" alt="" coords="296,233,500,273"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="248,282,289,273,290,278,249,287"/>
+<area shape="rect" id="Node000008" href="$classMesh.html#a66a15ef22bb05be4699cf2bab9b1cb83" title="Call preprocess() before index() to ensure correct projection handling." alt="" coords="347,297,449,323"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="248,307,334,307,334,313,248,313"/>
+<area shape="rect" id="Node000009" href="$classprecice_1_1mapping_1_1Mapping.html#a61c3c55af467ada2bdd735efa0f960e4" title="Returns pointer to input mesh." alt="" coords="299,347,497,387"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="249,333,290,342,289,347,248,338"/>
+<area shape="rect" id="Node000010" href="$classprecice_1_1mapping_1_1Mapping.html#a07a71a54b71eda6d54510c94fb188e70" title="Returns pointer to output mesh." alt="" coords="299,411,497,451"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="175,335,233,366,297,397,316,404,314,409,295,402,230,371,173,340"/>
+<area shape="rect" id="Node000011" href="$classprecice_1_1profiling_1_1Event.html#a4218cc284dfa09a754f4bf510e574066" title="Stops a running event." alt="" coords="333,475,463,515"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="153,336,215,399,254,432,297,461,321,472,318,477,295,466,251,436,211,403,149,340"/>
+<area shape="rect" id="Node000015" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/utility/tuple/tie.html#" title=" " alt="" coords="365,540,431,565"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="144,336,167,378,202,430,245,482,297,525,324,538,352,545,350,550,322,543,295,530,242,485,197,433,163,381,139,339"/>
+<area shape="rect" id="Node000016" href="$classMesh.html#a61d536967e403c9c2c4dfa33ddc8a044" title="Mutable access to a vertex by VertexID." alt="" coords="345,589,451,615"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="140,336,160,388,194,453,239,520,267,550,297,576,332,592,330,597,295,580,263,554,235,523,189,456,156,390,135,338"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/copy_n.html#" title=" " alt="" coords="591,112,687,137"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="479,122,578,122,578,127,479,127"/>
+<area shape="rect" id="Node000012" href="$classprecice_1_1profiling_1_1EventRegistry.html#a0a1555e6211794ef23fcaf7a4f41950d" title="Returns the only instance (singleton) of the EventRegistry class." alt="" coords="548,443,731,483"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="464,484,534,475,535,480,464,489"/>
+<area shape="rect" id="Node000014" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/chrono/steady_clock/now.html#" title=" " alt="" coords="566,507,713,547"/>
+<area shape="poly" id="edge15_Node000011_Node000014" title=" " alt="" coords="464,501,553,513,552,518,464,507"/>
+<area shape="poly" id="edge14_Node000012_Node000012" title=" " alt="" coords="595,444,592,434,599,424,615,419,639,417,667,420,682,427,680,432,666,425,639,422,616,424,602,429,597,435,600,442"/>
+<area shape="rect" id="Node000013" href="$classprecice_1_1profiling_1_1EventRegistry.html#accbda0e81acd443abf06cdf62a901c09" title="Deleted copy and move SMFs for singleton pattern." alt="" coords="779,443,997,483"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="731,461,765,461,765,466,731,466"/>
+<area shape="poly" id="edge13_Node000013_Node000013" title=" " alt="" coords="842,444,839,434,847,424,863,419,888,417,917,420,933,427,930,432,915,425,888,422,864,424,850,429,844,435,847,442"/>
+</map>

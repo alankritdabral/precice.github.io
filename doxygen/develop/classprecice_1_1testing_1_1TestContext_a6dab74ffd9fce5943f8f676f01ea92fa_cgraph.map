@@ -1,0 +1,7 @@
+<map id="precice::testing::TestContext::connectPrimaryRanks" name="precice::testing::TestContext::connectPrimaryRanks">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,212,75"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1testing_1_1TestContext.html#a87ef3b67f676b69dfb8c4cfc2e8df819" title="Check whether this context has a given name." alt="" coords="260,5,467,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,40,246,36,247,41,212,45"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr/make_shared.html#" title=" " alt="" coords="295,70,432,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="212,63,281,71,281,76,212,69"/>
+</map>

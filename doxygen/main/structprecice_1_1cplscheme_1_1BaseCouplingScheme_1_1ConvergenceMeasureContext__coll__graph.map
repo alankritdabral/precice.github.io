@@ -1,0 +1,7 @@
+<map id="precice::cplscheme::BaseCouplingScheme::ConvergenceMeasureContext" name="precice::cplscheme::BaseCouplingScheme::ConvergenceMeasureContext">
+<area shape="rect" id="Node000001" title="Holds meta information to perform a convergence measurement." alt="" coords="104,116,327,171"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="5,5,196,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,53,191,114,187,117,127,57"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="221,5,439,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="304,57,268,94,244,118,240,114,264,90,300,54"/>
+</map>

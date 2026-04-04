@@ -1,0 +1,54 @@
+<map id="src/utils/Helpers.hpp" name="src/utils/Helpers.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="2043,5,2197,31"/>
+<area shape="rect" id="Node000002" href="$Acceleration_8cpp.html" title=" " alt="" coords="5,86,243,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2029,21,1733,22,1295,29,781,47,515,62,255,81,194,89,193,83,254,76,515,56,780,41,1295,23,1733,17,2029,16"/>
+<area shape="rect" id="Node000003" href="$AitkenAcceleration_8cpp.html" title=" " alt="" coords="267,86,546,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="2029,23,1776,27,1412,36,989,54,558,81,488,89,488,83,557,76,989,48,1412,31,1776,21,2029,17"/>
+<area shape="rect" id="Node000004" href="$BaseQNAcceleration_8cpp.html" title=" " alt="" coords="570,86,859,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="2029,24,1535,41,1206,58,872,81,801,89,801,83,872,76,1206,53,1535,36,2029,19"/>
+<area shape="rect" id="Node000005" href="$ConstantRelaxationAcceleration_8cpp.html" title=" " alt="" coords="884,79,1084,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="2029,24,1624,40,1361,57,1096,81,1084,83,1084,77,1096,76,1361,52,1623,35,2028,19"/>
+<area shape="rect" id="Node000006" href="$IQNILSAcceleration_8cpp.html" title=" " alt="" coords="1109,86,1390,111"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="2029,28,1748,50,1402,81,1337,89,1337,83,1401,76,1748,45,2028,23"/>
+<area shape="rect" id="Node000007" href="$CommunicationConfiguration_8cpp.html" title=" " alt="" coords="1414,79,1637,119"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="2029,33,1650,81,1637,83,1636,78,1649,76,2029,28"/>
+<area shape="rect" id="Node000008" href="$BaseCouplingScheme_8cpp.html" title=" " alt="" coords="1661,79,1869,119"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="2056,36,1851,81,1850,76,2055,31"/>
+<area shape="rect" id="Node000009" href="$BiCouplingScheme_8cpp.html" title=" " alt="" coords="1893,79,2083,119"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="2090,40,2021,81,2018,76,2087,36"/>
+<area shape="rect" id="Node000010" href="$MultiCouplingScheme_8hpp.html" title=" " alt="" coords="2158,79,2367,119"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="2155,35,2230,76,2227,81,2152,40"/>
+<area shape="rect" id="Node000012" href="$CouplingSchemeConfiguration_8cpp.html" title=" " alt="" coords="1650,262,1899,302"/>
+<area shape="poly" id="edge20_Node000001_Node000012" title=" " alt="" coords="2122,45,2115,82,2108,102,2096,121,1813,264,1811,259,2093,117,2103,100,2110,81,2117,44"/>
+<area shape="rect" id="Node000019" href="$ParticipantImpl_8cpp.html" title=" " alt="" coords="3105,262,3303,302"/>
+<area shape="poly" id="edge27_Node000001_Node000019" title=" " alt="" coords="2211,28,2295,46,2338,59,2380,76,2396,86,2406,97,2417,107,2432,116,2493,139,2572,159,2759,195,2948,226,3094,252,3126,259,3125,265,3093,257,2947,231,2758,201,2571,164,2492,144,2430,121,2413,111,2403,101,2393,91,2377,81,2336,64,2293,51,2210,33"/>
+<area shape="rect" id="Node000020" href="$ExportVTU_8cpp.html" title=" " alt="" coords="2443,86,2600,111"/>
+<area shape="poly" id="edge21_Node000001_Node000020" title=" " alt="" coords="2192,31,2463,83,2462,89,2191,36"/>
+<area shape="rect" id="Node000021" href="$ExportXML_8cpp.html" title=" " alt="" coords="2625,86,2783,111"/>
+<area shape="poly" id="edge22_Node000001_Node000021" title=" " alt="" coords="2211,25,2397,46,2612,76,2652,83,2651,89,2612,81,2396,51,2211,31"/>
+<area shape="rect" id="Node000022" href="$TXTTableWriter_8cpp.html" title=" " alt="" coords="2808,86,2995,111"/>
+<area shape="poly" id="edge23_Node000001_Node000022" title=" " alt="" coords="2211,22,2474,42,2635,57,2796,76,2843,83,2842,89,2796,81,2635,62,2474,47,2211,27"/>
+<area shape="rect" id="Node000023" href="$M2NConfiguration_8cpp.html" title=" " alt="" coords="3019,86,3285,111"/>
+<area shape="poly" id="edge24_Node000001_Node000023" title=" " alt="" coords="2212,21,2561,41,2783,57,3007,76,3071,83,3070,89,3006,81,2783,62,2561,46,2211,26"/>
+<area shape="rect" id="Node000024" href="$geometry_8cpp.html" title=" " alt="" coords="3309,86,3480,111"/>
+<area shape="poly" id="edge25_Node000001_Node000024" title=" " alt="" coords="2211,17,2408,20,2678,29,2986,47,3298,76,3343,83,3342,89,3297,81,2985,52,2677,34,2408,25,2211,22"/>
+<area shape="rect" id="Node000025" href="$MeshConfiguration_8cpp.html" title=" " alt="" coords="3504,86,3781,111"/>
+<area shape="poly" id="edge26_Node000001_Node000025" title=" " alt="" coords="2211,18,2753,33,3120,51,3492,76,3561,83,3560,89,3492,81,3119,56,2753,39,2211,23"/>
+<area shape="rect" id="Node000011" href="$MultiCouplingScheme_8cpp.html" title=" " alt="" coords="2015,167,2225,207"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="2221,128,2153,169,2150,164,2218,123"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="2266,133,2260,172,2251,192,2238,209,2211,225,2173,236,2081,247,1985,252,1912,257,1871,265,1870,259,1912,252,1985,246,2080,242,2172,230,2208,220,2234,205,2246,189,2254,171,2261,132"/>
+<area shape="rect" id="Node000013" href="$CouplingSchemeConfiguration_8hpp.html" title=" " alt="" coords="2300,167,2551,207"/>
+<area shape="poly" id="edge12_Node000010_Node000013" title=" " alt="" coords="2312,123,2391,164,2388,169,2309,127"/>
+<area shape="poly" id="edge13_Node000013_Node000012" title=" " alt="" coords="2287,209,1912,257,1870,265,1869,259,1912,252,2286,203"/>
+<area shape="rect" id="Node000014" href="$CompositionalCouplingSchemeTest_8cpp.html" title=" " alt="" coords="1924,255,2153,309"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="2335,212,2148,257,2147,252,2333,207"/>
+<area shape="rect" id="Node000015" href="$ExplicitCouplingSchemeTest_8cpp.html" title=" " alt="" coords="2178,262,2414,302"/>
+<area shape="poly" id="edge15_Node000013_Node000015" title=" " alt="" coords="2390,217,2324,264,2321,260,2386,213"/>
+<area shape="rect" id="Node000016" href="$ParallelImplicitCouplingSchemeTest_8cpp.html" title=" " alt="" coords="2439,255,2671,309"/>
+<area shape="poly" id="edge16_Node000013_Node000016" title=" " alt="" coords="2464,212,2520,252,2517,257,2461,217"/>
+<area shape="rect" id="Node000017" href="$SerialImplicitCouplingSchemeTest_8cpp.html" title=" " alt="" coords="2695,255,2916,309"/>
+<area shape="poly" id="edge17_Node000013_Node000017" title=" " alt="" coords="2516,207,2699,252,2698,257,2515,213"/>
+<area shape="rect" id="Node000018" href="$Configuration_8cpp.html" title=" " alt="" coords="2941,262,3081,302"/>
+<area shape="poly" id="edge18_Node000013_Node000018" title=" " alt="" coords="2565,204,2929,252,2957,259,2955,265,2927,257,2564,209"/>
+<area shape="poly" id="edge19_Node000013_Node000019" title=" " alt="" coords="2565,203,2570,204,2717,217,2832,224,2947,232,3094,252,3131,259,3130,265,3093,257,2946,238,2832,229,2717,222,2569,209,2564,209"/>
+</map>

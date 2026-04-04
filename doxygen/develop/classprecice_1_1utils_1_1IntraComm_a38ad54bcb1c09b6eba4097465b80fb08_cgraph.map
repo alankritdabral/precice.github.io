@@ -1,0 +1,11 @@
+<map id="precice::utils::IntraComm::dot" name="precice::utils::IntraComm::dot">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,220,80"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1utils_1_1IntraComm.html#a1181baf395fd7e41bb0f922e3c3334cf" title=" " alt="" coords="268,47,455,87"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,65,254,65,254,70,220,70"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1span.html#ab25ca07a93bfa334622507c2c22b1034" title=" " alt="" coords="503,5,655,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="449,45,508,31,509,36,451,50"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/copy.html#" title=" " alt="" coords="538,55,619,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="455,65,524,65,524,70,455,70"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1span.html#ab86c14ec7bc7475d3ddb21d400e93121" title=" " alt="" coords="509,104,649,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="451,85,509,98,508,104,449,90"/>
+</map>

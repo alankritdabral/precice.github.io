@@ -1,0 +1,13 @@
+<map id="precice::cplscheme::BaseCouplingScheme::willDataBeExchanged" name="precice::cplscheme::BaseCouplingScheme::willDataBeExchanged">
+<area shape="rect" id="Node000001" title="Returns true, if data will be exchanged when calling advance()." alt="" coords="5,76,177,131"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a231c0f2d24c3ec3af6b81c5599908052" title="Returns the maximal size of the next time step to be computed." alt="" coords="225,44,424,99"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,89,211,84,212,89,178,94"/>
+<area shape="rect" id="Node000006" href="$namespaceprecice_1_1math.html#ab5fc218ddab783ccd97f7c14fc4ccab3" title=" " alt="" coords="241,123,408,148"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="178,113,228,119,227,125,178,118"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a073567dc3535de4121def61a3dc5215c" title="Function to check whether time window size is defined by coupling scheme." alt="" coords="472,5,643,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="424,52,458,46,459,52,425,57"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a0f21dae30a9253a435a98434c016d2a4" title="Returns true, when the coupled simulation is still ongoing." alt="" coords="472,84,643,139"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="425,86,459,92,458,97,424,91"/>
+<area shape="rect" id="Node000004" href="$namespaceprecice_1_1math.html#a0e86802cfe992deba131d789d035b5b7" title="Compares two Eigen::MatrixBase for equality up to tolerance." alt="" coords="691,20,853,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="643,30,677,30,677,35,643,35"/>
+</map>

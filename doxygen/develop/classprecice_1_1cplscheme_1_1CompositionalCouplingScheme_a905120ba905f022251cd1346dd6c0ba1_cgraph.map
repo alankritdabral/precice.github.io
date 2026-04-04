@@ -1,0 +1,20 @@
+<map id="precice::cplscheme::CompositionalCouplingScheme::hasDataBeenReceived" name="precice::cplscheme::CompositionalCouplingScheme::hasDataBeenReceived">
+<area shape="rect" id="Node000001" title="checks all coupling schemes this coupling scheme is composed of." alt="" coords="5,221,239,276"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1cplscheme_1_1CompositionalCouplingScheme.html#a29b650838cc28c815e5b704ecb317aa6" title="Returns all schemes in execution order, explicit as well as implicit." alt="" coords="287,115,521,169"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,219,318,172,319,177,196,224"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/utility/functional/mem_fn.html#" title=" " alt="" coords="613,219,717,244"/>
+<area shape="poly" id="edge9_Node000001_Node000005" title=" " alt="" coords="239,242,599,231,599,236,239,248"/>
+<area shape="rect" id="Node000008" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/all_any_none_of.html#" title=" " alt="" coords="357,261,451,287"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="239,256,343,266,343,271,239,262"/>
+<area shape="rect" id="Node000009" href="$classprecice_1_1cplscheme_1_1CouplingScheme.html#ae91c824606fdbe167f8d62bd0371b465" title="Returns true, if data has been exchanged in last call of advance()." alt="" coords="287,311,521,365"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="210,274,305,304,303,309,208,279"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="597,5,732,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="443,112,501,76,568,41,592,32,593,37,570,46,503,80,446,117"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr/get.html#" title=" " alt="" coords="569,55,760,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="511,112,572,96,573,101,512,117"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="469,167,570,205,600,214,598,219,568,210,468,172"/>
+<area shape="rect" id="Node000006" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="581,120,749,145"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="521,135,567,133,567,139,521,140"/>
+<area shape="rect" id="Node000007" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/transform.html#" title=" " alt="" coords="607,169,722,195"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="521,157,594,169,593,174,520,163"/>
+</map>

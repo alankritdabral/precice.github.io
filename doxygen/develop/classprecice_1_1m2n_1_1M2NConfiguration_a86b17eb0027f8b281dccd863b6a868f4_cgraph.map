@@ -1,0 +1,31 @@
+<map id="precice::m2n::M2NConfiguration::xmlTagCallback" name="precice::m2n::M2NConfiguration::xmlTagCallback">
+<area shape="rect" id="Node000001" title="Callback at begin of XML tag." alt="" coords="5,248,236,288"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1m2n_1_1M2NConfiguration.html#aaf14d19346d80e5443ecdb6c610a3c46" title=" " alt="" coords="284,5,515,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,246,152,206,186,154,230,101,282,55,293,49,295,54,286,59,233,104,190,157,156,209,134,249"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr/get.html#" title=" " alt="" coords="325,70,473,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,246,193,176,235,138,283,106,311,94,313,99,285,110,239,142,197,180,138,249"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1xml_1_1XMLTag.html#a359e6589dbb57960f102b03dbe869efe" title=" " alt="" coords="301,120,498,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="149,246,209,208,283,170,302,162,304,167,285,174,212,212,152,250"/>
+<area shape="rect" id="Node000007" href="$classprecice_1_1xml_1_1XMLTag.html#ac74a7af0b26a7d519756ccbd9575f7e4" title=" " alt="" coords="319,184,480,224"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="208,245,305,223,306,228,209,251"/>
+<area shape="rect" id="Node000008" href="$classprecice_1_1xml_1_1XMLTag.html#a9212e8c59708a9e07f0ff70a997349f9" title="Returns name (without namespace)." alt="" coords="320,312,479,352"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="209,285,307,308,306,313,208,291"/>
+<area shape="rect" id="Node000009" href="$classprecice_1_1xml_1_1XMLTag.html#a09189de158cf557d111530ff83be18bd" title="Returns xml namespace." alt="" coords="320,376,479,416"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="152,286,212,324,285,362,308,370,306,375,283,366,209,328,149,290"/>
+<area shape="rect" id="Node000010" href="$classprecice_1_1xml_1_1XMLTag.html#a31c349d79529108e575f36271e5ffb83" title=" " alt="" coords="308,248,491,288"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="236,265,294,265,294,271,236,271"/>
+<area shape="rect" id="Node000011" href="$namespaceprecice_1_1utils.html#a7604f20aa9ca3fd5e42375779dc06bd5" title="Returns true, if numerical truncation happens in case of type conversion." alt="" coords="306,441,493,466"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="138,287,197,356,239,394,285,426,303,434,301,439,283,430,235,398,193,360,134,290"/>
+<area shape="rect" id="Node000013" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr/make_shared.html#" title=" " alt="" coords="331,490,468,515"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="134,287,155,328,189,380,232,433,258,456,285,476,318,491,316,496,283,481,254,460,228,436,184,383,151,330,129,289"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/utility/variant/holds_alternative.html#" title=" " alt="" coords="573,217,736,242"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="485,158,516,170,540,186,564,202,585,210,583,215,561,206,537,190,513,174,483,163"/>
+<area shape="rect" id="Node000006" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/utility/optional/value.html#" title=" " alt="" coords="581,167,728,193"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="499,153,568,164,567,169,498,158"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="481,209,560,217,560,223,480,215"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="480,194,567,186,568,191,481,199"/>
+<area shape="poly" id="edge12_Node000010_Node000005" title=" " alt="" coords="490,252,559,241,560,246,491,257"/>
+<area shape="poly" id="edge13_Node000010_Node000006" title=" " alt="" coords="483,245,513,234,537,218,561,202,580,194,582,199,564,206,540,222,516,238,485,250"/>
+<area shape="rect" id="Node000012" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/types/numeric_limits/max.html#" title=" " alt="" coords="563,441,747,466"/>
+<area shape="poly" id="edge15_Node000011_Node000012" title=" " alt="" coords="493,451,549,451,549,456,493,456"/>
+</map>

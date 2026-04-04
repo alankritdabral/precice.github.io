@@ -1,0 +1,75 @@
+<map id="precice::cplscheme::CouplingSchemeConfiguration::createParallelExplicitCouplingScheme" name="precice::cplscheme::CouplingSchemeConfiguration::createParallelExplicitCouplingScheme">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,149,281,204"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1cplscheme_1_1CouplingSchemeConfiguration.html#a347f261ca80d960103fccc38ec90ef07" title="Adds configured exchange data to be sent or received to scheme." alt="" coords="329,149,556,204"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="282,174,316,174,316,179,282,179"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1cplscheme_1_1BiCouplingScheme.html#a8ac6f555a3baa1edf67729fb41c9de25" title="Adds data to be received on data exchange." alt="" coords="673,84,833,139"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="556,150,659,128,660,133,557,155"/>
+<area shape="rect" id="Node000006" href="$namespaceprecice_1_1utils.html#a434eabaa71f97a31726281a4df77bbcf" title="Returns true, if given element is in vector, otherwise false." alt="" coords="954,108,1131,133"/>
+<area shape="poly" id="edge13_Node000002_Node000006" title=" " alt="" coords="556,172,720,165,901,147,976,134,977,139,902,153,720,170,556,177"/>
+<area shape="rect" id="Node000010" href="$classprecice_1_1cplscheme_1_1BiCouplingScheme.html#ad2ab2d072cce1a60cc1cdd76452e4269" title="Adds data to be sent on data exchange and possibly be modified during coupling iterations." alt="" coords="673,5,833,60"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="477,147,534,107,603,69,659,49,660,54,605,74,537,111,480,151"/>
+<area shape="rect" id="Node000011" href="$classprecice_1_1cplscheme_1_1CouplingSchemeConfiguration.html#a47039349da4e7be869998c6948230e78" title="Helper function to check that waveform&#45;degree and substep exchange are compatible." alt="" coords="604,215,901,269"/>
+<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="557,198,610,209,609,214,556,203"/>
+<area shape="rect" id="Node000012" href="$classprecice_1_1cplscheme_1_1BiCouplingScheme.html#aec47e011b61da1f854ff1992d2439506" title="Determines which data is initialized and therefore has to be exchanged during initialize." alt="" coords="643,293,863,348"/>
+<area shape="poly" id="edge14_Node000002_Node000012" title=" " alt="" coords="481,202,537,241,605,278,631,288,629,293,603,283,535,246,477,206"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#ab797535f79f36c0f75cd005c6b6143b9" title="Adds CouplingData with given properties to this BaseCouplingScheme and returns a pointer to the Coupl..." alt="" coords="957,5,1128,60"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="832,87,901,69,944,57,945,62,902,74,833,93"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="833,111,940,115,940,120,833,117"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr/make_shared.html#" title=" " alt="" coords="1227,12,1364,37"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1128,27,1213,25,1213,30,1128,33"/>
+<area shape="rect" id="Node000007" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="1228,61,1363,87"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1112,105,1214,86,1215,91,1113,111"/>
+<area shape="rect" id="Node000008" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="1234,111,1357,136"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="1131,119,1220,120,1220,125,1131,124"/>
+<area shape="rect" id="Node000009" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/find.html#" title=" " alt="" coords="1258,160,1333,185"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="1106,131,1245,160,1244,165,1105,136"/>
+<area shape="poly" id="edge10_Node000010_Node000004" title=" " alt="" coords="833,30,943,30,943,35,833,35"/>
+<area shape="poly" id="edge11_Node000010_Node000006" title=" " alt="" coords="833,49,902,69,996,101,994,106,901,74,832,55"/>
+<area shape="rect" id="Node000013" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a197d3c5ee0b7a593c2f71e0884eb33bf" title="Sets _receivesInitializedData, if receiveData requires initialization." alt="" coords="949,415,1136,469"/>
+<area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="820,346,965,407,963,412,818,351"/>
+<area shape="rect" id="Node000024" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a24ea9ccdded53102a8f2b62f6736b012" title="Sets _sendsInitializedData, if sendData requires initialization." alt="" coords="957,321,1128,376"/>
+<area shape="poly" id="edge27_Node000012_Node000024" title=" " alt="" coords="863,329,944,336,943,342,863,334"/>
+<area shape="rect" id="Node000032" href="$classprecice_1_1cplscheme_1_1BiCouplingScheme.html#ab66e411f621d13312e3728404cc42eb8" title="Returns all data to be received." alt="" coords="963,164,1123,219"/>
+<area shape="poly" id="edge39_Node000012_Node000032" title=" " alt="" coords="862,296,900,278,915,267,924,254,933,241,948,228,955,223,958,228,951,232,937,245,928,258,918,270,903,283,864,301"/>
+<area shape="rect" id="Node000033" href="$classprecice_1_1cplscheme_1_1BiCouplingScheme.html#a53be61eb89bfff98ada4a33c3ba00545" title="Returns all data to be sent." alt="" coords="963,243,1123,297"/>
+<area shape="poly" id="edge40_Node000012_Node000033" title=" " alt="" coords="863,299,949,284,950,289,864,304"/>
+<area shape="rect" id="Node000014" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a6c03bf6ae814ea06faf0ed3b2e3b846f" title="Checks whether any CouplingData in dataMap requires initialization." alt="" coords="1184,415,1407,469"/>
+<area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="1136,439,1170,439,1170,445,1136,445"/>
+<area shape="rect" id="Node000018" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#af690c8d4e0f11e52fc7b9ca1fe098229" title="Receives data receiveDataIDs given in mapCouplingData with communication." alt="" coords="1210,575,1381,629"/>
+<area shape="poly" id="edge20_Node000013_Node000018" title=" " alt="" coords="1088,467,1241,565,1238,569,1086,472"/>
+<area shape="rect" id="Node000015" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/all_any_none_of.html#" title=" " alt="" coords="1510,437,1605,463"/>
+<area shape="poly" id="edge17_Node000014_Node000015" title=" " alt="" coords="1407,443,1497,446,1497,451,1407,448"/>
+<area shape="rect" id="Node000016" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/map/begin.html#" title=" " alt="" coords="1496,487,1619,512"/>
+<area shape="poly" id="edge18_Node000014_Node000016" title=" " alt="" coords="1408,464,1486,481,1485,486,1406,469"/>
+<area shape="rect" id="Node000017" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/map/end.html#" title=" " alt="" coords="1502,388,1613,413"/>
+<area shape="poly" id="edge19_Node000014_Node000017" title=" " alt="" coords="1407,422,1488,409,1489,414,1407,427"/>
+<area shape="poly" id="edge25_Node000018_Node000018" title=" " alt="" coords="1247,575,1247,564,1256,556,1272,550,1295,548,1324,551,1340,559,1337,564,1322,556,1295,553,1273,555,1258,560,1252,566,1252,575"/>
+<area shape="rect" id="Node000019" href="$classprecice_1_1com_1_1serialize_1_1SerializedStamples.html#a6323c9aec715a5f6e4ff770807d3277b" title="Create SerializedStamples with allocated buffers according to size of CouplingData." alt="" coords="1455,694,1660,734"/>
+<area shape="poly" id="edge21_Node000018_Node000019" title=" " alt="" coords="1347,627,1456,680,1475,687,1473,692,1454,684,1344,632"/>
+<area shape="rect" id="Node000022" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a9b2b8a399d66b14dd68a35db5347d308" title="getter for _time" alt="" coords="1472,615,1643,669"/>
+<area shape="poly" id="edge24_Node000018_Node000022" title=" " alt="" coords="1381,612,1459,624,1458,630,1380,618"/>
+<area shape="rect" id="Node000023" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a7bd0c976a2b5072fe3c9e98c2c4f1688" title=" " alt="" coords="1472,536,1643,591"/>
+<area shape="poly" id="edge26_Node000018_Node000023" title=" " alt="" coords="1380,587,1458,575,1459,581,1381,592"/>
+<area shape="rect" id="Node000020" href="$classprecice_1_1com_1_1serialize_1_1SerializedStamples.html#a3bd729e27395b592be2fe9a124886f3b" title=" " alt="" coords="1708,644,1876,699"/>
+<area shape="poly" id="edge22_Node000019_Node000020" title=" " alt="" coords="1660,693,1694,686,1695,692,1661,698"/>
+<area shape="rect" id="Node000021" href="$classprecice_1_1com_1_1serialize_1_1SerializedStamples.html#a72962498cead40c9cb5570666b2a7e98" title=" " alt="" coords="1708,495,1876,549"/>
+<area shape="poly" id="edge23_Node000019_Node000021" title=" " alt="" coords="1637,692,1658,680,1680,660,1707,629,1761,559,1765,562,1712,632,1684,664,1662,684,1640,696"/>
+<area shape="poly" id="edge28_Node000024_Node000014" title=" " alt="" coords="1118,374,1209,407,1207,412,1116,379"/>
+<area shape="rect" id="Node000025" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#aa3083ed3bef603159180ffa6ec520cca" title="Sets an action required to be performed by the accessor." alt="" coords="1210,215,1381,269"/>
+<area shape="poly" id="edge29_Node000024_Node000025" title=" " alt="" coords="1109,319,1135,306,1183,278,1197,272,1199,277,1185,283,1137,311,1111,324"/>
+<area shape="rect" id="Node000026" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a3aa71af66bf740fa8d9182b47db7dac3" title="Sends data sendDataIDs given in mapCouplingData with communication." alt="" coords="1210,317,1381,372"/>
+<area shape="poly" id="edge30_Node000024_Node000026" title=" " alt="" coords="1128,345,1196,344,1196,349,1128,350"/>
+<area shape="poly" id="edge31_Node000026_Node000026" title=" " alt="" coords="1247,317,1247,307,1256,298,1272,293,1295,291,1324,294,1340,302,1337,306,1322,299,1295,296,1273,298,1258,303,1252,309,1252,317"/>
+<area shape="rect" id="Node000027" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a1f7b29aa49ad8ba5c652e9e452bacbb5" title=" " alt="" coords="1472,231,1643,285"/>
+<area shape="poly" id="edge32_Node000026_Node000027" title=" " alt="" coords="1378,315,1461,287,1462,292,1380,320"/>
+<area shape="rect" id="Node000029" href="$classprecice_1_1com_1_1serialize_1_1SerializedStamples.html#a1016a4d24473c968c6cc89659e3de614" title="Serializes a given CouplingData into SerializedStamples." alt="" coords="1473,309,1641,364"/>
+<area shape="poly" id="edge34_Node000026_Node000029" title=" " alt="" coords="1381,339,1460,337,1460,342,1381,345"/>
+<area shape="rect" id="Node000028" href="$classprecice_1_1span.html#ae91f5ed50b6cbf0d15382b8e3c2a9a04" title=" " alt="" coords="1721,245,1863,271"/>
+<area shape="poly" id="edge33_Node000027_Node000028" title=" " alt="" coords="1643,255,1707,255,1707,261,1643,261"/>
+<area shape="poly" id="edge35_Node000029_Node000020" title=" " alt="" coords="1643,359,1662,375,1679,398,1689,421,1694,464,1695,509,1700,534,1710,561,1733,598,1758,632,1754,635,1728,601,1706,563,1695,535,1690,510,1689,465,1683,422,1674,401,1658,378,1640,363"/>
+<area shape="poly" id="edge36_Node000029_Node000021" title=" " alt="" coords="1643,362,1662,375,1679,392,1688,410,1696,427,1710,447,1747,484,1743,487,1706,450,1692,430,1683,412,1674,396,1658,379,1640,366"/>
+<area shape="rect" id="Node000030" href="$classprecice_1_1com_1_1serialize_1_1SerializedStamples.html#abdad84a4a2921adfb761ffcdefcdc027" title="Serialize gradients from waveform of data into _gradients." alt="" coords="1708,381,1876,436"/>
+<area shape="poly" id="edge37_Node000029_Node000030" title=" " alt="" coords="1643,360,1695,376,1694,381,1641,365"/>
+<area shape="rect" id="Node000031" href="$classprecice_1_1com_1_1serialize_1_1SerializedStamples.html#a71a588417330365bb8cf607c352d3919" title="Serialize values from waveform of data into _values." alt="" coords="1708,303,1876,357"/>
+<area shape="poly" id="edge38_Node000029_Node000031" title=" " alt="" coords="1642,332,1694,330,1694,335,1642,337"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="precice::cplscheme::BaseCouplingScheme::initializeWithZeroInitialData" name="precice::cplscheme::BaseCouplingScheme::initializeWithZeroInitialData">
+<area shape="rect" id="Node000001" title="Initializes storage in receiveData as zero." alt="" coords="5,47,220,101"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a9b2b8a399d66b14dd68a35db5347d308" title="getter for _time" alt="" coords="504,5,675,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,57,268,51,490,35,491,40,268,57,221,62"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#af690c8d4e0f11e52fc7b9ca1fe098229" title="Receives data receiveDataIDs given in mapCouplingData with communication." alt="" coords="268,91,439,145"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="221,91,255,97,254,103,220,96"/>
+<area shape="poly" id="edge6_Node000003_Node000002" title=" " alt="" coords="429,88,499,62,501,67,431,93"/>
+<area shape="poly" id="edge7_Node000003_Node000003" title=" " alt="" coords="308,91,308,80,316,72,331,66,353,64,380,67,395,75,392,80,378,72,353,69,332,71,319,76,313,82,313,91"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1com_1_1serialize_1_1SerializedStamples.html#a6323c9aec715a5f6e4ff770807d3277b" title="Create SerializedStamples with allocated buffers according to size of CouplingData." alt="" coords="487,93,692,133"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="439,113,473,113,473,118,439,119"/>
+<area shape="rect" id="Node000007" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a7bd0c976a2b5072fe3c9e98c2c4f1688" title=" " alt="" coords="504,157,675,212"/>
+<area shape="poly" id="edge8_Node000003_Node000007" title=" " alt="" coords="440,140,492,154,490,159,438,145"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1com_1_1serialize_1_1SerializedStamples.html#a3bd729e27395b592be2fe9a124886f3b" title=" " alt="" coords="740,45,908,100"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="692,93,726,87,727,92,693,98"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1com_1_1serialize_1_1SerializedStamples.html#a72962498cead40c9cb5570666b2a7e98" title=" " alt="" coords="740,124,908,179"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="693,127,727,133,726,138,692,132"/>
+</map>

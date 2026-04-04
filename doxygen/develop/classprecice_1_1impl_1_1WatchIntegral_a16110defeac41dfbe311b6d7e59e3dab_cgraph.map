@@ -1,0 +1,5 @@
+<map id="precice::impl::WatchIntegral::initialize" name="precice::impl::WatchIntegral::initialize">
+<area shape="rect" id="Node000001" title="Adds surface area information based on mesh connectivity." alt="" coords="5,5,209,45"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1utils_1_1IntraComm.html#abde303b11e46851ae65dca65ef06daad" title="True if this process is running a secondary rank." alt="" coords="257,5,444,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,23,243,23,243,28,209,28"/>
+</map>

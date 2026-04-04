@@ -1,0 +1,13 @@
+<map id="precice::acceleration::impl::ValuePreconditioner::_update_" name="precice::acceleration::impl::ValuePreconditioner::_update_">
+<area shape="rect" id="Node000001" title="Update the scaling after every FSI iteration." alt="" coords="5,40,203,95"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1utils_1_1IntraComm.html#a2b6ac8a54b0f96edb2e3fe47d3a52d62" title="The l2 norm of a vector is calculated on distributed data." alt="" coords="251,47,437,87"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,65,237,65,237,70,203,70"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1utils_1_1IntraComm.html#a1181baf395fd7e41bb0f922e3c3334cf" title=" " alt="" coords="485,47,672,87"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="437,65,472,65,472,70,437,70"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1span.html#ab25ca07a93bfa334622507c2c22b1034" title=" " alt="" coords="720,5,872,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="667,45,726,31,727,36,668,50"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/copy.html#" title=" " alt="" coords="755,55,837,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="672,65,741,65,741,70,672,70"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1span.html#ab86c14ec7bc7475d3ddb21d400e93121" title=" " alt="" coords="726,104,866,129"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="668,85,727,98,726,104,667,90"/>
+</map>

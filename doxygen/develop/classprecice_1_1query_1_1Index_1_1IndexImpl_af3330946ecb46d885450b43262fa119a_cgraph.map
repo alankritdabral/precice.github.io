@@ -1,0 +1,9 @@
+<map id="precice::query::Index::IndexImpl::getTriangleRTree" name="precice::query::Index::IndexImpl::getTriangleRTree">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,216,87"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="264,5,457,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,45,282,31,283,36,213,50"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr/make_shared.html#" title=" " alt="" coords="292,55,429,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,65,278,65,278,70,216,70"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/reserve.html#" title=" " alt="" coords="287,104,435,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="213,85,283,99,282,104,212,90"/>
+</map>

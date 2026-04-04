@@ -1,0 +1,19 @@
+<map id="precice::cplscheme::MultiCouplingScheme::initializeReceiveDataStorage" name="precice::cplscheme::MultiCouplingScheme::initializeReceiveDataStorage">
+<area shape="rect" id="Node000001" title="Functions needed for initialize()" alt="" coords="5,47,224,101"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a0b8be6a29082c8115db22aad3e0aa624" title="Initializes storage in receiveData as zero." alt="" coords="272,47,487,101"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,71,258,71,258,77,224,77"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a9b2b8a399d66b14dd68a35db5347d308" title="getter for _time" alt="" coords="771,5,941,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="487,57,534,51,757,35,757,40,535,57,487,62"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#af690c8d4e0f11e52fc7b9ca1fe098229" title="Receives data receiveDataIDs given in mapCouplingData with communication." alt="" coords="535,91,705,145"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="487,91,522,97,521,103,486,96"/>
+<area shape="poly" id="edge7_Node000004_Node000003" title=" " alt="" coords="696,88,766,62,768,67,697,93"/>
+<area shape="poly" id="edge8_Node000004_Node000004" title=" " alt="" coords="574,91,574,80,583,72,598,66,620,64,647,67,662,75,659,80,645,72,620,69,599,71,586,76,579,82,580,91"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1com_1_1serialize_1_1SerializedStamples.html#a6323c9aec715a5f6e4ff770807d3277b" title="Create SerializedStamples with allocated buffers according to size of CouplingData." alt="" coords="753,93,959,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="706,113,740,113,740,118,706,119"/>
+<area shape="rect" id="Node000008" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a7bd0c976a2b5072fe3c9e98c2c4f1688" title=" " alt="" coords="771,157,941,212"/>
+<area shape="poly" id="edge9_Node000004_Node000008" title=" " alt="" coords="706,140,758,154,757,159,705,145"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1com_1_1serialize_1_1SerializedStamples.html#a3bd729e27395b592be2fe9a124886f3b" title=" " alt="" coords="1007,45,1175,100"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="958,93,993,87,994,92,959,98"/>
+<area shape="rect" id="Node000007" href="$classprecice_1_1com_1_1serialize_1_1SerializedStamples.html#a72962498cead40c9cb5570666b2a7e98" title=" " alt="" coords="1007,124,1175,179"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="959,127,994,133,993,138,958,132"/>
+</map>

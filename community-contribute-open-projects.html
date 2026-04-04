@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="Open opportunities for contributing to preCICE">
+
+<meta name="keywords" content=" contribute, GSoC, google summer of code, student">
+<meta name="theme-color" content="#0A76BB">
+<meta name="msapplication-square310x310logo" content="images/icon-310x310.png">
+
+<title>Contribute to preCICE - Open projects | preCICE - The Coupling Library</title>
+<link rel="alternate" type="application/rss+xml" title="" href="https://precice.org/feed.xml">
+
+<!-- OpenGraph metadata -->
+<meta property="og:title" content="Contribute to preCICE - Open projects" />
+<meta property="og:site_name" content="preCICE.org" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://precice.org/community-contribute-open-projects.html" />
+<meta property="og:image" content="https://precice.org/images/icon-310x310.png" />
+<meta property="og:description" content="Open opportunities for contributing to preCICE">
+
+<!-- Twitter Card metadata -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Contribute to preCICE - Open projects" />
+<meta name="twitter:description" content="Open opportunities for contributing to preCICE">
+<meta name="twitter:image" content="https://precice.org/images/icon-310x310.png" />
+
+<!-- Canonical link -->
+<link rel="canonical" href="https://precice.org/community-contribute-open-projects" >
+
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/syntax.css">
+<link rel="icon" sizes="192x192" href="images/icon.png">
+<link rel="apple-touch-icon" sizes="310x310" href="images/icon-310x310.png">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<!-- Bootstrap -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Local CSS -->
+<link rel="stylesheet" href="css/modern-business.css">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/customstyles-precice.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<link rel="stylesheet" href="css/bookcover.css">
+<!-- Color styles -->
+<link rel="stylesheet" href="css/theme-precice.css">
+<!-- Styling for landing page -->
+
+
+<!-- Jquery, Ajax -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<!-- Anchor.js -->
+<script src="https://cdn.jsdelivr.net/npm/anchor-js@4.2.0/anchor.min.js" integrity="sha256-m1eTvwEHwmsw4+XKF7BshClVJEPwTVycveNl0CS0Mkk=" crossorigin="anonymous"></script>
+
+<!-- Bootstrap JavaScript (requires jquery) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Local JS -->
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<!-- Algolia search -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.20.1/moment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+
+<!-- QR code for printed pages -->
+<script defer src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var qrDiv = document.createElement("div");
+    qrDiv.id = "print-qr-code";
+    var qr = qrcode(0, "M");
+    qr.addData("https://precice.org/community-contribute-open-projects.html");
+    qr.make();
+    qrDiv.innerHTML = qr.createImgTag(3, 0);
+    document.body.appendChild(qrDiv);
+  });
+</script>
+<style>
+  #print-qr-code {
+    display: none;
+  }
+  @media print {
+    #print-qr-code {
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+    }
+  }
+</style>
+
+<!-- Plausible Analytics -->
+<script async defer data-domain="precice.org" src="https://plausible.io/js/plausible.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    <script>
+        // wrap tables into a div to make them scrollable on small viewports
+        // https://getbootstrap.com/docs/3.4/css/#tables-responsive
+        $(document).ready(function() {
+            $('table').addClass('table');
+            $('table').wrap('<div class="table-responsive"></div>');
+        });
+    </script>
+    
+</head>
+<body>
+    <header>
+        <!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" aria-label="Main">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand no-icon" href="https://precice.org">
+            <span class="navbar-brand-icon">
+            <img class="navbar-brand-text" src="images/preCICE_text_28px.svg" alt="preCICE"></span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                
+                <!-- entries without drop-downs appear here -->
+
+                
+                
+
+                
+                
+                
+                
+                
+                <li><a href="quickstart.html">Quickstart</a></li>
+                
+                
+                
+                
+                
+                <li><a href="docs.html">Docs</a></li>
+                
+                
+                
+                
+                
+                <li><a href="tutorials.html">Tutorials</a></li>
+                
+                
+                
+                
+                
+                <li class="active"><a href="community.html">Community</a></li>
+                
+                
+                
+                
+                
+                <li><a href="https://precice.discourse.group/c/news" target="_blank" rel="noopener">Blog</a></li>
+                
+                
+                
+                
+                
+                <li><a href="about.html">About</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <div id="search-input"></div>
+                        <div id="search-results"></div>
+                        <script>
+const algoliaSearch = instantsearch({
+  appId: 'LIT6P0EW26',
+  apiKey: '760ed6be3e165d08b4a798ac4aa82fe4',
+  indexName: 'jekyll',
+  searchFunction: function(helper) {          // hide search result in init query
+    var searchResults = $('#search-results');
+    if (helper.state.query === '') {
+      searchResults.hide();
+      return;
+    }
+    helper.search();
+    searchResults.show();
+  }
+});
+
+const hitTemplate = function(hit) {
+  let date = '';
+  if (hit.date) {
+    date = moment.unix(hit.date).format('MMM D, YYYY');
+  }
+
+  let url = `${hit.url}#${hit.anchor}`;
+
+  const title = hit._highlightResult.title.value;
+
+  let breadcrumbs = '';
+  if (hit._highlightResult.headings) {
+    breadcrumbs = hit._highlightResult.headings.map(match => {
+      return `<span class="result-breadcrumb">${match.value}</span>`
+    }).join(' > ')
+  }
+
+  const content = hit._highlightResult.html.value;
+
+  return `
+    <div class="result-item">
+    <h2><a class="result-link" href="${url}">${title}</a></h2>
+    <a href="${url}" class="result-breadcrumbs">${breadcrumbs}</a>
+    <div class="result-snippet">${content}</div>
+    </div>
+  `;
+}
+
+algoliaSearch.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '#search-input',
+    placeholder: 'Search (' + (/Mac|iPhone|iPad/.test(navigator.platform) ? '⌘K' : 'Ctrl+K') + ')',
+    poweredBy: true, // This is required if you're on the free Community plan
+    magnifier: false,
+    autofocus: false,
+    searchOnEnterKeyPressOnly: false,
+    reset: true
+  })
+);
+
+algoliaSearch.addWidget(
+  instantsearch.widgets.hits({
+    container: '#search-results',
+    templates: {
+      item: hitTemplate
+    }
+  })
+);
+
+algoliaSearch.start();
+
+// Patch the style of the search input bar generated by the above script
+// The equivalent CSS is below, however, including <style> in <body> is against the W3C commandments
+// Chrome and Firefox had baby called scope, but it didn't make it
+// https://stackoverflow.com/questions/2830296/using-style-tags-in-the-body-with-other-html
+var elem = document.querySelector('.ais-search-box--powered-by');
+elem.style.marginTop = '-15px';
+elem.style.paddingRight = '5px';
+
+var elem = document.querySelector('.nav li a.ais-search-box--powered-by-link');
+elem.style.padding = '0';
+elem.style.backgroundColor = 'transparent';
+elem.style.display = "inline-block";
+
+var elem = document.querySelector('.ais-search-box--input');
+elem.style.paddingLeft = '10px';
+elem.style.borderColor = '#0A76BB';
+
+var elem = document.querySelector('.ais-search-box');
+elem.style.padding = '.5em';
+elem.style.marginBottom = '0px';
+elem.style.marginLeft = '10px';
+elem.style.marginTop = '0px';
+elem.style.width = '20em';
+elem.style.fontSize = '0.8em';
+elem.style.height = '50px';
+elem.style.boxSizing = 'border-box';
+
+/*<style type="text/css">
+.ais-search-box--powered-by {
+  margin-top: -15px;
+  padding-right: 5px;
+}
+.nav li a.ais-search-box--powered-by-link {
+  padding: 0;
+  background-color: transparent;
+  display: inline-block;
+}
+.ais-search-box--input {
+  padding-left: 10px;
+  border-color: #0A76BB;
+}
+.ais-search-box {
+  padding: .5em;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-top: 0px;
+  width: 20em;
+  font-size: 0.8em;
+  box-sizing: border-box;
+  height: 50px;
+}
+</style>*/
+
+// some hacky JS to hide the search results until we move to docsearch (which is a true autocomplete-type search)
+document.addEventListener('mouseup', function(e) {
+  var results = document.getElementById('search-results');
+  if (!results.contains(e.target)) {
+    results.style.display = 'none';
+  }
+});
+document.addEventListener('mouseup', function(e) {
+  var input = document.getElementById('search-input');
+  var results = document.getElementById('search-results');
+  if (input.contains(e.target)) {
+    results.style.display = 'block';
+  }
+});
+
+// Cmd+K / Ctrl+K keyboard shortcut to focus search, Escape to dismiss
+document.addEventListener('keydown', function(e) {
+  var isMac = /Mac|iPhone|iPad|iPod/.test(navigator.platform);
+  if ((isMac ? e.metaKey : e.ctrlKey) && e.key === 'k') {
+    e.preventDefault();
+    var input = document.querySelector('.ais-search-box--input');
+    if (input) {
+      input.focus();
+      input.select();
+    }
+  }
+
+  if (e.key === 'Escape' || e.keyCode === 27) {
+    var results = document.getElementById('search-results');
+    var inputContainer = document.getElementById('search-input');
+    var activeElement = document.activeElement;
+
+    if (results) {
+      results.style.display = 'none';
+    }
+
+    if (inputContainer && inputContainer.contains(activeElement)) {
+      activeElement.blur();
+    } else if (results && results.contains(activeElement)) {
+      var algoliaInput = document.querySelector('#search-input .ais-search-box--input');
+      if (algoliaInput) {
+        algoliaInput.focus();
+      } else {
+        activeElement.blur();
+      }
+    }
+  }
+});
+
+</script>
+                    </div>
+                    <!--end search-->
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://precice.discourse.group" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Join the discourse community"><i class="fab fa-discourse"></i></a>
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://github.com/precice" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Star precice/precice on GitHub"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://www.linkedin.com/company/precice" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <!-- rel="me" required by Mastodon for verification -->
+                    <a rel="me noopener noreferrer" class="no-icon nav-external" href="https://fosstodon.org/@precice" target="_blank" data-show-count="false" aria-label="Follow us on Mastodon"><i class="fab fa-mastodon"></i></a>
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://www.youtube.com/c/preCICECoupling/" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Subscribe on Youtube"><i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+          <!-- News banner -->
+          
+
+
+
+    </header>
+    <div class="container" style="margin-bottom:50px">
+        
+        <div class="row">
+          <div class="col-md-3" id="tg-sb-sidebar">
+            
+
+<nav aria-label="Community">
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">Community </li>
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Overview & news" href="community.html">Overview & news</a>
+  </li>
+  
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Current events" href="#">Current events</a>
+    <ul>
+      
+      
+      
+      <li><a title="ECCOMAS WCCM 2026" href="eccomas-wccm-2026.html">ECCOMAS WCCM 2026</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Online training 2026" href="precice-online-training-2026-oct.html">Online training 2026</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2027" href="precice-workshop-2027.html">Workshop 2027</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="preCICE workshops" href="#">preCICE workshops</a>
+    <ul>
+      
+      
+      
+      <li><a title="Overview" href="precice-workshop.html">Overview</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2027" href="precice-workshop-2027.html">Workshop 2027</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2025" href="precice-workshop-2025.html">Workshop 2025</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2024" href="precice-workshop-2024.html">Workshop 2024</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2023" href="precice-workshop-2023.html">Workshop 2023</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2022" href="precice-workshop-2022.html">Workshop 2022</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2021" href="precice-workshop-2021.html">Workshop 2021</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Workshop 2020" href="precice-workshop-2020.html">Workshop 2020</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Organizing" href="precice-workshop-organizing.html">Organizing</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Further events" href="#">Further events</a>
+    <ul>
+      
+      
+      
+      <li><a title="Online training 2026" href="precice-online-training-2026-oct.html">Online training 2026</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS WCCM 2026" href="eccomas-wccm-2026.html">ECCOMAS WCCM 2026</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS Coupled Problems 2025" href="eccomas-coupled-2025.html">ECCOMAS Coupled Problems 2025</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="iacm WCCM 2024" href="iacm-wccm-2024.html">iacm WCCM 2024</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS Coupled Problems 2023" href="eccomas-coupled-2023.html">ECCOMAS Coupled Problems 2023</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS Congress 2022" href="eccomas-congress-2022.html">ECCOMAS Congress 2022</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS Coupled Problems 2021" href="eccomas-coupled-2021.html">ECCOMAS Coupled Problems 2021</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS WCCM 2020" href="community-events-wccm-eccomas-2020.html">ECCOMAS WCCM 2020</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS Coupled Problems 2019" href="eccomas-coupled-2019.html">ECCOMAS Coupled Problems 2019</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="ECCOMAS ECCM-ECFD 2018" href="eccomas-eccm-ecfd-2018.html">ECCOMAS ECCM-ECFD 2018</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Support preCICE" href="community-support-precice.html">Support preCICE</a>
+  </li>
+  
+  
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Training" href="community-training.html">Training</a>
+  </li>
+  
+  
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Stories" href="community-projects.html">Stories</a>
+  </li>
+  
+  
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Contributors" href="community-contributors.html">Contributors</a>
+  </li>
+  
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Contribute" href="#">Contribute</a>
+    <ul>
+      
+      
+      
+      <li><a title="Contribute to preCICE" href="community-contribute-to-precice.html">Contribute to preCICE</a></li>
+      
+      
+      
+      
+      
+      
+      <li  class="active"  ><a title="Open projects" href="community-contribute-open-projects.html">Open projects</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Adapter guidelines" href="community-guidelines-adapters.html">Adapter guidelines</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Application case guidelines" href="community-guidelines-application-cases.html">Application case guidelines</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Example - OpenFOAM adapter" href="community-guidelines-adapters-openfoam.html">Example - OpenFOAM adapter</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Example - OpenDiHu adapter" href="community-guidelines-adapters-opendihu.html">Example - OpenDiHu adapter</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Example - ISSM adapter" href="community-guidelines-adapters-issm.html">Example - ISSM adapter</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Example - DuMux adapter" href="community-guidelines-adapters-dumux.html">Example - DuMux adapter</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has url and no folderitems -->
+  
+  <li>
+    <a title="Community channels" href="community-channels.html">Community channels</a>
+  </li>
+  
+  
+  
+  
+  
+  <!-- if you aren't using the accordion, uncomment this block:
+  <p class="external">
+  <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+  </p>
+  -->
+</ul>
+</nav>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+          </div>
+          <main class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Contribute to preCICE - Open projects</h1>
+</div>
+
+
+
+<div class="post-content">
+
+    
+    <div class="summary">
+        <!-- https://github.com/jekyll/jekyll/issues/3571 -->
+        Open opportunities for contributing to preCICE
+
+    </div>
+    
+
+    <div class="row">
+        <div class="col-md-9 col-sm-8">
+          
+          <nav aria-label="table of contents">
+          
+          
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+    $('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers:  'h2,h3,h4'  });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+          
+          </nav>
+          
+        </div>
+
+        <div class="col-md-3 col-sm-4">
+          
+          <aside>
+            
+                <div class="text-right">
+                    <a target="_blank" rel="noopener" href="https://github.com/precice/precice.github.io/edit/master/content/community/contribute/community-contribute-open-projects.md" class="btn btn-default githubEditButton" role="button"><i class="fab fa-github fa-lg"></i> Edit me</a>
+                </div>
+            
+            <div class="text-right">
+              <small>Updated 16 Mar 26</small>
+            </div>
+          </aside>
+          
+        </div>
+    </div>
+
+   <h2 id="context">Context</h2>
+
+<p>In case you skipped the <a href="index.html">home page</a>,
+preCICE is a <em>coupling library</em> for <strong>numerical simulations</strong> (think meshes, iterative solution, FEM, CFD)
+and an <em>ecosystem</em> of related components.
+Scientists take independent numerical simulation codes and make them work together on a more complex simulation,
+which none of the individual codes could do alone.
+For this, they use one of the many <em>adapters</em> (think plugins for various simulation codes), or directly the core library.
+While the latter is written in <strong>C++</strong>, more languages are relevant (<strong>Python, Julia, Matlab, C, Fortran, and Rust</strong>).
+preCICE is primarily used on <strong>Linux</strong> systems, with a growing user-base on macOS and Windows.</p>
+
+<p>Most of the preCICE development has been happening in a university context,
+and student projects have played a vital role: Just look at the <a href="community-contributors.html">list of contributors</a>.
+We are working on <a href="https://github.com/precice/">GitHub</a>, and we accept contributions by everyone.
+We review pull requests trying to improve their quality together and bring them in line with the current project needs,
+which can sometimes be a long but rewarding experience.
+In the university context, we also closely mentor students,
+we encourage participation in team events such as our coding days,
+and several students have so far participated in workshops, conferences, and publications, or even done their PhD in the team.</p>
+
+<p>If you want to contribute with a student project (typically a thesis), see the <a href="about.html">university groups behind preCICE</a>.
+This page highlights a few specific projects that are not directly suitable for a thesis (<a href="https://github.com/precice/precice/issues?q=is%3Aissue%20state%3Aopen%20label%3Athesis">thesis-suitable issues in the core library</a>), but are also a bit more than a <a href="https://github.com/precice/precice/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22">good first issue</a>.
+Some of these projects we advertise publicly, in programs such as the Google Summer of Code.</p>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square"></i> <b>Tip:</b> 
+Are you looking for or offering a thesis / PhD / other related job? Have a look also at <a href="https://precice.discourse.group/c/jobs/13">our forum</a>.
+</div>
+
+<h2 id="google-summer-of-code-gsoc">Google Summer of Code (GSoC)</h2>
+
+<p>The <a href="https://summerofcode.withgoogle.com/">Google Summer of Code</a> is <em>“a global, online program focused on bringing new contributors into open source software development. GSoC Contributors work with an open source organization on a 12+ week programming project under the guidance of mentors.”</em>.</p>
+
+<p>For 2026, we have prepared the following topics, for different sets of skills.
+Since this is our first year, and since we are a rather small project, we might not be able to accommodate applicants to all of these projects.
+Before applying, introduce yourself in the <a href="https://precice.discourse.group/c/jobs/gsoc/15">forum</a> and let us know more about your background and motivation:</p>
+
+<ul>
+  <li>What motivates you spend this summer in GSoC instead of doing anything else?</li>
+  <li>What interests you most about our project?</li>
+  <li>Will you have any other commitments (e.g., work or study) while working on the project?</li>
+  <li>What previous experience do you have with the respective technologies?</li>
+  <li>What previous experience with Git and GitHub do you have, if any?</li>
+</ul>
+
+<p>Additionally, show us what you have tried already (see “entry test” in each project and feel free to go beyond that), to support your application. If you have contributed anything to any preCICE repository, definitely mention this here.</p>
+
+<p>We will contact you via replies and/or private messages in the forum, to find out together if these topics are a good fit. You can alternatively ask quick questions in the <a href="https://matrix.to/#/#precice_lobby:gitter.im?web-instance[element.io]=app.gitter.im">Matrix chat</a>. Don’t miss the <a href="#general-guidelines">guidelines</a> at the bottom of this page.</p>
+
+<div class="alert alert-warning" role="alert"><i class="fas fa-exclamation-triangle"></i> <b>Important:</b> 
+We are a small project, and we are experiencing a spike of activity, which is very difficult to review next to the usual work.
+Please do not ask whether you can work on an issue - not without details. If you find something interesting to you that you feel it is clear enough for you to contribute, go ahead and submit a PR.
+We value quality higher than quantity. If you find something interesting, take your time and focus on it.
+We expect to work with the accepted GSoC participants in the summer. Our capacity to review external contributions before that is very limited.
+</div>
+
+<div class="alert alert-warning" role="alert"><i class="fas fa-exclamation-triangle"></i> <b>Important:</b> 
+We have already received too many pull requests in the period before proposals open. For this reason, we have now restricted interactions with the preCICE repositories to collaborators. If you have not reached out so far, chances for selection are very small.
+</div>
+
+<h3 id="submitting-proposals">Submitting proposals</h3>
+
+<p>You need to <a href="https://google.github.io/gsocguides/student/writing-a-proposal">submit a proposal on the GSoC system</a>. The proposal has to follow the following guidelines. Not following will lead to automatic rejection. You can edit your proposal on the GSoC system until the end of the <a href="https://summerofcode.withgoogle.com/organizations/precice/programs/2026/timeline">proposal submission deadline</a>. Due to the amount of interest, we do not have the capacity to provide feedback on drafts.</p>
+
+<p>We are looking for proposals of maximum 4 A4 pages, in a PDF file. Use the following order, and start every part in a new page, so that we can quickly navigate.</p>
+
+<ul>
+  <li><strong>Page 1: About yourself</strong>
+    <ul>
+      <li>Full name</li>
+      <li>E-mail</li>
+      <li>GitHub username</li>
+      <li>Matrix username, if available</li>
+      <li>Link to your introduction thread on the preCICE Discourse forum.</li>
+      <li>Short summary as a written paragraph of your education and code experience.</li>
+      <li>Short summary as a written paragraph of what motivates you personally to contribute to preCICE including first contact.</li>
+      <li>List one PR in the preCICE organization that you think reflects your technical skills relevant for the project and your eye for details. It does not need to be reviewed/merged.</li>
+      <li>List one PR in the preCICE organization that you think reflects your communication skills. It does not need to be reviewed/merged.</li>
+      <li>Which tools did you use for these PRs, and how much time approximately did you need?</li>
+      <li>Optionally, list up to two PR in any other project that you think show skills relevant to the proposed project.</li>
+    </ul>
+  </li>
+  <li><strong>Page 2: About the project you want to work on</strong>
+    <ul>
+      <li>Project title (can be the project idea)</li>
+      <li>Short summary as a written paragraph what the project idea is based on. This can include project idea/issue/interest/paper.</li>
+      <li>Short summary as a written paragraph about the benefit for the community (current and future users of preCICE).</li>
+      <li>Short summary as a written paragraph why you are personally interested in the project.</li>
+      <li>Deviating from the proposed ideas is welcome, if you see a good reason for it / you have your own idea. But, as a new and small organization, we will probably only be allocated very few slots.</li>
+    </ul>
+  </li>
+  <li><strong>Page 3: Project plan</strong>
+    <ul>
+      <li>Milestones of the project in multiple sections</li>
+      <li>Description of steps
+        <ul>
+          <li>What are related issues / PRs / discussions?</li>
+          <li>What is the context in code (classes, files with line numbers)?</li>
+          <li>What are you intending to do?</li>
+          <li>How to test the contribution?</li>
+        </ul>
+      </li>
+      <li>What would you expect as a result of a good project? What could be possible stretch goals?</li>
+    </ul>
+  </li>
+  <li><strong>Page 4: Figures</strong>: This is an optional page exclusively for large figures, images or code.</li>
+</ul>
+
+<h3 id="project-website-modernization">Project: Website modernization</h3>
+
+<p>This website is built with <a href="https://jekyllrb.com/">Jekyll</a>,
+a straight-forward static site generator that has served us well,
+but now starts to feel a bit restrictive
+(<a href="https://github.com/precice/precice.github.io">GitHub repository</a>, <a href="docs-meta-overview.html">documentation</a>).
+We envy the dark theme, the nice footer that showcases contributions, and the nice search engine support
+when we look at the documentation of other community projects, such as <a href="https://docs.gitlab.com/user/">GitLab</a> or <a href="https://docs.docker.com/get-started/">Docker</a>.
+We also required some hacky jekyll plugins to integrate multiple repositories into one jekyll website, which are a bit error-prone.
+Our technology stack is also a bit outdated:
+For example, the front-end is using <a href="https://getbootstrap.com/docs/">Bootstrap</a> 3.3.7, with some custom CSS on top.
+We have done some <a href="https://github.com/orgs/precice/projects/22/views/1">preliminary work</a> porting to hugo,
+but web development is not what we are good at.
+As a first step, we would like to <a href="https://github.com/precice/precice.github.io/issues/691">upgrade to a newer Bootstrap version</a>.
+After that, we would like to switch to the <a href="https://gohugo.io/">Hugo static site generator</a>,
+aiming to have a framework that we can upgrade and maintain with minimal effort.</p>
+
+<p><strong>Entry test:</strong> To figure out if this is for you, try <a href="https://github.com/precice/precice.github.io/blob/master/README.md">building the website locally</a>
+and adding and styling some new element in the <a href="https://github.com/precice/precice.github.io/blob/master/content/index.html">landing page</a>.
+Be creative!</p>
+
+<ul>
+  <li>Skills required: Web development (Jekyll/Hugo + CSS, JS)</li>
+  <li>Project size: Medium (175h)</li>
+  <li>Difficulty: Easy/Intermediate - Requires upgrading the front-end framework and porting existing content from one framework and stack to another, but will be driven primarily by you on the “how”.</li>
+  <li>Mentors: <a href="https://github.com/fsimonis">Frédéric Simonis</a> and <a href="https://github.com/MakisH">Gerasimos Chourdakis</a></li>
+</ul>
+
+<h3 id="project-system-tests-improvements">Project: System tests improvements</h3>
+
+<p>While the core library has several unit and integration tests,
+some issues only show up when running complete simulations.
+For this reason, preCICE has <a href="dev-docs-system-tests.html">system tests</a>,
+which choose and install components from the ecosystem in Docker containers,
+run complete simulations, and compare the numerical results against references.
+These tests are integrated into the <a href="https://docs.github.com/en/actions">GitHub Actions</a> CI infrastructure of preCICE.
+While the system tests are already running every night and on many pull requests, several improvements are possible (<a href="https://github.com/precice/tutorials/issues?q=is%3Aissue%20state%3Aopen%20label%3Asystemtests">related issues</a>):
+running (much) faster test cases, running multiple test cases in parallel, better communicating what went wrong, integrating more repositories, and the list of possibilities goes on.</p>
+
+<p><strong>Entry test:</strong> To figure out if this is for you, <a href="dev-docs-system-tests.html#running-specific-test-suites">run the system tests locally</a> and <a href="dev-docs-system-tests.html#adding-tutorials">add one more tutorial to the tests</a>.</p>
+
+<ul>
+  <li>Skills required: Python, Docker, GitHub Actions</li>
+  <li>Project size: Medium (175h) - Depending on the availability, small or large are also possible</li>
+  <li>Difficulty: Intermediate - Requires combining multiple technologies and has an impact in multiple repositories, but includes mostly small and clear work packages.</li>
+  <li>Mentors: <a href="https://github.com/MakisH">Gerasimos Chourdakis</a> - Fallback: <a href="https://github.com/fsimonis">Frédéric Simonis</a></li>
+</ul>
+
+<h3 id="project-error-messages-with-configuration-context">Project: Error messages with configuration context</h3>
+
+<p>The core library needs a <a href="configuration-overview.html">preCICE configuration file</a>,
+which currently needs to be written manually (we are working on higher-level configuration tools as well).
+When one configures something wrong, preCICE throws an error message with details and recommendations (think git).
+In this project, we want to attach context to these error messages,
+referring to specific lines in the configuration file
+(similarly to how a compiler would refer to code lines with errors):
+see the <a href="https://github.com/precice/precice/issues/751">related issue</a>.</p>
+
+<p><strong>Entry test:</strong> To figure out if this is for you, try <a href="installation-source-preparation.html">building preCICE from source</a>,
+running the <a href="tutorials-elastic-tube-1d.html">elastic tube 1D tutorial</a>,
+and modifying the <a href="https://github.com/precice/tutorials/blob/master/elastic-tube-1d/precice-config.xml">configuration file</a>
+to trigger an error (e.g., remove one of the <code class="language-plaintext highlighter-rouge">&lt;data&gt;</code> tags).
+Then, locate and modify the error message in the source code, to provide more information.</p>
+
+<ul>
+  <li>Skills required: C++</li>
+  <li>Project size: Small (90h)</li>
+  <li>Difficulty: Intermediate - Requires significant modifications to the C++ codebase, but with limited impact to/from other work.</li>
+  <li>Mentors: <a href="https://github.com/fsimonis">Frédéric Simonis</a> - Fallback: <a href="https://github.com/uekerman">Benjamin Uekermann</a></li>
+</ul>
+
+<h3 id="project-clean-multi-step-configuration">Project: Clean multi-step configuration</h3>
+
+<p>The core library parses its <a href="configuration-overview.html">configuration file</a> using the <a href="https://gitlab.gnome.org/GNOME/libxml2/-/wikis/home">libxml2 library</a>.
+The way this currently works is a bit rigid and the configuration of objects is directly tied to this parsing.
+Instead, we could do this in multiple stages, introducing an additional abstract syntax tree, which we could then use as a layer for additional checks,
+or to parse the configuration in a predefined order.
+In this project, we want to refactor the configuration code to introduce a confguration AST (structured types), generated from the XML AST (nested tags and their attributes) built with libxml2.
+See the <a href="https://github.com/precice/precice/issues/982">related issue</a>.</p>
+
+<p><strong>Entry test:</strong> To figure out if this is for you, try the same as in the <a href="#project-error-messages-with-configuration-context">project idea above</a>.</p>
+
+<ul>
+  <li>Skills required: C++</li>
+  <li>Project size: Medium (175h)</li>
+  <li>Difficulty: Intermediate/Hard - Requires refactoring or modifying large parts of the C++ codebase, but with limited impact to/from other work.</li>
+  <li>Mentors: <a href="https://github.com/fsimonis">Frédéric Simonis</a> - Fallback: <a href="https://github.com/uekerman">Benjamin Uekermann</a></li>
+</ul>
+
+<h2 id="general-guidelines">General guidelines</h2>
+
+<ol>
+  <li>Be creative, be proactive, and make your project your own.</li>
+  <li>When writing (e.g., a pull request description), think of writing to colleagues with the same questions as you when you started.</li>
+  <li>We welcome all kinds of modern tools for assisting with code development, but we do value the human factor:
+we want to see your work, in your own words, and we trust that you understand what you contribute.
+No need to impress, we are happy to help understand every concept together!</li>
+</ol>
+
+
+    
+
+
+
+<!-- Breadcrumb metadata -->
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "@type": "ListItem",
+  "position": 1,
+  "name": "Community",
+  "item": "https://precice.org/community.html"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,{
+  "@type": "ListItem",
+  "position": 2,
+  "name": "Open projects",
+  "item": "https://precice.org/community-contribute-open-projects.html"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+]}
+</script>
+
+
+</div>
+
+
+          </main>
+        </div>
+        
+    </div>
+    <footer class="background-dark">
+  <div class="container">
+
+
+    <div class="row equal">
+      <div class="col-md-4" style="background:white;border-radius:1rem;padding:0 3rem;margin:0 auto 50px auto;">
+        <h2> The preCICE newsletter </h2>
+        <script charset="utf-8" type="text/javascript" src="https://js.mailercloud.com/form/form.js"></script>
+<script>
+(function() {
+  mcform.create({
+    formId: "V3dEdUAzMTQ0NkAwMDAwMA==",
+    targetElement: "form_element_id"
+  })
+})();
+</script>
+
+        </div>
+    </div>
+
+
+    <div class="row equal text-center">
+      <div class="col-md-4">
+        <nav aria-label="Footer left">
+          <ul class="list-unstyled">
+            <li>
+              <a href="fundamentals-literature-guide.html">Cite preCICE</a>
+            </li>
+            <li>
+              <a href="community-contribute-to-precice.html">Contribute</a>
+            </li>
+            <li>
+              <a href="community-support-precice.html">Get support</a>
+            </li>
+            <li>
+              <a href="community-training.html">Get training</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-md-4">
+        <nav aria-label="Footer right">
+          <ul class="list-unstyled">
+            <li>
+              <a class="no-icon" href="https://precice.discourse.group">Forum on Discourse</a>
+            </li>
+            <li>
+              <a class="no-icon" href="https://github.com/precice">preCICE on GitHub</a>
+            </li>
+            <li>
+              <a href="fundamentals-license.html">License</a>
+            </li>
+            <li>
+              <a href="about.html">Impressum / Legal</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-md-4">
+        <p>
+        <a class="no-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+          <img alt="This work is licensed under a Creative Commons Attribution 4.0 International License." src="images/licensebutton-by-40_88x31.png" />
+        </a>
+        </p>
+        <p>
+        Page last updated: Mar 16, 2026<br>
+        Site last updated: Apr 4, 2026
+        </p>
+        <p>
+        <i class="fas fa-shield-halved" aria-hidden="true"></i> This website does not use cookies
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="/js/copy-code.js"></script>
+</footer>
+
+
+
+</body>
+
+</html>

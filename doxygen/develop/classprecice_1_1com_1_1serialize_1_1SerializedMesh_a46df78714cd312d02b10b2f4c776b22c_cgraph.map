@@ -1,0 +1,21 @@
+<map id="precice::com::serialize::SerializedMesh::serialize" name="precice::com::serialize::SerializedMesh::serialize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,178,197,218"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1com_1_1serialize_1_1SerializedMesh.html#aed26fa2da0465bbd683b12ed302928fe" title="asserts the content for correctness" alt="" coords="259,22,468,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,176,172,124,207,97,244,73,262,65,264,69,247,78,210,101,175,128,123,179"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/copy_n.html#" title=" " alt="" coords="315,87,411,112"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="134,176,185,148,244,122,301,107,303,112,246,127,187,153,137,180"/>
+<area shape="rect" id="Node000006" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="279,136,447,161"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="197,177,281,161,282,167,198,183"/>
+<area shape="rect" id="Node000007" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/reserve.html#" title=" " alt="" coords="289,185,437,211"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="197,195,275,195,275,201,197,201"/>
+<area shape="rect" id="Node000008" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/resize.html#" title=" " alt="" coords="308,235,419,260"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="198,213,295,232,294,237,197,219"/>
+<area shape="rect" id="Node000009" href="$classprecice_1_1com_1_1serialize_1_1SerializedMesh.html#a9b69217876065da8c1e0e0438db0c42e" title=" " alt="" coords="245,285,481,325"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="138,216,188,243,246,270,267,278,266,283,244,275,186,248,135,221"/>
+<area shape="rect" id="Node000010" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="301,349,426,375"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="119,216,171,276,207,308,247,334,288,350,286,355,244,339,203,312,167,280,115,220"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/set/count.html#" title=" " alt="" coords="529,5,644,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="468,28,515,23,516,28,469,33"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/set/insert.html#" title=" " alt="" coords="529,55,644,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="469,51,516,57,515,62,468,57"/>
+</map>

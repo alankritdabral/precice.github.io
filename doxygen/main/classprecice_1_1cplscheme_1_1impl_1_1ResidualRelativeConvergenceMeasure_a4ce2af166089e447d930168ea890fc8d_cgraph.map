@@ -1,0 +1,13 @@
+<map id="precice::cplscheme::impl::ResidualRelativeConvergenceMeasure::measure" name="precice::cplscheme::impl::ResidualRelativeConvergenceMeasure::measure">
+<area shape="rect" id="Node000001" title="Performs convergence measurement." alt="" coords="5,40,268,95"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1utils_1_1IntraComm.html#a2b6ac8a54b0f96edb2e3fe47d3a52d62" title="The l2 norm of a vector is calculated on distributed data." alt="" coords="316,47,503,87"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="268,65,302,65,302,70,268,70"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1utils_1_1IntraComm.html#a1181baf395fd7e41bb0f922e3c3334cf" title=" " alt="" coords="551,47,737,87"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="503,65,537,65,537,70,503,70"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1span.html#ab25ca07a93bfa334622507c2c22b1034" title=" " alt="" coords="785,5,937,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="732,45,791,31,792,36,733,50"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/copy.html#" title=" " alt="" coords="821,55,902,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="738,65,807,65,807,70,738,70"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1span.html#ab86c14ec7bc7475d3ddb21d400e93121" title=" " alt="" coords="791,104,931,129"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="733,85,792,98,791,104,732,90"/>
+</map>

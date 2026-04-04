@@ -1,0 +1,27 @@
+<map id="precice::com::sendConnectionMap" name="precice::com::sendConnectionMap">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,207,251,233"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1com_1_1serialize_1_1SerializedConnectionMap.html#acbaa9b26b4b694ef02377dc22558447f" title=" " alt="" coords="299,108,533,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,205,339,150,340,155,170,210"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1com_1_1serialize_1_1SerializedConnectionMap.html#a7c49087c94fe2fe2fdb4b830eaf6cb0c" title=" " alt="" coords="319,229,513,283"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="230,230,305,239,304,245,230,235"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1com_1_1Communication.html#a8caa1032e130719ef235553313b59a3b" title="Sends a range of doubles (size + content)" alt="" coords="581,51,797,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="511,105,580,91,581,96,513,111"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1com_1_1Communication.html#ac95d9a27ce66edc756c96176d2e9d916" title="Sends a std::string to process with given rank." alt="" coords="845,5,1061,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="797,50,831,44,832,49,798,55"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1span.html#ae91f5ed50b6cbf0d15382b8e3c2a9a04" title=" " alt="" coords="882,70,1025,95"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="797,73,868,76,868,81,797,78"/>
+<area shape="rect" id="Node000007" href="$classprecice_1_1com_1_1serialize_1_1SerializedConnectionMap.html#ac371682a00038cb21f3da4012831be73" title="asserts the content for correctness" alt="" coords="592,115,787,170"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="473,226,580,179,596,172,598,177,582,184,476,231"/>
+<area shape="rect" id="Node000009" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/map/begin.html#" title=" " alt="" coords="628,194,751,219"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="513,236,614,217,615,223,514,241"/>
+<area shape="rect" id="Node000010" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/map/end.html#" title=" " alt="" coords="634,243,745,269"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="514,253,620,253,620,259,514,259"/>
+<area shape="rect" id="Node000011" href="$classprecice_1_1com_1_1serialize_1_1SerializedConnectionMap.html#a9916c6991446288d8dc3526ab894e300" title=" " alt="" coords="592,293,787,347"/>
+<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="514,276,579,291,578,297,513,281"/>
+<area shape="rect" id="Node000012" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/map/size.html#" title=" " alt="" coords="633,371,746,397"/>
+<area shape="poly" id="edge11_Node000006_Node000012" title=" " alt="" coords="455,282,513,320,582,356,620,369,619,374,580,361,511,325,452,286"/>
+<area shape="rect" id="Node000013" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/transform_reduce.html#" title=" " alt="" coords="607,421,772,446"/>
+<area shape="poly" id="edge12_Node000006_Node000013" title=" " alt="" coords="441,282,500,346,539,379,583,407,597,414,595,418,580,412,536,383,496,349,437,285"/>
+<area shape="rect" id="Node000008" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/set/size.html#" title=" " alt="" coords="901,130,1005,155"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="787,140,888,140,888,145,787,145"/>
+</map>

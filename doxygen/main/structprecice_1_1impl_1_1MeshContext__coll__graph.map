@@ -1,0 +1,13 @@
+<map id="precice::impl::MeshContext" name="precice::impl::MeshContext">
+<area shape="rect" id="Node000001" title=" " alt="" coords="35,348,235,373"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="5,225,189,250"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,263,134,347,129,349,102,264"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="213,217,403,257"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="271,268,153,350,150,346,268,263"/>
+<area shape="rect" id="Node000004" href="$structprecice_1_1impl_1_1MappingContext.html" title="Holds a data mapping and related information." alt="" coords="197,121,419,147"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="311,161,311,217,305,217,305,161"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="97,5,303,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="222,39,299,119,295,123,219,43"/>
+<area shape="rect" id="Node000006" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="327,5,507,31"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="399,43,346,99,322,123,318,119,342,95,396,39"/>
+</map>

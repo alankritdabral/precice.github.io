@@ -1,0 +1,124 @@
+<map id="BOOST_AUTO_TEST_CASE" name="BOOST_AUTO_TEST_CASE">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,1535,196,1560"/>
+<area shape="rect" id="Node000002" href="$AccelerationSerialTest_8cpp.html#a0594bd08e888d4d088365d8b91942f96" title=" " alt="" coords="244,925,435,951"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,1534,325,963,330,965,109,1536"/>
+<area shape="rect" id="Node000072" href="$classprecice_1_1cplscheme_1_1impl_1_1TimeHandler.html#aa8701355a78631d3803994e18799e3d4" title=" " alt="" coords="251,1455,427,1509"/>
+<area shape="poly" id="edge53_Node000001_Node000072" title=" " alt="" coords="147,1532,237,1507,238,1512,149,1537"/>
+<area shape="rect" id="Node000073" href="$classprecice_1_1cplscheme_1_1impl_1_1TimeHandler.html#acf44ef74e3031f7fcdf1edf9f4a24f4d" title=" " alt="" coords="502,1324,653,1379"/>
+<area shape="poly" id="edge62_Node000001_Node000073" title=" " alt="" coords="114,1532,168,1488,204,1463,243,1441,305,1415,369,1393,488,1364,489,1369,371,1399,307,1420,245,1446,207,1467,171,1492,117,1537"/>
+<area shape="rect" id="Node000077" href="$classprecice_1_1cplscheme_1_1impl_1_1TimeHandler.html#ae1a0d1d47090dc59c35e3f461be490c8" title="Returns the window progress as a double." alt="" coords="502,1599,653,1653"/>
+<area shape="poly" id="edge72_Node000001_Node000077" title=" " alt="" coords="196,1545,311,1553,374,1560,435,1571,501,1591,499,1596,434,1577,373,1566,311,1558,196,1551"/>
+<area shape="rect" id="Node000078" href="$classprecice_1_1cplscheme_1_1impl_1_1TimeHandler.html#af2ecc09bc9e7fcbfc184aa17cdfcbed4" title="Progress the time window by the given amount." alt="" coords="264,1585,415,1640"/>
+<area shape="poly" id="edge61_Node000001_Node000078" title=" " alt="" coords="149,1558,251,1586,250,1591,147,1563"/>
+<area shape="rect" id="Node000079" href="$classprecice_1_1cplscheme_1_1impl_1_1TimeHandler.html#a7a5d13e5b7a4f78ddde948221dc0d1e7" title=" " alt="" coords="253,1664,426,1719"/>
+<area shape="poly" id="edge63_Node000001_Node000079" title=" " alt="" coords="118,1558,172,1602,245,1650,255,1656,252,1660,243,1655,169,1606,115,1562"/>
+<area shape="rect" id="Node000080" href="$classprecice_1_1cplscheme_1_1impl_1_1TimeHandler.html#aa1f9e5b3ad17a5ed37693674f245a15b" title="Returns the time distance to the possibly truncated end of the current time window." alt="" coords="502,1729,653,1784"/>
+<area shape="poly" id="edge71_Node000001_Node000080" title=" " alt="" coords="110,1559,127,1595,156,1642,196,1691,219,1712,245,1729,305,1752,368,1765,431,1768,488,1766,488,1771,431,1773,368,1770,303,1758,243,1734,216,1716,192,1695,151,1645,122,1597,105,1561"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="301,927,292,917,297,907,313,901,339,899,373,903,385,912,382,916,371,907,339,904,314,906,300,911,298,916,305,923"/>
+<area shape="rect" id="Node000003" href="$AccelerationSerialTest_8cpp.html#a2e980a4317bbb2d46ff88f84ad79eca1" title=" " alt="" coords="519,509,635,535"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="346,924,560,545,564,548,350,926"/>
+<area shape="rect" id="Node000004" href="$namespaceprecice_1_1testing.html#a0819eba8ac83ede1db16e724dd4f5458" title="equals to be used in tests. Compares two std::vectors using a given tolerance. Prints both operands o..." alt="" coords="1035,535,1208,560"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="636,522,1021,540,1021,545,635,527"/>
+<area shape="rect" id="Node000009" href="$classprecice_1_1acceleration_1_1BaseQNAcceleration.html#aaa0cd21ba53e97017e1e49d3db16ca69" title="Initializes the acceleration." alt="" coords="752,155,915,209"/>
+<area shape="poly" id="edge10_Node000003_Node000009" title=" " alt="" coords="586,507,801,219,806,222,590,511"/>
+<area shape="rect" id="Node000018" href="$AccelerationSerialTest_8cpp.html#a11425d2802d25b333dac8b92e3a2bc5b" title=" " alt="" coords="760,484,907,509"/>
+<area shape="poly" id="edge16_Node000003_Node000018" title=" " alt="" coords="635,514,746,503,746,508,636,519"/>
+<area shape="rect" id="Node000019" href="$namespaceprecice_1_1testing.html#a67eee3f00bc5b8d01fe0bffcb23c4ca1" title=" " alt="" coords="720,351,947,391"/>
+<area shape="poly" id="edge17_Node000003_Node000019" title=" " alt="" coords="599,507,785,396,788,401,602,511"/>
+<area shape="rect" id="Node000024" href="$classprecice_1_1acceleration_1_1BaseQNAcceleration.html#ae8fb4aaeecfe3799572328c1b14b73c4" title="Performs one acceleration step." alt="" coords="752,869,915,924"/>
+<area shape="poly" id="edge21_Node000003_Node000024" title=" " alt="" coords="590,533,808,856,803,859,585,536"/>
+<area shape="rect" id="Node000035" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="1313,1403,1481,1428"/>
+<area shape="poly" id="edge51_Node000003_Node000035" title=" " alt="" coords="582,535,587,593,599,688,622,811,658,949,682,1022,710,1094,743,1164,782,1233,826,1297,876,1356,933,1408,996,1453,1041,1473,1090,1483,1140,1485,1190,1480,1239,1471,1284,1458,1356,1431,1357,1436,1285,1463,1240,1476,1191,1486,1140,1491,1089,1489,1040,1478,993,1458,929,1413,872,1360,822,1300,777,1235,739,1167,705,1096,677,1023,653,951,616,812,594,689,582,593,577,535"/>
+<area shape="rect" id="Node000071" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/resize.html#" title=" " alt="" coords="764,105,903,131"/>
+<area shape="poly" id="edge52_Node000003_Node000071" title=" " alt="" coords="577,509,583,443,604,343,622,288,646,234,678,183,718,140,750,123,752,127,722,144,682,187,651,236,627,290,609,344,589,444,582,509"/>
+<area shape="poly" id="edge8_Node000004_Node000004" title=" " alt="" coords="1077,536,1067,526,1072,516,1091,510,1121,508,1161,512,1171,517,1175,523,1171,526,1168,521,1159,517,1121,513,1092,515,1076,520,1073,526,1081,533"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="1329,1027,1464,1052"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="1209,547,1231,556,1250,571,1271,599,1285,626,1293,654,1296,682,1290,738,1276,793,1262,848,1255,903,1258,930,1265,957,1278,985,1298,1012,1318,1027,1315,1031,1294,1016,1273,987,1260,959,1252,931,1250,903,1256,847,1271,791,1285,737,1291,682,1288,655,1280,628,1267,601,1246,575,1229,561,1207,552"/>
+<area shape="rect" id="Node000006" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/copy.html#" title=" " alt="" coords="1545,564,1627,589"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="1209,550,1532,571,1532,576,1208,555"/>
+<area shape="rect" id="Node000007" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="1335,977,1458,1003"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="1209,549,1231,557,1250,571,1271,596,1283,621,1288,645,1289,670,1287,722,1290,752,1299,784,1342,885,1383,964,1379,966,1337,887,1293,786,1285,753,1282,723,1283,670,1282,646,1278,622,1266,599,1246,575,1228,562,1207,553"/>
+<area shape="rect" id="Node000008" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="1334,465,1459,491"/>
+<area shape="poly" id="edge9_Node000004_Node000008" title=" " alt="" coords="1172,532,1331,492,1333,497,1173,537"/>
+<area shape="rect" id="Node000010" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/all_any_none_of.html#" title=" " alt="" coords="1074,169,1169,195"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="915,179,1060,179,1060,185,915,185"/>
+<area shape="rect" id="Node000011" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/map/begin.html#" title=" " alt="" coords="1056,5,1187,31"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="913,160,945,140,955,128,962,116,967,90,973,65,981,52,993,40,1016,27,1041,19,1043,24,1018,32,996,44,985,55,978,67,972,92,967,118,960,131,948,144,916,164"/>
+<area shape="rect" id="Node000012" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/map/end.html#" title=" " alt="" coords="1062,55,1181,80"/>
+<area shape="poly" id="edge13_Node000009_Node000012" title=" " alt="" coords="914,156,945,140,959,128,968,115,978,102,993,90,1020,79,1048,72,1049,77,1022,84,996,95,981,106,972,118,963,131,948,144,916,161"/>
+<area shape="rect" id="Node000013" href="$classprecice_1_1acceleration_1_1Acceleration.html#a141786be729bae2aeba7760629f4e634" title="Checks if all dataIDs are contained in cplData." alt="" coords="1017,105,1226,145"/>
+<area shape="poly" id="edge14_Node000009_Node000013" title=" " alt="" coords="914,163,1006,145,1007,150,915,168"/>
+<area shape="rect" id="Node000017" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/map/size.html#" title=" " alt="" coords="1065,219,1178,244"/>
+<area shape="poly" id="edge15_Node000009_Node000017" title=" " alt="" coords="915,193,1051,217,1050,222,914,199"/>
+<area shape="rect" id="Node000020" href="$namespaceprecice_1_1testing.html#a339334f6a0a4fa7608c074750e072fce" title=" " alt="" coords="1018,269,1225,309"/>
+<area shape="poly" id="edge18_Node000019_Node000020" title=" " alt="" coords="894,349,994,318,1025,310,1026,315,995,323,896,354"/>
+<area shape="rect" id="Node000021" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr/make_shared.html#" title=" " alt="" coords="1053,333,1190,359"/>
+<area shape="poly" id="edge19_Node000019_Node000021" title=" " alt="" coords="947,359,1039,351,1040,356,947,364"/>
+<area shape="rect" id="Node000022" href="$namespaceprecice_1_1testing.html#a08533fd83bad3d7f27ea7f4a35a14aa4" title=" " alt="" coords="1017,383,1225,408"/>
+<area shape="poly" id="edge20_Node000019_Node000022" title=" " alt="" coords="947,378,1004,383,1003,388,947,383"/>
+<area shape="poly" id="edge50_Node000024_Node000017" title=" " alt="" coords="841,868,889,721,944,520,951,479,951,443,947,377,947,347,953,317,968,286,993,255,1019,237,1050,228,1051,234,1022,242,996,259,972,289,958,318,953,347,952,377,957,442,956,480,949,521,894,722,847,870"/>
+<area shape="rect" id="Node000025" href="$classprecice_1_1utils_1_1IntraComm.html#a1181baf395fd7e41bb0f922e3c3334cf" title=" " alt="" coords="1303,585,1490,625"/>
+<area shape="poly" id="edge22_Node000024_Node000025" title=" " alt="" coords="848,868,871,830,904,786,945,741,993,704,1035,688,1110,668,1290,625,1291,630,1111,673,1037,693,996,708,949,745,909,789,876,834,852,871"/>
+<area shape="rect" id="Node000028" href="$classprecice_1_1acceleration_1_1BaseQNAcceleration.html#a3e23afa5b5496a0d74c1d322dd947522" title="Applies the filter method for the least&#45;squares system, defined in the configuration." alt="" coords="1040,432,1203,487"/>
+<area shape="poly" id="edge24_Node000024_Node000028" title=" " alt="" coords="835,868,848,795,875,695,895,641,921,588,954,539,993,496,1026,475,1028,480,996,500,958,542,926,591,900,643,880,696,853,796,840,869"/>
+<area shape="rect" id="Node000031" href="$classprecice_1_1acceleration_1_1Acceleration.html#a10b273b969503ff1193738fccd53468e" title="performs a relaxation given a relaxation factor omega" alt="" coords="1009,1403,1234,1443"/>
+<area shape="poly" id="edge26_Node000024_Node000031" title=" " alt="" coords="838,924,844,1014,853,1073,866,1139,887,1206,914,1273,950,1334,997,1388,1003,1393,999,1397,993,1392,946,1337,909,1275,882,1208,861,1140,847,1074,839,1014,832,925"/>
+<area shape="rect" id="Node000033" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/map/at.html#" title=" " alt="" coords="1347,1144,1447,1169"/>
+<area shape="poly" id="edge27_Node000024_Node000033" title=" " alt="" coords="840,924,851,995,877,1089,897,1137,923,1183,956,1224,996,1257,1029,1276,1060,1287,1088,1293,1116,1292,1176,1280,1247,1257,1284,1241,1318,1220,1371,1177,1375,1181,1321,1225,1286,1246,1249,1262,1177,1285,1117,1298,1088,1298,1058,1293,1027,1281,993,1262,952,1228,919,1186,892,1139,872,1090,846,996,834,925"/>
+<area shape="rect" id="Node000034" href="$classprecice_1_1acceleration_1_1BaseQNAcceleration.html#a76b4933bdc33b0627da9928b6a943b6d" title="Check bound violations caused by performing QN update." alt="" coords="1038,1324,1205,1379"/>
+<area shape="poly" id="edge28_Node000024_Node000034" title=" " alt="" coords="840,924,853,998,880,1099,901,1154,927,1208,958,1258,996,1303,1027,1324,1024,1329,993,1307,954,1261,922,1210,896,1156,875,1101,848,999,835,925"/>
+<area shape="rect" id="Node000036" href="$classprecice_1_1acceleration_1_1BaseQNAcceleration.html#a173f0d6c5ea54db4907840b8a578b8fa" title="Computes the quasi&#45;Newton update using the specified pp scheme (IQNIMVJ, IQNILS)" alt="" coords="1040,829,1203,884"/>
+<area shape="poly" id="edge31_Node000024_Node000036" title=" " alt="" coords="915,883,1026,867,1027,872,915,888"/>
+<area shape="rect" id="Node000037" href="$classprecice_1_1acceleration_1_1BaseQNAcceleration.html#a399e3571c08a226ca5685ddcff1cc83b" title="Samples and concatenates the data and old data in cplData into a long vector." alt="" coords="1022,1193,1221,1248"/>
+<area shape="poly" id="edge32_Node000024_Node000037" title=" " alt="" coords="845,923,864,977,895,1046,939,1117,966,1150,996,1179,1011,1189,1008,1193,993,1183,962,1154,935,1120,891,1049,859,979,840,925"/>
+<area shape="rect" id="Node000040" href="$classprecice_1_1acceleration_1_1BaseQNAcceleration.html#a2354cc9c97ebd8ff1ba76b5959e79f20" title=": computes number of cols in least squares system, i.e, number of cols in _matrixV,..." alt="" coords="1040,908,1203,963"/>
+<area shape="poly" id="edge34_Node000024_Node000040" title=" " alt="" coords="915,905,1027,920,1026,925,915,910"/>
+<area shape="rect" id="Node000041" href="$classprecice_1_1acceleration_1_1BaseQNAcceleration.html#a9fa3c949204c7aebb6b9511ec3ba4448" title=" " alt="" coords="1296,719,1497,773"/>
+<area shape="poly" id="edge35_Node000024_Node000041" title=" " alt="" coords="850,867,874,834,907,797,947,762,994,736,1029,723,1066,715,1142,707,1215,709,1283,718,1282,723,1215,715,1142,713,1067,720,1031,728,996,740,950,766,911,801,878,838,854,870"/>
+<area shape="rect" id="Node000043" href="$classprecice_1_1acceleration_1_1BaseQNAcceleration.html#ae93628ec7ed5ba99dc24831b68926f93" title="Initializes the vectors, matrices and preconditioner This has to be done after the first iteration of..." alt="" coords="995,751,1248,805"/>
+<area shape="poly" id="edge36_Node000024_Node000043" title=" " alt="" coords="883,867,994,814,1012,807,1014,812,996,819,885,872"/>
+<area shape="rect" id="Node000052" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/numeric/math/isnan.html#" title=" " alt="" coords="1079,1144,1164,1169"/>
+<area shape="poly" id="edge39_Node000024_Node000052" title=" " alt="" coords="848,923,869,969,900,1026,943,1082,968,1108,996,1129,1030,1144,1066,1152,1065,1157,1028,1150,993,1134,965,1112,939,1086,896,1028,864,972,843,925"/>
+<area shape="rect" id="Node000053" href="$classprecice_1_1utils_1_1IntraComm.html#a2b6ac8a54b0f96edb2e3fe47d3a52d62" title="The l2 norm of a vector is calculated on distributed data." alt="" coords="1028,585,1215,625"/>
+<area shape="poly" id="edge40_Node000024_Node000053" title=" " alt="" coords="842,868,863,820,895,758,938,695,964,667,993,641,1014,628,1017,633,996,645,968,670,942,699,899,761,868,822,847,870"/>
+<area shape="rect" id="Node000054" href="$classprecice_1_1acceleration_1_1BaseQNAcceleration.html#a3c84df13da7b19a9a8238afd72c31070" title="Handles bound violations after QN update by clamping." alt="" coords="1024,1065,1219,1120"/>
+<area shape="poly" id="edge42_Node000024_Node000054" title=" " alt="" coords="858,923,916,987,954,1021,996,1050,1012,1059,1010,1064,993,1055,951,1025,912,990,854,926"/>
+<area shape="rect" id="Node000056" href="$classprecice_1_1acceleration_1_1BaseQNAcceleration.html#a103a0494180ad8b06b3514a34347b721" title="Handles bound violations after QN update by scaling the QN step." alt="" coords="1028,987,1215,1041"/>
+<area shape="poly" id="edge46_Node000024_Node000056" title=" " alt="" coords="888,922,996,972,1017,980,1015,985,994,976,886,927"/>
+<area shape="poly" id="edge23_Node000025_Node000006" title=" " alt="" coords="1490,588,1531,582,1532,587,1491,593"/>
+<area shape="poly" id="edge25_Node000028_Node000008" title=" " alt="" coords="1203,462,1320,470,1320,476,1203,467"/>
+<area shape="poly" id="edge29_Node000034_Node000033" title=" " alt="" coords="1203,1324,1247,1302,1286,1273,1321,1240,1375,1178,1379,1182,1325,1243,1289,1277,1249,1307,1206,1329"/>
+<area shape="poly" id="edge30_Node000034_Node000035" title=" " alt="" coords="1205,1368,1329,1397,1327,1402,1204,1373"/>
+<area shape="poly" id="edge33_Node000037_Node000033" title=" " alt="" coords="1220,1195,1333,1169,1334,1174,1221,1200"/>
+<area shape="poly" id="edge37_Node000043_Node000033" title=" " alt="" coords="1238,804,1250,815,1272,846,1282,876,1284,905,1282,935,1279,995,1284,1027,1298,1062,1330,1103,1366,1134,1363,1138,1326,1106,1294,1065,1279,1029,1274,995,1277,934,1279,905,1277,877,1267,848,1246,818,1234,808"/>
+<area shape="poly" id="edge38_Node000043_Node000041" title=" " alt="" coords="1248,761,1282,757,1283,762,1249,766"/>
+<area shape="poly" id="edge41_Node000053_Node000025" title=" " alt="" coords="1215,602,1290,602,1290,607,1215,607"/>
+<area shape="poly" id="edge44_Node000054_Node000005" title=" " alt="" coords="1218,1071,1317,1052,1318,1057,1219,1076"/>
+<area shape="poly" id="edge45_Node000054_Node000007" title=" " alt="" coords="1218,1063,1247,1050,1261,1041,1270,1031,1280,1021,1295,1012,1321,1001,1323,1006,1297,1016,1283,1025,1274,1035,1264,1045,1249,1055,1220,1068"/>
+<area shape="poly" id="edge43_Node000054_Node000033" title=" " alt="" coords="1219,1113,1334,1140,1333,1145,1218,1118"/>
+<area shape="poly" id="edge48_Node000056_Node000005" title=" " alt="" coords="1215,1020,1316,1029,1315,1035,1215,1025"/>
+<area shape="poly" id="edge49_Node000056_Node000007" title=" " alt="" coords="1215,1003,1321,994,1322,999,1215,1009"/>
+<area shape="poly" id="edge47_Node000056_Node000033" title=" " alt="" coords="1216,1036,1249,1050,1317,1091,1372,1133,1368,1137,1314,1096,1247,1055,1214,1041"/>
+<area shape="rect" id="Node000069" href="$namespaceprecice_1_1math.html#a0e86802cfe992deba131d789d035b5b7" title="Compares two Eigen::MatrixBase for equality up to tolerance." alt="" coords="752,1569,915,1595"/>
+<area shape="poly" id="edge54_Node000072_Node000069" title=" " alt="" coords="405,1507,483,1533,616,1558,739,1573,738,1578,616,1564,482,1538,404,1512"/>
+<area shape="poly" id="edge55_Node000072_Node000073" title=" " alt="" coords="379,1452,481,1389,495,1382,497,1387,484,1394,381,1457"/>
+<area shape="rect" id="Node000075" href="$classprecice_1_1cplscheme_1_1impl_1_1TimeHandler.html#a40a4de8adfd1f9030ee8601fc3863683" title="Resets the progress of the time window back to 0." alt="" coords="502,1468,653,1523"/>
+<area shape="poly" id="edge58_Node000072_Node000075" title=" " alt="" coords="428,1484,488,1488,488,1493,427,1490"/>
+<area shape="rect" id="Node000076" href="$classprecice_1_1cplscheme_1_1impl_1_1TimeHandler.html#a98a5365f35f80c2956df85a624ca3c21" title="Returns the current time as a double." alt="" coords="483,1403,672,1443"/>
+<area shape="poly" id="edge59_Node000072_Node000076" title=" " alt="" coords="427,1458,482,1444,483,1449,428,1463"/>
+<area shape="poly" id="edge60_Node000072_Node000077" title=" " alt="" coords="405,1507,436,1527,451,1540,461,1552,470,1564,484,1577,503,1590,500,1594,481,1581,466,1568,457,1556,447,1544,433,1531,402,1512"/>
+<area shape="poly" id="edge56_Node000073_Node000069" title=" " alt="" coords="654,1373,674,1390,688,1411,695,1432,697,1472,700,1511,707,1529,722,1548,741,1562,738,1566,718,1552,703,1532,695,1512,692,1472,690,1433,684,1413,670,1393,651,1377"/>
+<area shape="rect" id="Node000074" href="$classprecice_1_1cplscheme_1_1impl_1_1TimeHandler.html#a3d2757a3ef13e33b3bb1881f7dde353c" title="Returns the time difference until the overall time reaches the given time." alt="" coords="1046,1581,1197,1636"/>
+<area shape="poly" id="edge57_Node000073_Node000074" title=" " alt="" coords="654,1375,674,1389,685,1404,692,1418,698,1446,703,1472,710,1485,722,1497,750,1518,776,1531,801,1538,826,1541,880,1544,947,1555,1034,1580,1032,1585,946,1561,880,1549,825,1546,800,1543,774,1535,747,1522,718,1501,706,1488,698,1474,692,1447,687,1420,681,1407,670,1393,651,1379"/>
+<area shape="poly" id="edge64_Node000079_Node000069" title=" " alt="" coords="426,1692,544,1686,608,1678,671,1663,708,1650,743,1634,801,1600,804,1604,745,1639,710,1655,673,1669,609,1683,544,1692,426,1697"/>
+<area shape="poly" id="edge65_Node000079_Node000080" title=" " alt="" coords="427,1713,489,1730,488,1735,426,1718"/>
+<area shape="rect" id="Node000081" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/min.html#" title=" " alt="" coords="796,1660,871,1685"/>
+<area shape="poly" id="edge66_Node000080_Node000081" title=" " alt="" coords="637,1727,719,1695,782,1679,783,1685,721,1701,639,1732"/>
+<area shape="rect" id="Node000082" href="$classprecice_1_1cplscheme_1_1impl_1_1TimeHandler.html#a1691b3de3f4d4c668b7389132d34268a" title=" " alt="" coords="758,1709,909,1764"/>
+<area shape="poly" id="edge67_Node000080_Node000082" title=" " alt="" coords="653,1748,744,1741,744,1746,653,1753"/>
+<area shape="rect" id="Node000084" href="$classprecice_1_1cplscheme_1_1impl_1_1TimeHandler.html#a97233c5f75ef847589a9bf7b94a0f5c4" title=" " alt="" coords="758,1788,909,1843"/>
+<area shape="poly" id="edge70_Node000080_Node000084" title=" " alt="" coords="654,1771,745,1793,744,1798,652,1776"/>
+<area shape="poly" id="edge69_Node000082_Node000074" title=" " alt="" coords="908,1710,946,1696,1058,1640,1060,1645,948,1700,910,1715"/>
+<area shape="rect" id="Node000083" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/types/numeric_limits/max.html#" title=" " alt="" coords="1029,1724,1213,1749"/>
+<area shape="poly" id="edge68_Node000082_Node000083" title=" " alt="" coords="909,1734,1015,1734,1015,1739,909,1739"/>
+</map>

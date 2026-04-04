@@ -1,0 +1,17 @@
+<map id="precice::com::serialize::SerializedBoundingBox::serialize" name="precice::com::serialize::SerializedBoundingBox::serialize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,176,185,231"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1com_1_1serialize_1_1SerializedBoundingBox.html#aa277540ee9df0f86e08a9567b2a7d1bc" title="asserts the content for correctness" alt="" coords="247,5,427,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,174,167,121,198,94,232,69,240,64,243,69,235,74,201,98,170,125,121,177"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/iterator/back_inserter.html#" title=" " alt="" coords="267,84,406,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,173,180,144,232,118,254,111,256,116,234,123,182,149,136,178"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/copy_n.html#" title=" " alt="" coords="289,133,385,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="185,179,275,158,276,163,186,185"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1mesh_1_1BoundingBox.html#ad500309dcbe440703ef71dfcc7a2a394" title="Getter dimension of the bounding box." alt="" coords="233,183,440,223"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="186,201,220,201,220,206,186,206"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1mesh_1_1BoundingBox.html#a14cd5dbd1775876bf5795845699557d8" title="the max corner of the bounding box" alt="" coords="233,247,440,287"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="186,225,248,241,247,246,185,230"/>
+<area shape="rect" id="Node000007" href="$classprecice_1_1mesh_1_1BoundingBox.html#a194a2fb80fd24fad4555df2a2453dac5" title="the min corner of the bounding box" alt="" coords="233,311,440,351"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="131,229,179,264,235,297,250,304,248,309,232,302,176,268,128,233"/>
+<area shape="rect" id="Node000008" href="$classprecice_1_1com_1_1serialize_1_1SerializedBoundingBox.html#ae30f5b4e04d3871b83fad74f693472fa" title=" " alt="" coords="247,376,427,431"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="116,229,165,295,198,330,235,361,244,367,241,371,232,365,194,334,161,298,112,232"/>
+</map>

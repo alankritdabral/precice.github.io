@@ -1,0 +1,113 @@
+<map id="precice::impl::ParticipantImpl::advance" name="precice::impl::ParticipantImpl::advance">
+<area shape="rect" id="Node000001" title="Advances preCICE after the solver has computed one time step." alt="" coords="5,1215,188,1255"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/accumulate.html#" title=" " alt="" coords="310,157,437,182"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,1214,95,1021,99,874,109,712,125,550,150,400,166,334,186,276,208,229,234,193,262,174,296,165,297,170,265,178,238,197,213,231,191,278,171,335,155,401,130,550,114,713,105,874,100,1021,100,1214"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1impl_1_1ParticipantImpl.html#a223e05129724a7b43fd84f2a7538a874" title="Advances the coupling schemes." alt="" coords="262,207,485,247"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="95,1214,98,1032,103,895,114,744,131,592,155,451,171,390,189,336,210,291,234,257,248,245,252,249,238,260,215,294,194,338,176,391,161,453,136,592,119,744,109,895,103,1032,101,1214"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1impl_1_1ParticipantImpl.html#a38ab84ea5ab9ef3a6e855cb07d98eef5" title="Clears stample of changed meshes to make them consistent after the reinitialization." alt="" coords="236,271,511,311"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="95,1214,100,1043,106,915,118,774,135,632,159,502,174,444,192,394,211,352,234,321,237,318,241,321,238,324,216,355,197,396,179,446,164,503,140,633,123,774,112,915,105,1043,101,1215"/>
+<area shape="rect" id="Node000009" href="$namespaceprecice_1_1math.html#a0e86802cfe992deba131d789d035b5b7" title="Compares two Eigen::MatrixBase for equality up to tolerance." alt="" coords="605,1194,768,1219"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="188,1228,592,1208,592,1214,189,1233"/>
+<area shape="rect" id="Node000010" href="$classprecice_1_1impl_1_1ParticipantImpl.html#a1cec6dbfe7f5c0f13831a0a08e2c10e9" title=" " alt="" coords="272,335,475,375"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="100,1214,151,1015,190,872,233,726,301,533,356,387,361,388,306,535,239,727,195,873,156,1016,105,1215"/>
+<area shape="rect" id="Node000019" href="$classprecice_1_1impl_1_1ParticipantImpl.html#a51c4d0cf24d612d605ef375b39d41acf" title="Completes everything data&#45;related after advancing the coupling scheme." alt="" coords="263,739,484,779"/>
+<area shape="poly" id="edge19_Node000001_Node000019" title=" " alt="" coords="107,1213,351,789,356,792,112,1216"/>
+<area shape="rect" id="Node000033" href="$classprecice_1_1impl_1_1ParticipantImpl.html#a4d765900daff1dcbf7c357b01fa4d07c" title="Completes everything data&#45;related between adding time to and advancing the coupling scheme." alt="" coords="257,1065,490,1105"/>
+<area shape="poly" id="edge31_Node000001_Node000033" title=" " alt="" coords="134,1212,322,1110,324,1114,136,1217"/>
+<area shape="rect" id="Node000037" href="$classprecice_1_1impl_1_1ParticipantImpl.html#a7fccfe140801238825be5485eedef1f0" title="Checks if the coupled simulation is still ongoing." alt="" coords="282,1959,465,1999"/>
+<area shape="poly" id="edge36_Node000001_Node000037" title=" " alt="" coords="102,1255,112,1391,137,1597,155,1704,178,1803,205,1884,221,1915,238,1938,253,1951,270,1961,268,1965,250,1955,234,1942,216,1918,200,1886,172,1804,150,1705,131,1597,107,1391,96,1255"/>
+<area shape="rect" id="Node000038" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/numeric/math/isfinite.html#" title=" " alt="" coords="326,2023,421,2049"/>
+<area shape="poly" id="edge37_Node000001_Node000038" title=" " alt="" coords="101,1255,109,1404,130,1632,148,1751,171,1860,201,1950,219,1984,238,2009,254,2021,272,2029,312,2037,311,2042,271,2034,251,2026,234,2013,214,1986,196,1952,166,1862,142,1752,125,1633,103,1404,96,1255"/>
+<area shape="rect" id="Node000039" href="$classprecice_1_1utils_1_1IntraComm.html#a946589c66048ff3058ffa078d54b6073" title="True if this process is running in parallel." alt="" coords="593,1244,780,1284"/>
+<area shape="poly" id="edge38_Node000001_Node000039" title=" " alt="" coords="189,1237,580,1256,580,1261,188,1242"/>
+<area shape="rect" id="Node000040" href="$classprecice_1_1impl_1_1ParticipantImpl.html#a61eb15948ec09afad424c8b129d339e7" title=" " alt="" coords="282,1551,465,1591"/>
+<area shape="poly" id="edge39_Node000001_Node000040" title=" " alt="" coords="116,1253,349,1538,345,1542,112,1256"/>
+<area shape="rect" id="Node000043" href="$classprecice_1_1impl_1_1ParticipantImpl.html#ab55919d08da47c8382d51213a1c75455" title="Reinitializes preCICE." alt="" coords="282,1723,465,1763"/>
+<area shape="poly" id="edge42_Node000001_Node000043" title=" " alt="" coords="105,1254,121,1316,148,1404,187,1504,211,1554,238,1601,261,1633,287,1663,338,1711,334,1715,283,1666,257,1636,234,1604,206,1557,182,1507,143,1406,116,1317,100,1255"/>
+<area shape="rect" id="Node000061" href="$classprecice_1_1profiling_1_1Event.html#a4218cc284dfa09a754f4bf510e574066" title="Stops a running event." alt="" coords="907,1844,1037,1884"/>
+<area shape="poly" id="edge54_Node000001_Node000061" title=" " alt="" coords="103,1254,119,1361,148,1517,167,1597,189,1671,212,1732,238,1773,271,1805,307,1832,347,1854,389,1872,432,1886,478,1897,570,1908,662,1910,749,1903,827,1893,893,1881,894,1886,828,1898,750,1909,662,1915,570,1914,477,1902,431,1891,387,1877,344,1859,304,1836,267,1809,234,1776,208,1734,184,1673,162,1599,143,1518,114,1362,98,1255"/>
+<area shape="rect" id="Node000063" href="$classprecice_1_1impl_1_1ParticipantImpl.html#ad24d152465417f618bc853ce3746944d" title="Syncs the time step size between all ranks (all time steps sizes should be the same!..." alt="" coords="282,1308,465,1348"/>
+<area shape="poly" id="edge55_Node000001_Node000063" title=" " alt="" coords="158,1252,301,1301,299,1306,156,1257"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1mesh_1_1Mesh.html#a15866c6bafb115577d1da05f5db1671b" title="Clears all data stamples." alt="" coords="609,16,765,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="493,268,509,257,525,237,532,217,534,176,535,132,542,110,557,88,574,72,595,59,598,64,578,76,561,91,546,112,540,133,539,176,537,218,529,240,513,261,497,273"/>
+<area shape="rect" id="Node000007" href="$namespaceprecice_1_1impl.html#ae3eef0b0afc97fe867d85be1b95f4b55" title="Helper to extract mesh from variant." alt="" coords="887,317,1057,342"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="485,268,509,256,524,243,532,229,541,214,557,202,627,176,657,171,685,170,745,179,816,202,858,222,896,249,953,304,949,308,893,253,855,227,814,206,743,184,685,175,657,176,628,181,560,206,545,218,536,231,528,247,512,261,487,273"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1mesh_1_1Mesh.html#aceb3eabb4f8e40a44d5d1c2822ba7b56" title="Allows access to all data." alt="" coords="894,5,1050,45"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="765,30,880,26,880,31,765,36"/>
+<area shape="rect" id="Node000008" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/utility/variant/visit.html#" title=" " alt="" coords="1181,317,1260,342"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1058,327,1168,327,1168,332,1058,332"/>
+<area shape="poly" id="edge16_Node000010_Node000007" title=" " alt="" coords="475,348,873,331,873,336,475,353"/>
+<area shape="rect" id="Node000011" href="$classprecice_1_1utils_1_1IntraComm.html#a1181baf395fd7e41bb0f922e3c3334cf" title=" " alt="" coords="593,101,780,141"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="473,341,509,321,521,307,529,294,535,265,539,235,546,219,557,202,590,171,627,146,630,151,593,175,561,206,550,221,545,237,540,266,534,296,526,310,512,325,476,345"/>
+<area shape="rect" id="Node000015" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="619,367,754,393"/>
+<area shape="poly" id="edge14_Node000010_Node000015" title=" " alt="" coords="475,360,606,371,605,376,474,365"/>
+<area shape="rect" id="Node000016" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="625,417,748,442"/>
+<area shape="poly" id="edge15_Node000010_Node000016" title=" " alt="" coords="446,372,559,401,613,413,612,418,558,407,445,377"/>
+<area shape="rect" id="Node000017" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="603,217,771,242"/>
+<area shape="poly" id="edge17_Node000010_Node000017" title=" " alt="" coords="474,338,509,321,525,304,532,287,540,268,557,251,588,237,590,242,560,256,544,271,537,289,529,307,512,325,476,343"/>
+<area shape="rect" id="Node000018" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="624,266,749,291"/>
+<area shape="poly" id="edge18_Node000010_Node000018" title=" " alt="" coords="460,332,510,320,621,292,623,297,511,325,461,337"/>
+<area shape="rect" id="Node000012" href="$classprecice_1_1span.html#ab25ca07a93bfa334622507c2c22b1034" title=" " alt="" coords="896,70,1048,95"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="780,106,882,92,882,97,781,111"/>
+<area shape="rect" id="Node000013" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/copy.html#" title=" " alt="" coords="931,119,1013,145"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="780,122,918,127,917,133,780,127"/>
+<area shape="rect" id="Node000014" href="$classprecice_1_1span.html#ab86c14ec7bc7475d3ddb21d400e93121" title=" " alt="" coords="902,169,1042,194"/>
+<area shape="poly" id="edge13_Node000011_Node000014" title=" " alt="" coords="781,138,898,163,897,168,780,144"/>
+<area shape="rect" id="Node000020" href="$namespaceprecice_1_1math.html#ab5fc218ddab783ccd97f7c14fc4ccab3" title=" " alt="" coords="603,774,770,799"/>
+<area shape="poly" id="edge20_Node000019_Node000020" title=" " alt="" coords="484,766,590,775,589,781,484,771"/>
+<area shape="rect" id="Node000021" href="$namespaceprecice_1_1math.html#a7c89628af2152c671582049853513b34" title=" " alt="" coords="582,823,791,849"/>
+<area shape="poly" id="edge21_Node000019_Node000021" title=" " alt="" coords="441,776,559,808,604,818,603,823,558,813,440,781"/>
+<area shape="rect" id="Node000022" href="$classprecice_1_1impl_1_1ParticipantImpl.html#a7e275248d0784f7f5d81b653f1946f9d" title=" " alt="" coords="595,873,778,913"/>
+<area shape="poly" id="edge22_Node000019_Node000022" title=" " alt="" coords="407,776,475,817,560,858,585,867,584,872,558,862,473,822,404,781"/>
+<area shape="rect" id="Node000023" href="$classprecice_1_1impl_1_1ParticipantImpl.html#aba79e596fdde7c66a2f9067e7807c774" title="Checks if the current coupling window is completed." alt="" coords="863,560,1081,600"/>
+<area shape="poly" id="edge23_Node000019_Node000023" title=" " alt="" coords="395,737,464,682,509,654,558,631,631,608,707,593,781,583,848,578,849,584,781,589,708,598,632,613,560,636,512,659,467,687,398,741"/>
+<area shape="rect" id="Node000024" href="$classprecice_1_1impl_1_1ParticipantImpl.html#a99c62e6b00ff868443bdf4901f479beb" title=" " alt="" coords="595,645,778,685"/>
+<area shape="poly" id="edge24_Node000019_Node000024" title=" " alt="" coords="430,736,558,695,589,686,590,691,559,700,432,741"/>
+<area shape="rect" id="Node000026" href="$classprecice_1_1impl_1_1ParticipantImpl.html#a3b412cae8f8d09d537c660c5784264ff" title="Performs all data actions with given timing." alt="" coords="591,937,782,977"/>
+<area shape="poly" id="edge25_Node000019_Node000026" title=" " alt="" coords="393,777,461,849,508,889,560,923,579,932,577,937,557,928,505,893,457,853,389,781"/>
+<area shape="rect" id="Node000029" href="$classprecice_1_1impl_1_1ParticipantImpl.html#ae1790053190108097de9cc839fe0209b" title="Discards data before the given time for all meshes and data known by this participant." alt="" coords="595,467,778,507"/>
+<area shape="poly" id="edge26_Node000019_Node000029" title=" " alt="" coords="382,737,406,691,445,631,495,569,525,541,557,516,581,504,583,509,560,521,528,545,499,573,449,635,411,694,386,740"/>
+<area shape="rect" id="Node000031" href="$classprecice_1_1impl_1_1ParticipantImpl.html#aad3bf6aa28af4574ae5836e2e40b8203" title="Removes samples in mapped to data connected to received data via a mapping." alt="" coords="585,531,788,571"/>
+<area shape="poly" id="edge28_Node000019_Node000031" title=" " alt="" coords="389,736,458,664,505,623,557,587,587,573,589,578,560,592,508,627,461,668,393,740"/>
+<area shape="rect" id="Node000032" href="$classprecice_1_1impl_1_1ParticipantImpl.html#a647eb1654923d4a136ca17487297fb5a" title="Discards send (currently write) data of a participant after a given time when another iteration is re..." alt="" coords="595,709,778,749"/>
+<area shape="poly" id="edge30_Node000019_Node000032" title=" " alt="" coords="484,746,581,736,582,742,484,751"/>
+<area shape="poly" id="edge27_Node000029_Node000007" title=" " alt="" coords="777,465,813,451,853,428,889,401,947,350,950,354,893,405,855,432,816,456,779,470"/>
+<area shape="poly" id="edge29_Node000031_Node000023" title=" " alt="" coords="788,558,850,565,849,570,788,564"/>
+<area shape="poly" id="edge33_Node000033_Node000026" title=" " alt="" coords="406,1063,475,1025,558,987,581,979,583,984,560,992,477,1030,409,1068"/>
+<area shape="rect" id="Node000034" href="$classprecice_1_1impl_1_1ParticipantImpl.html#af636499d1a821595ff12482c0d8da45d" title="Computes, and performs suitable write mappings either entirely or after given time." alt="" coords="595,1001,778,1041"/>
+<area shape="poly" id="edge32_Node000033_Node000034" title=" " alt="" coords="472,1063,581,1040,582,1045,473,1068"/>
+<area shape="rect" id="Node000035" href="$classprecice_1_1impl_1_1ParticipantImpl.html#adf6231a01d4bc486bed74c65f5c5f60b" title="Resets written data." alt="" coords="595,1065,778,1105"/>
+<area shape="poly" id="edge34_Node000033_Node000035" title=" " alt="" coords="490,1083,582,1083,582,1088,490,1088"/>
+<area shape="rect" id="Node000036" href="$classprecice_1_1impl_1_1ParticipantImpl.html#a5210663f5b5d640fcaa039bf47800ef4" title="Creates a Stample at the given time for each write Data and zeros the buffers." alt="" coords="595,1129,779,1169"/>
+<area shape="poly" id="edge35_Node000033_Node000036" title=" " alt="" coords="473,1103,582,1125,581,1131,472,1108"/>
+<area shape="rect" id="Node000041" href="$classprecice_1_1utils_1_1IntraComm.html#a4c3e0f895b88a259c5b6b7bde2dc0895" title=" " alt="" coords="593,1551,780,1591"/>
+<area shape="poly" id="edge40_Node000040_Node000041" title=" " alt="" coords="465,1568,580,1568,580,1573,465,1573"/>
+<area shape="rect" id="Node000042" href="$classprecice_1_1utils_1_1IntraComm.html#abde303b11e46851ae65dca65ef06daad" title="True if this process is running a secondary rank." alt="" coords="879,1608,1065,1648"/>
+<area shape="poly" id="edge41_Node000040_Node000042" title=" " alt="" coords="465,1586,559,1600,720,1614,865,1622,865,1627,719,1620,558,1605,464,1591"/>
+<area shape="rect" id="Node000044" href="$classprecice_1_1profiling_1_1Event.html#ad2acc4896e1fc5cc57a06b07ccd3da1d" title="Adds named integer data, associated to an event." alt="" coords="907,1780,1037,1820"/>
+<area shape="poly" id="edge43_Node000043_Node000044" title=" " alt="" coords="465,1741,628,1748,815,1765,894,1779,893,1784,814,1771,628,1754,465,1747"/>
+<area shape="rect" id="Node000048" href="$classprecice_1_1impl_1_1ParticipantImpl.html#a5f6e330c93e18ef8414cf80e63cb9d5f" title="Syncs the primary ranks of all connected participants." alt="" coords="559,1665,815,1705"/>
+<area shape="poly" id="edge47_Node000043_Node000048" title=" " alt="" coords="464,1723,563,1705,564,1710,465,1729"/>
+<area shape="rect" id="Node000049" href="$classprecice_1_1impl_1_1ParticipantImpl.html#ac452ac502dade1b4fcda704eeb027a8e" title="Connect participants including repartitioning." alt="" coords="587,1844,786,1884"/>
+<area shape="poly" id="edge49_Node000043_Node000049" title=" " alt="" coords="412,1760,479,1795,560,1830,584,1838,582,1843,558,1834,477,1800,409,1765"/>
+<area shape="rect" id="Node000062" href="$classprecice_1_1impl_1_1ParticipantImpl.html#ab5eafe66fdcad128131ebea1d93d47fd" title="Setup mesh watcher such as WatchPoints." alt="" coords="595,1780,778,1820"/>
+<area shape="poly" id="edge53_Node000043_Node000062" title=" " alt="" coords="465,1757,582,1778,581,1783,464,1762"/>
+<area shape="rect" id="Node000045" href="$classprecice_1_1profiling_1_1EventRegistry.html#a0a1555e6211794ef23fcaf7a4f41950d" title="Returns the only instance (singleton) of the EventRegistry class." alt="" coords="1129,1780,1312,1820"/>
+<area shape="poly" id="edge44_Node000044_Node000045" title=" " alt="" coords="1038,1797,1116,1797,1116,1803,1038,1803"/>
+<area shape="rect" id="Node000047" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/chrono/steady_clock/now.html#" title=" " alt="" coords="1147,1844,1294,1884"/>
+<area shape="poly" id="edge46_Node000044_Node000047" title=" " alt="" coords="1039,1814,1135,1839,1133,1844,1037,1819"/>
+<area shape="poly" id="edge45_Node000045_Node000045" title=" " alt="" coords="1175,1780,1172,1770,1179,1761,1196,1755,1221,1753,1249,1756,1265,1763,1263,1768,1248,1761,1221,1759,1197,1761,1182,1765,1177,1771,1180,1779"/>
+<area shape="poly" id="edge48_Node000048_Node000042" title=" " alt="" coords="786,1663,865,1647,866,1652,787,1668"/>
+<area shape="poly" id="edge50_Node000049_Node000061" title=" " alt="" coords="786,1861,893,1861,893,1867,786,1867"/>
+<area shape="poly" id="edge51_Node000061_Node000045" title=" " alt="" coords="1037,1845,1129,1821,1130,1826,1039,1850"/>
+<area shape="poly" id="edge52_Node000061_Node000047" title=" " alt="" coords="1038,1861,1134,1861,1134,1867,1038,1867"/>
+<area shape="poly" id="edge57_Node000063_Node000009" title=" " alt="" coords="405,1305,474,1267,558,1229,591,1220,593,1225,560,1235,476,1271,408,1310"/>
+<area shape="poly" id="edge59_Node000063_Node000039" title=" " alt="" coords="464,1307,579,1283,580,1288,465,1312"/>
+<area shape="poly" id="edge61_Node000063_Node000042" title=" " alt="" coords="393,1347,461,1416,508,1454,560,1486,596,1501,628,1509,685,1515,744,1518,777,1524,816,1536,878,1566,932,1598,929,1603,876,1570,814,1541,776,1530,743,1523,685,1520,627,1514,594,1506,557,1490,505,1458,458,1420,390,1350"/>
+<area shape="rect" id="Node000064" href="$classprecice_1_1utils_1_1IntraComm.html#a557db722e7bfe5d237d0e7ed51851a44" title="Returns an iterable range over salve ranks [1, _size)" alt="" coords="593,1308,780,1348"/>
+<area shape="poly" id="edge56_Node000063_Node000064" title=" " alt="" coords="465,1325,580,1325,580,1331,465,1331"/>
+<area shape="rect" id="Node000065" href="$classprecice_1_1utils_1_1IntraComm.html#ad45fca6e5adf1b476ddb74f3f53e750c" title="Intra&#45;participant communication." alt="" coords="593,1372,780,1412"/>
+<area shape="poly" id="edge58_Node000063_Node000065" title=" " alt="" coords="465,1344,580,1368,579,1373,464,1349"/>
+<area shape="rect" id="Node000066" href="$classprecice_1_1utils_1_1IntraComm.html#a3e69605ac1a3f9f8c82471ba52624f5d" title="True if this process is running the primary rank." alt="" coords="593,1436,780,1476"/>
+<area shape="poly" id="edge60_Node000063_Node000066" title=" " alt="" coords="409,1346,477,1384,560,1422,583,1429,581,1434,558,1426,475,1389,406,1350"/>
+</map>

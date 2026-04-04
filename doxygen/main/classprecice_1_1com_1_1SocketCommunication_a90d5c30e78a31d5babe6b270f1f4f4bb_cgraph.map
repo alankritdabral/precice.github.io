@@ -1,0 +1,9 @@
+<map id="precice::com::SocketCommunication::~SocketCommunication" name="precice::com::SocketCommunication::~SocketCommunication">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,264,75"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1com_1_1SocketCommunication.html#a8ebaed06ffe94d3390544c0ff7f4d4f2" title="Disconnects from communication space, i.e. participant." alt="" coords="312,35,571,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="264,52,298,52,298,57,264,57"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1com_1_1Communication.html#a444946d1a6c67c352fe96b56cdbf1fd2" title="Returns true, if a connection to a remote participant has been setup." alt="" coords="619,5,835,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="570,39,604,35,605,40,571,44"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/error/exception/what.html#" title=" " alt="" coords="649,70,804,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="571,65,636,71,635,76,571,70"/>
+</map>

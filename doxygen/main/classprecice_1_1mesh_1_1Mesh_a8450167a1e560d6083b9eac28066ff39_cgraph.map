@@ -1,0 +1,15 @@
+<map id="precice::mesh::Mesh::generateImplictPrimitives" name="precice::mesh::Mesh::generateImplictPrimitives">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,101,204,141"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1mesh_1_1Mesh.html#ae05c5234aa9adc6f47a814622039c28e" title="Creates and initializes an Edge object." alt="" coords="252,5,408,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,99,251,55,267,48,269,53,253,60,152,104"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1mesh_1_1Mesh.html#a00c3db2576c63d8c6f351175ddc0a4d0" title="Creates and initializes a Triangle object." alt="" coords="252,69,408,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,105,238,100,239,105,205,110"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1mesh_1_1Mesh.html#aec6f303d7791f8a64e2b78180531c89e" title="Returns modifiable container holding all edges." alt="" coords="252,133,408,173"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="205,133,239,138,238,143,204,138"/>
+<area shape="rect" id="Node000007" href="$classprecice_1_1mesh_1_1Mesh.html#ad24f3877f1ea7cd5cd5f93a6f2e4d3f9" title="Returns modifiable container holding all triangles." alt="" coords="252,197,408,237"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="152,139,253,183,269,190,267,195,251,188,150,144"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1mesh_1_1Edge.html#af27f4bd02d0b67cc5c3d04e2cf1ddee7" title="Checks whether both edges share a vertex." alt="" coords="456,69,609,109"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="408,87,442,87,442,92,408,92"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1mesh_1_1Edge.html#a4d8897cfcc08ba7a7da5f99d704982ea" title="Constructor." alt="" coords="657,69,811,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="610,87,644,87,644,92,610,92"/>
+</map>

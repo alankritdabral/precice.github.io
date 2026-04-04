@@ -1,0 +1,13 @@
+<map id="precice::profiling::Event::~Event" name="precice::profiling::Event::~Event">
+<area shape="rect" id="Node000001" title="Stops the event if it&#39;s running and report its times to the EventRegistry." alt="" coords="5,61,136,101"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1profiling_1_1Event.html#a4218cc284dfa09a754f4bf510e574066" title="Stops a running event." alt="" coords="184,61,315,101"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,79,170,79,170,84,136,84"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1profiling_1_1EventRegistry.html#a0a1555e6211794ef23fcaf7a4f41950d" title="Returns the only instance (singleton) of the EventRegistry class." alt="" coords="363,29,545,69"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="315,68,349,63,350,68,316,74"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/chrono/steady_clock/now.html#" title=" " alt="" coords="381,93,527,133"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="316,89,368,97,367,102,315,94"/>
+<area shape="poly" id="edge5_Node000003_Node000003" title=" " alt="" coords="416,30,414,20,420,11,433,5,454,3,478,6,491,13,488,18,476,11,454,8,435,10,423,15,419,21,421,28"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1profiling_1_1EventRegistry.html#accbda0e81acd443abf06cdf62a901c09" title="Deleted copy and move SMFs for singleton pattern." alt="" coords="593,29,812,69"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="546,47,580,47,580,52,546,52"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="657,30,654,20,661,10,678,5,703,3,731,6,747,13,745,18,730,11,703,8,679,10,664,15,659,21,662,28"/>
+</map>

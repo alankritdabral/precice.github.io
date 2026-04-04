@@ -1,0 +1,5 @@
+<map id="precice::impl::ParticipantImpl::closeCommunicationChannels" name="precice::impl::ParticipantImpl::closeCommunicationChannels">
+<area shape="rect" id="Node000001" title="Syncs the primary ranks of all connected participants." alt="" coords="5,5,261,45"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1utils_1_1IntraComm.html#abde303b11e46851ae65dca65ef06daad" title="True if this process is running a secondary rank." alt="" coords="309,5,496,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="261,23,296,23,296,28,261,28"/>
+</map>

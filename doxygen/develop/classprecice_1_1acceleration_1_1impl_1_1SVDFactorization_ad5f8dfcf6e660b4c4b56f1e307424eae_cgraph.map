@@ -1,0 +1,20 @@
+<map id="precice::acceleration::impl::SVDFactorization::computeQRdecomposition" name="precice::acceleration::impl::SVDFactorization::computeQRdecomposition">
+<area shape="rect" id="Node000001" title=": computes the QR decomposition of a matrix A of type A = PSI^T*A \in R^(rank x n)" alt="" coords="5,97,208,152"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1utils_1_1IntraComm.html#a38ad54bcb1c09b6eba4097465b80fb08" title=" " alt="" coords="256,25,471,51"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,95,255,61,288,51,289,57,257,66,169,100"/>
+<area shape="rect" id="Node000007" href="$classprecice_1_1utils_1_1IntraComm.html#a2b6ac8a54b0f96edb2e3fe47d3a52d62" title="The l2 norm of a vector is calculated on distributed data." alt="" coords="270,75,457,115"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="208,110,256,105,257,110,208,116"/>
+<area shape="rect" id="Node000008" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/types/numeric_limits/min.html#" title=" " alt="" coords="273,140,453,165"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="208,133,260,139,259,144,208,138"/>
+<area shape="rect" id="Node000009" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="326,189,401,215"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="182,150,257,174,313,189,312,194,255,179,180,155"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1utils_1_1IntraComm.html#a1181baf395fd7e41bb0f922e3c3334cf" title=" " alt="" coords="519,47,705,87"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="471,48,505,52,505,57,470,53"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1span.html#ab25ca07a93bfa334622507c2c22b1034" title=" " alt="" coords="753,5,905,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="700,45,759,31,760,36,701,50"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/copy.html#" title=" " alt="" coords="789,55,870,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="706,65,775,65,775,70,706,70"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1span.html#ab86c14ec7bc7475d3ddb21d400e93121" title=" " alt="" coords="759,104,899,129"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="701,85,760,98,759,104,700,90"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="457,82,505,77,506,82,457,87"/>
+</map>

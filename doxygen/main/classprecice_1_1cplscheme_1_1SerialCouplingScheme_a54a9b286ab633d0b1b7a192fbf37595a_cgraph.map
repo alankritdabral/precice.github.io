@@ -1,0 +1,67 @@
+<map id="precice::cplscheme::SerialCouplingScheme::exchangeSecondData" name="precice::cplscheme::SerialCouplingScheme::exchangeSecondData">
+<area shape="rect" id="Node000001" title="Exchanges the second set of data." alt="" coords="5,658,181,713"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#af880c679675d59efcf00b0b9fd984f6e" title="Getter for _doesFirstStep." alt="" coords="527,294,698,349"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,657,100,589,120,498,138,451,161,406,190,365,228,331,260,312,296,298,333,290,371,285,446,285,514,294,513,299,445,290,371,290,334,295,297,303,263,317,231,335,194,369,165,409,143,453,126,500,105,589,98,658"/>
+<area shape="rect" id="Node000003" href="$namespaceprecice_1_1math.html#a0e86802cfe992deba131d789d035b5b7" title="Compares two Eigen::MatrixBase for equality up to tolerance." alt="" coords="1016,127,1179,153"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="92,657,99,571,118,448,135,381,158,313,189,248,227,188,259,148,289,117,319,93,350,74,421,45,513,19,591,5,672,4,752,14,829,30,901,52,965,76,1061,119,1059,123,963,81,900,57,828,36,751,19,672,10,592,10,514,24,423,50,353,78,322,97,293,121,263,152,231,191,193,250,163,315,140,382,123,450,104,572,98,658"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1cplscheme_1_1BiCouplingScheme.html#ae90273efd5e7a1ba0b91b5e09fd971ac" title=" " alt="" coords="533,451,693,506"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="99,657,115,612,141,557,178,503,201,480,228,462,263,446,300,435,338,430,377,428,452,434,520,447,519,452,452,439,377,433,339,435,301,440,265,451,231,466,205,484,182,507,145,560,120,614,104,659"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1cplscheme_1_1BiCouplingScheme.html#ab66e411f621d13312e3728404cc42eb8" title="Returns all data to be received." alt="" coords="267,737,427,791"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="182,710,255,733,253,738,181,715"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a9b2b8a399d66b14dd68a35db5347d308" title="getter for _time" alt="" coords="777,806,948,861"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="118,711,166,759,197,782,230,800,274,813,331,822,475,832,629,835,763,834,763,839,629,841,474,838,331,827,272,818,228,805,194,787,163,763,115,715"/>
+<area shape="rect" id="Node000007" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#ac12278b409b70f27a135701e12cbcf3f" title=" " alt="" coords="527,34,698,89"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="95,657,107,588,131,492,148,440,170,388,196,337,227,290,258,255,292,223,368,167,447,124,519,91,521,96,449,128,371,172,296,227,262,259,231,294,201,340,175,390,153,442,136,494,113,589,101,658"/>
+<area shape="rect" id="Node000009" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a71a31cd898a45b62b761f9545fce767b" title="Checks if the implicit cplscheme has converged." alt="" coords="527,530,698,585"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="141,656,183,635,228,617,302,598,377,582,513,563,514,568,378,587,303,603,230,623,185,640,144,660"/>
+<area shape="rect" id="Node000010" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a0f21dae30a9253a435a98434c016d2a4" title="Returns true, when the coupled simulation is still ongoing." alt="" coords="262,997,433,1051"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="102,712,115,769,140,842,157,880,177,918,202,953,231,983,251,997,248,1002,228,987,198,956,173,920,152,883,135,844,110,770,97,714"/>
+<area shape="rect" id="Node000011" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a38eb9e294c701da2259e803d184710ee" title="Function to determine whether coupling scheme is an explicit coupling scheme." alt="" coords="248,1075,447,1130"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="99,713,108,783,129,876,147,926,169,976,197,1022,231,1062,238,1068,235,1072,227,1066,192,1025,164,978,142,928,124,878,103,783,94,713"/>
+<area shape="rect" id="Node000012" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a4dcb97e3ef79b1cca6af577f9cbbec19" title="Function to determine whether coupling scheme is an implicit coupling scheme." alt="" coords="513,609,712,663"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="174,655,229,643,299,634,369,630,499,628,499,634,370,635,299,640,230,648,175,661"/>
+<area shape="rect" id="Node000013" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a88e63605dd9bd11de8a3e5ecb00135e0" title="finalizes this window&#39;s data and initializes data for next window." alt="" coords="262,1154,433,1209"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="97,713,102,795,108,850,120,910,136,972,160,1033,191,1090,231,1141,251,1156,248,1160,227,1145,187,1093,155,1035,131,973,114,911,103,851,96,796,92,713"/>
+<area shape="rect" id="Node000014" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a3153d22622f9abe534cef5fb0fb299dc" title="Used to set flag after data has been received using receiveData()." alt="" coords="239,1233,455,1287"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="101,712,117,823,144,975,163,1052,183,1123,206,1180,231,1220,233,1222,230,1225,227,1223,201,1183,178,1124,157,1054,139,976,111,824,95,713"/>
+<area shape="rect" id="Node000015" href="$classprecice_1_1cplscheme_1_1SerialCouplingScheme.html#a2e5a29de7a6610336338700f49f10189" title="Receives and sets the time window size, if this participant is the one to receive." alt="" coords="229,346,465,401"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="99,657,115,607,141,543,178,477,201,446,228,418,244,405,247,410,231,422,205,449,183,480,146,545,120,609,104,658"/>
+<area shape="rect" id="Node000018" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#ae25a2c72a7e120f70b382b716347600d" title="receives convergence from other participant via m2n" alt="" coords="262,477,433,531"/>
+<area shape="poly" id="edge25_Node000001_Node000018" title=" " alt="" coords="114,656,163,602,194,574,228,548,251,535,254,540,231,553,198,578,167,606,118,660"/>
+<area shape="rect" id="Node000019" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#af690c8d4e0f11e52fc7b9ca1fe098229" title="Receives data receiveDataIDs given in mapCouplingData with communication." alt="" coords="527,891,698,946"/>
+<area shape="poly" id="edge28_Node000001_Node000019" title=" " alt="" coords="112,711,131,744,158,780,192,816,231,846,281,865,353,882,514,906,514,911,353,887,279,870,228,850,188,820,154,784,127,746,107,714"/>
+<area shape="rect" id="Node000024" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a2ecb01c18534e30572a4a3d85f9a9513" title="Like receiveData, but temporarily sets window time to end of window." alt="" coords="245,918,450,973"/>
+<area shape="poly" id="edge35_Node000001_Node000024" title=" " alt="" coords="108,712,126,752,153,802,188,852,231,897,249,909,246,914,228,901,184,856,149,804,121,755,103,714"/>
+<area shape="rect" id="Node000025" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a41a071da3c8348a41bf4ae78c9edc06a" title="used for storing all Data at end of doImplicitStep for later reference." alt="" coords="262,658,433,713"/>
+<area shape="poly" id="edge37_Node000001_Node000025" title=" " alt="" coords="182,683,248,683,248,688,182,688"/>
+<area shape="rect" id="Node000008" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a073567dc3535de4121def61a3dc5215c" title="Function to check whether time window size is defined by coupling scheme." alt="" coords="777,113,948,167"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="699,86,765,107,764,112,697,91"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="948,137,1002,137,1002,143,948,143"/>
+<area shape="poly" id="edge16_Node000015_Node000002" title=" " alt="" coords="465,348,514,338,515,343,466,353"/>
+<area shape="poly" id="edge17_Node000015_Node000003" title=" " alt="" coords="388,344,446,310,512,279,567,261,611,252,711,235,838,207,965,176,1041,154,1042,159,966,181,840,212,713,240,612,257,568,266,514,284,448,315,391,348"/>
+<area shape="poly" id="edge18_Node000015_Node000004" title=" " alt="" coords="418,398,466,418,531,444,529,448,464,422,416,403"/>
+<area shape="poly" id="edge22_Node000015_Node000008" title=" " alt="" coords="373,344,433,289,471,260,512,235,611,203,763,162,765,168,612,209,514,240,474,264,437,293,376,348"/>
+<area shape="poly" id="edge21_Node000015_Node000009" title=" " alt="" coords="389,399,467,462,490,490,500,502,515,515,524,521,521,525,512,519,496,506,486,494,463,466,386,403"/>
+<area shape="poly" id="edge23_Node000015_Node000012" title=" " alt="" coords="397,399,434,427,467,462,479,481,485,499,490,532,495,563,503,578,515,594,520,598,516,602,511,598,498,581,490,564,484,532,480,500,474,483,463,466,430,431,394,403"/>
+<area shape="rect" id="Node000016" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a63b909185caf2cb97411e3ed18761482" title="Returns the time window size, if one is given by the coupling scheme." alt="" coords="527,113,698,167"/>
+<area shape="poly" id="edge19_Node000015_Node000016" title=" " alt="" coords="366,344,426,267,467,224,512,185,531,172,534,176,515,189,470,228,430,270,370,347"/>
+<area shape="rect" id="Node000017" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#ae5884457e1339371a60deb846268fc25" title="Setter for _nextTimeWindowSize." alt="" coords="516,373,709,427"/>
+<area shape="poly" id="edge24_Node000015_Node000017" title=" " alt="" coords="466,383,502,386,502,392,465,388"/>
+<area shape="poly" id="edge20_Node000016_Node000008" title=" " alt="" coords="698,137,764,137,764,143,698,143"/>
+<area shape="poly" id="edge26_Node000018_Node000002" title=" " alt="" coords="385,474,463,410,486,383,496,371,512,358,519,353,522,358,515,362,500,375,490,386,467,414,388,479"/>
+<area shape="poly" id="edge27_Node000018_Node000012" title=" " alt="" coords="396,529,515,594,530,601,528,606,512,598,393,534"/>
+<area shape="poly" id="edge32_Node000019_Node000006" title=" " alt="" coords="692,889,768,863,770,868,694,894"/>
+<area shape="poly" id="edge33_Node000019_Node000019" title=" " alt="" coords="564,891,565,881,573,872,589,867,613,865,641,868,657,876,654,880,639,873,613,870,590,872,576,877,570,883,570,891"/>
+<area shape="rect" id="Node000020" href="$classprecice_1_1com_1_1serialize_1_1SerializedStamples.html#a6323c9aec715a5f6e4ff770807d3277b" title="Create SerializedStamples with allocated buffers according to size of CouplingData." alt="" coords="760,893,965,933"/>
+<area shape="poly" id="edge29_Node000019_Node000020" title=" " alt="" coords="698,914,746,913,746,918,698,920"/>
+<area shape="rect" id="Node000023" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a7bd0c976a2b5072fe3c9e98c2c4f1688" title=" " alt="" coords="777,958,948,1013"/>
+<area shape="poly" id="edge34_Node000019_Node000023" title=" " alt="" coords="699,939,764,956,763,962,697,944"/>
+<area shape="rect" id="Node000021" href="$classprecice_1_1com_1_1serialize_1_1SerializedStamples.html#a3bd729e27395b592be2fe9a124886f3b" title=" " alt="" coords="1013,847,1181,902"/>
+<area shape="poly" id="edge30_Node000020_Node000021" title=" " alt="" coords="965,894,1000,888,1000,893,966,899"/>
+<area shape="rect" id="Node000022" href="$classprecice_1_1com_1_1serialize_1_1SerializedStamples.html#a72962498cead40c9cb5570666b2a7e98" title=" " alt="" coords="1013,926,1181,981"/>
+<area shape="poly" id="edge31_Node000020_Node000022" title=" " alt="" coords="966,928,1000,934,1000,939,965,933"/>
+<area shape="poly" id="edge36_Node000024_Node000019" title=" " alt="" coords="450,932,513,926,514,931,450,938"/>
+<area shape="poly" id="edge38_Node000025_Node000012" title=" " alt="" coords="432,667,499,654,500,660,433,672"/>
+<area shape="rect" id="Node000026" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#ae08255093a016fbec0974a9e87652bef" title="Returns the name of the local participant." alt="" coords="527,687,698,742"/>
+<area shape="poly" id="edge39_Node000025_Node000026" title=" " alt="" coords="433,692,514,701,514,706,433,697"/>
+</map>

@@ -1,0 +1,21 @@
+<map id="precice::mesh::MeshConfiguration::xmlTagCallback" name="precice::mesh::MeshConfiguration::xmlTagCallback">
+<area shape="rect" id="Node000001" title="Callback at begin of XML tag." alt="" coords="5,165,248,205"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1mesh_1_1MeshConfiguration.html#aec22d98371b16b2625452d21f3973222" title="Get the number of dimensions that data values of this type (scalar/vector) have on this mesh." alt="" coords="303,5,545,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,163,210,109,251,80,295,55,312,48,314,52,297,60,254,85,213,114,150,167"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1xml_1_1XMLTag.html#ac74a7af0b26a7d519756ccbd9575f7e4" title=" " alt="" coords="343,69,505,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,163,295,119,329,109,331,114,297,124,177,168"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1xml_1_1XMLTag.html#a9212e8c59708a9e07f0ff70a997349f9" title="Returns name (without namespace)." alt="" coords="345,197,503,237"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="249,196,331,205,331,210,248,201"/>
+<area shape="rect" id="Node000007" href="$classprecice_1_1xml_1_1XMLTag.html#a31c349d79529108e575f36271e5ffb83" title=" " alt="" coords="333,133,515,173"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="248,170,319,162,320,167,249,175"/>
+<area shape="rect" id="Node000008" href="$classprecice_1_1mesh_1_1MeshConfiguration.html#af176dbe0c0c22db05ee91b23a5471a00" title="Initialize the map between meshes and dimensions, for unit tests that directly create mesh objects wi..." alt="" coords="296,261,552,301"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="177,203,297,247,325,255,324,260,295,252,175,208"/>
+<area shape="rect" id="Node000009" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr/make_shared.html#" title=" " alt="" coords="355,326,493,351"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="150,204,212,258,253,287,297,311,343,326,341,331,295,316,250,291,209,262,146,208"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/utility/variant/holds_alternative.html#" title=" " alt="" coords="600,81,763,106"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="505,88,586,89,586,95,505,93"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/utility/optional/value.html#" title=" " alt="" coords="608,134,755,159"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="505,105,611,128,610,134,504,110"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="510,131,612,107,614,112,511,136"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="515,148,594,146,595,152,516,154"/>
+</map>

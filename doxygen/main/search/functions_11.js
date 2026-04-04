@@ -1,0 +1,10 @@
+var searchData=
+[
+  ['qrfactorization_0',['QRFactorization',['../classprecice_1_1acceleration_1_1impl_1_1QRFactorization.html#ad3cb77c81621cea6e222aed78adfa718',1,'precice::acceleration::impl::QRFactorization::QRFactorization(int filter=0, double omega=0, double theta=1./0.7, double sigma=std::numeric_limits&lt; double &gt;::min())'],['../classprecice_1_1acceleration_1_1impl_1_1QRFactorization.html#a9091c53906126c180c82fa7e459fc191',1,'precice::acceleration::impl::QRFactorization::QRFactorization(Eigen::MatrixXd A, int filter, double omega=0, double theta=1./0.7, double sigma=std::numeric_limits&lt; double &gt;::min())'],['../classprecice_1_1acceleration_1_1impl_1_1QRFactorization.html#af92bc49062b12c89b64ba5214ab3799d',1,'precice::acceleration::impl::QRFactorization::QRFactorization(Eigen::MatrixXd Q, Eigen::MatrixXd R, int rows, int cols, int filter, double omega=0, double theta=1./0.7, double sigma=std::numeric_limits&lt; double &gt;::min())']]],
+  ['qsort_1',['qsort',['http://en.cppreference.com/w/cpp/algorithm/qsort.html',1,'std']]],
+  ['queue_2',['queue',['http://en.cppreference.com/w/cpp/container/queue/queue.html',1,'std::queue']]],
+  ['quick_5fexit_3',['quick_exit',['http://en.cppreference.com/w/cpp/utility/program/quick_exit.html',1,'std']]],
+  ['quicktest_4',['QuickTest',['../structprecice_1_1testing_1_1QuickTest.html#a968037b7b61af486f1251075d422f27c',1,'precice::testing::QuickTest::QuickTest(Participant &amp;p, Mesh m, ReadData r)'],['../structprecice_1_1testing_1_1QuickTest.html#a5c81b30466de5fff785dc439ddfe0a21',1,'precice::testing::QuickTest::QuickTest(Participant &amp;p, Mesh m, WriteData w)'],['../structprecice_1_1testing_1_1QuickTest.html#a80028fcfa060afa511a96c653bcb4205',1,'precice::testing::QuickTest::QuickTest(Participant &amp;p, Mesh m, ReadData r, WriteData w)']]],
+  ['quiet_5fnan_5',['quiet_NaN',['http://en.cppreference.com/w/cpp/types/numeric_limits/quiet_NaN.html',1,'std::numeric_limits']]],
+  ['quoted_6',['quoted',['http://en.cppreference.com/w/cpp/io/manip/quoted.html',1,'std']]]
+];

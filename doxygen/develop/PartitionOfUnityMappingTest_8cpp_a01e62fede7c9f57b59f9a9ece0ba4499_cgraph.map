@@ -1,0 +1,39 @@
+<map id="testTagging" name="testTagging">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,315,103,341"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1mesh_1_1Mesh.html#a988baa22e8e6fcaa9efc64e7943cb2fc" title="Computes the boundingBox for the vertices." alt="" coords="168,161,341,201"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,314,94,264,120,236,149,211,159,205,162,210,152,216,123,240,98,267,65,317"/>
+<area shape="rect" id="Node000011" href="$classprecice_1_1mesh_1_1Mesh.html#a6e3fec22b430b35daccd92ef560d2c87" title="Create only data for vertex." alt="" coords="177,225,333,265"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="76,313,150,276,172,267,174,272,152,281,79,318"/>
+<area shape="rect" id="Node000013" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/find.html#" title=" " alt="" coords="209,290,300,315"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="102,319,195,307,196,313,103,325"/>
+<area shape="rect" id="Node000014" href="$PartitionOfUnityMappingTest_8cpp.html#acab76e6e014dd25e845f97554d1ac77f" title=" " alt="" coords="179,339,330,365"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="103,331,166,339,166,344,102,336"/>
+<area shape="rect" id="Node000016" href="$namespaceprecice_1_1testing.html#a08533fd83bad3d7f27ea7f4a35a14aa4" title=" " alt="" coords="151,389,359,414"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="78,338,112,357,152,375,176,383,174,388,150,380,109,362,75,343"/>
+<area shape="rect" id="Node000018" href="$classprecice_1_1mesh_1_1Mesh.html#a13faa9b03e5d20918ed6528db1415fa3" title="Returns modifieable container holding all vertices." alt="" coords="177,439,333,479"/>
+<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="66,339,101,381,125,404,152,424,165,432,163,436,149,429,122,408,97,385,62,343"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1mesh_1_1BoundingBox.html#a7aeb328ca8291253c4fd22d0d4cb0a18" title="Expand bounding box using another bounding box." alt="" coords="409,97,615,137"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="335,159,417,138,419,143,337,164"/>
+<area shape="rect" id="Node000008" href="$classprecice_1_1mesh_1_1Mesh.html#a61d536967e403c9c2c4dfa33ddc8a044" title="Mutable access to a vertex by VertexID." alt="" coords="434,161,590,201"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="342,179,420,179,420,184,342,184"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1mesh_1_1BoundingBox.html#a7afbe3af5a4b2026dbe41276c7a189d1" title=" " alt="" coords="665,33,872,73"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="592,95,674,74,676,79,594,100"/>
+<area shape="rect" id="Node000007" href="$classprecice_1_1mesh_1_1BoundingBox.html#ad500309dcbe440703ef71dfcc7a2a394" title="Getter dimension of the bounding box." alt="" coords="665,97,872,137"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="616,115,652,115,652,120,616,120"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/types/numeric_limits/lowest.html#" title=" " alt="" coords="939,5,1085,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="872,39,925,33,925,38,872,44"/>
+<area shape="rect" id="Node000006" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/types/numeric_limits/max.html#" title=" " alt="" coords="920,70,1104,95"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="872,63,907,67,906,73,872,68"/>
+<area shape="rect" id="Node000009" href="$classprecice_1_1mesh_1_1Mesh.html#ac21407160a09623491d9f6364c0a7e43" title="Returns true if the given vertexID is valid." alt="" coords="691,161,847,201"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="590,179,677,179,677,184,590,184"/>
+<area shape="rect" id="Node000010" href="$classprecice_1_1mesh_1_1Mesh.html#a4220c9b15bb1c3dbf5c00701851f8288" title="Returns the number of vertices." alt="" coords="934,189,1090,229"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="591,198,666,211,723,215,768,215,872,211,920,210,920,215,872,216,769,220,723,220,665,216,590,203"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="847,188,921,196,920,201,847,193"/>
+<area shape="rect" id="Node000012" href="$classprecice_1_1mesh_1_1Mesh.html#aceb3eabb4f8e40a44d5d1c2822ba7b56" title="Allows access to all data." alt="" coords="434,225,590,265"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="333,243,420,243,420,248,333,248"/>
+<area shape="rect" id="Node000015" href="$PartitionOfUnityMappingTest_8cpp.html#a091feb1893c75899e59fa939e678debe" title=" " alt="" coords="450,335,574,361"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="330,348,436,347,436,352,330,354"/>
+<area shape="poly" id="edge16_Node000015_Node000015" title=" " alt="" coords="471,337,462,327,466,317,483,311,512,309,548,313,558,317,562,323,558,326,555,321,547,318,512,314,484,316,470,321,467,326,474,333"/>
+<area shape="rect" id="Node000017" href="$classprecice_1_1utils_1_1ManageUniqueIDs.html#a02be264c279698ae293587b6576088b5" title=" " alt="" coords="407,385,617,425"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="359,400,393,401,393,406,359,406"/>
+</map>

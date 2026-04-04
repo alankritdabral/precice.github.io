@@ -1,0 +1,9 @@
+<map id="precice::mapping::InverseMultiquadrics::evaluate" name="precice::mapping::InverseMultiquadrics::evaluate">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,196,63"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1mapping_1_1InverseMultiquadrics.html#a50ea85bb8d8a1b5a24bf5c21009b4e6e" title=" " alt="" coords="244,23,435,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,41,230,41,230,46,196,46"/>
+<area shape="rect" id="Node000003" href="$namespaceprecice_1_1math.html#a37f5823aac685c016c9ebe3bf344b146" title="Computes the power of a given number by an integral exponent given at compile time,..." alt="" coords="483,5,653,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="435,30,469,26,469,32,435,35"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="531,55,605,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="435,51,517,59,517,65,435,56"/>
+</map>

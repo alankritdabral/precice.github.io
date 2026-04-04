@@ -1,0 +1,12 @@
+<map id="BOOST_FIXTURE_TEST_CASE" name="BOOST_FIXTURE_TEST_CASE">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,70,216,95"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="69,72,60,62,65,52,82,45,111,43,147,47,157,52,161,58,156,61,154,56,145,52,111,49,83,51,68,56,66,61,73,68"/>
+<area shape="rect" id="Node000002" href="$namespaceprecice_1_1mesh.html#a27bca58154223d9708c9634163026578" title="Given the data and the mesh, this function returns the volume integral. Assumes no overlap exists for..." alt="" coords="278,5,458,45"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="168,67,264,46,265,51,169,73"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr/make_shared.html#" title=" " alt="" coords="299,70,437,95"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="216,80,286,80,286,85,216,85"/>
+<area shape="rect" id="Node000004" href="$namespaceprecice_1_1testing.html#a08533fd83bad3d7f27ea7f4a35a14aa4" title=" " alt="" coords="264,119,472,145"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="178,93,288,114,287,119,177,98"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1utils_1_1ManageUniqueIDs.html#a02be264c279698ae293587b6576088b5" title=" " alt="" coords="520,112,731,152"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="472,129,507,129,507,135,472,135"/>
+</map>

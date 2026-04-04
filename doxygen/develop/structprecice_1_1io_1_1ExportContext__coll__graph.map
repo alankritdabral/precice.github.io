@@ -1,0 +1,9 @@
+<map id="precice::io::ExportContext" name="precice::io::ExportContext">
+<area shape="rect" id="Node000001" title=" " alt="" coords="69,231,260,256"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="5,95,196,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,132,121,168,138,205,155,229,151,232,133,208,116,170,104,134"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/string/basic_string.html" title=" " alt="" coords="220,95,307,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="252,133,201,208,179,232,176,228,197,205,248,130"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/string/basic_string.html" title=" " alt="" coords="194,5,333,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="266,59,266,94,261,94,261,59"/>
+</map>

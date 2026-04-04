@@ -1,0 +1,9 @@
+<map id="precice::com::serialize::SerializedConnectionMap::send" name="precice::com::serialize::SerializedConnectionMap::send">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,240,75"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1com_1_1Communication.html#a8caa1032e130719ef235553313b59a3b" title="Sends a range of doubles (size + content)" alt="" coords="288,35,504,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,52,274,52,274,57,240,57"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1com_1_1Communication.html#ac95d9a27ce66edc756c96176d2e9d916" title="Sends a std::string to process with given rank." alt="" coords="552,5,768,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="504,40,538,36,539,41,504,45"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1span.html#ae91f5ed50b6cbf0d15382b8e3c2a9a04" title=" " alt="" coords="589,70,731,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="504,63,575,71,575,76,504,69"/>
+</map>

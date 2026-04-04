@@ -1,0 +1,5 @@
+<map id="precice::m2n::M2N::broadcastReceiveAll" name="precice::m2n::M2N::broadcastReceiveAll">
+<area shape="rect" id="Node000001" title="Receives an int per connected rank on remote participant (concerning the given mesh) @para[out] itemT..." alt="" coords="5,5,160,45"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1utils_1_1IntraComm.html#a946589c66048ff3058ffa078d54b6073" title="True if this process is running in parallel." alt="" coords="208,5,395,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,23,194,23,194,28,160,28"/>
+</map>

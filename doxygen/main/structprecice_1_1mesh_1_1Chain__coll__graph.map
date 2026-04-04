@@ -1,0 +1,16 @@
+<map id="precice::mesh::Chain&lt; n &gt;" name="precice::mesh::Chain&lt; n &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="8,532,204,557"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/array.html" title=" " alt="" coords="5,261,164,301"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,315,108,532,102,532,85,315"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1mesh_1_1Vertex.html" title="Vertex of a mesh." alt="" coords="51,101,214,127"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="98,137,86,152,77,180,75,209,82,261,77,262,69,209,71,179,81,149,94,133"/>
+<area shape="rect" id="Node000007" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/array.html" title=" " alt="" coords="121,197,280,237"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="151,137,160,149,191,196,186,198,156,152,147,140"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/array.html" title=" " alt="" coords="45,5,220,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="135,45,135,101,130,101,130,45"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/array.html" title=" " alt="" coords="124,421,272,461"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="174,473,118,534,114,530,170,470"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1mesh_1_1Edge.html" title="Linear edge of a mesh, defined by two Vertex objects." alt="" coords="123,325,276,351"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="202,365,201,421,196,421,196,365"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="203,251,202,325,197,325,198,251"/>
+</map>

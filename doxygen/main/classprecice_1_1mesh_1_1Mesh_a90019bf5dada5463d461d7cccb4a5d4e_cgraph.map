@@ -1,0 +1,23 @@
+<map id="precice::mesh::Mesh::preprocess" name="precice::mesh::Mesh::preprocess">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,195,161,235"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1mesh_1_1Mesh.html#a8450167a1e560d6083b9eac28066ff39" title=" " alt="" coords="209,133,408,173"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,192,221,174,222,180,158,197"/>
+<area shape="rect" id="Node000009" href="$classprecice_1_1mesh_1_1Mesh.html#a339d375dcc901100c90fdcd933a369af" title="Removes all duplicate connectivity." alt="" coords="231,255,387,295"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="160,232,221,249,219,254,159,237"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1mesh_1_1Mesh.html#ae05c5234aa9adc6f47a814622039c28e" title="Creates and initializes an Edge object." alt="" coords="456,5,612,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="336,131,390,94,455,55,467,49,470,53,457,60,393,98,339,135"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1mesh_1_1Mesh.html#a00c3db2576c63d8c6f351175ddc0a4d0" title="Creates and initializes a Triangle object." alt="" coords="456,69,612,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="379,131,449,111,450,116,381,136"/>
+<area shape="rect" id="Node000007" href="$classprecice_1_1mesh_1_1Mesh.html#aec6f303d7791f8a64e2b78180531c89e" title="Returns modifiable container holding all edges." alt="" coords="456,133,612,173"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="408,151,442,151,442,156,408,156"/>
+<area shape="rect" id="Node000008" href="$classprecice_1_1mesh_1_1Mesh.html#ad24f3877f1ea7cd5cd5f93a6f2e4d3f9" title="Returns modifiable container holding all triangles." alt="" coords="456,197,612,237"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="381,171,450,191,449,196,379,176"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1mesh_1_1Edge.html#af27f4bd02d0b67cc5c3d04e2cf1ddee7" title="Checks whether both edges share a vertex." alt="" coords="660,69,813,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="612,87,646,87,646,92,612,92"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1mesh_1_1Edge.html#a4d8897cfcc08ba7a7da5f99d704982ea" title="Constructor." alt="" coords="861,69,1015,109"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="814,87,848,87,848,92,814,92"/>
+<area shape="rect" id="Node000010" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/sort.html#" title=" " alt="" coords="497,262,571,287"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="387,272,483,272,483,277,387,277"/>
+<area shape="rect" id="Node000011" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/unique.html#" title=" " alt="" coords="487,311,581,337"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="388,289,473,308,472,313,387,294"/>
+</map>

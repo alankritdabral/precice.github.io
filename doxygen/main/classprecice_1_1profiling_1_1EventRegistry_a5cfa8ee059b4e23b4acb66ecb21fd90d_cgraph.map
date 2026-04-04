@@ -1,0 +1,16 @@
+<map id="precice::profiling::EventRegistry::stopBackend" name="precice::profiling::EventRegistry::stopBackend">
+<area shape="rect" id="Node000001" title="Stops the global event, flushes the buffers and closes the filestream." alt="" coords="5,47,216,87"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1profiling_1_1EventRegistry.html#acf4b1aee6136a1bd64034c8ebb78bf97" title="Writes all recorded events to file and flushes the buffer." alt="" coords="463,22,622,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,45,264,33,339,29,413,33,450,34,449,39,413,38,339,35,264,38,192,50"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/chrono/steady_clock/now.html#" title=" " alt="" coords="265,47,412,87"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="216,65,252,65,252,70,216,70"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1profiling_1_1EventRegistry.html#a753aa85b27412998730b0837b601cf23" title="Records an event." alt="" coords="264,111,413,151"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="183,85,254,105,253,110,182,90"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/iterator/back_inserter.html#" title=" " alt="" coords="672,5,811,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="622,30,658,25,659,31,622,35"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/for_each.html#" title=" " alt="" coords="688,55,795,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="622,49,674,56,674,61,622,55"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="385,109,412,97,483,65,485,70,414,102,387,114"/>
+<area shape="rect" id="Node000007" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/utility/variant/holds_alternative.html#" title=" " alt="" coords="461,119,624,144"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="414,129,447,129,447,134,414,134"/>
+</map>

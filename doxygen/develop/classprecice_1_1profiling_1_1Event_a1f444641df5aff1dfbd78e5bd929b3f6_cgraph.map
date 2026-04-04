@@ -1,0 +1,27 @@
+<map id="precice::profiling::Event::start" name="precice::profiling::Event::start">
+<area shape="rect" id="Node000001" title="Starts or restarts a stopped event." alt="" coords="5,125,136,165"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1profiling_1_1EventRegistry.html#a0a1555e6211794ef23fcaf7a4f41950d" title="Returns the only instance (singleton) of the EventRegistry class." alt="" coords="186,29,369,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,123,183,79,200,72,202,77,185,84,105,128"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/chrono/steady_clock/now.html#" title=" " alt="" coords="204,93,351,133"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="136,133,190,124,191,129,137,138"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1utils_1_1IntraComm.html#ab83f497a05f344c66737c0eb98f7a7b5" title=" " alt="" coords="184,157,371,197"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="137,153,171,158,170,163,136,158"/>
+<area shape="rect" id="Node000012" href="$classprecice_1_1utils_1_1IntraComm.html#a2c839c2feac78037e34ad6416e8de5f4" title=" " alt="" coords="184,221,371,261"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="105,163,185,207,202,214,200,219,183,212,102,168"/>
+<area shape="poly" id="edge4_Node000002_Node000002" title=" " alt="" coords="239,30,236,20,243,11,256,5,277,3,301,6,315,13,312,18,300,11,277,8,258,10,246,15,242,21,244,28"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1profiling_1_1EventRegistry.html#accbda0e81acd443abf06cdf62a901c09" title="Deleted copy and move SMFs for singleton pattern." alt="" coords="419,29,637,69"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="369,47,405,47,405,52,369,52"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="481,30,479,20,486,10,503,5,528,3,557,6,573,13,571,18,556,11,528,8,504,10,489,15,484,21,486,28"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1utils_1_1IntraComm.html#a0c8bde3062c069b344ffe8573be7dc7c" title="Synchronizes all ranks." alt="" coords="435,157,621,197"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="371,175,421,175,421,180,371,180"/>
+<area shape="rect" id="Node000007" href="$classprecice_1_1utils_1_1IntraComm.html#a1181baf395fd7e41bb0f922e3c3334cf" title=" " alt="" coords="685,125,872,165"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="621,163,672,156,672,162,622,168"/>
+<area shape="rect" id="Node000011" href="$classprecice_1_1utils_1_1IntraComm.html#a946589c66048ff3058ffa078d54b6073" title="True if this process is running in parallel." alt="" coords="685,189,872,229"/>
+<area shape="poly" id="edge12_Node000006_Node000011" title=" " alt="" coords="622,187,672,193,672,198,621,192"/>
+<area shape="rect" id="Node000008" href="$classprecice_1_1span.html#ab25ca07a93bfa334622507c2c22b1034" title=" " alt="" coords="920,83,1072,109"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="867,123,926,109,927,114,868,128"/>
+<area shape="rect" id="Node000009" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/copy.html#" title=" " alt="" coords="955,133,1037,158"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="872,143,941,143,941,148,872,148"/>
+<area shape="rect" id="Node000010" href="$classprecice_1_1span.html#ab86c14ec7bc7475d3ddb21d400e93121" title=" " alt="" coords="926,182,1066,207"/>
+<area shape="poly" id="edge11_Node000007_Node000010" title=" " alt="" coords="868,163,927,176,926,182,867,168"/>
+</map>

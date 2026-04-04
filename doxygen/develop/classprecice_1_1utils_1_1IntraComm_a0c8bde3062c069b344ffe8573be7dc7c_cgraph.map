@@ -1,0 +1,13 @@
+<map id="precice::utils::IntraComm::barrier" name="precice::utils::IntraComm::barrier">
+<area shape="rect" id="Node000001" title="Synchronizes all ranks." alt="" coords="5,79,192,119"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1utils_1_1IntraComm.html#a1181baf395fd7e41bb0f922e3c3334cf" title=" " alt="" coords="240,47,427,87"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,84,226,79,227,85,192,89"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1utils_1_1IntraComm.html#a946589c66048ff3058ffa078d54b6073" title="True if this process is running in parallel." alt="" coords="240,111,427,151"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="192,109,227,114,226,119,192,115"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1span.html#ab25ca07a93bfa334622507c2c22b1034" title=" " alt="" coords="475,5,627,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="421,45,480,31,481,36,423,50"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/copy.html#" title=" " alt="" coords="510,55,591,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="427,65,496,65,496,70,427,70"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1span.html#ab86c14ec7bc7475d3ddb21d400e93121" title=" " alt="" coords="481,104,621,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="423,85,481,98,480,104,421,90"/>
+</map>

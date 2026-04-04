@@ -1,0 +1,22 @@
+<map id="precice::mapping::LinearCellInterpolationMapping" name="precice::mapping::LinearCellInterpolationMapping">
+<area shape="rect" id="Node000001" title="Mapping using orthogonal projection to nearest triangle/edge/vertex and linear interpolation from pro..." alt="" coords="1411,139,1597,179"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1mapping_1_1BarycentricBaseMapping.html" title="Base class for interpolation based mappings, where mapping is done using a geometry&#45;based linear comb..." alt="" coords="1145,79,1361,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1351,119,1420,136,1419,141,1350,125"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1mapping_1_1Mapping.html" title="Abstract base class for mapping of data from one mesh to another." alt="" coords="813,83,1012,109"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1026,94,1145,95,1145,100,1026,100"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="491,87,675,113"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="689,97,789,96,813,96,813,101,789,101,689,102"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1logging_1_1Logger.html" title="This class provides a lightweight logger." alt="" coords="824,151,1001,177"/>
+<area shape="poly" id="edge10_Node000001_Node000005" title=" " alt="" coords="1015,160,1410,157,1410,162,1015,166"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="997,146,1121,123,1154,116,1155,121,1122,128,998,151"/>
+<area shape="rect" id="Node000006" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/unique_ptr.html" title=" " alt="" coords="469,144,696,184"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="710,161,824,161,824,167,710,167"/>
+<area shape="rect" id="Node000007" href="$classprecice_1_1logging_1_1Logger_1_1LoggerImpl.html" title=" " alt="" coords="217,144,395,184"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="408,161,469,161,469,167,408,167"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="5,144,168,184"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="182,161,217,161,217,167,182,167"/>
+<area shape="rect" id="Node000009" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="825,11,1000,51"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="1014,48,1153,76,1152,81,1013,53"/>
+<area shape="rect" id="Node000010" href="$structprecice_1_1mapping_1_1Operation.html" title=" " alt="" coords="479,14,686,39"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="700,25,825,27,825,32,700,31"/>
+</map>

@@ -1,0 +1,47 @@
+<map id="precice::query::Index::findCellOrProjection" name="precice::query::Index::findCellOrProjection">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,288,164,328"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1query_1_1Index.html#a6274f24e063680f72f2d553700c6fb34" title="Find the closest interpolation element to the given location. If exists, triangle or edge projection ..." alt="" coords="218,288,389,328"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,305,204,305,204,311,165,311"/>
+<area shape="rect" id="Node000013" href="$classprecice_1_1query_1_1Index.html#a7ea839d34f729a8bd497aaec52c5447a" title="Get n number of closest triangles to the given vertex." alt="" coords="661,21,819,61"/>
+<area shape="poly" id="edge27_Node000001_Node000013" title=" " alt="" coords="134,286,676,64,678,69,136,291"/>
+<area shape="rect" id="Node000016" href="$classprecice_1_1query_1_1Index.html#a34e91ccdc64912d3650a2711ac0109d6" title="Return all the tetrahedra whose axis&#45;aligned bounding box contains a vertex." alt="" coords="212,480,395,520"/>
+<area shape="poly" id="edge28_Node000001_Node000016" title=" " alt="" coords="110,326,271,469,267,473,107,330"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1query_1_1Index.html#a9915af4778d545e56a26dd2bea431ae8" title="Find closest edge interpolation element. If cannot be found, it falls back to vertex projection." alt="" coords="661,288,819,328"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="389,305,648,305,648,311,389,311"/>
+<area shape="rect" id="Node000012" href="$classprecice_1_1query_1_1Index.html#acfc4fee3cfdaae2914a3cadf526f9f76" title="Find closest face interpolation element. If cannot be found, it falls back to first edge interpolatio..." alt="" coords="443,231,613,271"/>
+<area shape="poly" id="edge13_Node000002_Node000012" title=" " alt="" coords="382,285,435,272,436,277,383,291"/>
+<area shape="rect" id="Node000014" href="$classprecice_1_1query_1_1Index.html#aaa6bf329e94fe687df08dc7741954010" title="Closest vertex projection element is always the nearest neighbor." alt="" coords="447,465,609,505"/>
+<area shape="poly" id="edge25_Node000002_Node000014" title=" " alt="" coords="332,326,492,455,489,459,328,331"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="897,451,1031,477"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="774,326,821,365,835,383,844,400,853,415,868,430,894,444,892,449,865,434,848,418,839,402,830,386,817,369,770,330"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1mapping_1_1Polation.html#a90b11bfde9c3f23b27a114a923ff4685" title="Returns the projection distance." alt="" coords="867,501,1061,541"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="752,327,769,362,795,405,828,449,868,487,876,492,873,497,865,492,824,453,790,408,765,364,748,329"/>
+<area shape="rect" id="Node000006" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="1109,401,1303,426"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="766,326,812,358,839,374,868,386,925,401,984,410,1095,416,1095,421,983,415,923,406,866,391,837,378,809,363,763,330"/>
+<area shape="rect" id="Node000007" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/empty.html#" title=" " alt="" coords="893,137,1035,162"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="752,286,798,229,829,197,865,171,879,164,882,169,868,176,833,202,802,232,757,289"/>
+<area shape="rect" id="Node000008" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="903,186,1025,211"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="764,286,809,252,866,220,888,212,890,217,868,225,812,257,767,290"/>
+<area shape="rect" id="Node000009" href="$classprecice_1_1query_1_1Index.html#ad7246f8806501075e083cff367eb4813" title="Get n number of closest edges to the given vertex." alt="" coords="885,336,1043,376"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="819,322,873,334,871,339,818,327"/>
+<area shape="rect" id="Node000010" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/reserve.html#" title=" " alt="" coords="1132,186,1280,211"/>
+<area shape="poly" id="edge12_Node000003_Node000010" title=" " alt="" coords="819,304,934,295,998,285,1061,270,1121,245,1172,216,1175,221,1124,250,1062,275,999,290,935,300,819,310"/>
+<area shape="rect" id="Node000011" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/min_element.html#" title=" " alt="" coords="896,235,1032,261"/>
+<area shape="poly" id="edge11_Node000003_Node000011" title=" " alt="" coords="815,285,902,262,904,267,816,291"/>
+<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="1044,372,1139,395,1138,400,1042,377"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="1022,334,1060,315,1128,266,1181,219,1184,223,1131,271,1063,320,1025,338"/>
+<area shape="poly" id="edge19_Node000012_Node000003" title=" " alt="" coords="603,268,653,282,652,287,602,273"/>
+<area shape="poly" id="edge14_Node000012_Node000004" title=" " alt="" coords="557,269,605,303,663,338,729,371,797,400,913,444,911,449,795,405,727,375,660,342,602,307,554,273"/>
+<area shape="poly" id="edge15_Node000012_Node000005" title=" " alt="" coords="543,269,590,339,624,378,663,413,708,440,757,463,854,496,853,501,755,468,706,445,660,417,620,382,585,342,538,272"/>
+<area shape="poly" id="edge16_Node000012_Node000006" title=" " alt="" coords="537,270,552,316,577,375,614,437,637,465,663,490,713,523,757,537,867,551,966,568,1009,566,1060,551,1101,528,1136,498,1165,465,1187,436,1191,439,1169,468,1140,501,1104,532,1062,556,1010,572,966,573,866,556,756,543,710,527,660,494,633,469,610,440,573,378,547,318,532,272"/>
+<area shape="poly" id="edge17_Node000012_Node000007" title=" " alt="" coords="581,228,661,203,775,177,879,159,880,164,776,182,662,208,583,233"/>
+<area shape="poly" id="edge18_Node000012_Node000008" title=" " alt="" coords="613,236,661,229,889,204,890,209,662,235,614,241"/>
+<area shape="poly" id="edge24_Node000012_Node000010" title=" " alt="" coords="555,228,603,197,660,168,716,148,761,136,866,121,965,110,1008,111,1062,122,1094,132,1125,146,1177,176,1174,181,1123,151,1092,137,1061,127,1007,117,965,115,867,127,762,141,718,153,662,173,606,202,558,233"/>
+<area shape="poly" id="edge23_Node000012_Node000011" title=" " alt="" coords="613,248,882,246,883,251,613,253"/>
+<area shape="poly" id="edge20_Node000012_Node000013" title=" " alt="" coords="542,229,607,142,660,78,677,66,680,70,663,82,611,145,547,232"/>
+<area shape="poly" id="edge21_Node000013_Node000006" title=" " alt="" coords="819,41,877,48,941,62,1005,86,1035,102,1063,122,1084,145,1094,168,1101,192,1112,222,1194,387,1190,389,1107,224,1096,194,1089,169,1079,148,1060,126,1033,107,1003,91,940,67,876,53,819,46"/>
+<area shape="poly" id="edge22_Node000013_Node000010" title=" " alt="" coords="810,19,866,8,931,3,998,8,1031,15,1063,27,1108,57,1145,96,1174,137,1195,172,1190,175,1170,140,1141,100,1104,61,1060,32,1030,20,997,13,931,8,867,14,811,24"/>
+<area shape="rect" id="Node000015" href="$classprecice_1_1query_1_1Index.html#a61ff793fd31c44ae072341d03f882a32" title="Get the closest vertex to the given vertex." alt="" coords="661,584,819,624"/>
+<area shape="poly" id="edge26_Node000014_Node000015" title=" " alt="" coords="562,503,663,563,686,575,683,580,660,568,560,508"/>
+<area shape="poly" id="edge29_Node000016_Node000006" title=" " alt="" coords="345,518,404,546,482,579,570,611,662,633,705,640,740,641,818,633,945,620,998,605,1060,574,1101,543,1137,506,1188,437,1192,440,1141,509,1105,547,1063,578,1000,610,946,625,819,639,740,647,705,645,661,639,569,616,480,584,402,551,342,523"/>
+</map>

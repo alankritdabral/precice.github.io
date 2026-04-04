@@ -1,0 +1,37 @@
+<map id="precice::impl::ParticipantImpl::mapAndReadData" name="precice::impl::ParticipantImpl::mapAndReadData">
+<area shape="rect" id="Node000001" title="Reads data values from a mesh using a just&#45;in&#45;time data mapping. Values correspond to a given point i..." alt="" coords="5,255,188,295"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1span.html#ab25ca07a93bfa334622507c2c22b1034" title=" " alt="" coords="279,5,431,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,254,117,209,144,151,183,90,207,63,235,40,264,25,266,30,237,44,211,67,187,94,149,153,122,211,106,256"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1span.html#a864923e4c92c2dd5176f2956531c977c" title=" " alt="" coords="275,55,434,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="105,254,124,217,152,173,189,127,235,89,261,77,263,81,237,94,193,131,156,176,128,220,109,256"/>
+<area shape="rect" id="Node000004" href="$namespaceprecice_1_1math.html#a0e86802cfe992deba131d789d035b5b7" title="Compares two Eigen::MatrixBase for equality up to tolerance." alt="" coords="273,104,436,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="113,253,163,200,197,171,235,146,271,131,273,136,237,151,201,175,167,204,116,257"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1impl_1_1DataContext.html#a947bcec25838edbba8d675527d1bb568" title="Get the dimensions of _providedData." alt="" coords="521,74,717,114"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="128,253,177,224,235,197,300,175,353,164,406,154,473,138,543,116,545,121,474,143,407,159,354,169,302,180,237,202,180,229,131,257"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1impl_1_1DataContext.html#ab6daa625b7405f14df10ac1f93dc49f6" title="Get the spatial dimensions of _providedData." alt="" coords="521,138,717,178"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="184,253,235,241,514,178,515,184,237,246,185,258"/>
+<area shape="rect" id="Node000007" href="$classprecice_1_1impl_1_1DataContext.html#a302ba32bc5da853e6c08c1219c299a8f" title=" " alt="" coords="521,381,717,421"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="184,293,474,362,526,375,524,380,473,367,183,298"/>
+<area shape="rect" id="Node000008" href="$classprecice_1_1impl_1_1ParticipantImpl.html#a7fccfe140801238825be5485eedef1f0" title="Checks if the coupled simulation is still ongoing." alt="" coords="263,421,446,461"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="117,294,168,346,201,375,237,400,264,413,262,418,235,404,198,379,164,350,113,298"/>
+<area shape="rect" id="Node000009" href="$classprecice_1_1impl_1_1ReadDataContext.html#acbe4044185a01b53b620f7f07a656072" title="Forwards the just&#45;in&#45;time mapping API call for reading data to the data context." alt="" coords="240,255,469,295"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="188,273,226,273,226,278,188,278"/>
+<area shape="rect" id="Node000013" href="$classprecice_1_1span.html#ae91f5ed50b6cbf0d15382b8e3c2a9a04" title=" " alt="" coords="548,445,691,471"/>
+<area shape="poly" id="edge18_Node000001_Node000013" title=" " alt="" coords="124,294,175,329,237,362,301,381,354,386,408,390,474,406,499,418,522,430,549,439,547,444,520,435,496,423,472,411,407,396,354,391,300,386,235,367,172,334,121,298"/>
+<area shape="rect" id="Node000014" href="$classprecice_1_1impl_1_1ParticipantImpl.html#aec5e745bdbf614d8fc438f0f22f23526" title=" " alt="" coords="236,485,473,540"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="109,295,128,332,156,379,193,428,238,471,246,476,243,481,234,475,189,432,152,382,123,335,105,297"/>
+<area shape="rect" id="Node000016" href="$namespaceprecice_1_1math.html#a637fb406522d6ac4dcba2fabba693f3f" title=" " alt="" coords="249,564,460,589"/>
+<area shape="poly" id="edge19_Node000001_Node000016" title=" " alt="" coords="104,295,118,347,143,417,160,454,182,490,207,523,238,551,244,555,241,560,234,555,204,526,177,493,156,457,138,419,112,349,99,296"/>
+<area shape="poly" id="edge10_Node000009_Node000005" title=" " alt="" coords="385,253,427,222,471,184,485,168,494,153,503,138,520,124,529,118,532,123,523,128,507,142,498,156,489,171,475,188,431,226,388,257"/>
+<area shape="poly" id="edge13_Node000009_Node000006" title=" " alt="" coords="433,253,472,234,486,223,495,212,505,200,520,188,532,181,534,186,523,192,509,204,499,215,490,227,475,239,435,258"/>
+<area shape="poly" id="edge14_Node000009_Node000007" title=" " alt="" coords="437,293,475,312,490,326,500,340,508,353,523,367,533,372,530,377,520,371,504,357,495,343,486,329,472,316,435,298"/>
+<area shape="rect" id="Node000010" href="$classprecice_1_1span.html#a38fb4273ab189e44dfb475c17e063a9a" title=" " alt="" coords="547,203,692,228"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="443,253,549,229,550,234,444,258"/>
+<area shape="rect" id="Node000011" href="$classprecice_1_1impl_1_1DataContext.html#a83f060a7c5fc9427870f99ba210c822e" title="Get the Name of _providedData." alt="" coords="521,253,717,293"/>
+<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="469,272,508,271,508,276,469,277"/>
+<area shape="rect" id="Node000012" href="$classprecice_1_1impl_1_1DataContext.html#afe73d1400324382a66b24c6b64f17adc" title="Get the name of _mesh." alt="" coords="521,317,717,357"/>
+<area shape="poly" id="edge12_Node000009_Node000012" title=" " alt="" coords="442,293,520,311,519,316,441,298"/>
+<area shape="poly" id="edge15_Node000009_Node000013" title=" " alt="" coords="389,293,432,324,475,363,490,382,498,400,507,415,523,431,537,438,534,443,520,435,503,419,493,402,485,385,471,366,428,328,386,298"/>
+<area shape="rect" id="Node000015" href="$classprecice_1_1utils_1_1IntraComm.html#a946589c66048ff3058ffa078d54b6073" title="True if this process is running in parallel." alt="" coords="526,495,713,535"/>
+<area shape="poly" id="edge17_Node000014_Node000015" title=" " alt="" coords="474,511,512,512,512,517,474,517"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="precice::cplscheme::BaseCouplingScheme::getNextTimeStepMaxSize" name="precice::cplscheme::BaseCouplingScheme::getNextTimeStepMaxSize">
+<area shape="rect" id="Node000001" title="Returns the maximal size of the next time step to be computed." alt="" coords="5,45,204,100"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a073567dc3535de4121def61a3dc5215c" title="Function to check whether time window size is defined by coupling scheme." alt="" coords="252,5,423,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,53,238,47,239,52,205,58"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1cplscheme_1_1BaseCouplingScheme.html#a0f21dae30a9253a435a98434c016d2a4" title="Returns true, when the coupled simulation is still ongoing." alt="" coords="252,84,423,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="205,87,239,92,238,98,204,92"/>
+<area shape="rect" id="Node000003" href="$namespaceprecice_1_1math.html#a0e86802cfe992deba131d789d035b5b7" title="Compares two Eigen::MatrixBase for equality up to tolerance." alt="" coords="471,20,633,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="423,30,457,30,457,35,423,35"/>
+</map>

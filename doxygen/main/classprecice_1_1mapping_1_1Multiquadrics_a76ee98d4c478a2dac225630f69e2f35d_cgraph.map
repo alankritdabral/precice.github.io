@@ -1,0 +1,7 @@
+<map id="precice::mapping::Multiquadrics::operator()" name="precice::mapping::Multiquadrics::operator()">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,236,63"/>
+<area shape="rect" id="Node000002" href="$namespaceprecice_1_1math.html#a37f5823aac685c016c9ebe3bf344b146" title="Computes the power of a given number by an integral exponent given at compile time,..." alt="" coords="284,5,455,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,29,270,25,271,31,237,34"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="332,55,407,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="237,52,319,60,318,65,236,57"/>
+</map>

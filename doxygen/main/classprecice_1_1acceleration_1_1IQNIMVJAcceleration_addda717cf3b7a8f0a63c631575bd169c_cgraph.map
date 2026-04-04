@@ -1,0 +1,20 @@
+<map id="precice::acceleration::IQNIMVJAcceleration::computeNewtonUpdateEfficient" name="precice::acceleration::IQNIMVJAcceleration::computeNewtonUpdateEfficient">
+<area shape="rect" id="Node000001" title=": computes the quasi&#45;Newton update vector based on the same numerics as above. However,..." alt="" coords="5,95,243,150"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1acceleration_1_1IQNIMVJAcceleration.html#aacd68d13e248791d4b9d66831f00b991" title=": re&#45;computes the matrix _Wtil = ( W &#45; J_prev * V) instead of updating it according to V" alt="" coords="291,134,455,189"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,138,277,144,277,149,243,144"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1acceleration_1_1BaseQNAcceleration.html#a2354cc9c97ebd8ff1ba76b5959e79f20" title=": computes number of cols in least squares system, i.e, number of cols in _matrixV,..." alt="" coords="522,51,685,106"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="155,93,215,51,251,31,290,16,335,5,372,3,409,7,455,16,498,28,538,43,536,48,496,33,454,21,408,12,372,8,336,11,291,21,254,36,218,55,158,97"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1acceleration_1_1BaseQNAcceleration.html#aafaf4e7716db0218c61b1ede572cdf8d" title=" " alt="" coords="522,209,685,263"/>
+<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="173,148,229,175,291,199,347,212,403,221,509,231,508,236,403,226,345,217,290,204,227,180,171,152"/>
+<area shape="rect" id="Node000007" href="$classprecice_1_1acceleration_1_1IQNIMVJAcceleration.html#a361265de574a4ef9558d3bcb10cc54d1" title=": computes the pseudo inverse of V multiplied with V^T, i.e., Z = (V^TV)^&#45;1V^T via QR&#45;dec" alt="" coords="291,55,455,110"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="243,101,277,95,277,101,243,106"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="449,131,513,108,514,113,451,136"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="456,185,510,203,508,208,454,190"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1acceleration_1_1BaseQNAcceleration.html#a9fa3c949204c7aebb6b9511ec3ba4448" title=" " alt="" coords="503,130,704,185"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="455,157,489,157,489,162,455,162"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1utils_1_1IntraComm.html#a946589c66048ff3058ffa078d54b6073" title="True if this process is running in parallel." alt="" coords="752,177,939,217"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="685,220,738,212,739,217,685,226"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="705,171,739,177,738,182,704,176"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="455,78,508,78,508,83,455,84"/>
+<area shape="poly" id="edge11_Node000007_Node000007" title=" " alt="" coords="328,55,328,45,336,36,351,31,373,29,399,32,413,40,411,44,397,37,373,34,352,36,339,41,333,47,333,55"/>
+</map>

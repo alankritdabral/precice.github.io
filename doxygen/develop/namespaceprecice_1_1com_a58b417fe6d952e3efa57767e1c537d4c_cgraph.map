@@ -1,0 +1,23 @@
+<map id="precice::com::receiveConnectionMap" name="precice::com::receiveConnectionMap">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,189,268,215"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1com_1_1serialize_1_1SerializedConnectionMap.html#a352036b293fa4c3532123ce88c322456" title="receives a SerializedConnectionMap and calls assertValid before returning" alt="" coords="316,107,511,161"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,187,302,159,303,164,190,192"/>
+<area shape="rect" id="Node000009" href="$classprecice_1_1com_1_1serialize_1_1SerializedConnectionMap.html#a496360dae8fd4fed55334120552b75e4" title="Builds and returns the connection map represented by the serialized state." alt="" coords="316,213,511,268"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="228,212,303,223,302,228,228,217"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1com_1_1serialize_1_1SerializedConnectionMap.html#ac371682a00038cb21f3da4012831be73" title="asserts the content for correctness" alt="" coords="569,5,764,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="476,104,558,70,577,62,579,67,560,75,479,109"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1com_1_1Communication.html#a2f98f94294a6100d0cd9e21c49fc3967" title="Receives a range of ints as a vector&lt;int&gt;" alt="" coords="559,85,775,125"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="511,120,545,116,545,121,511,125"/>
+<area shape="rect" id="Node000008" href="$classprecice_1_1com_1_1serialize_1_1SerializedConnectionMap.html#a9916c6991446288d8dc3526ab894e300" title=" " alt="" coords="569,149,764,204"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="511,148,556,155,555,161,510,153"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/set/size.html#" title=" " alt="" coords="879,20,983,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="764,30,865,30,865,35,764,35"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1com_1_1Communication.html#a1dba8319f7bd90aecb30efba944f3bc9" title="Receives a std::string from process with given rank." alt="" coords="823,78,1039,118"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="775,99,809,98,809,104,775,105"/>
+<area shape="rect" id="Node000007" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/resize.html#" title=" " alt="" coords="861,143,1000,168"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="772,122,851,137,850,143,771,127"/>
+<area shape="rect" id="Node000010" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/iterator/advance.html#" title=" " alt="" coords="614,228,719,253"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="511,238,601,238,601,243,511,243"/>
+<area shape="rect" id="Node000011" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/map/emplace.html#" title=" " alt="" coords="595,277,738,303"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="511,257,588,272,587,277,510,262"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="precice::com::serialize::SerializedBoundingBoxMap::receive" name="precice::com::serialize::SerializedBoundingBoxMap::receive">
+<area shape="rect" id="Node000001" title="receives a SerializedBoundingBoxMap and calls assertValid before returning" alt="" coords="5,113,213,168"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1com_1_1serialize_1_1SerializedBoundingBoxMap.html#ac5da435f4595d1f171d688a7b260c0ea" title="asserts the content for correctness" alt="" coords="265,5,473,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,111,260,70,280,62,282,67,262,75,170,116"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1com_1_1Communication.html#a2f98f94294a6100d0cd9e21c49fc3967" title="Receives a range of ints as a vector&lt;int&gt;" alt="" coords="261,85,477,125"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,124,247,119,248,124,214,129"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1com_1_1serialize_1_1SerializedBoundingBoxMap.html#a5611225eb22d9294230e9005426828f2" title=" " alt="" coords="265,149,473,204"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="214,152,252,158,251,163,213,158"/>
+<area shape="rect" id="Node000007" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="307,228,432,253"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="159,166,208,191,262,214,294,224,292,229,260,219,206,196,156,170"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1com_1_1Communication.html#a1dba8319f7bd90aecb30efba944f3bc9" title="Receives a std::string from process with given rank." alt="" coords="525,57,741,97"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="477,91,512,87,512,92,478,96"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/resize.html#" title=" " alt="" coords="564,121,703,147"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="478,114,551,122,550,128,477,119"/>
+</map>

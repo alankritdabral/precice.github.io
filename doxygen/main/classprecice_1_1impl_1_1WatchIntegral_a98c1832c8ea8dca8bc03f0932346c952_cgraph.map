@@ -1,0 +1,21 @@
+<map id="precice::impl::WatchIntegral::exportIntegralData" name="precice::impl::WatchIntegral::exportIntegralData">
+<area shape="rect" id="Node000001" title="Writes one line with data of the integral over the mesh into the output file." alt="" coords="5,133,209,173"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1impl_1_1WatchIntegral.html#afad466b203e147badc42d8247bebd978" title=" " alt="" coords="257,5,461,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,131,189,93,256,55,273,48,275,53,259,60,192,97,137,135"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1impl_1_1WatchIntegral.html#ad509475bc558fa97bf90f9ad6daee7e0" title=" " alt="" coords="257,69,461,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="186,131,266,110,268,115,188,136"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1utils_1_1IntraComm.html#a288038e87868e4078aed49436aa20264" title="Number of ranks. This includes ranks from both participants, e.g. minimal size is 2." alt="" coords="266,133,453,173"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="209,151,252,151,252,156,209,156"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1utils_1_1IntraComm.html#abde303b11e46851ae65dca65ef06daad" title="True if this process is running a secondary rank." alt="" coords="266,197,453,237"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="188,171,268,191,266,197,186,176"/>
+<area shape="rect" id="Node000007" href="$classprecice_1_1utils_1_1IntraComm.html#ae428ead3ae2209f974fdc35d5d7d41c4" title=" " alt="" coords="266,261,453,301"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="137,171,192,209,259,247,275,254,273,259,256,252,189,214,134,176"/>
+<area shape="rect" id="Node000003" href="$namespaceprecice_1_1mesh.html#a162b2fb3f2b688033cc4363e5cc8b06d" title="Given the data and the mesh, this function returns the surface integral. Assumes no overlap exists fo..." alt="" coords="509,5,689,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="462,23,496,23,496,28,462,28"/>
+<area shape="rect" id="Node000008" href="$classprecice_1_1span.html#ab25ca07a93bfa334622507c2c22b1034" title=" " alt="" coords="523,219,675,245"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="452,260,523,245,524,250,453,265"/>
+<area shape="rect" id="Node000009" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/copy.html#" title=" " alt="" coords="559,269,640,294"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="453,279,545,279,545,284,453,284"/>
+<area shape="rect" id="Node000010" href="$classprecice_1_1span.html#ab86c14ec7bc7475d3ddb21d400e93121" title=" " alt="" coords="529,318,669,343"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="453,298,524,312,523,318,452,303"/>
+</map>

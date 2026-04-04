@@ -1,0 +1,23 @@
+<map id="precice::mesh::Mesh::getOwnedVertexData" name="precice::mesh::Mesh::getOwnedVertexData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,202,175,242"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/data.html#" title=" " alt="" coords="243,5,371,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,200,117,166,144,123,179,79,221,41,233,34,236,39,224,45,183,83,148,126,121,168,103,203"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1mesh_1_1Mesh.html#a81b21c3d6f589494c843e2a2ff65da43" title="Does the mesh contain any vertices?" alt="" coords="229,55,385,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="108,200,157,153,221,105,232,99,235,104,224,110,160,157,112,204"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1mesh_1_1Mesh.html#a66a15ef22bb05be4699cf2bab9b1cb83" title="Call preprocess() before index() to ensure correct projection handling." alt="" coords="229,119,385,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="142,200,240,162,242,167,144,204"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1mesh_1_1Mesh.html#a4220c9b15bb1c3dbf5c00701851f8288" title="Returns the number of vertices." alt="" coords="643,277,799,317"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="175,214,278,213,391,219,522,242,639,270,638,276,521,247,390,225,278,218,175,220"/>
+<area shape="rect" id="Node000006" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="223,235,391,260"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="175,229,209,233,209,239,174,235"/>
+<area shape="rect" id="Node000007" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="244,284,369,309"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="144,240,224,269,250,277,248,282,222,274,142,245"/>
+<area shape="rect" id="Node000008" href="$classprecice_1_1mesh_1_1Mesh.html#a61d536967e403c9c2c4dfa33ddc8a044" title="Mutable access to a vertex by VertexID." alt="" coords="229,334,385,374"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="115,240,164,279,224,320,236,326,233,331,221,324,161,284,112,244"/>
+<area shape="rect" id="Node000010" href="$classprecice_1_1mesh_1_1Mesh.html#a13faa9b03e5d20918ed6528db1415fa3" title="Returns modifieable container holding all vertices." alt="" coords="229,398,385,438"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="105,241,152,310,185,350,224,384,232,389,229,393,221,388,182,353,148,314,101,244"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="381,331,438,319,536,307,628,299,629,304,537,312,439,325,382,337"/>
+<area shape="rect" id="Node000009" href="$classprecice_1_1mesh_1_1Mesh.html#ac21407160a09623491d9f6364c0a7e43" title="Returns true if the given vertexID is valid." alt="" coords="439,334,595,374"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="385,351,425,351,425,357,385,357"/>
+<area shape="poly" id="edge9_Node000009_Node000005" title=" " alt="" coords="588,331,635,318,637,323,589,337"/>
+</map>

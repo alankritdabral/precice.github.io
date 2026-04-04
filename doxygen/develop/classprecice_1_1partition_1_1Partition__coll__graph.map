@@ -1,0 +1,21 @@
+<map id="precice::partition::Partition" name="precice::partition::Partition">
+<area shape="rect" id="Node000001" title="Abstract base class for partitions." alt="" coords="1155,104,1287,144"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="813,11,997,37"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1011,23,1072,32,1132,51,1171,75,1202,102,1199,106,1168,79,1130,56,1071,38,1010,29"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="816,67,995,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1009,96,1155,114,1154,119,1008,101"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="480,74,685,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="699,84,816,84,816,89,699,89"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector.html" title=" " alt="" coords="816,131,995,171"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1008,153,1069,152,1130,147,1157,141,1158,147,1131,152,1069,158,1008,159"/>
+<area shape="rect" id="Node000006" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr.html" title=" " alt="" coords="493,138,672,163"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="686,148,816,148,816,153,686,153"/>
+<area shape="rect" id="Node000007" href="$classprecice_1_1logging_1_1Logger.html" title="This class provides a lightweight logger." alt="" coords="817,195,994,221"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1008,205,1069,197,1130,182,1165,164,1195,142,1198,146,1168,168,1132,186,1070,203,1008,210"/>
+<area shape="rect" id="Node000008" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/unique_ptr.html" title=" " alt="" coords="469,188,696,228"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="710,205,817,205,817,211,710,211"/>
+<area shape="rect" id="Node000009" href="$classprecice_1_1logging_1_1Logger_1_1LoggerImpl.html" title=" " alt="" coords="217,188,395,228"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="408,205,469,205,469,211,408,211"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="5,188,168,228"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="182,205,217,205,217,211,182,211"/>
+</map>

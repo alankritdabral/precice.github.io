@@ -1,0 +1,83 @@
+<map id="precice::testing::TestContext::TestContext" name="precice::testing::TestContext::TestContext">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,435,212,475"/>
+<area shape="rect" id="Node000002" href="$classprecice_1_1testing_1_1TestContext.html#a2fe5767d24dcaf51fe850660cc8d40a1" title="Main entrypoint." alt="" coords="260,435,467,475"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,452,246,452,246,457,212,457"/>
+<area shape="rect" id="Node000003" href="$classprecice_1_1testing_1_1TestContext.html#ad10763dd01277ea7e0a0e59e671b219d" title="Initialize Events if required." alt="" coords="515,123,721,163"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="379,433,513,265,589,171,593,175,517,268,383,436"/>
+<area shape="rect" id="Node000006" href="$classprecice_1_1testing_1_1TestContext.html#abd109d825f755e8bb51244fa09d6a7de" title="Initialize the intra&#45;participant communication connection if requested." alt="" coords="515,279,721,319"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="396,432,571,324,574,328,398,437"/>
+<area shape="rect" id="Node000014" href="$classprecice_1_1testing_1_1TestContext.html#a7e03470228a61d376c70e14fb332a06a" title="Initialize Ginkgo if required." alt="" coords="515,435,721,475"/>
+<area shape="poly" id="edge16_Node000002_Node000014" title=" " alt="" coords="467,452,501,452,501,457,467,457"/>
+<area shape="rect" id="Node000016" href="$classprecice_1_1testing_1_1TestContext.html#a812027671345dcade7414e24d8b45813" title=" " alt="" coords="515,757,721,797"/>
+<area shape="poly" id="edge18_Node000002_Node000016" title=" " alt="" coords="383,473,595,745,590,748,378,476"/>
+<area shape="rect" id="Node000036" href="$classprecice_1_1testing_1_1TestContext.html#a58ad3c01e57de4970f77eb88353781d0" title="Initialize PETSc if required." alt="" coords="515,965,721,1005"/>
+<area shape="poly" id="edge43_Node000002_Node000036" title=" " alt="" coords="375,474,431,615,472,711,517,808,560,886,599,952,594,955,555,889,512,811,467,714,426,617,370,476"/>
+<area shape="rect" id="Node000004" href="$classprecice_1_1profiling_1_1EventRegistry.html#a0a1555e6211794ef23fcaf7a4f41950d" title="Returns the only instance (singleton) of the EventRegistry class." alt="" coords="789,29,972,69"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="664,120,768,79,793,71,794,76,770,84,666,125"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="832,30,829,20,837,10,854,5,881,3,911,6,927,13,925,18,910,11,881,8,855,10,840,15,834,21,837,28"/>
+<area shape="rect" id="Node000005" href="$classprecice_1_1profiling_1_1EventRegistry.html#accbda0e81acd443abf06cdf62a901c09" title="Deleted copy and move SMFs for singleton pattern." alt="" coords="1040,29,1259,69"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="972,47,1026,47,1026,52,972,52"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="1105,30,1102,20,1110,10,1125,5,1149,3,1177,6,1192,13,1190,18,1176,11,1149,8,1126,10,1113,15,1108,21,1110,28"/>
+<area shape="rect" id="Node000007" href="$classprecice_1_1utils_1_1IntraComm.html#ad8494d9e3d57e0f5944d826585b3f4ad" title="Configures the intra&#45;participant communication." alt="" coords="787,93,974,133"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="631,277,686,211,725,175,768,143,780,136,783,141,771,148,728,179,690,215,636,280"/>
+<area shape="rect" id="Node000008" href="$classprecice_1_1utils_1_1IntraComm.html#ad45fca6e5adf1b476ddb74f3f53e750c" title="Intra&#45;participant communication." alt="" coords="787,157,974,197"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="647,276,702,241,768,207,787,200,789,204,770,212,704,246,649,281"/>
+<area shape="rect" id="Node000009" href="$classprecice_1_1testing_1_1TestContext.html#ab410f680ed3f84ee3994cbb1eb49a217" title="Check whether this context has a given size." alt="" coords="777,221,984,261"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="710,276,775,262,776,267,711,281"/>
+<area shape="rect" id="Node000010" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr/reset.html#" title=" " alt="" coords="801,286,961,311"/>
+<area shape="poly" id="edge11_Node000006_Node000010" title=" " alt="" coords="721,296,787,296,787,301,721,301"/>
+<area shape="rect" id="Node000011" href="$namespaceprecice_1_1logging.html#a33f23997f82442b8a7f097ec2e5d87c8" title=" " alt="" coords="775,335,986,361"/>
+<area shape="poly" id="edge12_Node000006_Node000011" title=" " alt="" coords="722,315,800,330,799,335,721,321"/>
+<area shape="rect" id="Node000013" href="$namespaceprecice_1_1logging.html#a3ea82083941739cf1dbb8e5b392a88c7" title=" " alt="" coords="769,385,992,410"/>
+<area shape="poly" id="edge14_Node000006_Node000013" title=" " alt="" coords="656,316,709,344,770,369,801,379,799,384,768,375,707,349,653,321"/>
+<area shape="rect" id="Node000012" href="$namespaceprecice_1_1logging.html#a90d9b50f6478a00af9aea3edd59e49cc" title="Returns the global logging configuration." alt="" coords="1051,353,1247,393"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="987,355,1038,360,1038,365,986,361"/>
+<area shape="poly" id="edge15_Node000013_Node000012" title=" " alt="" coords="992,385,1037,381,1038,386,992,390"/>
+<area shape="rect" id="Node000015" href="$classprecice_1_1device_1_1Device.html#afc4a6e499d3a1416915da4f76ee92866" title=" " alt="" coords="794,435,967,475"/>
+<area shape="poly" id="edge17_Node000014_Node000015" title=" " alt="" coords="721,452,780,452,780,457,721,457"/>
+<area shape="rect" id="Node000017" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/back.html#" title=" " alt="" coords="815,499,946,525"/>
+<area shape="poly" id="edge19_Node000016_Node000017" title=" " alt="" coords="623,756,641,710,671,649,713,587,739,558,768,534,801,518,803,523,771,538,742,562,717,590,675,652,646,712,628,758"/>
+<area shape="rect" id="Node000018" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="813,549,948,574"/>
+<area shape="poly" id="edge20_Node000016_Node000018" title=" " alt="" coords="628,755,650,720,681,676,721,630,768,591,799,576,801,580,771,596,725,634,685,679,654,723,633,758"/>
+<area shape="rect" id="Node000019" href="$classprecice_1_1utils_1_1Parallel.html#a2aeadec30c9e48918e014608ede4d51d" title="Returns an owning pointer to the current CommState." alt="" coords="1307,700,1468,740"/>
+<area shape="poly" id="edge21_Node000016_Node000019" title=" " alt="" coords="634,755,689,701,727,673,768,651,839,624,901,603,958,590,1012,584,1066,585,1123,592,1187,607,1260,628,1287,640,1313,655,1357,688,1354,692,1310,659,1285,644,1258,633,1186,612,1122,598,1066,590,1012,589,958,595,902,608,841,629,770,656,730,677,693,705,638,759"/>
+<area shape="rect" id="Node000024" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/iterator/distance.html#" title=" " alt="" coords="828,765,933,790"/>
+<area shape="poly" id="edge27_Node000016_Node000024" title=" " alt="" coords="721,775,814,775,814,780,721,780"/>
+<area shape="rect" id="Node000025" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="819,814,942,839"/>
+<area shape="poly" id="edge28_Node000016_Node000025" title=" " alt="" coords="722,794,806,810,805,815,721,799"/>
+<area shape="rect" id="Node000026" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/partial_sum.html#" title=" " alt="" coords="817,863,944,889"/>
+<area shape="poly" id="edge29_Node000016_Node000026" title=" " alt="" coords="655,795,708,823,770,849,805,860,803,865,768,855,706,828,652,800"/>
+<area shape="rect" id="Node000027" href="$classprecice_1_1testing_1_1TestContext.html#af7dd2dfc718bea23291c2cfbf70ce656" title=" " alt="" coords="1046,643,1253,683"/>
+<area shape="poly" id="edge30_Node000016_Node000027" title=" " alt="" coords="643,755,698,718,733,700,769,685,835,669,904,659,971,655,1032,654,1033,659,971,660,905,665,836,674,770,691,735,704,701,722,646,759"/>
+<area shape="rect" id="Node000028" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/container/vector/size.html#" title=" " alt="" coords="818,913,943,938"/>
+<area shape="poly" id="edge32_Node000016_Node000028" title=" " alt="" coords="639,796,695,848,731,876,770,899,805,912,804,917,768,904,728,880,691,852,636,799"/>
+<area shape="rect" id="Node000029" href="$classprecice_1_1utils_1_1Parallel.html#ae82ebe4973e5487a525611cd475e2d32" title="Splits and creates a local MPI communicator according to groupName." alt="" coords="800,700,961,740"/>
+<area shape="poly" id="edge33_Node000016_Node000029" title=" " alt="" coords="710,755,786,738,787,743,711,760"/>
+<area shape="rect" id="Node000033" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/to_string.html#" title=" " alt="" coords="827,962,934,987"/>
+<area shape="poly" id="edge40_Node000016_Node000033" title=" " alt="" coords="633,796,655,830,686,872,725,914,771,948,792,958,814,965,813,970,790,963,768,953,721,918,682,875,650,833,629,799"/>
+<area shape="rect" id="Node000034" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/transform.html#" title=" " alt="" coords="823,1011,938,1037"/>
+<area shape="poly" id="edge41_Node000016_Node000034" title=" " alt="" coords="633,796,698,906,737,962,771,998,790,1008,810,1015,809,1020,788,1013,768,1002,733,966,693,909,628,799"/>
+<area shape="rect" id="Node000035" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/algorithm/upper_bound.html#" title=" " alt="" coords="813,1061,948,1086"/>
+<area shape="poly" id="edge42_Node000016_Node000035" title=" " alt="" coords="634,796,724,952,736,981,742,1005,751,1026,771,1047,801,1063,799,1067,768,1051,747,1029,737,1007,731,983,719,955,629,799"/>
+<area shape="rect" id="Node000020" href="$structprecice_1_1utils_1_1Parallel_1_1CommState.html#a11c87f5cfaad1fb984d9dcd80e6f2c55" title="returns a commstate containing MPI_COMM_WORLD" alt="" coords="1516,728,1677,768"/>
+<area shape="poly" id="edge22_Node000019_Node000020" title=" " alt="" coords="1469,728,1503,733,1502,738,1468,733"/>
+<area shape="rect" id="Node000021" href="$structprecice_1_1utils_1_1Parallel_1_1CommState.html#a440432f97f08c595678e1102edb43b9f" title="returns the commstate representing comm" alt="" coords="1725,785,1915,825"/>
+<area shape="poly" id="edge23_Node000020_Node000021" title=" " alt="" coords="1676,765,1729,779,1728,784,1675,771"/>
+<area shape="rect" id="Node000022" href="$structprecice_1_1utils_1_1Parallel_1_1CommState.html#a5e3626f4c22a0aa7ac05cd740dda95ca" title="returns an blank commstate representing MPI_COMM_NULL" alt="" coords="1963,757,2124,797"/>
+<area shape="poly" id="edge26_Node000020_Node000022" title=" " alt="" coords="1678,751,1949,769,1949,774,1677,756"/>
+<area shape="poly" id="edge24_Node000021_Node000022" title=" " alt="" coords="1915,791,1949,786,1949,792,1915,796"/>
+<area shape="rect" id="Node000023" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/memory/shared_ptr/make_shared.html#" title=" " alt="" coords="2172,765,2309,790"/>
+<area shape="poly" id="edge25_Node000022_Node000023" title=" " alt="" coords="2124,775,2158,775,2158,780,2124,780"/>
+<area shape="poly" id="edge31_Node000027_Node000019" title=" " alt="" coords="1234,680,1294,695,1293,700,1232,685"/>
+<area shape="poly" id="edge34_Node000029_Node000019" title=" " alt="" coords="962,717,1293,717,1293,723,962,723"/>
+<area shape="poly" id="edge35_Node000029_Node000021" title=" " alt="" coords="963,736,994,751,1009,766,1017,782,1026,796,1041,807,1095,823,1168,833,1255,837,1350,837,1545,828,1711,814,1712,820,1545,834,1350,843,1255,843,1168,838,1094,828,1039,812,1022,799,1013,784,1005,769,990,756,960,740"/>
+<area shape="rect" id="Node000030" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/utility/optional/operator_bool.html#" title=" " alt="" coords="1082,872,1217,912"/>
+<area shape="poly" id="edge36_Node000029_Node000030" title=" " alt="" coords="963,733,994,751,1005,764,1013,777,1019,802,1025,827,1031,839,1042,851,1071,870,1068,874,1038,855,1027,842,1020,829,1014,804,1008,779,1001,767,990,755,960,738"/>
+<area shape="rect" id="Node000031" href="$classprecice_1_1utils_1_1Parallel.html#a603b416754124be0703ca4cdbe886456" title=" " alt="" coords="1069,757,1230,797"/>
+<area shape="poly" id="edge37_Node000029_Node000031" title=" " alt="" coords="962,735,1056,755,1055,760,961,740"/>
+<area shape="rect" id="Node000032" href="/home/runner/work/precice.github.io/precice.github.io/website/doxygen/cppreference-doxygen-web.tag.xml$cpp/utility/optional/value_or.html#" title=" " alt="" coords="1066,937,1233,962"/>
+<area shape="poly" id="edge39_Node000029_Node000032" title=" " alt="" coords="963,731,994,751,1010,773,1017,796,1018,839,1019,882,1026,902,1042,922,1055,932,1052,936,1038,926,1022,905,1014,883,1013,839,1012,797,1005,776,990,755,960,736"/>
+<area shape="poly" id="edge38_Node000031_Node000019" title=" " alt="" coords="1230,755,1292,740,1294,745,1231,761"/>
+<area shape="rect" id="Node000037" href="$classprecice_1_1utils_1_1Petsc.html#abdd2cf12e0525b013ea49edb73680c24" title="Initializes the Petsc environment." alt="" coords="807,1111,955,1151"/>
+<area shape="poly" id="edge44_Node000036_Node000037" title=" " alt="" coords="642,1003,698,1050,733,1075,771,1096,794,1107,792,1111,768,1101,730,1079,695,1054,639,1007"/>
+</map>
