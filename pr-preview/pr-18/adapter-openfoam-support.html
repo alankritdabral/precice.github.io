@@ -1,0 +1,2727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="Recent OpenFOAM.com versions work out-of-the-box. Recent OpenFOAM.org versions are also supported, but you will need a version-specific branch.">
+
+<meta name="keywords" content=" adapter, openfoam, support, versions">
+<meta name="theme-color" content="#0A76BB">
+<meta name="msapplication-square310x310logo" content="images/icon-310x310.png">
+
+<title>OpenFOAM support | preCICE - The Coupling Library</title>
+<link rel="alternate" type="application/rss+xml" title="" href="https://precice.org/feed.xml">
+
+<!-- OpenGraph metadata -->
+<meta property="og:title" content="OpenFOAM support" />
+<meta property="og:site_name" content="preCICE.org" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://precice.org/adapter-openfoam-support.html" />
+<meta property="og:image" content="https://precice.org/images/icon-310x310.png" />
+<meta property="og:description" content="Recent OpenFOAM.com versions work out-of-the-box. Recent OpenFOAM.org versions are also supported, but you will need a version-specific branch.">
+
+<!-- Twitter Card metadata -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="OpenFOAM support" />
+<meta name="twitter:description" content="Recent OpenFOAM.com versions work out-of-the-box. Recent OpenFOAM.org versions are also supported, but you will need a version-specific branch.">
+<meta name="twitter:image" content="https://precice.org/images/icon-310x310.png" />
+
+<!-- Canonical link -->
+<link rel="canonical" href="https://precice.org/adapter-openfoam-support" >
+
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/syntax.css">
+<link rel="icon" sizes="192x192" href="images/icon.png">
+<link rel="apple-touch-icon" sizes="310x310" href="images/icon-310x310.png">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<!-- Bootstrap -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Local CSS -->
+<link rel="stylesheet" href="css/modern-business.css">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/customstyles-precice.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<link rel="stylesheet" href="css/bookcover.css">
+<!-- Color styles -->
+<link rel="stylesheet" href="css/theme-precice.css">
+<!-- Styling for landing page -->
+
+
+<!-- Jquery, Ajax -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<!-- Anchor.js -->
+<script src="https://cdn.jsdelivr.net/npm/anchor-js@4.2.0/anchor.min.js" integrity="sha256-m1eTvwEHwmsw4+XKF7BshClVJEPwTVycveNl0CS0Mkk=" crossorigin="anonymous"></script>
+
+<!-- Bootstrap JavaScript (requires jquery) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Local JS -->
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<!-- Algolia search -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.20.1/moment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+
+<!-- QR code for printed pages -->
+<script defer src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var qrDiv = document.createElement("div");
+    qrDiv.id = "print-qr-code";
+    var qr = qrcode(0, "M");
+    qr.addData("https://precice.org/adapter-openfoam-support.html");
+    qr.make();
+    qrDiv.innerHTML = qr.createImgTag(3, 0);
+    document.body.appendChild(qrDiv);
+  });
+</script>
+<style>
+  #print-qr-code {
+    display: none;
+  }
+  @media print {
+    #print-qr-code {
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+    }
+  }
+</style>
+
+<!-- Plausible Analytics -->
+<script async defer data-domain="precice.org" src="https://plausible.io/js/plausible.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    <script>
+        // wrap tables into a div to make them scrollable on small viewports
+        // https://getbootstrap.com/docs/3.4/css/#tables-responsive
+        $(document).ready(function() {
+            $('table').addClass('table');
+            $('table').wrap('<div class="table-responsive"></div>');
+        });
+    </script>
+    
+</head>
+<body>
+    <header>
+        <!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" aria-label="Main">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand no-icon" href="https://precice.org">
+            <span class="navbar-brand-icon">
+            <img class="navbar-brand-text" src="images/preCICE_text_28px.svg" alt="preCICE"></span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                
+                <!-- entries without drop-downs appear here -->
+
+                
+                
+
+                
+                
+                
+                
+                
+                <li><a href="quickstart.html">Quickstart</a></li>
+                
+                
+                
+                
+                
+                <li class="active"><a href="docs.html">Docs</a></li>
+                
+                
+                
+                
+                
+                <li><a href="tutorials.html">Tutorials</a></li>
+                
+                
+                
+                
+                
+                <li><a href="community.html">Community</a></li>
+                
+                
+                
+                
+                
+                <li><a href="https://precice.discourse.group/c/news" target="_blank" rel="noopener">Blog</a></li>
+                
+                
+                
+                
+                
+                <li><a href="about.html">About</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <div id="search-input"></div>
+                        <div id="search-results"></div>
+                        <script>
+const algoliaSearch = instantsearch({
+  appId: 'LIT6P0EW26',
+  apiKey: '760ed6be3e165d08b4a798ac4aa82fe4',
+  indexName: 'jekyll',
+  searchFunction: function(helper) {          // hide search result in init query
+    var searchResults = $('#search-results');
+    if (helper.state.query === '') {
+      searchResults.hide();
+      return;
+    }
+    helper.search();
+    searchResults.show();
+  }
+});
+
+const hitTemplate = function(hit) {
+  let date = '';
+  if (hit.date) {
+    date = moment.unix(hit.date).format('MMM D, YYYY');
+  }
+
+  let url = `${hit.url}#${hit.anchor}`;
+
+  const title = hit._highlightResult.title.value;
+
+  let breadcrumbs = '';
+  if (hit._highlightResult.headings) {
+    breadcrumbs = hit._highlightResult.headings.map(match => {
+      return `<span class="result-breadcrumb">${match.value}</span>`
+    }).join(' > ')
+  }
+
+  const content = hit._highlightResult.html.value;
+
+  return `
+    <div class="result-item">
+    <h2><a class="result-link" href="${url}">${title}</a></h2>
+    <a href="${url}" class="result-breadcrumbs">${breadcrumbs}</a>
+    <div class="result-snippet">${content}</div>
+    </div>
+  `;
+}
+
+algoliaSearch.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '#search-input',
+    placeholder: 'Search (' + (/Mac|iPhone|iPad/.test(navigator.platform) ? '⌘K' : 'Ctrl+K') + ')',
+    poweredBy: true, // This is required if you're on the free Community plan
+    magnifier: false,
+    autofocus: false,
+    searchOnEnterKeyPressOnly: false,
+    reset: true
+  })
+);
+
+algoliaSearch.addWidget(
+  instantsearch.widgets.hits({
+    container: '#search-results',
+    templates: {
+      item: hitTemplate
+    }
+  })
+);
+
+algoliaSearch.start();
+
+// Patch the style of the search input bar generated by the above script
+// The equivalent CSS is below, however, including <style> in <body> is against the W3C commandments
+// Chrome and Firefox had baby called scope, but it didn't make it
+// https://stackoverflow.com/questions/2830296/using-style-tags-in-the-body-with-other-html
+var elem = document.querySelector('.ais-search-box--powered-by');
+elem.style.marginTop = '-15px';
+elem.style.paddingRight = '5px';
+
+var elem = document.querySelector('.nav li a.ais-search-box--powered-by-link');
+elem.style.padding = '0';
+elem.style.backgroundColor = 'transparent';
+elem.style.display = "inline-block";
+
+var elem = document.querySelector('.ais-search-box--input');
+elem.style.paddingLeft = '10px';
+elem.style.borderColor = '#0A76BB';
+
+var elem = document.querySelector('.ais-search-box');
+elem.style.padding = '.5em';
+elem.style.marginBottom = '0px';
+elem.style.marginLeft = '10px';
+elem.style.marginTop = '0px';
+elem.style.width = '20em';
+elem.style.fontSize = '0.8em';
+elem.style.height = '50px';
+elem.style.boxSizing = 'border-box';
+
+/*<style type="text/css">
+.ais-search-box--powered-by {
+  margin-top: -15px;
+  padding-right: 5px;
+}
+.nav li a.ais-search-box--powered-by-link {
+  padding: 0;
+  background-color: transparent;
+  display: inline-block;
+}
+.ais-search-box--input {
+  padding-left: 10px;
+  border-color: #0A76BB;
+}
+.ais-search-box {
+  padding: .5em;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-top: 0px;
+  width: 20em;
+  font-size: 0.8em;
+  box-sizing: border-box;
+  height: 50px;
+}
+</style>*/
+
+// some hacky JS to hide the search results until we move to docsearch (which is a true autocomplete-type search)
+document.addEventListener('mouseup', function(e) {
+  var results = document.getElementById('search-results');
+  if (!results.contains(e.target)) {
+    results.style.display = 'none';
+  }
+});
+document.addEventListener('mouseup', function(e) {
+  var input = document.getElementById('search-input');
+  var results = document.getElementById('search-results');
+  if (input.contains(e.target)) {
+    results.style.display = 'block';
+  }
+});
+
+// Cmd+K / Ctrl+K keyboard shortcut to focus search, Escape to dismiss
+document.addEventListener('keydown', function(e) {
+  var isMac = /Mac|iPhone|iPad|iPod/.test(navigator.platform);
+  if ((isMac ? e.metaKey : e.ctrlKey) && e.key === 'k') {
+    e.preventDefault();
+    var input = document.querySelector('.ais-search-box--input');
+    if (input) {
+      input.focus();
+      input.select();
+    }
+  }
+
+  if (e.key === 'Escape' || e.keyCode === 27) {
+    var results = document.getElementById('search-results');
+    var inputContainer = document.getElementById('search-input');
+    var activeElement = document.activeElement;
+
+    if (results) {
+      results.style.display = 'none';
+    }
+
+    if (inputContainer && inputContainer.contains(activeElement)) {
+      activeElement.blur();
+    } else if (results && results.contains(activeElement)) {
+      var algoliaInput = document.querySelector('#search-input .ais-search-box--input');
+      if (algoliaInput) {
+        algoliaInput.focus();
+      } else {
+        activeElement.blur();
+      }
+    }
+  }
+});
+
+</script>
+                    </div>
+                    <!--end search-->
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://precice.discourse.group" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Join the discourse community"><i class="fab fa-discourse"></i></a>
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://github.com/precice" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Star precice/precice on GitHub"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://www.linkedin.com/company/precice" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <!-- rel="me" required by Mastodon for verification -->
+                    <a rel="me noopener noreferrer" class="no-icon nav-external" href="https://fosstodon.org/@precice" target="_blank" data-show-count="false" aria-label="Follow us on Mastodon"><i class="fab fa-mastodon"></i></a>
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://www.youtube.com/c/preCICECoupling/" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Subscribe on Youtube"><i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+          <!-- News banner -->
+          
+
+
+
+    </header>
+    <div class="container" style="margin-bottom:50px">
+        
+        <div class="row">
+          <div class="col-md-3" id="tg-sb-sidebar">
+            
+
+<nav aria-label="Documentation">
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">Documentation </li>
+  
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Fundamentals" href="#">Fundamentals</a>
+    <ul>
+      
+      
+      
+      <li><a title="Overview" href="docs.html">Overview</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Terminology" href="fundamentals-terminology.html">Terminology</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="License information" href="fundamentals-license.html">License information</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Literature guide" href="fundamentals-literature-guide.html">Literature guide</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Roadmap" href="fundamentals-roadmap.html">Roadmap</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="FAQ" href="fundamentals-faq.html">FAQ</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Previous versions" href="fundamentals-previous-versions.html">Previous versions</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Installation" href="#">Installation</a>
+    <ul>
+      
+      
+      
+      <li><a title="Overview" href="installation-overview.html">Overview</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="System packages" href="installation-packages.html">System packages</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Using Spack" href="installation-spack.html">Using Spack</a></li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="Building from source" href="#">Building from source</a>
+        <ul>
+          
+          
+          
+          <li><a title="Preparation" href="installation-source-preparation.html">Preparation</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Dependencies" href="installation-source-dependencies.html">Dependencies</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Configuration" href="installation-source-configuration.html">Configuration</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Building" href="installation-source-building.html">Building</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Testing" href="installation-source-testing.html">Testing</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Installation" href="installation-source-installation.html">Installation</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Finding" href="installation-source-finding.html">Finding</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Advanced" href="installation-source-advanced.html">Advanced</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Troubleshooting" href="installation-source-troubleshooting.html">Troubleshooting</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Notes on CMake" href="installation-source-cmake.html">Notes on CMake</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Linking to preCICE" href="installation-linking.html">Linking to preCICE</a></li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="Language bindings" href="#">Language bindings</a>
+        <ul>
+          
+          
+          
+          <li><a title="Fortran" href="installation-bindings-fortran.html">Fortran</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Python" href="installation-bindings-python.html">Python</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Matlab" href="installation-bindings-matlab.html">Matlab</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Julia" href="installation-bindings-julia.html">Julia</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Rust" href="installation-bindings-rust.html">Rust</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Special systems" href="installation-special-systems.html">Special systems</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Demo Virtual Machine" href="installation-vm.html">Demo Virtual Machine</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="preCICE distribution" href="installation-distribution.html">preCICE distribution</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Configuration" href="#">Configuration</a>
+    <ul>
+      
+      
+      
+      <li><a title="Overview" href="configuration-overview.html">Overview</a></li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="Basics" href="#">Basics</a>
+        <ul>
+          
+          
+          
+          <li><a title="Introduction" href="configuration-introduction.html">Introduction</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Mapping" href="configuration-mapping.html">Mapping</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Communication" href="configuration-communication.html">Communication</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Coupling scheme" href="configuration-coupling.html">Coupling scheme</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Acceleration" href="configuration-acceleration.html">Acceleration</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Mesh exchange example" href="configuration-coupling-mesh-exchange.html">Mesh exchange example</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="Advanced topics" href="#">Advanced topics</a>
+        <ul>
+          
+          
+          
+          <li><a title="Multi coupling" href="configuration-coupling-multi.html">Multi coupling</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Logging" href="configuration-logging.html">Logging</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Export" href="configuration-export.html">Export</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Action" href="configuration-action.html">Action</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Watchpoint" href="configuration-watchpoint.html">Watchpoint</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Watch integral" href="configuration-watchintegral.html">Watch integral</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      
+      
+      
+      <li><a title="XML reference" href="configuration-xml-reference.html">XML reference</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Tooling" href="#">Tooling</a>
+    <ul>
+      
+      
+      
+      <li><a title="Overview" href="tooling-overview.html">Overview</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Artificial solver testing environment (ASTE)" href="tooling-aste.html">Artificial solver testing environment (ASTE)</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="The preCICE CLI" href="tooling-cli.html">The preCICE CLI</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Built-in tooling" href="tooling-builtin.html">Built-in tooling</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Config visualization" href="tooling-config-visualization.html">Config visualization</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="FMI runner" href="tooling-fmi-runner.html">FMI runner</a></li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="Micro Manager" href="#">Micro Manager</a>
+        <ul>
+          
+          
+          
+          <li><a title="Overview" href="tooling-micro-manager-overview.html">Overview</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Get the Micro Manager" href="tooling-micro-manager-installation.html">Get the Micro Manager</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Preparing micro simulation" href="tooling-micro-manager-prepare-micro-simulation.html">Preparing micro simulation</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Configuration" href="tooling-micro-manager-configuration.html">Configuration</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Running" href="tooling-micro-manager-running.html">Running</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Logging" href="tooling-micro-manager-logging.html">Logging</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Adaptivity" href="tooling-micro-manager-adaptivity.html">Adaptivity</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Model adaptivity" href="tooling-micro-manager-model-adaptivity.html">Model adaptivity</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Snapshot Computation" href="tooling-micro-manager-snapshot-configuration.html">Snapshot Computation</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Performance analysis" href="tooling-performance-analysis.html">Performance analysis</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="RBF shape calculator" href="tooling-rbf-shape.html">RBF shape calculator</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Provided adapters" href="#">Provided adapters</a>
+    <ul>
+      
+      
+      
+      <li><a title="Overview" href="adapters-overview.html">Overview</a></li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="CalculiX" href="#">CalculiX</a>
+        <ul>
+          
+          
+          
+          <li><a title="Overview" href="adapter-calculix-overview.html">Overview</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Get CalculiX" href="adapter-calculix-get-calculix.html">Get CalculiX</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Get the adapter" href="adapter-calculix-get-adapter.html">Get the adapter</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Build the adapter with PaStiX" href="adapter-calculix-pastix-build.html">Build the adapter with PaStiX</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Configuration" href="adapter-calculix-config.html">Configuration</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Troubleshooting" href="adapter-calculix-troubleshooting.html">Troubleshooting</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Building on SuperMUC" href="adapter-calculix-supermuc.html">Building on SuperMUC</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="code_aster" href="#">code_aster</a>
+        <ul>
+          
+          
+          
+          <li><a title="Overview" href="adapter-code_aster.html">Overview</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="deal.II" href="#">deal.II</a>
+        <ul>
+          
+          
+          
+          <li><a title="Overview" href="adapter-dealii-overview.html">Overview</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Get the adapter" href="adapter-dealii-get.html">Get the adapter</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Configuration" href="adapter-dealii-configure.html">Configuration</a></li>
+          
+          
+          
+          
+          
+          <li><a title="For your own deal.II code" href="adapter-dealii-own-project.html">For your own deal.II code</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Limitations and assumptions" href="adapter-dealii-limitations.html">Limitations and assumptions</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Solver details" href="adapter-dealii-solver-details.html">Solver details</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Coupling Meshes in deal.II" href="adapter-dealii-coupling-meshes.html">Coupling Meshes in deal.II</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="DuMuX" href="#">DuMuX</a>
+        <ul>
+          
+          
+          
+          <li><a title="Overview" href="adapter-dumux.html">Overview</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Get the adapter" href="adapter-dumux-get.html">Get the adapter</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Use the adapter" href="adapter-dumux-use.html">Use the adapter</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="DUNE" href="#">DUNE</a>
+        <ul>
+          
+          
+          
+          <li><a title="Overview" href="adapter-dune.html">Overview</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="FEniCS" href="#">FEniCS</a>
+        <ul>
+          
+          
+          
+          <li><a title="Overview" href="adapter-fenics.html">Overview</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="FEniCSx" href="#">FEniCSx</a>
+        <ul>
+          
+          
+          
+          <li><a title="Overview" href="adapter-fenicsx.html">Overview</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="G+Smo" href="#">G+Smo</a>
+        <ul>
+          
+          
+          
+          <li><a title="Overview" href="adapter-gismo.html">Overview</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="Nutils" href="#">Nutils</a>
+        <ul>
+          
+          
+          
+          <li><a title="Overview" href="adapter-nutils.html">Overview</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="OpenFOAM" href="#">OpenFOAM</a>
+        <ul>
+          
+          
+          
+          <li><a title="Overview" href="adapter-openfoam-overview.html">Overview</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Get the adapter" href="adapter-openfoam-get.html">Get the adapter</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Configuration" href="adapter-openfoam-config.html">Configuration</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Extending" href="adapter-openfoam-extend.html">Extending</a></li>
+          
+          
+          
+          
+          
+          <li class="active"><a title="OpenFOAM support" href="adapter-openfoam-support.html">OpenFOAM support</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="SU2" href="#">SU2</a>
+        <ul>
+          
+          
+          
+          <li><a title="Overview" href="adapter-su2-overview.html">Overview</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Get the adapter" href="adapter-su2-get.html">Get the adapter</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Configuration" href="adapter-su2-configure.html">Configuration</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Couple your code" href="#">Couple your code</a>
+    <ul>
+      
+      
+      
+      <li><a title="Overview" href="couple-your-code-overview.html">Overview</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Application programming interface" href="couple-your-code-api.html">Application programming interface</a></li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="Step by step" href="#">Step by step</a>
+        <ul>
+          
+          
+          
+          <li><a title="Step 1 – Preparation" href="couple-your-code-preparing-your-solver.html">Step 1 – Preparation</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Step 2 – Steering methods" href="couple-your-code-steering-methods.html">Step 2 – Steering methods</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Step 3 – Mesh and data access" href="couple-your-code-mesh-and-data-access.html">Step 3 – Mesh and data access</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Step 4 – Coupling flow" href="couple-your-code-coupling-flow.html">Step 4 – Coupling flow</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Step 5 – Non-matching time step sizes" href="couple-your-code-time-step-sizes.html">Step 5 – Non-matching time step sizes</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Step 6 – Implicit coupling" href="couple-your-code-implicit-coupling.html">Step 6 – Implicit coupling</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Step 7 – Data initialization" href="couple-your-code-initializing-coupling-data.html">Step 7 – Data initialization</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Step 8 – Mesh connectivity" href="couple-your-code-defining-mesh-connectivity.html">Step 8 – Mesh connectivity</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Step 9 – Gradient Data" href="couple-your-code-gradient-data.html">Step 9 – Gradient Data</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="Advanced topics" href="#">Advanced topics</a>
+        <ul>
+          
+          
+          
+          <li><a title="Adapter software engineering" href="couple-your-code-adapter-software-engineering.html">Adapter software engineering</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Initialization in existing MPI environment" href="couple-your-code-existing-mpi-environment.html">Initialization in existing MPI environment</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Moving or changing meshes" href="couple-your-code-moving-or-changing-meshes.html">Moving or changing meshes</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Just-in-time data mapping" href="couple-your-code-just-in-time-mapping.html">Just-in-time data mapping</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Dealing with FEM meshes" href="couple-your-code-fem-meshes.html">Dealing with FEM meshes</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Dealing with distributed meshes" href="couple-your-code-distributed-meshes.html">Dealing with distributed meshes</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Direct access to received meshes" href="couple-your-code-direct-access.html">Direct access to received meshes</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Time interpolation of coupling data" href="couple-your-code-waveform.html">Time interpolation of coupling data</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Global data" href="couple-your-code-global-data.html">Global data</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="Porting guides for major versions" href="#">Porting guides for major versions</a>
+        <ul>
+          
+          
+          
+          <li><a title="Porting adapters in general" href="couple-your-code-porting-overview.html">Porting adapters in general</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Porting from 1.x to 2.x" href="couple-your-code-porting-v1-2.html">Porting from 1.x to 2.x</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Porting from 2.x to 3.x" href="couple-your-code-porting-v2-3.html">Porting from 2.x to 3.x</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Running simulations" href="#">Running simulations</a>
+    <ul>
+      
+      
+      
+      <li><a title="Overview" href="running-overview.html">Overview</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Running locally" href="running-simple.html">Running locally</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Distributed systems" href="running-distributed.html">Distributed systems</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="SLURM sessions" href="running-slurm.html">SLURM sessions</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Output files" href="running-output-files.html">Output files</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Dev docs" href="#">Dev docs</a>
+    <ul>
+      
+      
+      
+      <li><a title="Overview" href="dev-docs-overview.html">Overview</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Naming" href="dev-docs-naming.html">Naming</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="General coding conventions" href="dev-docs-dev-conventions.html">General coding conventions</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Timings in preCICE" href="dev-docs-dev-eventtimings.html">Timings in preCICE</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Logging" href="dev-docs-dev-logging.html">Logging</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Optimization" href="dev-docs-dev-optimization.html">Optimization</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Release workflow" href="dev-docs-dev-release.html">Release workflow</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Running and writing tests" href="dev-docs-dev-testing.html">Running and writing tests</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="System tests" href="dev-docs-system-tests.html">System tests</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Tooling" href="dev-docs-dev-tooling.html">Tooling</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Release strategy" href="dev-docs-release-strategy.html">Release strategy</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Publication strategy" href="dev-docs-publication-strategy.html">Publication strategy</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Documentation meta" href="#">Documentation meta</a>
+    <ul>
+      
+      
+      
+      <li><a title="Overview" href="docs-meta-overview.html">Overview</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Content guidelines" href="docs-meta-content-guidelines.html">Content guidelines</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Cheatsheet" href="docs-meta-cheatsheet.html">Cheatsheet</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Landing page" href="docs-meta-landing-page.html">Landing page</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="PDF generation" href="docs-meta-publish-to-pdf.html">PDF generation</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Common issues" href="docs-meta-common-issues.html">Common issues</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Search" href="docs-meta-search.html">Search</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Migration guide" href="docs-meta-migration-guide.html">Migration guide</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  <!-- if you aren't using the accordion, uncomment this block:
+  <p class="external">
+  <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+  </p>
+  -->
+</ul>
+</nav>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+          </div>
+          <main class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">OpenFOAM support</h1>
+</div>
+
+
+
+<div class="post-content">
+
+    
+    <div class="summary">
+        <!-- https://github.com/jekyll/jekyll/issues/3571 -->
+        Recent OpenFOAM.com versions work out-of-the-box. Recent OpenFOAM.org versions are also supported, but you will need a version-specific branch.
+
+    </div>
+    
+
+    <div class="row">
+        <div class="col-md-9 col-sm-8">
+          
+          <nav aria-label="table of contents">
+          
+          
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+    $('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers:  'h2,h3,h4'  });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+          
+          </nav>
+          
+        </div>
+
+        <div class="col-md-3 col-sm-4">
+          
+          <aside>
+            
+                
+                
+                
+                
+                <div class="text-right">
+                    <a target="_blank" rel="noopener" href="https://github.com/precice/openfoam-adapter/edit/develop/docs/openfoam-support.md" class="btn btn-default githubEditButton" role="button"><i class="fab fa-github fa-lg"></i> Edit me</a>
+                </div>
+            
+            <div class="text-right">
+              <small>Updated 10 Mar 26</small>
+            </div>
+          </aside>
+          
+        </div>
+    </div>
+
+   <h2 id="how-to-get-openfoam">How to get OpenFOAM</h2>
+
+<p>The easiest way to start is to get binary packages for your Linux distribution. For example, to <a href="https://gitlab.com/openfoam/core/openfoam/-/wikis/precompiled/debian">get OpenFOAM v2512 on Ubuntu</a>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Add the signing key, add the repository, update:</span>
+wget <span class="nt">-q</span> <span class="nt">-O</span> - https://dl.openfoam.com/add-debian-repo.sh | <span class="nb">sudo </span>bash
+
+<span class="c"># Install OpenFOAM v2512:</span>
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>openfoam2512-dev
+</code></pre></div></div>
+
+<p>As these steps change your <code class="language-plaintext highlighter-rouge">.profile</code>, you need to log out and in again to make OpenFOAM fully discoverable.</p>
+
+<h2 id="supported-openfoam-solvers">Supported OpenFOAM solvers</h2>
+
+<p>We support mainstream OpenFOAM solvers such as pimpleFoam and solids4Foam for FSI, buoyantPimpleFoam, buoyantSimpleFoam, and laplacianFoam for CHT, or pimpleFoam and sonicLiquidFoam for FF. Our community has, additionally, tried the adapter with multiple different solvers that support function objects.</p>
+
+<h2 id="supported-openfoam-versions">Supported OpenFOAM versions</h2>
+
+<p>OpenFOAM is a project with long history and many forks, of which we try to support as many as possible. Since several HPC systems only provide older versions, we try to also support a wide range of versions.</p>
+
+<div class="alert alert-danger" role="alert"><i class="fas fa-exclamation-circle"></i> <b>Warning:</b> 
+Currently, and since v1.3.0 of the adapter (first one for preCICE v3), only the default variant of the adapter for the OpenCFD / ESI is available. We are working on supporting further versions again.
+</div>
+
+<p>We provide version-specific <a href="https://github.com/precice/openfoam-adapter/releases/latest">release archives</a> and respective Git branches for:</p>
+
+<ul>
+  <li>OpenCFD / ESI (openfoam.com) - main focus:
+    <ul>
+      <li><a href="https://github.com/precice/openfoam-adapter">OpenFOAM v1812-v2512</a> or newer</li>
+      <li><a href="https://github.com/precice/openfoam-adapter/tree/OpenFOAMv1806">OpenFOAM v1612-v1806</a> (not tested)</li>
+    </ul>
+  </li>
+  <li>OpenFOAM Foundation (openfoam.org) - secondary, consider experimental:
+    <ul>
+      <li><a href="https://github.com/precice/openfoam-adapter/tree/OpenFOAM10">OpenFOAM 10</a></li>
+      <li><a href="https://github.com/precice/openfoam-adapter/tree/OpenFOAM9">OpenFOAM 9</a></li>
+      <li><a href="https://github.com/precice/openfoam-adapter/tree/OpenFOAM8">OpenFOAM 8</a></li>
+      <li><a href="https://github.com/precice/openfoam-adapter/tree/OpenFOAM7">OpenFOAM 7</a></li>
+      <li><a href="https://github.com/precice/openfoam-adapter/tree/OpenFOAM6">OpenFOAM 6</a></li>
+      <li><a href="https://github.com/precice/openfoam-adapter/tree/OpenFOAM5">OpenFOAM 5.x</a></li>
+      <li><a href="https://github.com/precice/openfoam-adapter/tree/OpenFOAM4">OpenFOAM 4.0/4.1</a> (not tested)</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Known not supported versions: OpenFOAM v1606+ or older, OpenFOAM 3 or older, foam-extend (any version).</p>
+
+<h2 id="availability-of-openfoam-packages">Availability of OpenFOAM packages</h2>
+
+<p>We use the Ubuntu repositories of each OpenFOAM vendor for testing. Quick reference for maintainers:</p>
+
+<ul>
+  <li>OpenCFD / ESI (openfoam.com):
+    <ul>
+      <li><a href="https://dl.openfoam.com/repos/deb/">PPA repository</a></li>
+      <li>More details on the <a href="https://gitlab.com/openfoam/core/openfoam/-/wikis/precompiled">OpenFOAM documentation</a>.</li>
+    </ul>
+  </li>
+  <li>OpenFOAM Foundation (openfoam.org):
+    <ul>
+      <li><a href="https://dl.openfoam.org/ubuntu/">PPA repository</a></li>
+      <li>More details on the <a href="https://dl.openfoam.org/">OpenFOAM documentation</a>.</li>
+    </ul>
+  </li>
+  <li>foam-extend:
+    <ul>
+      <li>The project distributes pre-built Debian packages as release artifacts on <a href="https://sourceforge.net/projects/foam-extend/files/">SourceForge</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The following table gives an overview, including versions that we do not support, but which might be useful for future or historical reference.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>version</th>
+      <th>24.04</th>
+      <th>22.04</th>
+      <th>20.04</th>
+      <th>18.04</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(com) v2512</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>(com) v2506</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>(com) v2412</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>(com) v2406</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>(com) v2312</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>(com) v2306</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>(com) v2212</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>(com) v2206</td>
+      <td>-</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>(com) v2112</td>
+      <td>-</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>(com) v2106</td>
+      <td>-</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>(com) v2012</td>
+      <td>-</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>(com) v2006</td>
+      <td>-</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>(com) v1912</td>
+      <td>-</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>(com) older</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>(org) 12</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>(org) 11</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>(org) 10</td>
+      <td>-</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>(org) 9</td>
+      <td>-</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>(org) 8</td>
+      <td>-</td>
+      <td>-</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>(org) 7</td>
+      <td>-</td>
+      <td>-</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>(org) 6</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>(org) 5</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>(org) 4</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>(ext) 5.0</td>
+      <td>-</td>
+      <td>x</td>
+      <td>x</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>(ext) 4.1</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>x</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="differences-between-openfoam-versions">Differences between OpenFOAM versions</h2>
+
+<p>We take into account the following relevant differences between OpenFOAM versions, compared to the latest OpenCFD version. This list is important for maintainers of version-specific ports of the adapter.</p>
+
+<h3 id="openfoam-v1612-v1806">OpenFOAM v1612-v1806</h3>
+
+<ul>
+  <li><strong>clockValue:</strong> The <code class="language-plaintext highlighter-rouge">clockValue.H</code> header is not available (used in <code class="language-plaintext highlighter-rouge">preciceAdapterFunctionObject.H</code>).
+    <ul>
+      <li>Disable the timers feature, controlled by the <code class="language-plaintext highlighter-rouge">ADAPTER_ENABLE_TIMINGS</code> preprocessor variable (set in <code class="language-plaintext highlighter-rouge">Allwmake</code>).</li>
+    </ul>
+  </li>
+  <li><strong>dictionary access:</strong> In dictionaries (essentially: in the <code class="language-plaintext highlighter-rouge">preciceDict</code>), some methods are not available. These are mainly used in the configuration step in <code class="language-plaintext highlighter-rouge">Adapter.C</code>, but also in <code class="language-plaintext highlighter-rouge">ForceBase.C</code>.
+    <ul>
+      <li>Replace <code class="language-plaintext highlighter-rouge">preciceDict.get&lt;fileName&gt;("...")</code> with <code class="language-plaintext highlighter-rouge">static_cast&lt;fileName&gt;(preciceDict.lookup("...")</code>.</li>
+      <li>Replace <code class="language-plaintext highlighter-rouge">preciceDict.get&lt;word&gt;("...")</code> with <code class="language-plaintext highlighter-rouge">static_cast&lt;word&gt;(preciceDict.lookup("..."))</code>.</li>
+      <li>Replace <code class="language-plaintext highlighter-rouge">preciceDict.getOrDefault</code> with <code class="language-plaintext highlighter-rouge">preciceDict.lookupOrDefault</code>.</li>
+      <li>Replace <code class="language-plaintext highlighter-rouge">preciceDict.get&lt;wordList&gt;("...")</code> with <code class="language-plaintext highlighter-rouge">static_cast&lt;wordList&gt;(preciceDict.lookup("..."))</code>.</li>
+      <li>Replace <code class="language-plaintext highlighter-rouge">preciceDict.findDict("...")</code> with <code class="language-plaintext highlighter-rouge">preciceDict.subDictPtr("...")</code>.</li>
+    </ul>
+  </li>
+  <li><strong>Db access:</strong> In the macro that deals with adding checkpointed fields, some methods are not available.
+    <ul>
+      <li>Replace <code class="language-plaintext highlighter-rouge">mesh_.sortedNames&lt;GeomFieldType&gt;()</code> with <code class="language-plaintext highlighter-rouge">mesh_.lookupClass&lt;GeomFieldType&gt;().sortedToc()</code>.</li>
+      <li>Replace <code class="language-plaintext highlighter-rouge">mesh_.thisDb().getObjectPtr&lt;GeomFieldType&gt;(obj)</code> with <code class="language-plaintext highlighter-rouge">&amp;(const_cast&lt;GeomFieldType&amp;&gt;(mesh_.thisDb().lookupObject&lt;GeomFieldType&gt;(obj)))</code>.</li>
+    </ul>
+  </li>
+  <li><strong>Pointers:</strong> <code class="language-plaintext highlighter-rouge">std::unique_ptr</code> is not available.
+    <ul>
+      <li>Replace <code class="language-plaintext highlighter-rouge">std::unique_ptr&lt;T&gt;</code> with <code class="language-plaintext highlighter-rouge">Foam::autoPtr&lt;T&gt;</code>.</li>
+      <li>Replace calls to pointer <code class="language-plaintext highlighter-rouge">.reset()</code>, such as <code class="language-plaintext highlighter-rouge">ForceOwning_.reset(new volVectorField(</code>, with <code class="language-plaintext highlighter-rouge">ForceOwning_ = new volVectorField(</code>. Adjust the number of closing parentheses.</li>
+      <li>Replace calls to pointer <code class="language-plaintext highlighter-rouge">.get();</code>, such as <code class="language-plaintext highlighter-rouge">ForceOwning_.get()</code>, with <code class="language-plaintext highlighter-rouge">ForceOwning_.ptr()</code>.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="openfoam-4-and-5">OpenFOAM 4 and 5</h3>
+
+<p>OpenFOAM 4 was <a href="https://openfoam.org/release/4/">released</a> in June 2016 (<a href="https://github.com/OpenFOAM/OpenFOAM-4.x">GitHub mirror</a>, <a href="https://cpp.openfoam.org/v4">Doxygen</a>).</p>
+
+<p>OpenFOAM 5 was <a href="https://openfoam.org/release/5/">released</a> in July 2017 (<a href="https://github.com/OpenFOAM/OpenFOAM-5.x">GitHub mirror</a>, <a href="https://cpp.openfoam.org/v5">Doxygen</a>).</p>
+
+<p>Same as in OpenFOAM v1612-v1806.</p>
+
+<h3 id="openfoam-6">OpenFOAM 6</h3>
+
+<p>OpenFOAM 6 was <a href="https://openfoam.org/release/6/">released</a> in July 2018 (<a href="https://github.com/OpenFOAM/OpenFOAM-6">GitHub mirror</a>, <a href="https://cpp.openfoam.org/v6">Doxygen</a>). Compared to OpenFOAM 5:</p>
+
+<ul>
+  <li><strong>adjustTimeStep:</strong> In the function objects interface, <code class="language-plaintext highlighter-rouge">adjustTimeStep()</code> was renamed to <code class="language-plaintext highlighter-rouge">setTimeStep()</code>.
+    <ul>
+      <li>Replace <code class="language-plaintext highlighter-rouge">adjustTimeStep()</code> with <code class="language-plaintext highlighter-rouge">setTimeStep()</code>, both for the function object and the adapter members.</li>
+    </ul>
+  </li>
+  <li><strong>setDeltaT:</strong> The <code class="language-plaintext highlighter-rouge">Time</code> method <code class="language-plaintext highlighter-rouge">setDeltaT(..., false)</code> was replaced by <code class="language-plaintext highlighter-rouge">setDeltaTNoAdjust(...)</code>.
+    <ul>
+      <li>Replace <code class="language-plaintext highlighter-rouge">setDeltaT(timestepSolver_, false)</code> with <code class="language-plaintext highlighter-rouge">setDeltaTNoAdjust(timestepSolver_)</code>.</li>
+    </ul>
+  </li>
+  <li><strong>Case files:</strong>
+    <ul>
+      <li>In <code class="language-plaintext highlighter-rouge">system/fvSolution</code>, replace <code class="language-plaintext highlighter-rouge">residualControl</code> with <code class="language-plaintext highlighter-rouge">outerResidualControl</code>.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Related work in the adapter: <a href="https://github.com/precice/openfoam-adapter/pull/33">PR #33</a>.</p>
+
+<h3 id="openfoam-7">OpenFOAM 7</h3>
+
+<p>OpenFOAM 7 was <a href="https://openfoam.org/release/7/">released</a> in July 2019 (<a href="https://github.com/OpenFOAM/OpenFOAM-7">GitHub mirror</a>, <a href="https://cpp.openfoam.org/v7">Doxygen</a>). Compared to OpenFOAM 6:</p>
+
+<ul>
+  <li><strong>writeEntry:</strong> The interface for <code class="language-plaintext highlighter-rouge">writeEntry</code> was changed.
+    <ul>
+      <li>Where in the latest adapter (<code class="language-plaintext highlighter-rouge">FF/BoundaryConditions</code>) you see <code class="language-plaintext highlighter-rouge">this-&gt;writeEntry("value", os)</code>, replace it with <code class="language-plaintext highlighter-rouge">writeEntry(os, "value", *this)</code>.</li>
+      <li>Similarly, where <code class="language-plaintext highlighter-rouge">this-&gt;valueFraction().writeEntry("valueFraction", os);</code>, replace it with <code class="language-plaintext highlighter-rouge">writeEntry(os, "valueFraction", this-&gt;valueFraction())</code>. Similarly for <code class="language-plaintext highlighter-rouge">this-&gt;refValue().writeEntry("refValue", os)</code>.</li>
+    </ul>
+  </li>
+  <li><strong>fileName:</strong> <code class="language-plaintext highlighter-rouge">fileName::DIRECTORY</code> was renamed to <code class="language-plaintext highlighter-rouge">fileType::directory</code>.
+    <ul>
+      <li>Replace this in the <code class="language-plaintext highlighter-rouge">Adapter.C</code>.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Related work in the adapter: <a href="https://github.com/precice/openfoam-adapter/pull/91">PR #91</a>.</p>
+
+<h3 id="openfoam-8">OpenFOAM 8</h3>
+
+<p>OpenFOAM 8 was <a href="https://openfoam.org/release/8/">released</a> in July 2020 (<a href="https://github.com/OpenFOAM/OpenFOAM-8">GitHub mirror</a>, <a href="https://cpp.openfoam.org/v8">Doxygen</a>). Compared to OpenFOAM 7:</p>
+
+<ul>
+  <li><strong>Function objects:</strong> Function objects changed behavior, and the <code class="language-plaintext highlighter-rouge">execute()</code> method is now also executed at start. See the <a href="https://github.com/precice/openfoam-adapter/issues/179">adapter issue #179</a> and <a href="https://github.com/precice/openfoam-adapter/pull/180">PR #180</a>.
+    <ul>
+      <li>In the beginning of <code class="language-plaintext highlighter-rouge">preciceAdapterFunctionObject::read()</code>, add <code class="language-plaintext highlighter-rouge">this-&gt;executeAtStart_ = false;</code>.</li>
+    </ul>
+  </li>
+  <li><strong>Thermophysical models:</strong> Some properties were moved from the previous <code class="language-plaintext highlighter-rouge">TurbulenceModels</code> and <code class="language-plaintext highlighter-rouge">transportModels</code> to the new <code class="language-plaintext highlighter-rouge">ThermophysicalTransportModels</code> and <code class="language-plaintext highlighter-rouge">MomentumTransportModels</code>.
+    <ul>
+      <li>In <code class="language-plaintext highlighter-rouge">Make/options</code>, replace the following include paths:
+        <ul>
+          <li>Remove the include paths to <code class="language-plaintext highlighter-rouge">transportModels/incompressible</code>, <code class="language-plaintext highlighter-rouge">transportModels/compressible</code>, <code class="language-plaintext highlighter-rouge">transportModels/twoPhaseMixture</code>, <code class="language-plaintext highlighter-rouge">transportModels/interfaceProperties</code>, <code class="language-plaintext highlighter-rouge">transportModels/immiscibleIncompressibleTwoPhaseMixture</code>, <code class="language-plaintext highlighter-rouge">TurbulenceModels/turbulenceModels</code>, <code class="language-plaintext highlighter-rouge">TurbulenceModels/compressible</code>, <code class="language-plaintext highlighter-rouge">TurbulenceModels/incompressible</code>.</li>
+          <li>Add include paths to <code class="language-plaintext highlighter-rouge">ThermophysicalTransportModels</code>, <code class="language-plaintext highlighter-rouge">MomentumTransportModels/momentumTransportModels</code>, <code class="language-plaintext highlighter-rouge">MomentumTransportModels/compressible</code>, <code class="language-plaintext highlighter-rouge">MomentumTransportModels/incompressible</code>, <code class="language-plaintext highlighter-rouge">transportModels</code>.</li>
+          <li>Remove the linking paths to <code class="language-plaintext highlighter-rouge">compressibleTurbulenceModels</code>, <code class="language-plaintext highlighter-rouge">incompressibleTurbulenceModels</code>.</li>
+          <li>Add linking paths to <code class="language-plaintext highlighter-rouge">thermophysicalTransportModels</code>, <code class="language-plaintext highlighter-rouge">fluidThermoMomentumTransportModels</code>, <code class="language-plaintext highlighter-rouge">incompressibleMomentumTransportModels</code>.</li>
+        </ul>
+      </li>
+      <li>In <code class="language-plaintext highlighter-rouge">CHT/KappaEffective.H</code>:
+        <ul>
+          <li>Remove the header inclusions <code class="language-plaintext highlighter-rouge">turbulentFluidThermoModel.H</code>, <code class="language-plaintext highlighter-rouge">turbulentTransportModel.H</code>.</li>
+          <li>Include the headers <code class="language-plaintext highlighter-rouge">fluidThermoMomentumTransportModel.H</code>, <code class="language-plaintext highlighter-rouge">kinematicMomentumTransportModel.H</code>, <code class="language-plaintext highlighter-rouge">thermophysicalTransportModel.H</code>.</li>
+          <li>Remove the variable declarations for <code class="language-plaintext highlighter-rouge">turbulence_</code> (2x), <code class="language-plaintext highlighter-rouge">nameRho_</code>, <code class="language-plaintext highlighter-rouge">nameCp_</code>, <code class="language-plaintext highlighter-rouge">namePr_</code>, <code class="language-plaintext highlighter-rouge">nameAlphat_</code>, <code class="language-plaintext highlighter-rouge">rho_</code>, <code class="language-plaintext highlighter-rouge">Cp_</code>, <code class="language-plaintext highlighter-rouge">Pr_</code> from the compressible and incompressible variants.</li>
+          <li>In the incompressible variant’s constructor signature, remove the <code class="language-plaintext highlighter-rouge">nameRho</code>, <code class="language-plaintext highlighter-rouge">nameCp</code>, <code class="language-plaintext highlighter-rouge">namePr</code>, <code class="language-plaintext highlighter-rouge">nameAlphat</code>.</li>
+          <li>Add a new declaration: <code class="language-plaintext highlighter-rouge">const Foam::thermophysicalTransportModel&amp; thermophysicalTransportModel_;</code> for each one of the <code class="language-plaintext highlighter-rouge">turbulence_</code> removed.</li>
+        </ul>
+      </li>
+      <li>In <code class="language-plaintext highlighter-rouge">CHT/KappaEffective.C</code>:
+        <ul>
+          <li>Replace all instances of <code class="language-plaintext highlighter-rouge">turbulence_</code> with <code class="language-plaintext highlighter-rouge">thermophysicalTransportModel_</code> and update the respective comments.</li>
+          <li>Replace <code class="language-plaintext highlighter-rouge">compressible::turbulenceModel</code> and <code class="language-plaintext highlighter-rouge">incompressible::turbulenceModel</code> with <code class="language-plaintext highlighter-rouge">thermophysicalTransportModel</code>.</li>
+          <li>Replace <code class="language-plaintext highlighter-rouge">turbulenceModel::propertiesName</code> with <code class="language-plaintext highlighter-rouge">thermophysicalTransportModel::typeName</code>.</li>
+          <li>In the incompressible variant, remove all lines of code working with <code class="language-plaintext highlighter-rouge">nameRho_</code>, <code class="language-plaintext highlighter-rouge">nameCp_</code>, <code class="language-plaintext highlighter-rouge">namePr_</code>, <code class="language-plaintext highlighter-rouge">nameAlphat_</code> from the constructor (which ends up with an empty body) and the <code class="language-plaintext highlighter-rouge">extract()</code> method. Replace the usage of <code class="language-plaintext highlighter-rouge">kappaEff_temp</code> with <code class="language-plaintext highlighter-rouge">thermophysicalTransportModel_.kappaEff()().boundaryField()[patchID]</code>.</li>
+          <li>Replace the <code class="language-plaintext highlighter-rouge">const dictionary&amp; CHTDict</code> with <code class="language-plaintext highlighter-rouge">const dictionary CHTDict</code>.</li>
+        </ul>
+      </li>
+      <li>In <code class="language-plaintext highlighter-rouge">CHT/HeatFlux.C</code> and in <code class="language-plaintext highlighter-rouge">CHT/HeatTransferCoefficient.C</code>:
+        <ul>
+          <li>Replace <code class="language-plaintext highlighter-rouge">KappaEff_Incompressible(mesh, nameRho, nameCp, namePr, nameAlphat)</code> with <code class="language-plaintext highlighter-rouge">KappaEff_Incompressible(mesh)</code>.</li>
+        </ul>
+      </li>
+      <li>In <code class="language-plaintext highlighter-rouge">FSI/ForceBase.H</code>:
+        <ul>
+          <li>Remove the header inclusions <code class="language-plaintext highlighter-rouge">immiscibleIncompressibleTwoPhaseMixture.H</code>, <code class="language-plaintext highlighter-rouge">turbulentFluidThermoModel.H</code>, <code class="language-plaintext highlighter-rouge">turbulentTransportModel.H</code>.</li>
+          <li>Include the headers <code class="language-plaintext highlighter-rouge">fluidThermoMomentumTransportModel.H</code>, <code class="language-plaintext highlighter-rouge">kinematicMomentumTransportModel.H</code>.</li>
+        </ul>
+      </li>
+      <li>In <code class="language-plaintext highlighter-rouge">FSI/ForceBase.C</code>, in the <code class="language-plaintext highlighter-rouge">ForceBase::devRhoReff()</code>:
+        <ul>
+          <li>Replace <code class="language-plaintext highlighter-rouge">compressible::turbulenceModel</code> with <code class="language-plaintext highlighter-rouge">compressible::momentumTransportModel</code>.</li>
+          <li>Replace <code class="language-plaintext highlighter-rouge">incompressible::turbulenceModel</code> with <code class="language-plaintext highlighter-rouge">incompressible::momentumTransportModel</code>.</li>
+          <li>Replace <code class="language-plaintext highlighter-rouge">cmpTurbModel::propertiesName</code> with <code class="language-plaintext highlighter-rouge">cmpTurbModel::typeName</code>.</li>
+          <li>Replace <code class="language-plaintext highlighter-rouge">turb(mesh_.lookupObject&lt;&gt;())</code> with <code class="language-plaintext highlighter-rouge">turb = mesh_.lookupObject&lt;&gt;()</code> (where <code class="language-plaintext highlighter-rouge">const cmpTurbModel&amp; turb</code>).</li>
+          <li>Replace <code class="language-plaintext highlighter-rouge">turb.devRhoReff()</code> with <code class="language-plaintext highlighter-rouge">turb.devTau()</code>.</li>
+          <li>Replace <code class="language-plaintext highlighter-rouge">turb.devReff()</code> with <code class="language-plaintext highlighter-rouge">turb.devSigma()</code>.</li>
+          <li>Replace <code class="language-plaintext highlighter-rouge">U(mesh_.lookupObject&lt;&gt;())</code> with <code class="language-plaintext highlighter-rouge">U = mesh_.lookupObject&lt;&gt;()</code> (where <code class="language-plaintext highlighter-rouge">const volVectorField&amp; U</code>).</li>
+        </ul>
+      </li>
+      <li>In <code class="language-plaintext highlighter-rouge">FSI/ForceBase.C</code>, in the <code class="language-plaintext highlighter-rouge">ForceBase::mu()</code>:
+        <ul>
+          <li>Remove the line <code class="language-plaintext highlighter-rouge">typedef immiscibleIncompressibleTwoPhaseMixture iitpMixture;</code>.</li>
+          <li>Replace the type <code class="language-plaintext highlighter-rouge">iitpMixture</code> with <code class="language-plaintext highlighter-rouge">fluidThermo</code> and rename the respective object from <code class="language-plaintext highlighter-rouge">mixture</code> to <code class="language-plaintext highlighter-rouge">thermo</code>.</li>
+          <li>Replace <code class="language-plaintext highlighter-rouge">"mixture"</code> in the lookups with <code class="language-plaintext highlighter-rouge">basicThermo::dictName</code>.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Related work in the adapter: <a href="https://github.com/precice/openfoam-adapter/pull/130">PR #130</a>.</p>
+
+<h3 id="openfoam-9">OpenFOAM 9</h3>
+
+<p>OpenFOAM 9 was <a href="https://openfoam.org/release/9/">released</a> in July 2021 (<a href="https://github.com/OpenFOAM/OpenFOAM-9">GitHub mirror</a>, <a href="https://cpp.openfoam.org/v9">Doxygen</a>). Compared to OpenFOAM 8:</p>
+
+<ul>
+  <li><strong>Function objects:</strong> The <code class="language-plaintext highlighter-rouge">setTimeStep()</code> method was removed.
+    <ul>
+      <li>Remove the method from the <code class="language-plaintext highlighter-rouge">preciceAdapterFunctionObject.H</code> and <code class="language-plaintext highlighter-rouge">preciceAdapterFunctionObject.C</code>. Adjust the comments for the equivalent method in <code class="language-plaintext highlighter-rouge">Adapter.H</code>.</li>
+      <li><strong>Impact:</strong> See limitations in adjustable time step size (<a href="https://github.com/precice/openfoam-adapter/issues/261">#261</a>).</li>
+    </ul>
+  </li>
+  <li><strong>Thermophysical models:</strong> Different libraries need to be linked and different headers need to be included:
+    <ul>
+      <li>In <code class="language-plaintext highlighter-rouge">Make/options</code>, remove the linking of <code class="language-plaintext highlighter-rouge">fluidThermoMomentumTransportModels</code> and <code class="language-plaintext highlighter-rouge">incompressibleMomentumTransportModels</code>.</li>
+      <li>In <code class="language-plaintext highlighter-rouge">Make/options</code>, link to <code class="language-plaintext highlighter-rouge">transportModels</code>, <code class="language-plaintext highlighter-rouge">momentumTransportModels</code>, <code class="language-plaintext highlighter-rouge">incompressibleMomentumTransportModels</code>, <code class="language-plaintext highlighter-rouge">compressibleMomentumTransportModels</code>.</li>
+      <li>In <code class="language-plaintext highlighter-rouge">CHT/KappaEffective.H</code>, replace the headers <code class="language-plaintext highlighter-rouge">fluidThermoMomentumTransportModel.H</code> and <code class="language-plaintext highlighter-rouge">kinematicMomentumTransportModel.H</code> with <code class="language-plaintext highlighter-rouge">momentumTransportModel.H</code>.</li>
+      <li>In <code class="language-plaintext highlighter-rouge">FSI/ForceBase.H</code>, replace the header <code class="language-plaintext highlighter-rouge">fluidThermoMomentumTransportModel.H</code> with <code class="language-plaintext highlighter-rouge">compressibleMomentumTransportModel.H</code>.</li>
+      <li>In <code class="language-plaintext highlighter-rouge">FSI/ForceBase.C</code>, add the header <code class="language-plaintext highlighter-rouge">fluidThermo.H</code>.</li>
+      <li>In <code class="language-plaintext highlighter-rouge">FSI/ForceBase.C</code>, replace:
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">compressible::momentumTransportModel</code> with <code class="language-plaintext highlighter-rouge">compressibleMomentumTransportModel</code></li>
+          <li><code class="language-plaintext highlighter-rouge">incompressible::momentumTransportModel</code> with <code class="language-plaintext highlighter-rouge">incompressibleMomentumTransportModel</code>. Further down, replace the usage <code class="language-plaintext highlighter-rouge">const incompressible::momentumTransportModel&amp;</code> with <code class="language-plaintext highlighter-rouge">const icoTurbModel&amp;</code>.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Triangulation:</strong> In <code class="language-plaintext highlighter-rouge">Adapter.C</code>:
+    <ul>
+      <li>Replace the header <code class="language-plaintext highlighter-rouge">faceTriangulation.H</code> with <code class="language-plaintext highlighter-rouge">polygonTriangulate.H</code>.</li>
+    </ul>
+  </li>
+  <li><strong>Case files:</strong>
+    <ul>
+      <li>In <code class="language-plaintext highlighter-rouge">constant/dynamicMeshDict</code>, replace <code class="language-plaintext highlighter-rouge">solver</code> with <code class="language-plaintext highlighter-rouge">motionSolver</code>.</li>
+      <li>In <code class="language-plaintext highlighter-rouge">system/fvSolution</code>, replace <code class="language-plaintext highlighter-rouge">residualControl</code> with <code class="language-plaintext highlighter-rouge">outerCorrectorResidualControl</code>. This was already renamed to <code class="language-plaintext highlighter-rouge">outerResidualControl</code> in OpenFOAM 6.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Related work in the adapter: <a href="https://github.com/precice/openfoam-adapter/pull/221">PR #221</a>.</p>
+
+<h3 id="openfoam-10">OpenFOAM 10</h3>
+
+<p>OpenFOAM 10 was <a href="https://openfoam.org/release/10/">released</a> in July 2022 (<a href="https://github.com/OpenFOAM/OpenFOAM-10">GitHub mirror</a>, <a href="https://cpp.openfoam.org/v10">Doxygen</a>). Compared to OpenFOAM 9:</p>
+
+<ul>
+  <li><strong>Function objects:</strong> The method <code class="language-plaintext highlighter-rouge">fields()</code> has been made pure virtual, meaning it needs to be implemented.
+    <ul>
+      <li>
+        <p>In <code class="language-plaintext highlighter-rouge">preciceAdapterFunctionObject.H</code>, implement it as (more of a workaround to avoid implementation):</p>
+
+        <div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">virtual</span> <span class="n">wordList</span> <span class="nf">fields</span><span class="p">()</span> <span class="k">const</span>
+<span class="p">{</span>
+    <span class="k">return</span> <span class="n">wordList</span><span class="o">::</span><span class="n">null</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Physical properties and models:</strong> The <code class="language-plaintext highlighter-rouge">physicalProperties</code> was replaced by <code class="language-plaintext highlighter-rouge">transportModels</code>.
+    <ul>
+      <li>In <code class="language-plaintext highlighter-rouge">Make/options</code>, replace <code class="language-plaintext highlighter-rouge">physicalProperties</code> with <code class="language-plaintext highlighter-rouge">transportModels</code> in the included paths and in the linked libraries.</li>
+      <li>In <code class="language-plaintext highlighter-rouge">FSI/ForceBase.H</code>, replace <code class="language-plaintext highlighter-rouge">kinematicMomentumTransportModel.H</code> with <code class="language-plaintext highlighter-rouge">incompressibleMomentumTransportModel.H</code>.</li>
+      <li>In <code class="language-plaintext highlighter-rouge">FSI/ForceBase.C</code>, replace <code class="language-plaintext highlighter-rouge">basicThermo::dictName</code> with <code class="language-plaintext highlighter-rouge">physicalProperties::typeName</code>.</li>
+    </ul>
+  </li>
+  <li><strong>Fields <code class="language-plaintext highlighter-rouge">V0</code> and <code class="language-plaintext highlighter-rouge">V00</code>:</strong> The fields <code class="language-plaintext highlighter-rouge">V0</code> and <code class="language-plaintext highlighter-rouge">V00</code> have been removed or renamed (not sure to what).
+    <ul>
+      <li>In <code class="language-plaintext highlighter-rouge">Adapter.C</code>, method <code class="language-plaintext highlighter-rouge">preciceAdapter::Adapter::setupMeshVolCheckpointing()</code>, guard each of these two fields with a <code class="language-plaintext highlighter-rouge">if (mesh_.foundObject&lt;volScalarField::Internal&gt;("V0"))</code> (and <code class="language-plaintext highlighter-rouge">if (... ("V00"))</code>, respectively). Alternatively, remove the implementation of this method altogether.</li>
+      <li><strong>Impact:</strong> This might lead to stability issues in FSI simulations with implicit coupling. Check your results.</li>
+    </ul>
+  </li>
+  <li><strong>Case files:</strong> Several <a href="https://github.com/precice/tutorials/tree/OpenFOAM10">changes to the tutorials</a> are needed, read the <a href="https://github.com/precice/tutorials/pull/283">discussion</a>.</li>
+</ul>
+
+<h3 id="openfoam-11">OpenFOAM 11</h3>
+
+<p>OpenFOAM 11 was <a href="https://openfoam.org/release/11/">released</a> in July 2023 (<a href="https://github.com/OpenFOAM/OpenFOAM-11">GitHub mirror</a>, <a href="https://cpp.openfoam.org/v11">Doxygen</a>). We do not yet know which are relevant changes. Please help us port the adapter to OpenFOAM 11.</p>
+
+<p>Related work in the adapter: <a href="https://github.com/precice/openfoam-adapter/pull/310">PR #310</a>.</p>
+
+<h3 id="openfoam-12">OpenFOAM 12</h3>
+
+<p>OpenFOAM 12 was <a href="https://openfoam.org/release/12/">released</a> in July 2024 (<a href="https://github.com/OpenFOAM/OpenFOAM-12">GitHub mirror</a>, <a href="https://cpp.openfoam.org/v12">Doxygen</a>). We do not yet know which are relevant changes. Please help us port the adapter to OpenFOAM 12.</p>
+
+<h3 id="foam-extend">foam-extend</h3>
+
+<p>We have not yet documented all related changes that would make the adapter work for foam-extend. See the repository <a href="https://github.com/precice/foam-extend-adapter"><code class="language-plaintext highlighter-rouge">precice/foam-extend-adapter</code></a> for the latest state and please contribute to this page.</p>
+
+<p>Related work in the adapter: <a href="https://github.com/precice/openfoam-adapter/pull/302">PR #302</a>.</p>
+
+<h2 id="notes-on-openfoam-features">Notes on OpenFOAM features</h2>
+
+<h3 id="end-of-the-simulation">End of the simulation</h3>
+
+<p>The adapter (by default) ignores the <code class="language-plaintext highlighter-rouge">endTime</code> set in the <code class="language-plaintext highlighter-rouge">controlDict</code> and stops the simulation when preCICE says so.</p>
+
+<p>Let’s see this with more details. During the simulation, both the solver and preCICE try to control when the simulation should end.
+While in an explicit coupling scenario this is clearly defined,
+in an implicit coupling scenario the solver may schedule its exit
+(and therefore the last call to the adapter) before the coupling is complete.
+See <a href="https://www.openfoam.com/documentation/guides/latest/api/Time_8C_source.html#l00890">how function objects are called</a>
+for more details on this.</p>
+
+<p>In order to prevent early exits from the solver, the solver’s <code class="language-plaintext highlighter-rouge">endTime</code>
+is set to infinity and it is later set to the current time when
+the simulation needs to end. This has the side effect of not calling
+any function object’s <code class="language-plaintext highlighter-rouge">end()</code> method normally, so these are triggered
+explicitly at the end of the simulation.</p>
+
+<h3 id="function-objects">Function Objects</h3>
+
+<p>In principle, using other function objects alongside the preCICE adapter
+is possible. They should be defined <em>before</em> the adapter in the
+<code class="language-plaintext highlighter-rouge">system/controlDict</code>, as (by default and opt-out) the adapter controls when the
+simulation should end and explicitly triggers (only) the <code class="language-plaintext highlighter-rouge">end()</code> methods
+of any other function objects at the end of the simulation.
+If the <code class="language-plaintext highlighter-rouge">end()</code> of a function object depends on its <code class="language-plaintext highlighter-rouge">execute()</code>, then
+the latter should have been called before the preCICE adapter’s <code class="language-plaintext highlighter-rouge">execute()</code>.</p>
+
+<p>If you want to test this behavior, you may
+also include e.g. the <code class="language-plaintext highlighter-rouge">systemCall</code> function
+object in your <code class="language-plaintext highlighter-rouge">system/controlDict</code>:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">functions</span>
+<span class="p">{</span>
+
+    <span class="n">systemCall1</span>
+    <span class="p">{</span>
+        <span class="n">type</span>        <span class="n">systemCall</span><span class="p">;</span>
+        <span class="n">libs</span>        <span class="p">(</span><span class="s">"libutilityFunctionObjects.so"</span><span class="p">);</span>
+
+        <span class="n">executeCalls</span>
+        <span class="p">(</span>
+            <span class="s">"echo \*\*\* systemCall execute \*\*\*"</span>
+        <span class="p">);</span>
+
+        <span class="n">writeCalls</span>
+        <span class="p">(</span>
+            <span class="s">"echo \*\*\* systemCall write \*\*\*"</span>
+        <span class="p">);</span>
+
+        <span class="n">endCalls</span>
+        <span class="p">(</span>
+            <span class="s">"echo \*\*\* systemCall end \*\*\*"</span>
+        <span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="n">preCICE_Adapter</span>
+    <span class="p">{</span>
+        <span class="n">type</span> <span class="n">preciceAdapterFunctionObject</span><span class="p">;</span>
+        <span class="n">libs</span> <span class="p">(</span><span class="s">"libpreciceAdapterFunctionObject.so"</span><span class="p">);</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="writing-results">Writing results</h3>
+
+<p>As soon as OpenFOAM writes the results, it will not try to write again
+if the time takes the same value again. Therefore, during an implicit
+coupling, we write again when the coupling timestep is complete.
+See also a <a href="https://github.com/precice/openfoam-adapter/issues/34">relevant issue</a>.</p>
+
+<h3 id="adjustable-timestep-and-modifiable-runtime">Adjustable timestep and modifiable runTime</h3>
+
+<p>In the <code class="language-plaintext highlighter-rouge">system/controlDict</code>, you may optionally specify the
+following:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">adjustTimeStep</span>  <span class="n">yes</span><span class="p">;</span>
+<span class="n">maxCo</span>           <span class="mf">0.5</span><span class="p">;</span>
+
+<span class="n">runTimeModifiable</span> <span class="n">yes</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>The adapter works both with fixed and adjustable timestep
+and it supports the <code class="language-plaintext highlighter-rouge">runTimeModifiable</code> feature.
+However, if you set a <em>fixed timestep</em> and <em>runTimeModifiable</em>,
+changing the configured timestep <em>during the simulation</em> will
+not affect the timestep used. A warning will be shown in this case.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-hands-wash"></i> <b>Disclaimer:</b> 
+This offering is not approved or endorsed by OpenCFD Limited, producer and distributor of the OpenFOAM software via www.openfoam.com, and owner of the OPENFOAM®  and OpenCFD®  trade marks.
+</div>
+
+
+    
+
+
+
+<!-- Breadcrumb metadata -->
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [
+
+
+
+
+
+
+
+
+
+{
+  "@type": "ListItem",
+  "position": 1,
+  "name": "Docs",
+  "item": "https://precice.org/docs.html"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]}
+</script>
+
+
+</div>
+
+
+          </main>
+        </div>
+        
+    </div>
+    <footer class="background-dark">
+  <div class="container">
+
+
+    <div class="row equal">
+      <div class="col-md-4" style="background:white;border-radius:1rem;padding:0 3rem;margin:0 auto 50px auto;">
+        <h2> The preCICE newsletter </h2>
+        <script charset="utf-8" type="text/javascript" src="https://js.mailercloud.com/form/form.js"></script>
+<script>
+(function() {
+  mcform.create({
+    formId: "V3dEdUAzMTQ0NkAwMDAwMA==",
+    targetElement: "form_element_id"
+  })
+})();
+</script>
+
+        </div>
+    </div>
+
+
+    <div class="row equal text-center">
+      <div class="col-md-4">
+        <nav aria-label="Footer left">
+          <ul class="list-unstyled">
+            <li>
+              <a href="fundamentals-literature-guide.html">Cite preCICE</a>
+            </li>
+            <li>
+              <a href="community-contribute-to-precice.html">Contribute</a>
+            </li>
+            <li>
+              <a href="community-support-precice.html">Get support</a>
+            </li>
+            <li>
+              <a href="community-training.html">Get training</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-md-4">
+        <nav aria-label="Footer right">
+          <ul class="list-unstyled">
+            <li>
+              <a class="no-icon" href="https://precice.discourse.group">Forum on Discourse</a>
+            </li>
+            <li>
+              <a class="no-icon" href="https://github.com/precice">preCICE on GitHub</a>
+            </li>
+            <li>
+              <a href="fundamentals-license.html">License</a>
+            </li>
+            <li>
+              <a href="about.html">Impressum / Legal</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-md-4">
+        <p>
+        <a class="no-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+          <img alt="This work is licensed under a Creative Commons Attribution 4.0 International License." src="images/licensebutton-by-40_88x31.png" />
+        </a>
+        </p>
+        <p>
+        Page last updated: Mar 10, 2026<br>
+        Site last updated: Apr 4, 2026
+        </p>
+        <p>
+        <i class="fas fa-shield-halved" aria-hidden="true"></i> This website does not use cookies
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="/js/copy-code.js"></script>
+</footer>
+
+
+
+</body>
+
+</html>
