@@ -431,6 +431,14 @@ div.highlighter-rouge:hover .copy-code-btn {
   background-color: #020617;
   border-color: #1e293b;
 }
+.navbar-theme-toggle {
+    float: right;
+    padding: 15px;
+    cursor: pointer;
+}
+#theme-icon {
+    font-size: 24px;
+}
 
 [data-theme="dark"] .nav > li > a {
   color: #cbd5f5;
