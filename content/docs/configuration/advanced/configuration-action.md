@@ -25,13 +25,13 @@ This example multiplies the stresses values by the respective element area, tran
 
 `timing` defines _when_ the action is executed. Options are:
 
-* `write-mapping-post`: at the end of a time window, directly after the write mappings are applied, but still before data communication.
-* `read-mapping-post`: at the end of a time window, directly after the read mappings are applied, and thus also after data communcation.
+- `write-mapping-post`: at the end of a time window, directly after the write mappings are applied, but still before data communication.
+- `read-mapping-post`: at the end of a time window, directly after the read mappings are applied, and thus also after data communcation.
 
 Pre-implemented actions are:
 
-* `multiply-by-area` / `divide-by-area`: Modify coupling data by mesh area
-* `summation`: Sum up the data from source participants and write to target participant
+- `multiply-by-area` / `divide-by-area`: Modify coupling data by mesh area
+- `summation`: Sum up the data from source participants and write to target participant
 
 {% note %}
 All target and source data used in actions require `<read-data ... />` or `<write-data ... />` tags.
@@ -76,7 +76,8 @@ performAction(time, sourceData, targetData)
 
 Without the Python action, the 1D elastic tube gives the following results:
 
-![diameter of 1D elastic tube as function of time and space without python action](images/docs/configuration-elastic-tube-diameter.png)
+<img src="/images/docs/configuration-elastic-tube-diameter_light.png" class="img-light" alt="diameter of 1D elastic tube as function of time and space without python action">
+<img src="/images/docs/configuration-elastic-tube-diameter_dark.png" class="img-dark" alt="diameter of 1D elastic tube as function of time and space without python action">
 
 Now, we want to ramp up the pressure values written by the fluid solver over time. A feature often needed to get a stable coupled simulation.
 
@@ -100,4 +101,5 @@ def performAction(time, sourceData, targetData):
 
 With the Python action, you should now get the following results. Note the lower maximum diameter and the change at `t=0.2` (`t=20` in the graph).
 
-![diameter of 1D elastic tube as function of time and space with python action](images/docs/configuration-diameter-python-action.png)
+<img src="/images/docs/configuration-diameter-python-action_light.png" class="img-light" alt="diameter of 1D elastic tube as function of time and space with python action">
+<img src="/images/docs/configuration-diameter-python-action_dark.png" class="img-dark" alt="diameter of 1D elastic tube as function of time and space with python action">

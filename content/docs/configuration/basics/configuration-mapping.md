@@ -25,7 +25,8 @@ Each data mapping definition refers to two meshes in the participant configurati
 </participant>
 ```
 
-![Mapping configuration](images/docs/configuration/doc-mapping.png)
+<img src="/images/docs/configuration/doc-mapping_light.png" class="img-light" alt="Mapping configuration">
+<img src="/images/docs/configuration/doc-mapping_dark.png" class="img-dark" alt="Mapping configuration">
 
 The `provide` mesh and `receive` mesh are then assigned to the `from` and `to` slot in the mapping configuration to indicate the mesh, on which data is written, and the mesh, on which data is read. In addition to a `from` and `to` mesh, each mapping defines a `direction`, which can either be `read` or `write`:
 
@@ -76,7 +77,8 @@ Instead of using static meshes as described here, you may consider using a [just
 
 The mapping method itself is defined in the xml configuration after the colon `mapping:...` (e.g. `<mapping:nearest-neighbor ...`). In general, preCICE offers two broader groups of mapping methods
 
-![Mapping options](images/docs/configuration/doc-mapping-options.svg)
+<img class="logo-light" src="/images/docs/configuration/doc-mapping-options_light.svg" alt="Mapping options">
+<img class="logo-dark" src="/images/docs/configuration/doc-mapping-options_dark.svg" alt="Mapping options">
 
 {% note %}
 Chapter 3.2 (Data mapping) of the preCICE version 2 [reference paper](https://doi.org/10.12688/openreseurope.14445.2) explains and compares a selection of projection-based methods and kernel methods.
@@ -86,7 +88,8 @@ Chapter 3.2 (Data mapping) of the preCICE version 2 [reference paper](https://do
 
 Projection-based data mapping methods are typically cheap to compute as they don't involve solving expensive linear systems as opposed to the kernel methods. The basic variant, which operates solely on vertex data, is `nearest-neighbor` mapping. All other variants require additional information from the user, as shown in the overview figure above.
 
-![different mapping variants visualized](images/docs/configuration-mapping-variants.png)
+<img src="/images/docs/configuration-mapping-variants_light.png" class="img-light" alt="different mapping variants visualized">
+<img src="/images/docs/configuration-mapping-variants_dark.png" class="img-dark" alt="different mapping variants visualized">
 
 Available methods are:
 
@@ -114,7 +117,8 @@ For global rbf methods, the interpolation problem (or rather the polynomial QR s
 
 Configuring kernel methods is more involved and offers more options. A full reference of all options can be found in the [xml reference](configuration-xml-reference.html). On a broader level, the configuration consists of two main options: the applied kernel mapping method and the used basis-function including its support radius or shape parameter. As the decision about the used kernel mapping method can be intricate, we provide an alias called `<mapping:rbf ...` which decides dynamically for a kernel method according to the setup (e.g. parallel execution, problem size, available dependencies)
 
-![RBF alias options](images/docs/configuration/doc-mapping-rbf-alias.svg)
+<img class="logo-light" src="/images/docs/configuration/doc-mapping-rbf-alias_light.svg" alt="RBF alias options">
+<img class="logo-dark" src="/images/docs/configuration/doc-mapping-rbf-alias_dark.svg" alt="RBF alias options">
 
 An RBF mapping configuration could look as follows
 
@@ -143,7 +147,8 @@ Starting from version 3.2, preCICE offers to execute `mapping:rbf-global...` on 
 
 To use this feature, please build preCICE from source with  [Ginkgo Mappings enabled](installation-source-dependencies.html#ginkgo).
 
-![RBF executors](images/docs/configuration/doc-mapping-rbf-executors.svg)
+<img class="logo-light" src="/images/docs/configuration/doc-mapping-rbf-executors_light.svg" alt="RBF executors">
+<img class="logo-dark" src="/images/docs/configuration/doc-mapping-rbf-executors_dark.svg" alt="RBF executors">
 
 To configure the executor, an additional subtag can be used in the mapping configuration:
 
@@ -162,7 +167,8 @@ Geometric multiscale mapping enables the coupling of dimensionally heterogeneous
 
 We differentiate between _axial_ and _radial_ geometric multiscale mapping:
 
-![Axial vs radial 1D-3D mapping](images/docs/configuration-mapping-geometric-multiscale-axial-radial.png)
+<img src="/images/docs/configuration-mapping-geometric-multiscale-axial-radial_light.png" class="img-light" alt="Axial vs radial 1D-3D mapping">
+<img src="/images/docs/configuration-mapping-geometric-multiscale-axial-radial_dark.png" class="img-dark" alt="Axial vs radial 1D-3D mapping">
 
 {% experimental %}
 This is an experimental feature, available since preCICE v3.0.0. Enable it using `<precice-configuration experimental="true">` and do not consider the configuration to be stable yet. For now, since preCICE does not yet support 1D meshes, both input and output meshes are defined as 3D, and a primary axis defines the active component of the 1D data. Are you interested in this feature? Give us your feedback!

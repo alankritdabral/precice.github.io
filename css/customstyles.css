@@ -279,6 +279,19 @@ div#toc >ul::before {
     padding-left:10px;
 }
 
+[data-theme="dark"] div#toc >ul::before {
+    content: "Table of Contents";
+    font-weight: 500;
+    color: #cbd5f5;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    width:70px;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:10px;
+}
+
 li.dropdownActive a {
     font-weight: bold;
 }
@@ -1321,10 +1334,6 @@ h4.panel-title {
   color: #cbd5f5;
 }
 
-[data-theme="dark"] .nav li a {
-  background-color: #1e293b;
-}
-
 [data-theme="dark"] .nav ul li a {
   background-color: #020617;
 }
@@ -1432,4 +1441,56 @@ h4.panel-title {
 /* External links */
 [data-theme="dark"] a:not(.no-icon)[href^="http"]::after {
   color: #94a3b8;
+}
+
+/* Dark theme scrollbar inside <pre> */
+[data-theme="dark"] pre::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+[data-theme="dark"] pre::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+[data-theme="dark"] pre::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 6px;
+}
+
+[data-theme="dark"] pre::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+[data-theme="dark"] strong {
+  color: #f9fafb;
+}
+
+/* General text */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6,
+[data-theme="dark"] p,
+[data-theme="dark"] a {
+  color: #f9fafb;
+}
+[data-theme="dark"] .btn-default {
+  background-color: #1e293b;
+  color: #e5e7eb;
+  border: 1px solid #334155;
+}
+
+[data-theme="dark"] .btn-default:hover {
+  background-color: #334155;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .btn-default:focus,
+[data-theme="dark"] .btn-default:active {
+  background-color: #475569;
+  color: #ffffff;
+  border-color: #475569;
 }

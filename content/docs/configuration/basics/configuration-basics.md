@@ -23,7 +23,8 @@ The configuration consists, in general, of the following five parts:
 Visualizing the configuration helps a lot in understanding the connections between these five parts. Do not forget to try out the [configuration visualizer](tooling-config-visualization.html). We use it to visualize the configuration in the documentation.
 {% endtip %}
 
-![Complete example](images/docs/configuration/doc-base.png)
+<img src="/images/docs/configuration/doc-base-light.png" class="img-light" alt="Complete example">
+<img src="/images/docs/configuration/doc-base-dark.png" class="img-dark" alt="Complete example">
 
 {% note %}
 On this page, you also find references to the preCICE API. If you are only using (and not developing) an adapter, don't panic: you can use these references to get a better understanding, but you don't need to change anything in your adapter.
@@ -53,7 +54,8 @@ The value `dimensions` needs to match the physical dimension of the mesh, i.e. t
 
 ## 3. Coupling participants
 
-![Participant configuration](images/docs/configuration/doc-participants.png)
+<img src="/images/docs/configuration/doc-participants-light.png" class="img-light" alt="Participant configuration">
+<img src="/images/docs/configuration/doc-participants-dark.png" class="img-dark" alt="Participant configuration">
 
 Each solver that participates in the coupled simulation needs a participant definition. You need to define at least two participants.
 
@@ -96,7 +98,8 @@ Read more about the [mapping configuration](configuration-mapping.html), or see 
 
 ## 4. Communication
 
-![Communication configuration](images/docs/configuration/doc-m2n.png)
+<img src="/images/docs/configuration/doc-m2n-light.png" class="img-light" alt="Communication configuration">
+<img src="/images/docs/configuration/doc-m2n-dark.png" class="img-dark" alt="Communication configuration">
 
 If two participants should exchange data, they need a communication channel.
 
@@ -108,7 +111,8 @@ Read more about the [communication configuration](configuration-communication.ht
 
 ## 5. Coupling scheme
 
-![Couplingscheme configuration](images/docs/configuration/doc-cplscheme.png)
+<img src="/images/docs/configuration/doc-cplscheme-light.png" class="img-light" alt="Couplingscheme configuration">
+<img src="/images/docs/configuration/doc-cplscheme-dark.png" class="img-dark" alt="Couplingscheme configuration">
 
 At last, you need to define how the two participants exchange data. If you want an explicit coupling scheme (no coupling subiterations), you can use:
 
