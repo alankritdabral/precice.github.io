@@ -9,7 +9,8 @@ summary: "As preCICE is designed for HPC, adapter developers often have to deal 
 
 We will focus on distributed meshes as they are often used in parallelized finite element codes, such as FEniCS or deal.II. In a distributed memory parallelization, the ranks usually only own a fraction of the mesh. At the interface between two partitions of the mesh vertices or elements owned by one rank usually have to be communicated to another one in order to make sure that all the information needed for the computations is available.
 
-![General Setup of a distributed mesh](images/docs/parallelizationWOCoupling.png)
+<img src="/images/docs/parallelizationWOCoupling_light.png" class="img-light" alt="General Setup of a distributed mesh">
+<img src="/images/docs/parallelizationWOCoupling_dark.png" class="img-dark" alt="General Setup of a distributed mesh">
 
 This distributed mesh setup is not only relevant for the internal degrees of freedom, but also for the coupling mesh of preCICE: The ranks have to call `precice::setMeshVertex(...)` or `precice::setMeshVertices(...)` to define the coupling mesh. In the following we want to discuss strategies how preCICE can be used in such a situation and how we can deal with the need for duplicate vertices.
 
@@ -19,7 +20,8 @@ In this approach we do not define any copied vertices in preCICE, but only the v
 
 Note that it might be required to add another communication step inside the adapter or the solver to synchronize the data on the copied vertices among ranks.
 
-![Use a single mesh](images/docs/parallelizationSingleMesh.png)
+<img src="/images/docs/parallelizationSingleMesh_light.png" class="img-light" alt="Use a single mesh">
+<img src="/images/docs/parallelizationSingleMesh_dark.png" class="img-dark" alt="Use a single mesh">
 
 Discussion of this approach:
 
@@ -34,7 +36,8 @@ Each rank can only access the vertices that it has previously defined. Therefore
 
 Since we have to write duplicate vertices, it becomes especially important to make sure that the values written by the rank that owns the vertices and the rank(s) where the vertices are only a copy of the original vertex are written correctly: If a conservative mapping is used, only a single rank (usually the rank that owns the vertex) is allowed to write the updated values to preCICE, since otherwise the mapping of preCICE will cause the actual value to be a multiple of the "true" result. If a consistent mapping is used, all ranks that define the vertex also have to write the "true" value to it, since otherwise the result will be a combination of the "true" value and zeroes originating from the ranks owning copies of the vertex.
 
-![Use a single mesh with duplicate vertices](images/docs/parallelizationSingleMeshDuplicate.png)
+<img src="/images/docs/parallelizationSingleMeshDuplicate_light.png" class="img-light" alt="Use a single mesh with duplicate vertices">
+<img src="/images/docs/parallelizationSingleMeshDuplicate_dark.png" class="img-dark" alt="Use a single mesh with duplicate vertices">
 
 Discussion of this approach:
 
@@ -49,7 +52,8 @@ We create a `write_mesh` where we call `precice::setMeshVertex(...)` *only* for 
 
 Additionally, we create a `read_mesh`, where we call `precice::setMeshVertex(...)` for vertices owned by the rank *and* vertices where a copy is required. This allows the rank to read the values for owned as well as for copied vertices (e.g. via `precice::readData(...)`).
 
-![Use two meshes and duplicate vertices](images/docs/parallelizationTwoMeshes.png)
+<img src="/images/docs/parallelizationTwoMeshes_light.png" class="img-light" alt="Use two meshes and duplicate vertices">
+<img src="/images/docs/parallelizationTwoMeshes_dark.png" class="img-dark" alt="Use two meshes and duplicate vertices">
 
 Discussion of this approach:
 

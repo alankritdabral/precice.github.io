@@ -42,7 +42,8 @@ All this sounds complicated at first, but is relatively clear once you draw the 
 </coupling-scheme:serial-explicit>
 ```
 
-![visualistion of the mesh exchange](images/docs/configuration-mesh-exchange.png)
+<img class="logo-light" src="/images/docs/configuration-mesh-exchange_light.png" alt="visualistion of the mesh exchange">
+<img class="logo-dark" src="/images/docs/configuration-mesh-exchange_dark.png" alt="visualistion of the mesh exchange">
 
 ## Why do we make all this so complicated?
 

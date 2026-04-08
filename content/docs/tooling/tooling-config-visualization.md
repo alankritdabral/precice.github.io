@@ -60,9 +60,11 @@ The configuration visualizer comes with a CLI and a GUI, which serve different p
 
 ## Using the GUI
 
-![The GUI showing the perpendicular flap tutorial](images/docs/tooling/config-visualizer-gui-main.png)
+<img src="/images/docs/tooling/config-visualizer-gui-main_light.png" class="img-light" alt="The GUI showing the perpendicular flap tutorial">
+<img src="/images/docs/tooling/config-visualizer-gui-main_dark.png" class="img-dark" alt="The GUI showing the perpendicular flap tutorial">
 
-![The GUI showing the coupling logic of the heat-exchanger tutorial](images/docs/tooling/config-visualizer-gui-heat-exchanger.png)
+<img src="/images/docs/tooling/config-visualizer-gui-heat-exchanger_light.png" class="img-light" alt="The GUI showing the coupling logic of the heat-exchanger tutorial">
+<img src="/images/docs/tooling/config-visualizer-gui-heat-exchanger_dark.png" class="img-dark" alt="The GUI showing the coupling logic of the heat-exchanger tutorial">
 
 To open the interactive GUI and optionally pass a path to a configuration file:
 
@@ -158,7 +160,8 @@ The following examples are based on the [elastic-tube-1d tutorial](tutorials-ela
 precice-config-visualizer -o graph.svg precice-config.xml
 ```
 
-![Config visualization](images/docs/tooling/elastictube1d-full.svg)
+<img class="logo-light" src="/images/docs/tooling/elastictube1d-full_light.svg" alt="Config visualization">
+<img class="logo-dark" src="/images/docs/tooling/elastictube1d-full_dark.svg" alt="Config visualization">
 
 ### Reduced information of coupling schemes and communicators
 
@@ -166,7 +169,8 @@ precice-config-visualizer -o graph.svg precice-config.xml
 precice-config-visualizer --communicators=merged --cplschemes=merged -o graph.svg precice-config.xml
 ```
 
-![Config visualization](images/docs/tooling/elastictube1d-cpl-com-merged.svg)
+<img class="logo-light" src="/images/docs/tooling/elastictube1d-cpl-com-merged_light.svg" alt="Config visualization">
+<img class="logo-dark" src="/images/docs/tooling/elastictube1d-cpl-com-merged_dark.svg" alt="Config visualization">
 
 ### Data flow visualization
 
@@ -174,4 +178,5 @@ precice-config-visualizer --communicators=merged --cplschemes=merged -o graph.sv
 precice-config-visualizer --communicators=hide --cplschemes=hide -o graph.svg precice-config.xml
 ```
 
-![Config visualization](images/docs/tooling/elastictube1d-data-flow.svg)
+<img class="img-light" src="/images/docs/tooling/elastictube1d-data-flow_light.svg" alt="Config visualization">
+<img class="img-dark" src="/images/docs/tooling/elastictube1d-data-flow_dark.svg" alt="Config visualization">

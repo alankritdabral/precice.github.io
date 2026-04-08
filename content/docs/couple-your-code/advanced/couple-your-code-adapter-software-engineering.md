@@ -11,7 +11,8 @@ What we develop in the [step-by-step guide](couple-your-code-preparing-your-solv
 
 In this section, we look into developing an adapter as a class in the solver code, as a wrapper that calls the solver and preCICE APIs, or as a solver plugin:
 
-![Adapter software engineering options](images/docs/couple-your-code/adapter-software-engineering/adapter-software-engineering-approaches.svg)
+<img src="/images/docs/couple-your-code/adapter-software-engineering/adapter-software-engineering-approaches_light.svg" class="img-light" alt="Adapter software engineering options">
+<img src="/images/docs/couple-your-code/adapter-software-engineering/adapter-software-engineering-approaches_dark.svg" class="img-dark" alt="Adapter software engineering options">
 
 This categorization is not always clear, as it often depends on our perspective: which is the executable application being coupled? A ready-to-use simulation program, a code using tools from a toolkit, or an external script delegating execution? This section is mainly meant to provide ideas and examples on how to better structure such an adapter code.
 
@@ -82,7 +83,8 @@ This configuration is typically sourced from a dedicated configuration file,
 which is read directly by the adapter.
 For example, for an FSI simulation coupling OpenFOAM and CalculiX, three configuration files are needed:
 
-![Adapter and preCICE configuration files in a coupled simulation](images/docs/couple-your-code/adapter-software-engineering/configuration-files-precice-adapter.svg)
+<img src="/images/docs/couple-your-code/adapter-software-engineering/configuration-files-precice-adapter_light.svg" class="img-light" alt="Adapter and preCICE configuration files in a coupled simulation">
+<img src="/images/docs/couple-your-code/adapter-software-engineering/configuration-files-precice-adapter_dark.svg" class="img-dark" alt="Adapter and preCICE configuration files in a coupled simulation">
 
 ### Configuration prototypes
 

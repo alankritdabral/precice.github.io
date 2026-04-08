@@ -1,5 +1,6 @@
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" aria-label="Main">
+    <script src="{{ 'js/toggle-theme.js' | relative_url }}"></script>
     <div class="container topnavlinks">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -10,7 +11,16 @@
             </button>
             <a class="navbar-brand no-icon" href="{{ site.url }}">
             <span class="navbar-brand-icon">
-            <img class="navbar-brand-text" src="images/preCICE_text_28px.svg" alt="preCICE"></span>
+            <img class="navbar-brand-text logo-light" 
+                 src="images/preCICE_text_28px.svg" 
+                 alt="preCICE">
+            <img class="navbar-brand-text logo-dark" 
+                 src="images/preCICE_text_28px_dark_theme.svg" 
+                 alt="preCICE">
+            </span>
+            </a>
+            <a id="theme-toggle" class="no-icon navbar-theme-toggle" aria-label="Toggle theme">
+                <i id="theme-icon" class="fas fa-moon"></i>
             </a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

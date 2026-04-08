@@ -14,7 +14,10 @@ layout: landing_page
 
     <div class="row">
       <div class="col-lg-12">
-        <h1 class="title no-anchor">Welcome to <img src="images/preCICE_logo_42px.svg" alt="preCICE"></h1>
+        <h1 class="title no-anchor">Welcome to 
+            <img src="images/preCICE_logo_42px_light.svg" alt="preCICE" class="logo-light">
+            <img src="images/preCICE_logo_42px_dark.svg" alt="preCICE" class="logo-dark">
+        </h1>
         <h2 class="subtitle no-anchor">The coupling library for partitioned multi-physics simulations.</h2>
         <div class="action-button-container">
           <span id="github-button">
@@ -42,8 +45,14 @@ layout: landing_page
         </p>
       </div>
       <div class="col-md-6">
-        <img class="img-responsive col-xs-12" src="images/lead-image-precice.svg" alt="visualisation of how preCICE couples different solvers">
-        <!-- https://stackoverflow.com/questions/21943108/bootstrap-3-img-responsive-images-are-not-responsive-inside-fieldset-in-firefox -->
+        <img class="img-responsive col-xs-12 logo-light"
+             src="images/lead-image-precice_light.svg"
+             alt="visualisation of how preCICE couples different solvers">
+
+        <img class="img-responsive col-xs-12 logo-dark"
+             src="images/lead-image-precice_dark.svg"
+             alt="visualisation of how preCICE couples different solvers">
+      <!-- https://stackoverflow.com/questions/21943108/bootstrap-3-img-responsive-images-are-not-responsive-inside-fieldset-in-firefox -->
       </div>
     </div>
 
@@ -347,7 +356,7 @@ layout: landing_page
 
 <!-- Community -->
 
-<div class="background-light">
+<div class="background-light" id="community-section">
   <div class="container">
     <div  class="section">
 
