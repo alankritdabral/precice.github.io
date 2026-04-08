@@ -54,8 +54,8 @@ The value `dimensions` needs to match the physical dimension of the mesh, i.e. t
 
 ## 3. Coupling participants
 
-<img src="/images/docs/configuration/doc-participants-light.png" class="img-light" alt="Participant configuration">
-<img src="/images/docs/configuration/doc-participants-dark.png" class="img-dark" alt="Participant configuration">
+<img src="/images/docs/configuration/doc-participants_light.png" class="img-light" alt="Participant configuration">
+<img src="/images/docs/configuration/doc-participants_dark.png" class="img-dark" alt="Participant configuration">
 
 Each solver that participates in the coupled simulation needs a participant definition. You need to define at least two participants.
 
