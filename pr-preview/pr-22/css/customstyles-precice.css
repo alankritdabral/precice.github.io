@@ -33,6 +33,21 @@ a.navbar-brand {
 a:hover > .navbar-brand-icon:before {
   transform: rotate(180deg);
 }
+[data-theme="dark"] .navbar-brand-icon:before {
+  width: 25px;
+  height: 25px;
+  content: "";
+  display: inline-block;
+  background: url("../images/icon_dark.svg");
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  transition: all 400ms;
+}
+
+[data-theme="dark"] a:hover > .navbar-brand-icon:before {
+  transform: rotate(180deg);
+}
 /* .nav styles both topnav and sidenav, so use .nav.navbar-nav */
 .nav.navbar-nav > li > a {
   font-size: 14px;
@@ -440,12 +455,12 @@ div.highlighter-rouge:hover .copy-code-btn {
     font-size: 24px;
 }
 
-[data-theme="dark"] .nav > li > a {
-  color: #cbd5f5;
+[data-theme="dark"] .nav.navbar > li > a {
+  color: #0A76BB;
 }
 
-[data-theme="dark"] .nav > li > a:hover {
-  color: #ffffff;
+[data-theme="dark"] .nav.navbar > li > a:hover {
+  color: #ED762C;
   background-color: transparent;
 }
 
@@ -479,7 +494,7 @@ div.highlighter-rouge:hover .copy-code-btn {
 /* Code blocks */
 [data-theme="dark"] pre,
 [data-theme="dark"] code {
-  background-color: #020617;
+  background-color: #0f172a;
   color: #e2e8f0;
 }
 
@@ -579,3 +594,44 @@ div.highlighter-rouge:hover .copy-code-btn {
 }
 
 
+/* docs configuration images  */
+.img-dark {
+  display: none;
+}
+
+[data-theme="dark"] .img-light {
+  display: none;
+} 
+
+[data-theme="dark"] .img-dark {
+  display: block;
+}
+
+[data-theme="dark"] .image-holder svg {
+  filter: invert(1);
+}
+/* =========================
+   SIDEBAR / NAV
+========================= */
+
+[data-theme="dark"] .nav > li > a {
+  color: #334155;
+}
+
+[data-theme="dark"] .nav > li > a:hover {
+  background-color: #2a3240;
+}
+
+[data-theme="dark"] .nav li.thirdlevel > a {
+  background-color: #1a1f28 !important;
+  color: #82c4ff;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+[data-theme="dark"] footer {
+  background-color: #161a22;
+  color: #aaa;
+}

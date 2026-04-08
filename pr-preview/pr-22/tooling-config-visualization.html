@@ -196,7 +196,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                  src="images/preCICE_text_28px.svg" 
                  alt="preCICE">
             <img class="navbar-brand-text logo-dark" 
-                 src="images/preCICE_text_28px_white.svg" 
+                 src="images/preCICE_text_28px_dark_theme.svg" 
                  alt="preCICE">
             </span>
             </a>
@@ -1789,9 +1789,11 @@ pipx <span class="nb">install </span>precice-config-visualizer-gui
 
 <h2 id="using-the-gui">Using the GUI</h2>
 
-<p><img src="images/docs/tooling/config-visualizer-gui-main.png" alt="The GUI showing the perpendicular flap tutorial" /></p>
+<p><img src="/images/docs/tooling/config-visualizer-gui-main_light.png" class="img-light" alt="The GUI showing the perpendicular flap tutorial" />
+<img src="/images/docs/tooling/config-visualizer-gui-main_dark.png" class="img-dark" alt="The GUI showing the perpendicular flap tutorial" /></p>
 
-<p><img src="images/docs/tooling/config-visualizer-gui-heat-exchanger.png" alt="The GUI showing the coupling logic of the heat-exchanger tutorial" /></p>
+<p><img src="/images/docs/tooling/config-visualizer-gui-heat-exchanger_light.png" class="img-light" alt="The GUI showing the coupling logic of the heat-exchanger tutorial" />
+<img src="/images/docs/tooling/config-visualizer-gui-heat-exchanger_dark.png" class="img-dark" alt="The GUI showing the coupling logic of the heat-exchanger tutorial" /></p>
 
 <p>To open the interactive GUI and optionally pass a path to a configuration file:</p>
 
@@ -1891,21 +1893,24 @@ To see the full list of options, run:</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>precice-config-visualizer <span class="nt">-o</span> graph.svg precice-config.xml
 </code></pre></div></div>
 
-<p><img src="images/docs/tooling/elastictube1d-full.svg" alt="Config visualization" /></p>
+<p><img class="logo-light" src="/images/docs/tooling/elastictube1d-full_light.svg" alt="Config visualization" />
+<img class="logo-dark" src="/images/docs/tooling/elastictube1d-full_dark.svg" alt="Config visualization" /></p>
 
 <h3 id="reduced-information-of-coupling-schemes-and-communicators">Reduced information of coupling schemes and communicators</h3>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>precice-config-visualizer <span class="nt">--communicators</span><span class="o">=</span>merged <span class="nt">--cplschemes</span><span class="o">=</span>merged <span class="nt">-o</span> graph.svg precice-config.xml
 </code></pre></div></div>
 
-<p><img src="images/docs/tooling/elastictube1d-cpl-com-merged.svg" alt="Config visualization" /></p>
+<p><img class="logo-light" src="/images/docs/tooling/elastictube1d-cpl-com-merged_light.svg" alt="Config visualization" />
+<img class="logo-dark" src="/images/docs/tooling/elastictube1d-cpl-com-merged_dark.svg" alt="Config visualization" /></p>
 
 <h3 id="data-flow-visualization">Data flow visualization</h3>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>precice-config-visualizer <span class="nt">--communicators</span><span class="o">=</span>hide <span class="nt">--cplschemes</span><span class="o">=</span>hide <span class="nt">-o</span> graph.svg precice-config.xml
 </code></pre></div></div>
 
-<p><img src="images/docs/tooling/elastictube1d-data-flow.svg" alt="Config visualization" /></p>
+<p><img class="img-light" src="/images/docs/tooling/elastictube1d-data-flow_light.svg" alt="Config visualization" />
+<img class="img-dark" src="/images/docs/tooling/elastictube1d-data-flow_dark.svg" alt="Config visualization" /></p>
 
 
     

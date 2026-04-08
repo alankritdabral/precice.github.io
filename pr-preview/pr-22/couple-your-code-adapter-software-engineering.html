@@ -196,7 +196,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                  src="images/preCICE_text_28px.svg" 
                  alt="preCICE">
             <img class="navbar-brand-text logo-dark" 
-                 src="images/preCICE_text_28px_white.svg" 
+                 src="images/preCICE_text_28px_dark_theme.svg" 
                  alt="preCICE">
             </span>
             </a>
@@ -1732,7 +1732,8 @@ $('#toc').on('click', 'a', function() {
 
 <p>In this section, we look into developing an adapter as a class in the solver code, as a wrapper that calls the solver and preCICE APIs, or as a solver plugin:</p>
 
-<p><img src="images/docs/couple-your-code/adapter-software-engineering/adapter-software-engineering-approaches.svg" alt="Adapter software engineering options" /></p>
+<p><img src="/images/docs/couple-your-code/adapter-software-engineering/adapter-software-engineering-approaches_light.svg" class="img-light" alt="Adapter software engineering options" />
+<img src="/images/docs/couple-your-code/adapter-software-engineering/adapter-software-engineering-approaches_dark.svg" class="img-dark" alt="Adapter software engineering options" /></p>
 
 <p>This categorization is not always clear, as it often depends on our perspective: which is the executable application being coupled? A ready-to-use simulation program, a code using tools from a toolkit, or an external script delegating execution? This section is mainly meant to provide ideas and examples on how to better structure such an adapter code.</p>
 
@@ -1808,7 +1809,8 @@ This configuration is typically sourced from a dedicated configuration file,
 which is read directly by the adapter.
 For example, for an FSI simulation coupling OpenFOAM and CalculiX, three configuration files are needed:</p>
 
-<p><img src="images/docs/couple-your-code/adapter-software-engineering/configuration-files-precice-adapter.svg" alt="Adapter and preCICE configuration files in a coupled simulation" /></p>
+<p><img src="/images/docs/couple-your-code/adapter-software-engineering/configuration-files-precice-adapter_light.svg" class="img-light" alt="Adapter and preCICE configuration files in a coupled simulation" />
+<img src="/images/docs/couple-your-code/adapter-software-engineering/configuration-files-precice-adapter_dark.svg" class="img-dark" alt="Adapter and preCICE configuration files in a coupled simulation" /></p>
 
 <h3 id="configuration-prototypes">Configuration prototypes</h3>
 

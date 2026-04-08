@@ -196,7 +196,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                  src="images/preCICE_text_28px.svg" 
                  alt="preCICE">
             <img class="navbar-brand-text logo-dark" 
-                 src="images/preCICE_text_28px_white.svg" 
+                 src="images/preCICE_text_28px_dark_theme.svg" 
                  alt="preCICE">
             </span>
             </a>
@@ -1744,7 +1744,8 @@ The mapping configuration has undergone a major revision between preCICE version
 <span class="nt">&lt;/participant&gt;</span>
 </code></pre></div></div>
 
-<p><img src="images/docs/configuration/doc-mapping.png" alt="Mapping configuration" /></p>
+<p><img src="/images/docs/configuration/doc-mapping_light.png" class="img-light" alt="Mapping configuration" />
+<img src="/images/docs/configuration/doc-mapping_dark.png" class="img-dark" alt="Mapping configuration" /></p>
 
 <p>The <code class="language-plaintext highlighter-rouge">provide</code> mesh and <code class="language-plaintext highlighter-rouge">receive</code> mesh are then assigned to the <code class="language-plaintext highlighter-rouge">from</code> and <code class="language-plaintext highlighter-rouge">to</code> slot in the mapping configuration to indicate the mesh, on which data is written, and the mesh, on which data is read. In addition to a <code class="language-plaintext highlighter-rouge">from</code> and <code class="language-plaintext highlighter-rouge">to</code> mesh, each mapping defines a <code class="language-plaintext highlighter-rouge">direction</code>, which can either be <code class="language-plaintext highlighter-rouge">read</code> or <code class="language-plaintext highlighter-rouge">write</code>:</p>
 
@@ -1801,7 +1802,8 @@ Instead of using static meshes as described here, you may consider using a <a hr
 
 <p>The mapping method itself is defined in the xml configuration after the colon <code class="language-plaintext highlighter-rouge">mapping:...</code> (e.g. <code class="language-plaintext highlighter-rouge">&lt;mapping:nearest-neighbor ...</code>). In general, preCICE offers two broader groups of mapping methods</p>
 
-<p><img src="images/docs/configuration/doc-mapping-options.svg" alt="Mapping options" /></p>
+<p><img class="logo-light" src="/images/docs/configuration/doc-mapping-options_light.svg" alt="Mapping options" />
+<img class="logo-dark" src="/images/docs/configuration/doc-mapping-options_dark.svg" alt="Mapping options" /></p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> 
 Chapter 3.2 (Data mapping) of the preCICE version 2 <a href="https://doi.org/10.12688/openreseurope.14445.2">reference paper</a> explains and compares a selection of projection-based methods and kernel methods.
@@ -1811,7 +1813,8 @@ Chapter 3.2 (Data mapping) of the preCICE version 2 <a href="https://doi.org/10.
 
 <p>Projection-based data mapping methods are typically cheap to compute as they don’t involve solving expensive linear systems as opposed to the kernel methods. The basic variant, which operates solely on vertex data, is <code class="language-plaintext highlighter-rouge">nearest-neighbor</code> mapping. All other variants require additional information from the user, as shown in the overview figure above.</p>
 
-<p><img src="images/docs/configuration-mapping-variants.png" alt="different mapping variants visualized" /></p>
+<p><img src="/images/docs/configuration-mapping-variants_light.png" class="img-light" alt="different mapping variants visualized" />
+<img src="/images/docs/configuration-mapping-variants_dark.png" class="img-dark" alt="different mapping variants visualized" /></p>
 
 <p>Available methods are:</p>
 
@@ -1849,7 +1852,8 @@ For global rbf methods, the interpolation problem (or rather the polynomial QR s
 
 <p>Configuring kernel methods is more involved and offers more options. A full reference of all options can be found in the <a href="configuration-xml-reference.html">xml reference</a>. On a broader level, the configuration consists of two main options: the applied kernel mapping method and the used basis-function including its support radius or shape parameter. As the decision about the used kernel mapping method can be intricate, we provide an alias called <code class="language-plaintext highlighter-rouge">&lt;mapping:rbf ...</code> which decides dynamically for a kernel method according to the setup (e.g. parallel execution, problem size, available dependencies)</p>
 
-<p><img src="images/docs/configuration/doc-mapping-rbf-alias.svg" alt="RBF alias options" /></p>
+<p><img class="logo-light" src="/images/docs/configuration/doc-mapping-rbf-alias_light.svg" alt="RBF alias options" />
+<img class="logo-dark" src="/images/docs/configuration/doc-mapping-rbf-alias_dark.svg" alt="RBF alias options" /></p>
 
 <p>An RBF mapping configuration could look as follows</p>
 
@@ -1879,7 +1883,8 @@ We recommend to use the alias tag, as long as there are no further requirements 
 
 <p>To use this feature, please build preCICE from source with  <a href="installation-source-dependencies.html#ginkgo">Ginkgo Mappings enabled</a>.</p>
 
-<p><img src="images/docs/configuration/doc-mapping-rbf-executors.svg" alt="RBF executors" /></p>
+<p><img class="logo-light" src="/images/docs/configuration/doc-mapping-rbf-executors_light.svg" alt="RBF executors" />
+<img class="logo-dark" src="/images/docs/configuration/doc-mapping-rbf-executors_dark.svg" alt="RBF executors" /></p>
 
 <p>To configure the executor, an additional subtag can be used in the mapping configuration:</p>
 
@@ -1897,7 +1902,8 @@ We recommend to use the alias tag, as long as there are no further requirements 
 
 <p>We differentiate between <em>axial</em> and <em>radial</em> geometric multiscale mapping:</p>
 
-<p><img src="images/docs/configuration-mapping-geometric-multiscale-axial-radial.png" alt="Axial vs radial 1D-3D mapping" /></p>
+<p><img src="/images/docs/configuration-mapping-geometric-multiscale-axial-radial_light.png" class="img-light" alt="Axial vs radial 1D-3D mapping" />
+<img src="/images/docs/configuration-mapping-geometric-multiscale-axial-radial_dark.png" class="img-dark" alt="Axial vs radial 1D-3D mapping" /></p>
 
 <div class="alert alert-warning" role="alert"><i class="fas fa-flask"></i> <b>Experimental:</b> 
 This is an experimental feature, available since preCICE v3.0.0. Enable it using <code class="language-plaintext highlighter-rouge">&lt;precice-configuration experimental="true"&gt;</code> and do not consider the configuration to be stable yet. For now, since preCICE does not yet support 1D meshes, both input and output meshes are defined as 3D, and a primary axis defines the active component of the 1D data. Are you interested in this feature? Give us your feedback!

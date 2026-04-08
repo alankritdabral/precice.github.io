@@ -196,7 +196,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                  src="images/preCICE_text_28px.svg" 
                  alt="preCICE">
             <img class="navbar-brand-text logo-dark" 
-                 src="images/preCICE_text_28px_white.svg" 
+                 src="images/preCICE_text_28px_dark_theme.svg" 
                  alt="preCICE">
             </span>
             </a>
@@ -1730,7 +1730,8 @@ $('#toc').on('click', 'a', function() {
 
 <p>We will focus on distributed meshes as they are often used in parallelized finite element codes, such as FEniCS or deal.II. In a distributed memory parallelization, the ranks usually only own a fraction of the mesh. At the interface between two partitions of the mesh vertices or elements owned by one rank usually have to be communicated to another one in order to make sure that all the information needed for the computations is available.</p>
 
-<p><img src="images/docs/parallelizationWOCoupling.png" alt="General Setup of a distributed mesh" /></p>
+<p><img src="/images/docs/parallelizationWOCoupling_light.png" class="img-light" alt="General Setup of a distributed mesh" />
+<img src="/images/docs/parallelizationWOCoupling_dark.png" class="img-dark" alt="General Setup of a distributed mesh" /></p>
 
 <p>This distributed mesh setup is not only relevant for the internal degrees of freedom, but also for the coupling mesh of preCICE: The ranks have to call <code class="language-plaintext highlighter-rouge">precice::setMeshVertex(...)</code> or <code class="language-plaintext highlighter-rouge">precice::setMeshVertices(...)</code> to define the coupling mesh. In the following we want to discuss strategies how preCICE can be used in such a situation and how we can deal with the need for duplicate vertices.</p>
 
@@ -1740,7 +1741,8 @@ $('#toc').on('click', 'a', function() {
 
 <p>Note that it might be required to add another communication step inside the adapter or the solver to synchronize the data on the copied vertices among ranks.</p>
 
-<p><img src="images/docs/parallelizationSingleMesh.png" alt="Use a single mesh" /></p>
+<p><img src="/images/docs/parallelizationSingleMesh_light.png" class="img-light" alt="Use a single mesh" />
+<img src="/images/docs/parallelizationSingleMesh_dark.png" class="img-dark" alt="Use a single mesh" /></p>
 
 <p>Discussion of this approach:</p>
 
@@ -1757,7 +1759,8 @@ $('#toc').on('click', 'a', function() {
 
 <p>Since we have to write duplicate vertices, it becomes especially important to make sure that the values written by the rank that owns the vertices and the rank(s) where the vertices are only a copy of the original vertex are written correctly: If a conservative mapping is used, only a single rank (usually the rank that owns the vertex) is allowed to write the updated values to preCICE, since otherwise the mapping of preCICE will cause the actual value to be a multiple of the “true” result. If a consistent mapping is used, all ranks that define the vertex also have to write the “true” value to it, since otherwise the result will be a combination of the “true” value and zeroes originating from the ranks owning copies of the vertex.</p>
 
-<p><img src="images/docs/parallelizationSingleMeshDuplicate.png" alt="Use a single mesh with duplicate vertices" /></p>
+<p><img src="/images/docs/parallelizationSingleMeshDuplicate_light.png" class="img-light" alt="Use a single mesh with duplicate vertices" />
+<img src="/images/docs/parallelizationSingleMeshDuplicate_dark.png" class="img-dark" alt="Use a single mesh with duplicate vertices" /></p>
 
 <p>Discussion of this approach:</p>
 
@@ -1774,7 +1777,8 @@ $('#toc').on('click', 'a', function() {
 
 <p>Additionally, we create a <code class="language-plaintext highlighter-rouge">read_mesh</code>, where we call <code class="language-plaintext highlighter-rouge">precice::setMeshVertex(...)</code> for vertices owned by the rank <em>and</em> vertices where a copy is required. This allows the rank to read the values for owned as well as for copied vertices (e.g. via <code class="language-plaintext highlighter-rouge">precice::readData(...)</code>).</p>
 
-<p><img src="images/docs/parallelizationTwoMeshes.png" alt="Use two meshes and duplicate vertices" /></p>
+<p><img src="/images/docs/parallelizationTwoMeshes_light.png" class="img-light" alt="Use two meshes and duplicate vertices" />
+<img src="/images/docs/parallelizationTwoMeshes_dark.png" class="img-dark" alt="Use two meshes and duplicate vertices" /></p>
 
 <p>Discussion of this approach:</p>
 
