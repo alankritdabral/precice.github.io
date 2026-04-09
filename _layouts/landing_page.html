@@ -6,17 +6,19 @@
 </head>
 
 <body>
+  <div class="page-wrapper">
 	<header>
 		{% include topnav.html %}
 		<!-- News banner -->
 		{% include news_banner.html onlanding=true %}
 	</header>
-	<main>
+	<main class="content-grow">
 		<!-- Page Content -->
 		{{content}}
 	</main>
 
 	{% include footer.html %}
+  </div>
 
 	<script src="{{ '/js/github-queries.js' | relative_url }}"></script>
 
