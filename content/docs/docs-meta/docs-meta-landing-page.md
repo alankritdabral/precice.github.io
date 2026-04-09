@@ -94,39 +94,39 @@ Code:
 
 Output:
 <style>
-  .col-md-1, .col-md-4, .col-md-6, .col-md-8 {
+  .demo-grid  {
     background-color: aliceblue;
     border: 1px solid darkgrey;
     margin-bottom: 10px;
     padding: 10px;
   }
 </style>
+  <div class="row">
+    <div class="col-xs-1 col-sm-1 col-md-1 demo-grid">.col-md-1</div>
+    <div class="col-xs-1 col-sm-1 col-md-1 demo-grid">.col-md-1</div>
+    <div class="col-xs-1 col-sm-1 col-md-1 demo-grid">.col-md-1</div>
+    <div class="col-xs-1 col-sm-1 col-md-1 demo-grid">.col-md-1</div>
+    <div class="col-xs-1 col-sm-1 col-md-1 demo-grid">.col-md-1</div>
+    <div class="col-xs-1 col-sm-1 col-md-1 demo-grid">.col-md-1</div>
+    <div class="col-xs-1 col-sm-1 col-md-1 demo-grid">.col-md-1</div>
+    <div class="col-xs-1 col-sm-1 col-md-1 demo-grid">.col-md-1</div>
+    <div class="col-xs-1 col-sm-1 col-md-1 demo-grid">.col-md-1</div>
+    <div class="col-xs-1 col-sm-1 col-md-1 demo-grid">.col-md-1</div>
+    <div class="col-xs-1 col-sm-1 col-md-1 demo-grid">.col-md-1</div>
+    <div class="col-xs-1 col-sm-1 col-md-1 demo-grid">.col-md-1</div>
+  </div>
 <div class="row">
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
+  <div class="col-xs-8 col-sm-8 col-md-8 demo-grid">.col-md-8</div>
+  <div class="col-xs-4 col-sm-4 col-md-4 demo-grid">.col-md-4</div>
 </div>
 <div class="row">
-  <div class="col-md-8">.col-md-8</div>
-  <div class="col-md-4">.col-md-4</div>
+  <div class="col-xs-4 col-sm-4 col-md-4 demo-grid">.col-md-4</div>
+  <div class="col-xs-4 col-sm-4 col-md-4 demo-grid">.col-md-4</div>
+  <div class="col-xs-4 col-sm-4 col-md-4 demo-grid">.col-md-4</div>
 </div>
 <div class="row">
-  <div class="col-md-4">.col-md-4</div>
-  <div class="col-md-4">.col-md-4</div>
-  <div class="col-md-4">.col-md-4</div>
-</div>
-<div class="row">
-  <div class="col-md-6">.col-md-6</div>
-  <div class="col-md-6">.col-md-6</div>
+  <div class="col-xs-6 col-sm-6 col-md-6 demo-grid">.col-md-6</div>
+  <div class="col-xs-6 col-sm-6 col-md-6 demo-grid">.col-md-6</div>
 </div>
 
 ## Typical example
