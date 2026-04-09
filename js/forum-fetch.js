@@ -36,6 +36,55 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     let visibleCount = 10;
     let filteredTopics = [...topics];
+    let renderedCount = 0;
+
+    function createTopicCard(t) {
+      const card = document.createElement("div");
+      card.className = "faq-card";
+      card.style.cssText =
+        "border:1px solid #ddd;padding:12px;border-radius:8px;background:#fff;";
+
+      const excerpt =
+        t.excerpt && t.excerpt.trim().length > 0
+          ? t.excerpt
+          : "No description available.";
+
+      var h4 = document.createElement("h4");
+      h4.style.cssText = "margin-bottom:8px;";
+      var strong = document.createElement("strong");
+      strong.style.cssText = "color:#040606;";
+      strong.textContent = t.title;
+      h4.appendChild(strong);
+
+      var excerptP = document.createElement("p");
+      excerptP.style.cssText = "color:#333;line-height:1.4;";
+      excerptP.textContent = excerpt + " ";
+      var readMore = document.createElement("a");
+      if (isSafeUrl(t.url)) {
+        readMore.setAttribute("href", t.url);
+      }
+      readMore.setAttribute("target", "_blank");
+      readMore.setAttribute("rel", "noopener noreferrer");
+      readMore.style.cssText = "text-decoration:none;color:#0069c2;";
+      readMore.dataset.noicon = "";
+      readMore.textContent = "Read more";
+      excerptP.appendChild(readMore);
+
+      var metaP = document.createElement("p");
+      metaP.style.cssText = "color:#666;font-size:0.9em;";
+      metaP.textContent =
+        "Last updated: " +
+        new Date(t.last_posted_at).toLocaleDateString("en-GB") +
+        " | Replies: " +
+        t.posts_count +
+        " | Views: " +
+        t.views;
+
+      card.appendChild(h4);
+      card.appendChild(excerptP);
+      card.appendChild(metaP);
+      return card;
+    }
 
     function filterAndSort() {
       const q = searchInput.value.trim().toLowerCase();
@@ -55,74 +104,45 @@ document.addEventListener("DOMContentLoaded", async function () {
       });
 
       visibleCount = 10;
+      renderedCount = 0;
       renderTopics();
     }
 
     function renderTopics() {
-      list.replaceChildren();
-
       const shown = filteredTopics.slice(0, visibleCount);
 
       if (!shown.length) {
+        list.replaceChildren();
+        renderedCount = 0;
         empty.style.display = "block";
         return;
       } else {
         empty.style.display = "none";
       }
 
-      shown.forEach((t) => {
-        const card = document.createElement("div");
-        card.className = "faq-card";
-        card.style.cssText =
-          "border:1px solid #ddd;padding:12px;border-radius:8px;background:#fff;";
-
-        const excerpt =
-          t.excerpt && t.excerpt.trim().length > 0
-            ? t.excerpt
-            : "No description available.";
-
-        var h4 = document.createElement("h4");
-        h4.style.cssText = "margin-bottom:8px;";
-        var strong = document.createElement("strong");
-        strong.textContent = t.title;
-        h4.appendChild(strong);
-
-        var excerptP = document.createElement("p");
-        excerptP.style.cssText = "color:#333;line-height:1.4;";
-        excerptP.textContent = excerpt + " ";
-        var readMore = document.createElement("a");
-        if (isSafeUrl(t.url)) {
-          readMore.setAttribute("href", t.url);
+      if (renderedCount === 0) {
+        list.replaceChildren();
+      } else {
+        const existingButton = list.querySelector(".faq-load-more-btn");
+        if (existingButton) {
+          existingButton.remove();
         }
-        readMore.setAttribute("target", "_blank");
-        readMore.setAttribute("rel", "noopener noreferrer");
-        readMore.style.cssText = "text-decoration:none;color:#0069c2;";
-        readMore.dataset.noicon = "";
-        readMore.textContent = "Read more";
-        excerptP.appendChild(readMore);
+      }
 
-        var metaP = document.createElement("p");
-        metaP.style.cssText = "color:#666;font-size:0.9em;";
-        metaP.textContent =
-          "Last updated: " +
-          new Date(t.last_posted_at).toLocaleDateString("en-GB") +
-          " | Replies: " +
-          t.posts_count +
-          " | Views: " +
-          t.views;
-
-        card.appendChild(h4);
-        card.appendChild(excerptP);
-        card.appendChild(metaP);
-        list.appendChild(card);
-      });
+      for (let i = renderedCount; i < shown.length; i++) {
+        list.appendChild(createTopicCard(shown[i]));
+      }
+      renderedCount = shown.length;
 
       if (visibleCount < filteredTopics.length) {
         const btn = document.createElement("button");
+        btn.className = "faq-load-more-btn";
+        btn.type = "button";
         btn.textContent = "Load more";
         btn.style.cssText =
-          "padding:8px 16px;margin:12px 0 12px auto;display:block;border:1px solid #ccc;border-radius:8px;background:#f9f9f9;cursor:pointer;";
-        btn.addEventListener("click", () => {
+          "padding:8px 16px;margin:12px 0 12px auto;display:block;border:1px solid #ccc;border-radius:8px;background:#f9f9f9;color:#040606;cursor:pointer;";
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
           visibleCount += 10;
           renderTopics();
         });
