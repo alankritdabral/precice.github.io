@@ -51,7 +51,7 @@ dt[id] {
 
 h1.title {
   margin-top: 0px;
-  color: #f9fafb;
+  color: rgb(4, 6, 6);
 }
 h2.subtitle {
   padding-top: 0px;
@@ -361,6 +361,10 @@ div.logo-holder > img {
   color: #e2e8f0;
 }
 
+[data-theme="dark"] h1.title {
+  color: #f9fafb;
+}
+
 /* Adapter cards */
 [data-theme="dark"] a.adapter,
 [data-theme="dark"] .adapter p {
@@ -428,6 +432,34 @@ div.logo-holder > img {
 
 [data-theme="dark"] .btn:hover {
   background-color: #475569;
+}
+
+[data-theme="dark"] .btn.btn-primary {
+  background-color: #0a76bb;
+  border-color: #0a76bb;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .btn.btn-primary:hover,
+[data-theme="dark"] .btn.btn-primary:focus,
+[data-theme="dark"] .btn.btn-primary:active {
+  background-color: #248ec2;
+  border-color: #347dbe;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .background-dark a.btn.btn-primary[href="community-projects.html"] {
+  background-color: #334155;
+  border-color: #475569;
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .background-dark a.btn.btn-primary[href="community-projects.html"]:hover,
+[data-theme="dark"] .background-dark a.btn.btn-primary[href="community-projects.html"]:focus,
+[data-theme="dark"] .background-dark a.btn.btn-primary[href="community-projects.html"]:active {
+  background-color: #475569;
+  border-color: #475569;
+  color: #e2e8f0;
 }
 
 .logo-dark {

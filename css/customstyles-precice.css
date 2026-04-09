@@ -635,3 +635,7 @@ div.highlighter-rouge:hover .copy-code-btn {
   background-color: #161a22;
   color: #aaa;
 }
+
+[data-theme="dark"] footer.background-dark h2 {
+  color: rgb(4, 6, 6);
+}
