@@ -1,0 +1,41 @@
+name: Cleanup PR Preview
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          fetch-depth: 0
+
+      - name: Remove preview folder
+        run: |
+          TARGET="pr-preview/pr-${{ github.event.number }}"
+          if [ -d "$TARGET" ]; then
+            rm -rf "$TARGET"
+            echo "Deleted $TARGET"
+          else
+            echo "Preview folder not found"
+          fi
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Remove preview for PR #${{ github.event.number }}"
+            git push origin gh-pages
+          fi
