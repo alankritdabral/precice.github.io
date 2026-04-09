@@ -100,24 +100,7 @@ Output:
     margin-bottom: 10px;
     padding: 10px;
   }
-@media (max-width: 767px) {
-  .scroll-grid {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* smoother on mobile */
-    padding: 0 1px; /* prevents edge fade */
-  }
-  .scroll-grid .row {
-    white-space: nowrap;
-    margin: 0; /* remove negative bootstrap margins */
-  }
-  .scroll-grid .row > [class*="col-"] {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
-  }
-}
 </style>
-<div class="scroll-grid">
   <div class="row">
     <div class="col-xs-1 col-sm-1 col-md-1 demo-grid">.col-md-1</div>
     <div class="col-xs-1 col-sm-1 col-md-1 demo-grid">.col-md-1</div>
@@ -132,7 +115,6 @@ Output:
     <div class="col-xs-1 col-sm-1 col-md-1 demo-grid">.col-md-1</div>
     <div class="col-xs-1 col-sm-1 col-md-1 demo-grid">.col-md-1</div>
   </div>
-</div>
 <div class="row">
   <div class="col-xs-8 col-sm-8 col-md-8 demo-grid">.col-md-8</div>
   <div class="col-xs-4 col-sm-4 col-md-4 demo-grid">.col-md-4</div>
