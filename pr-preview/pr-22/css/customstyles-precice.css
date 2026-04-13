@@ -604,7 +604,7 @@ div.highlighter-rouge:hover .copy-code-btn {
 } 
 
 [data-theme="dark"] .img-dark {
-  display: block;
+  display: block !important;
 }
 
 [data-theme="dark"] .image-holder svg {
