@@ -35,6 +35,18 @@
 <link rel="stylesheet" href="css/syntax.css">
 <link rel="icon" sizes="192x192" href="images/icon.png">
 <link rel="apple-touch-icon" sizes="310x310" href="images/icon-310x310.png">
+<script>
+  (function() {
+    try {
+      var savedTheme = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var initialTheme = savedTheme || (prefersDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", initialTheme);
+    } catch (e) {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  })();
+</script>
 
 <!-- Font Awesome -->
 <link rel="stylesheet" 
@@ -68,6 +80,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 <script src="js/jquery.navgoco.min.js"></script>
 <script src="js/toc.js"></script>
 <script src="js/customscripts.js"></script>
+<script defer src="/js/toggle-theme.js"></script>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -181,7 +194,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     <header>
         <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" aria-label="Main">
-    <script src="/js/toggle-theme.js"></script>
     <div class="container topnavlinks">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -913,7 +925,7 @@ $('#toc').on('click', 'a', function() {
                 </div>
             
             <div class="text-right">
-              <small>Updated 02 Apr 26</small>
+              <small>Updated 13 Apr 26</small>
             </div>
           </aside>
           
@@ -928,7 +940,8 @@ Get the <a href="https://github.com/precice/tutorials/tree/develop/perpendicular
 
 <p>We model a two-dimensional fluid flowing through a channel. A solid, elastic flap is fixed to the floor of this channel. The flap oscillates due to the fluid pressure building up on its surface. The setup is shown schematically here:</p>
 
-<p><img src="images/tutorials-perpendicular-flap-setup-drawing.png" alt="Flap setup" /></p>
+<p><img src="images/tutorials-perpendicular-flap-setup-drawing_light.png" class="img-light" alt="Flap setup" />
+<img src="images/tutorials-perpendicular-flap-setup-drawing_dark.png" class="img-dark" style="display:none;" alt="Flap setup" /></p>
 
 <p>The simulated flow domain is 6 units long (x) and 4 units tall (y). The flap is located at the center of the bottom (x=0) and is 1 unit long (y) and 0.1 units thick (x). We set the fluid density \(\rho_F= 1.0kg/m^{3}\), the kinematic viscosity \(\nu_f= 1.0m^{2}/s\), the solid density \(\rho_s= 3.0·10^{3}kg/m^{3}\), the Young’s modulus to \(E= 4.0·10^{6} kg/ms^{2}\) and the Poisson ratio \(\nu_s = 0.3\). On the left boundary a constant inflow profile in x-direction of 10m/s is prescribed. The right boundary is an outflow and the top and bottom of the channel as well as the surface of the flap are no-slip walls.</p>
 
@@ -936,7 +949,8 @@ Get the <a href="https://github.com/precice/tutorials/tree/develop/perpendicular
 
 <p>preCICE configuration (image generated using the <a href="https://precice.org/tooling-config-visualization.html">precice-config-visualizer</a>):</p>
 
-<p><img src="images/tutorials-perpendicular-flap-precice-config.png" alt="preCICE configuration visualization" /></p>
+<p><img src="images/tutorials-perpendicular-flap-precice-config_light.png" class="img-light" alt="preCICE configuration visualization" />
+<img src="images/tutorials-perpendicular-flap-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization" /></p>
 
 <h2 id="available-solvers">Available solvers</h2>
 
@@ -1010,13 +1024,15 @@ Get the <a href="https://github.com/precice/tutorials/tree/develop/perpendicular
 
 <p>As we defined a watchpoint on the ‘Solid’ participant at the flap tip (see <code class="language-plaintext highlighter-rouge">precice-config.xml</code>), we can plot it with gnuplot using the script <code class="language-plaintext highlighter-rouge">plot-displacement.sh.</code> You need to specify the directory of the selected solid participant as a command line argument, so that the script can pick-up the desired watchpoint file, e.g. <code class="language-plaintext highlighter-rouge">plot-displacement.sh solid-fenics</code>. The resulting graph shows the x displacement of the flap tip. You can modify the script to plot the force instead.</p>
 
-<p><img src="images/tutorials-perpendicular-flap-displacement-watchpoint.png" alt="Flap watchpoint" /></p>
+<p><img src="images/tutorials-perpendicular-flap-displacement-watchpoint_light.png" class="img-light" alt="Flap watchpoint" />
+<img src="images/tutorials-perpendicular-flap-displacement-watchpoint_dark.png" class="img-dark" style="display:none;" alt="Flap watchpoint" /></p>
 
 <p>There is moreover a script <code class="language-plaintext highlighter-rouge">plot-all-displacements.sh</code> to plot and compare all possible variants. This script expects all watchpoint logs to be available in a subfolder <code class="language-plaintext highlighter-rouge">watchpoints</code> in the format <code class="language-plaintext highlighter-rouge">openfoam-dealii-version.log</code> or similar. If you want to use this script, you need to edit it to exclude combinations you want to exclude and copy the files over accordingly.</p>
 
 <p>You should get results similar to this one:</p>
 
-<p><img src="images/tutorials-perpendicular-flap-displacement-selected-watchpoints.png" alt="Selected flap watchpoints" /></p>
+<p><img src="images/tutorials-perpendicular-flap-displacement-selected-watchpoints_light.png" class="img-light" alt="Selected flap watchpoints" />
+<img src="images/tutorials-perpendicular-flap-displacement-selected-watchpoints_dark.png" class="img-dark" style="display:none;" alt="Selected flap watchpoints" /></p>
 
 <p>Reasons for the differences:</p>
 
@@ -1031,23 +1047,28 @@ Get the <a href="https://github.com/precice/tutorials/tree/develop/perpendicular
 
 <p>Comparison of the different flow solvers (incompressible <code class="language-plaintext highlighter-rouge">fluid-openfoam</code> and <code class="language-plaintext highlighter-rouge">fluid-nutils</code>, compressible <code class="language-plaintext highlighter-rouge">fluid-su2</code>, dummy <code class="language-plaintext highlighter-rouge">fluid-fake</code>):</p>
 
-<p><img src="images/tutorials-perpendicular-flap-displacement-flow-comparison-watchpoints.png" alt="Flap watchpoints using solid-calculix" /></p>
+<p><img src="images/tutorials-perpendicular-flap-displacement-flow-comparison-watchpoints_light.png" class="img-light" alt="Flap watchpoints using solid-calculix" />
+<img src="images/tutorials-perpendicular-flap-displacement-flow-comparison-watchpoints_dark.png" class="img-dark" style="display:none;" alt="Flap watchpoints using solid-calculix" /></p>
 
 <p>Combinations using the incompressible <code class="language-plaintext highlighter-rouge">fluid-openfoam</code> case:</p>
 
-<p><img src="images/tutorials-perpendicular-flap-displacement-openfoam-watchpoints.png" alt="Flap watchpoints using fluid-openfoam" /></p>
+<p><img src="images/tutorials-perpendicular-flap-displacement-openfoam-watchpoints_light.png" class="img-light" alt="Flap watchpoints using fluid-openfoam" />
+<img src="images/tutorials-perpendicular-flap-displacement-openfoam-watchpoints_dark.png" class="img-dark" style="display:none;" alt="Flap watchpoints using fluid-openfoam" /></p>
 
 <p>Combinations (excerpt) using the incompressible <code class="language-plaintext highlighter-rouge">fluid-nutils</code> case:</p>
 
-<p><img src="images/tutorials-perpendicular-flap-displacement-nutils-watchpoints.png" alt="Flap watchpoints using fluid-nutils" /></p>
+<p><img src="images/tutorials-perpendicular-flap-displacement-nutils-watchpoints_light.png" class="img-light" alt="Flap watchpoints using fluid-nutils" />
+<img src="images/tutorials-perpendicular-flap-displacement-nutils-watchpoints_dark.png" class="img-dark" style="display:none;" alt="Flap watchpoints using fluid-nutils" /></p>
 
 <p>Combinations (excerpt) using the compressible <code class="language-plaintext highlighter-rouge">fluid-su2</code> case:</p>
 
-<p><img src="images/tutorials-perpendicular-flap-displacement-su2-watchpoints.png" alt="Flap watchpoints using fluid-su2" /></p>
+<p><img src="images/tutorials-perpendicular-flap-displacement-su2-watchpoints_light.png" class="img-light" alt="Flap watchpoints using fluid-su2" />
+<img src="images/tutorials-perpendicular-flap-displacement-su2-watchpoints_dark.png" class="img-dark" style="display:none;" alt="Flap watchpoints using fluid-su2" /></p>
 
 <p>Combinations (excerpt) using the dummy <code class="language-plaintext highlighter-rouge">fluid-fake</code> case:</p>
 
-<p><img src="images/tutorials-perpendicular-flap-displacement-fake-watchpoints.png" alt="Flap watchpoints using fluid-fake" /></p>
+<p><img src="images/tutorials-perpendicular-flap-displacement-fake-watchpoints_light.png" class="img-light" alt="Flap watchpoints using fluid-fake" />
+<img src="images/tutorials-perpendicular-flap-displacement-fake-watchpoints_dark.png" class="img-dark" style="display:none;" alt="Flap watchpoints using fluid-fake" /></p>
 
 <h2 id="try-the-case-with-a-stronger-coupling">Try the case with a stronger coupling</h2>
 
@@ -1300,8 +1321,8 @@ This offering is not approved or endorsed by OpenCFD Limited, producer and distr
         </a>
         </p>
         <p>
-        Page last updated: Apr 2, 2026<br>
-        Site last updated: Apr 8, 2026
+        Page last updated: Apr 13, 2026<br>
+        Site last updated: Apr 13, 2026
         </p>
         <p>
         <i class="fas fa-shield-halved" aria-hidden="true"></i> This website does not use cookies

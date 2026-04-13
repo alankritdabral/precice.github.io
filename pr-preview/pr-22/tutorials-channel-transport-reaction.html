@@ -35,6 +35,18 @@
 <link rel="stylesheet" href="css/syntax.css">
 <link rel="icon" sizes="192x192" href="images/icon.png">
 <link rel="apple-touch-icon" sizes="310x310" href="images/icon-310x310.png">
+<script>
+  (function() {
+    try {
+      var savedTheme = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var initialTheme = savedTheme || (prefersDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", initialTheme);
+    } catch (e) {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  })();
+</script>
 
 <!-- Font Awesome -->
 <link rel="stylesheet" 
@@ -68,6 +80,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 <script src="js/jquery.navgoco.min.js"></script>
 <script src="js/toc.js"></script>
 <script src="js/customscripts.js"></script>
+<script defer src="/js/toggle-theme.js"></script>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -181,7 +194,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     <header>
         <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" aria-label="Main">
-    <script src="/js/toggle-theme.js"></script>
     <div class="container topnavlinks">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -913,7 +925,7 @@ $('#toc').on('click', 'a', function() {
                 </div>
             
             <div class="text-right">
-              <small>Updated 02 Apr 26</small>
+              <small>Updated 13 Apr 26</small>
             </div>
           </aside>
           
@@ -930,7 +942,8 @@ Get the <a href="https://github.com/precice/tutorials/tree/develop/channel-trans
 
 <p>The geometry is shown below:</p>
 
-<p><img src="images/tutorials-channel-transport-reaction-geometry.png" alt="Geometry" /></p>
+<p><img src="images/tutorials-channel-transport-reaction-geometry_light.png" class="img-light" alt="Geometry" />
+<img src="images/tutorials-channel-transport-reaction-geometry_light.png" class="img-dark" style="display:none;" alt="Geometry" /></p>
 
 <p>The simulation is split into two participants: a Fluid participant that computes the fluid flow and sends the velocity field to the Chemical participant which computes the reaction, diffusion and advection of all chemical species. The coupling is unidirectional (<code class="language-plaintext highlighter-rouge">serial-explicit</code> with only one data entity being transferred).</p>
 
@@ -938,7 +951,8 @@ Get the <a href="https://github.com/precice/tutorials/tree/develop/channel-trans
 
 <p>preCICE configuration (image generated using the <a href="https://precice.org/tooling-config-visualization.html">precice-config-visualizer</a>):</p>
 
-<p><img src="images/tutorials-channel-transport-reaction-precice-config.png" alt="preCICE configuration visualization" /></p>
+<p><img src="images/tutorials-channel-transport-reaction-precice-config_light.png" class="img-light" alt="preCICE configuration visualization" />
+<img src="images/tutorials-channel-transport-reaction-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization" /></p>
 
 <h2 id="available-solvers-and-dependencies">Available solvers and dependencies</h2>
 
@@ -964,7 +978,8 @@ To start the <code class="language-plaintext highlighter-rouge">Fluid</code> par
 <p>The chemical participant writes <code class="language-plaintext highlighter-rouge">.vtu</code> and <code class="language-plaintext highlighter-rouge">.pvd</code> files that can be opened with ParaView. The fluid participant also produces output files representing the velocity field. Since the fluid time step is significantly smaller than the chemical time step, there are more fluid velocity files than chemical concentration files. Keep this in mind when opening both simultaneously.
 The figure below shows the state after a duration of 2 units of time. The concentration in A, B and C are plotted.</p>
 
-<p><img src="images/tutorials-channel-transport-reaction-state-t40.png" alt="Results" /></p>
+<p><img src="images/tutorials-channel-transport-reaction-state-t40_light.png" class="img-light" alt="Results" />
+<img src="images/tutorials-channel-transport-reaction-state-t40_dark.png" class="img-dark" style="display:none;" alt="Results" /></p>
 
 <h2 id="references">References</h2>
 
@@ -1202,8 +1217,8 @@ The figure below shows the state after a duration of 2 units of time. The concen
         </a>
         </p>
         <p>
-        Page last updated: Apr 2, 2026<br>
-        Site last updated: Apr 8, 2026
+        Page last updated: Apr 13, 2026<br>
+        Site last updated: Apr 13, 2026
         </p>
         <p>
         <i class="fas fa-shield-halved" aria-hidden="true"></i> This website does not use cookies

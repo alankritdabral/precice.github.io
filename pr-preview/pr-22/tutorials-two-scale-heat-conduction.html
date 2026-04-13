@@ -35,6 +35,18 @@
 <link rel="stylesheet" href="css/syntax.css">
 <link rel="icon" sizes="192x192" href="images/icon.png">
 <link rel="apple-touch-icon" sizes="310x310" href="images/icon-310x310.png">
+<script>
+  (function() {
+    try {
+      var savedTheme = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var initialTheme = savedTheme || (prefersDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", initialTheme);
+    } catch (e) {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  })();
+</script>
 
 <!-- Font Awesome -->
 <link rel="stylesheet" 
@@ -68,6 +80,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 <script src="js/jquery.navgoco.min.js"></script>
 <script src="js/toc.js"></script>
 <script src="js/customscripts.js"></script>
+<script defer src="/js/toggle-theme.js"></script>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -181,7 +194,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     <header>
         <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" aria-label="Main">
-    <script src="/js/toggle-theme.js"></script>
     <div class="container topnavlinks">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -913,7 +925,7 @@ $('#toc').on('click', 'a', function() {
                 </div>
             
             <div class="text-right">
-              <small>Updated 02 Apr 26</small>
+              <small>Updated 13 Apr 26</small>
             </div>
           </aside>
           
@@ -928,7 +940,8 @@ Get the <a href="https://github.com/precice/tutorials/tree/develop/two-scale-hea
 
 <p>This tutorial solves a heat conduction problem on a 2D domain which has an underlying micro-structure. This micro-structure changes the constituent quantities necessary for solving the problem on the macro scale. This leads to a two-scale problem with one macro-scale simulation and several micro-scale simulations.</p>
 
-<p><img src="images/tutorials-two-scale-heat-conduction-macro-micro-schematic.png" alt="Case setup of two-scale-heat-conduction case" /></p>
+<p><img src="images/tutorials-two-scale-heat-conduction-macro-micro-schematic_light.png" class="img-light" alt="Case setup of two-scale-heat-conduction case" />
+<img src="images/tutorials-two-scale-heat-conduction-macro-micro-schematic_dark.png" class="img-dark" style="display:none;" alt="Case setup of two-scale-heat-conduction case" /></p>
 
 <p>At each Gauss point of the macro domain there exists a micro simulation. The macro problem is one participant, which is coupled to many micro simulations. Each micro simulation is not an individual coupling participant, instead we use a managing software which controls all the micro simulations and their coupling via preCICE. The case is chosen from the first example case in the publication</p>
 
@@ -938,7 +951,8 @@ Get the <a href="https://github.com/precice/tutorials/tree/develop/two-scale-hea
 
 <p>preCICE configuration (image generated using the <a href="https://precice.org/tooling-config-visualization.html">precice-config-visualizer</a>):</p>
 
-<p><img src="images/tutorials-two-scale-heat-conduction-precice-config.png" alt="preCICE configuration visualization" /></p>
+<p><img src="images/tutorials-two-scale-heat-conduction-precice-config_light.png" class="img-light" alt="preCICE configuration visualization" />
+<img src="images/tutorials-two-scale-heat-conduction-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization" /></p>
 
 <h2 id="available-solvers-and-dependencies">Available solvers and dependencies</h2>
 
@@ -999,15 +1013,15 @@ Get the <a href="https://github.com/precice/tutorials/tree/develop/two-scale-hea
 
 <p>Here are the results from Nutils-Nutils and DuMux-DuMux combination:</p>
 
-<p>&lt;img class=”img-responsive” src=”images/tutorials-two-scale-heat-conduction-results.png” alt=”Macro and micro data of macro-nutils - micro-nutils simulation” width=50% height=30%/&gt;</p>
+<p>&lt;img class=”img-responsive” src=”images/tutorials-two-scale-heat-conduction-results_light.png” alt=”Macro and micro data of macro-nutils - micro-nutils simulation” width=50% height=30%/&gt;</p>
 
-<p>&lt;img class=”img-responsive” src=”images/tutorials-two-scale-heat-conduction-results-du-du.png” alt=”Macro and micro data of macro-dumux - micro-dumux simulation” width=50% height=30%/&gt;</p>
+<p>&lt;img class=”img-responsive” src=”images/tutorials-two-scale-heat-conduction-results-du-du_light.png” alt=”Macro and micro data of macro-dumux - micro-dumux simulation” width=50% height=30%/&gt;</p>
 
 <p>The differences of the fields are mainly introduced in by the different numerical schemes in the two solvers.</p>
 
 <p>The participant <code class="language-plaintext highlighter-rouge">macro-nutils</code> outputs <code class="language-plaintext highlighter-rouge">macro-*.vtk</code> files which can be viewed in ParaView to see the macro concentration field. The Micro Manager uses the <a href="https://precice.org/configuration-export.html#enabling-exporters">export functionality</a> of preCICE to output micro simulation data and <a href="https://precice.org/tooling-micro-manager-configuration.html#adding-adaptivity-in-the-precice-xml-configuration">adaptivity related data</a> to VTU files which can be viewed in ParaView. To view the data on each micro simulation, create a Glyph on the Micro Manager VTU data. In the figure above, micro-scale porosity is shown. For a lower concentration value, the porosity increases (in the lower left corner).</p>
 
-<p>&lt;img class=”img-responsive” src=”images/tutorials-two-scale-heat-conduction-evolving-micro-simulations.png” alt=”Adaptive mesh refinement in the micro simulation” width=50% height=30%/&gt;</p>
+<p>&lt;img class=”img-responsive” src=”images/tutorials-two-scale-heat-conduction-evolving-micro-simulations._light.png” alt=”Adaptive mesh refinement in the micro simulation” width=50% height=30%/&gt;</p>
 
 <p>The micro simulations themselves have a circular micro structure which is resolved in every time step. To output VTK files for each micro simulation, uncomment the <code class="language-plaintext highlighter-rouge">output()</code> function in the file <code class="language-plaintext highlighter-rouge">micro-nutils/micro.py</code>. The figure above shows the changing phase field used to represent the circular micro structure and the diffuse interface width.</p>
 
@@ -1237,8 +1251,8 @@ Get the <a href="https://github.com/precice/tutorials/tree/develop/two-scale-hea
         </a>
         </p>
         <p>
-        Page last updated: Apr 2, 2026<br>
-        Site last updated: Apr 8, 2026
+        Page last updated: Apr 13, 2026<br>
+        Site last updated: Apr 13, 2026
         </p>
         <p>
         <i class="fas fa-shield-halved" aria-hidden="true"></i> This website does not use cookies

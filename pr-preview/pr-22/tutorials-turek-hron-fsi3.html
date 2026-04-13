@@ -35,6 +35,18 @@
 <link rel="stylesheet" href="css/syntax.css">
 <link rel="icon" sizes="192x192" href="images/icon.png">
 <link rel="apple-touch-icon" sizes="310x310" href="images/icon-310x310.png">
+<script>
+  (function() {
+    try {
+      var savedTheme = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var initialTheme = savedTheme || (prefersDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", initialTheme);
+    } catch (e) {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  })();
+</script>
 
 <!-- Font Awesome -->
 <link rel="stylesheet" 
@@ -68,6 +80,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 <script src="js/jquery.navgoco.min.js"></script>
 <script src="js/toc.js"></script>
 <script src="js/customscripts.js"></script>
+<script defer src="/js/toggle-theme.js"></script>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -181,7 +194,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     <header>
         <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" aria-label="Main">
-    <script src="/js/toggle-theme.js"></script>
     <div class="container topnavlinks">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -913,7 +925,7 @@ $('#toc').on('click', 'a', function() {
                 </div>
             
             <div class="text-right">
-              <small>Updated 02 Apr 26</small>
+              <small>Updated 13 Apr 26</small>
             </div>
           </aside>
           
@@ -928,7 +940,8 @@ Get the <a href="https://github.com/precice/tutorials/tree/develop/turek-hron-fs
 
 <p>The setup is shown schematically here:</p>
 
-<p><img src="images/tutorials-turek-hron-fsi3-setup.png" alt="FSI3 setup" /></p>
+<p><img src="images/tutorials-turek-hron-fsi3-setup_light.png" class="img-light" alt="FSI3 setup" />
+<img src="images/tutorials-turek-hron-fsi3-setup_dark.png" class="img-dark" style="display:none;" alt="FSI3 setup" /></p>
 
 <p>For more information please refer to the original publication of the benchmark [1].</p>
 
@@ -936,7 +949,8 @@ Get the <a href="https://github.com/precice/tutorials/tree/develop/turek-hron-fs
 
 <p>preCICE configuration (image generated using the <a href="https://precice.org/tooling-config-visualization.html">precice-config-visualizer</a>):</p>
 
-<p><img src="images/tutorials-turek-hron-fsi3-precice-config.png" alt="preCICE configuration visualization" /></p>
+<p><img src="images/tutorials-turek-hron-fsi3-precice-config_light.png" class="img-light" alt="preCICE configuration visualization" />
+<img src="images/tutorials-turek-hron-fsi3-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization" /></p>
 
 <h2 id="available-solvers">Available solvers</h2>
 
@@ -986,7 +1000,8 @@ Get the <a href="https://github.com/precice/tutorials/tree/develop/turek-hron-fs
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code> plot-displacement.sh solid-dealii
 
-<span class="o">![</span>FSI3 watchpoint]<span class="o">(</span>images/tutorials-turek-hron-fsi3-tip-plot.png<span class="o">)</span>
+&lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">"images/tutorials-turek-hron-fsi3-tip-plot_light.png"</span> <span class="nv">class</span><span class="o">=</span><span class="s2">"img-light"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"FSI3 watchpoint"</span><span class="o">&gt;</span>
+&lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">"images/tutorials-turek-hron-fsi3-tip-plot_dark.png"</span> <span class="nv">class</span><span class="o">=</span><span class="s2">"img-dark"</span> <span class="nv">style</span><span class="o">=</span><span class="s2">"display:none;"</span> <span class="nv">alt</span><span class="o">=</span><span class="s2">"FSI3 watchpoint"</span><span class="o">&gt;</span>
 
 Before running the simulation again, you may want to cleanup any result files using the script <span class="sb">`</span>clean-tutorial.sh<span class="sb">`</span><span class="nb">.</span>
 
@@ -1246,8 +1261,8 @@ This offering is not approved or endorsed by OpenCFD Limited, producer and distr
         </a>
         </p>
         <p>
-        Page last updated: Apr 2, 2026<br>
-        Site last updated: Apr 8, 2026
+        Page last updated: Apr 13, 2026<br>
+        Site last updated: Apr 13, 2026
         </p>
         <p>
         <i class="fas fa-shield-halved" aria-hidden="true"></i> This website does not use cookies

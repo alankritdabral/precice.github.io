@@ -35,6 +35,18 @@
 <link rel="stylesheet" href="css/syntax.css">
 <link rel="icon" sizes="192x192" href="images/icon.png">
 <link rel="apple-touch-icon" sizes="310x310" href="images/icon-310x310.png">
+<script>
+  (function() {
+    try {
+      var savedTheme = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var initialTheme = savedTheme || (prefersDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", initialTheme);
+    } catch (e) {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  })();
+</script>
 
 <!-- Font Awesome -->
 <link rel="stylesheet" 
@@ -68,6 +80,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 <script src="js/jquery.navgoco.min.js"></script>
 <script src="js/toc.js"></script>
 <script src="js/customscripts.js"></script>
+<script defer src="/js/toggle-theme.js"></script>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -181,7 +194,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     <header>
         <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" aria-label="Main">
-    <script src="/js/toggle-theme.js"></script>
     <div class="container topnavlinks">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -913,7 +925,7 @@ $('#toc').on('click', 'a', function() {
                 </div>
             
             <div class="text-right">
-              <small>Updated 02 Apr 26</small>
+              <small>Updated 13 Apr 26</small>
             </div>
           </aside>
           
@@ -928,7 +940,8 @@ Get the <a href="https://github.com/precice/tutorials/tree/develop/breaking-dam-
 
 <p>The two-dimensional breaking dam case is a free surface problem. A large column of water comes into contact with a flexible wall, causing the wall to bend and the water to flow over the wall. A no-slip boundary condition is applied at the bottom, the left, and the right boundary, and a zero pressure condition at the top boundary. The image below shows the alpha value (0 is air, 1 is water) and velocity vectors at t=0.6.</p>
 
-<p><img src="images/tutorials-breaking-dam-2d-physics.png" alt="Breaking dam 2D physics at t=0.595" /></p>
+<p><img src="images/tutorials-breaking-dam-2d-physics_light.png" class="img-light" alt="Breaking dam 2D physics at t=0.595" />
+<img src="images/tutorials-breaking-dam-2d-physics_dark.png" class="img-dark" style="display:none;" alt="Breaking dam 2D physics at t=0.595" /></p>
 
 <p>A similar, but not identical, setup is used in [1].</p>
 
@@ -936,7 +949,8 @@ Get the <a href="https://github.com/precice/tutorials/tree/develop/breaking-dam-
 
 <p>preCICE configuration (image generated using the <a href="https://precice.org/tooling-config-visualization.html">precice-config-visualizer</a>):</p>
 
-<p><img src="images/tutorials-breaking-dam-2d-precice-config.png" alt="preCICE configuration visualization" /></p>
+<p><img src="images/tutorials-breaking-dam-2d-precice-config_light.png" class="img-light" alt="preCICE configuration visualization" />
+<img src="images/tutorials-breaking-dam-2d-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization" /></p>
 
 <h2 id="available-solvers">Available solvers</h2>
 
@@ -1140,8 +1154,8 @@ This offering is not approved or endorsed by OpenCFD Limited, producer and distr
         </a>
         </p>
         <p>
-        Page last updated: Apr 2, 2026<br>
-        Site last updated: Apr 8, 2026
+        Page last updated: Apr 13, 2026<br>
+        Site last updated: Apr 13, 2026
         </p>
         <p>
         <i class="fas fa-shield-halved" aria-hidden="true"></i> This website does not use cookies

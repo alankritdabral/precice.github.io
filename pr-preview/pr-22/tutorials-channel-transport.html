@@ -35,6 +35,18 @@
 <link rel="stylesheet" href="css/syntax.css">
 <link rel="icon" sizes="192x192" href="images/icon.png">
 <link rel="apple-touch-icon" sizes="310x310" href="images/icon-310x310.png">
+<script>
+  (function() {
+    try {
+      var savedTheme = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var initialTheme = savedTheme || (prefersDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", initialTheme);
+    } catch (e) {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  })();
+</script>
 
 <!-- Font Awesome -->
 <link rel="stylesheet" 
@@ -68,6 +80,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 <script src="js/jquery.navgoco.min.js"></script>
 <script src="js/toc.js"></script>
 <script src="js/customscripts.js"></script>
+<script defer src="/js/toggle-theme.js"></script>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -181,7 +194,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     <header>
         <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" aria-label="Main">
-    <script src="/js/toggle-theme.js"></script>
     <div class="container topnavlinks">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -913,7 +925,7 @@ $('#toc').on('click', 'a', function() {
                 </div>
             
             <div class="text-right">
-              <small>Updated 02 Apr 26</small>
+              <small>Updated 13 Apr 26</small>
             </div>
           </aside>
           
@@ -928,7 +940,8 @@ Get the <a href="https://github.com/precice/tutorials/tree/develop/channel-trans
 
 <p>We model a two-dimensional incompressible fluid flowing through a channel with an obstacle. The fluid problem is coupled to a simple transport problem in a uni-directional fashion. The transport problem is initialized with a circular blob close to the inflow. The density of the species is denoted with <code class="language-plaintext highlighter-rouge">T</code> (like temperature). The convected and diffused blob after 23 timesteps:</p>
 
-<p><img src="images/tutorials-channel-transport-physics.png" alt="Flap setup" /></p>
+<p><img src="images/tutorials-channel-transport-physics_light.png" class="img-light" alt="Flap setup" />
+<img src="images/tutorials-channel-transport-physics_dark.png" class="img-dark" style="display:none;" alt="Flap setup" /></p>
 
 <p>The behavior of the blob over the full 200 timesteps looks as follows:</p>
 
@@ -939,13 +952,15 @@ Get the <a href="https://github.com/precice/tutorials/tree/develop/channel-trans
 
 <p>The transport solver also supports the use of adaptive mesh refinement.</p>
 
-<p><img src="images/tutorials-channel-transport-amr.png" alt="Setup with AMR" /></p>
+<p><img src="images/tutorials-channel-transport-amr_light.png" class="img-light" alt="Setup with AMR" />
+<img src="images/tutorials-channel-transport-amr_dark.png" class="img-dark" style="display:none;" alt="Setup with AMR" /></p>
 
 <h2 id="configuration">Configuration</h2>
 
 <p>preCICE configuration (image generated using the <a href="https://precice.org/tooling-config-visualization.html">precice-config-visualizer</a>):</p>
 
-<p><img src="images/tutorials-channel-transport-precice-config.png" alt="preCICE configuration visualization" /></p>
+<p><img src="images/tutorials-channel-transport-precice-config_light.png" class="img-light" alt="preCICE configuration visualization" />
+<img src="images/tutorials-channel-transport-precice-config_dark.png" class="img-dark" style="display:none;" alt="preCICE configuration visualization" /></p>
 
 <h2 id="available-solvers">Available solvers</h2>
 
@@ -1229,8 +1244,8 @@ Get the <a href="https://github.com/precice/tutorials/tree/develop/channel-trans
         </a>
         </p>
         <p>
-        Page last updated: Apr 2, 2026<br>
-        Site last updated: Apr 8, 2026
+        Page last updated: Apr 13, 2026<br>
+        Site last updated: Apr 13, 2026
         </p>
         <p>
         <i class="fas fa-shield-halved" aria-hidden="true"></i> This website does not use cookies
