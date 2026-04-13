@@ -1,62 +1,77 @@
 /* (Material) changes to the customstyles.css start here */
 
 body {
-    font-size: 16px;
-    font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    padding-top: 70px;      /* https://getbootstrap.com/docs/3.4/components/#navbar-fixed-top */
+  font-size: 16px;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-top: 70px; /* https://getbootstrap.com/docs/3.4/components/#navbar-fixed-top */
 }
 
 .banner-container {
-  margin-top:-20px;
+  margin-top: -20px;
 }
 a.navbar-brand {
-    padding-top: 12px;
+  padding-top: 12px;
 }
 .navbar-brand-text {
-    height: 28px;
-    padding-left: 1px; /* 1px */
-    display: inline;
-    vertical-align: top;
+  height: 28px;
+  padding-left: 1px; /* 1px */
+  display: inline;
+  vertical-align: top;
 }
 /* use :before pseudo-class to rotate icon independent of text */
 .navbar-brand-icon:before {
-    width: 25px;
-    height: 25px;
-    content: '';
-    display: inline-block;
-    background: url('../images/icon.svg');
-    background-size: 25px 25px;
-    background-repeat: no-repeat;
-    background-position: top left;
-    transition: all 400ms;
+  width: 25px;
+  height: 25px;
+  content: "";
+  display: inline-block;
+  background: url("../images/icon.svg");
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  transition: all 400ms;
 }
-a:hover > .navbar-brand-icon:before{
-    transform: rotate(180deg);
+a:hover > .navbar-brand-icon:before {
+  transform: rotate(180deg);
+}
+[data-theme="dark"] .navbar-brand-icon:before {
+  width: 25px;
+  height: 25px;
+  content: "";
+  display: inline-block;
+  background: url("../images/icon_dark.svg");
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  transition: all 400ms;
+}
+
+[data-theme="dark"] a:hover > .navbar-brand-icon:before {
+  transform: rotate(180deg);
 }
 /* .nav styles both topnav and sidenav, so use .nav.navbar-nav */
 .nav.navbar-nav > li > a {
-    font-size: 14px;
-    line-height: 20px;
-    padding: 4px 10px;
-    font-weight: 500;
-    margin-top: 11px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 4px 10px;
+  font-weight: 500;
+  margin-top: 11px;
 }
 .nav > li > a {
-    font-size: 14px;
-    line-height: 20px;
-    padding: 4px 10px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 4px 10px;
 }
 /* rightmost icons */
 .nav > li > a.nav-external {
-    font-size: 24px;
-    line-height: 20px;
-    padding: 2px 0px;
-    margin-top: 11px;
+  font-size: 24px;
+  line-height: 20px;
+  padding: 2px 0px;
+  margin-top: 11px;
 }
 @media (max-width: 1200px) {
-    .nav > li > a.nav-external {
-        float: left;
-    }
+  .nav > li > a.nav-external {
+    float: left;
+  }
 }
 /* Fix Firefox/normalize.css bug https://github.com/necolas/normalize.css/issues/740 */
 details > summary {
@@ -68,7 +83,7 @@ details > summary {
 
 h2.page-header {
   /*border-bottom: 1px solid #0A76BB;*/
-  border-bottom: 1px solid rgba(10,118,187, 0);
+  border-bottom: 1px solid rgba(10, 118, 187, 0);
   font-size: 28px;
 }
 .row {
@@ -105,9 +120,10 @@ h2.page-header {
 .citation-link {
   margin-top: 15px;
 }
-.vertical-align { /* https://stackoverflow.com/questions/20547819/vertical-align-with-bootstrap-3/25517025#25517025 */
-    display: flex;
-    align-items: center;
+.vertical-align {
+  /* https://stackoverflow.com/questions/20547819/vertical-align-with-bootstrap-3/25517025#25517025 */
+  display: flex;
+  align-items: center;
 }
 /* https://stackoverflow.com/questions/19695784/how-can-i-make-bootstrap-columns-all-the-same-height */
 /* https://stackoverflow.com/questions/20503064/twitter-bootstrap-3-panels-of-equal-height-in-a-fluid-row */
@@ -117,11 +133,11 @@ h2.page-header {
   flex-wrap: wrap;
 }*/
 @media (min-width: 992px) {
-   .equal{
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-    }
+  .equal {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
 }
 /* add horizontal scoll on code blocks */
 pre > code {
@@ -132,7 +148,7 @@ pre > code {
 div.col-flex {
   display: flex;
   flex-flow: column;
-  align-content: stretch;  /* file up remaining space */
+  align-content: stretch; /* file up remaining space */
 }
 
 /* Search bar and results */
@@ -175,7 +191,6 @@ a.result-link {
 .result-breadcrumb .ais-Highlight {
   font-weight: bold;
   font-style: normal;
-
 }
 .result-snippet .ais-Highlight {
   color: #2a7ae2;
@@ -219,10 +234,10 @@ a.result-link {
   border-radius: 5px;
   padding: 0;
 }
-.devlist>li.devlist-first {
+.devlist > li.devlist-first {
   border-top: 1px solid transparent;
 }
-ul.devlist>li {
+ul.devlist > li {
   display: flex;
   flex-flow: row wrap;
   border-top: 1px solid #0a76bb;
@@ -231,26 +246,25 @@ ul.devlist>li {
   margin: 0;
 }
 
-.devlist>li .devlist-img {
+.devlist > li .devlist-img {
   flex: 0 0 auto;
   width: auto;
   width: 50px;
   margin-right: 1rem;
-
 }
-.devlist>li .devlist-img>img {
+.devlist > li .devlist-img > img {
   border-radius: 5px;
   width: 100%;
   margin: 0;
   border: 1px solid lightgrey;
 }
-.devlist>li .devlist-left {
+.devlist > li .devlist-left {
   flex: 1 1 0px;
   width: auto;
   align-items: center;
   display: flex;
 }
-.devlist>li .devlist-right {
+.devlist > li .devlist-right {
   flex: 0 0 auto;
   width: auto;
   padding: 0;
@@ -262,7 +276,7 @@ ul.devlist>li {
   align-items: center;
   font-size: larger;
 }
-.devlist>li .devlist-right li+li {
+.devlist > li .devlist-right li + li {
   margin-left: 16px;
 }
 .devlist-left > p {
@@ -308,7 +322,7 @@ ul.devlist>li {
 
 /* Testimonials == community stories */
 @media (max-width: 767px) {
-  .testimonials h2{
+  .testimonials h2 {
     padding-top: 80px;
   }
 }
@@ -318,7 +332,7 @@ ul.devlist>li {
   Uses 'position: sticky' which offsets relative to its nearest scrolling ancestor and containing block
   see https://developer.mozilla.org/en-US/docs/Web/CSS/position
 */
-ul.nav.affix { 
+ul.nav.affix {
   position: static; /* override 'position: fixed' for <ul> */
 }
 div#tg-sb-sidebar {
@@ -326,24 +340,26 @@ div#tg-sb-sidebar {
   top: 40px;
 }
 /* Unstick the sidebar if window is too small */
-@media (max-height: 850px) { /* this value may need to be updated if sidebar height increases */
-  div#tg-sb-sidebar  {
+@media (max-height: 850px) {
+  /* this value may need to be updated if sidebar height increases */
+  div#tg-sb-sidebar {
     position: static;
   }
 }
 /* Unstick on mobile */
 @media (max-width: 991px) {
-  div#tg-sb-sidebar  {
+  div#tg-sb-sidebar {
     position: static;
   }
   /* style navtabs */
-  .post-content ol li, .post-content ul li {
+  .post-content ol li,
+  .post-content ul li {
     margin: 0px;
   }
   div.tab-content {
     padding: 0px;
     background-color: white;
-    }
+  }
   div.tab-content div.tab-pane pre {
     margin-top: 0px;
   }
@@ -379,36 +395,247 @@ details[open] > summary::after {
 
 /* Copy to Clipboard Button Styles */
 div.highlighter-rouge {
-    position: relative;
+  position: relative;
 }
 
 .copy-code-btn {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    padding: 4px 8px;
-    font-size: 12px;
-    color: #555;
-    background-color: #f8f9fa;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.2s, background-color 0.2s, color 0.2s;
-    z-index: 10;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 4px 8px;
+  font-size: 12px;
+  color: #555;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0;
+  transition:
+    opacity 0.2s,
+    background-color 0.2s,
+    color 0.2s;
+  z-index: 10;
 }
 
 div.highlighter-rouge:hover .copy-code-btn {
-    opacity: 1;
+  opacity: 1;
 }
 
 .copy-code-btn:hover {
-    background-color: #e2e6ea;
-    color: #333;
+  background-color: #e2e6ea;
+  color: #333;
 }
 
 .copy-code-btn.copied {
-    background-color: #28a745;
-    color: white;
-    border-color: #28a745;
+  background-color: #28a745;
+  color: white;
+  border-color: #28a745;
+}
+
+/* =========================
+   DARK THEME (GLOBAL STYLES)
+   ========================= */
+
+[data-theme="dark"] body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+/* Navbar */
+[data-theme="dark"] .navbar {
+  background-color: #020617;
+  border-color: #1e293b;
+}
+.navbar-theme-toggle {
+    float: right;
+    padding: 15px;
+    cursor: pointer;
+}
+#theme-icon {
+    font-size: 24px;
+}
+
+[data-theme="dark"] .nav.navbar > li > a {
+  color: #0A76BB;
+}
+
+[data-theme="dark"] .nav.navbar > li > a:hover {
+  color: #ED762C;
+  background-color: transparent;
+}
+
+/* Brand */
+[data-theme="dark"] .navbar-brand-text {
+  color: #e2e8f0;
+}
+
+/* Panels */
+[data-theme="dark"] .panel,
+[data-theme="dark"] .panel-precice {
+  background-color: #1e293b;
+  border-color: #334155;
+  color: #e2e8f0;
+}
+
+/* Headings */
+[data-theme="dark"] h2.page-header {
+  border-bottom: 1px solid #334155;
+}
+
+/* Links */
+[data-theme="dark"] a {
+  color: #93c5fd;
+}
+
+[data-theme="dark"] a:hover {
+  color: #bfdbfe;
+}
+
+/* Code blocks */
+[data-theme="dark"] pre,
+[data-theme="dark"] code {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+/* Search results dropdown */
+[data-theme="dark"] #search-demo-container div#search-results {
+  background-color: #1e293b;
+  border-color: #334155;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .result-item {
+  border-top: 1px solid #334155;
+}
+
+[data-theme="dark"] .result-link .ais-Highlight {
+  color: #facc15;
+}
+
+[data-theme="dark"] .result-breadcrumb,
+[data-theme="dark"] .result-snippet {
+  color: #cbd5f5;
+}
+
+/* Dev list (contributors) */
+[data-theme="dark"] .devlist {
+  border-color: #334155;
+}
+
+[data-theme="dark"] ul.devlist > li {
+  border-top: 1px solid #334155;
+}
+
+[data-theme="dark"] .devlist > li .devlist-img > img {
+  border-color: #475569;
+}
+
+/* Workshop / cards */
+[data-theme="dark"] .workshop-event {
+  background-color: #1e293b;
+  border-color: #334155;
+}
+
+/* Tabs (mobile) */
+[data-theme="dark"] div.tab-content {
+  background-color: #020617;
+}
+
+/* Copy button */
+[data-theme="dark"] .copy-code-btn {
+  background-color: #1e293b;
+  color: #cbd5f5;
+  border-color: #475569;
+}
+
+[data-theme="dark"] .copy-code-btn:hover {
+  background-color: #334155;
+  color: #ffffff;
+}
+
+/* Tables */
+[data-theme="dark"] .table {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .table > thead > tr > th {
+  border-color: #334155;
+}
+
+[data-theme="dark"] .table > tbody > tr > td {
+  border-color: #334155;
+}
+
+/* Sidebar */
+[data-theme="dark"] #tg-sb-sidebar {
+  background-color: transparent;
+}
+
+/* Details toggle arrows */
+[data-theme="dark"] details > summary::after {
+  color: #cbd5f5;
+}
+
+/* Default (light theme) */
+.logo-light {
+  display: inline-block;
+}
+.logo-dark {
+  display: none;
+}
+
+/* Dark theme */
+[data-theme="dark"] .logo-light {
+  display: none;
+}
+[data-theme="dark"] .logo-dark {
+  display: inline-block;
+}
+
+
+/* docs configuration images  */
+.img-dark {
+  display: none;
+}
+
+[data-theme="dark"] .img-light {
+  display: none;
+} 
+
+[data-theme="dark"] .img-dark {
+  display: block !important;
+}
+
+[data-theme="dark"] .image-holder svg {
+  filter: invert(1);
+}
+/* =========================
+   SIDEBAR / NAV
+========================= */
+
+[data-theme="dark"] .nav > li > a {
+  color: #334155;
+}
+
+[data-theme="dark"] .nav > li > a:hover {
+  background-color: #2a3240;
+}
+
+[data-theme="dark"] .nav li.thirdlevel > a {
+  background-color: #1a1f28 !important;
+  color: #82c4ff;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+[data-theme="dark"] footer {
+  background-color: #161a22;
+  color: #aaa;
+}
+
+[data-theme="dark"] footer.background-dark h2 {
+  color: rgb(4, 6, 6);
 }

@@ -34,7 +34,6 @@
 .highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
 .highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
 .highlight .nn { color: #555555 } /* Name.Namespace */
-.highlight .nt { color: #000080 } /* Name.Tag */
 .highlight .nv { color: #008080 } /* Name.Variable */
 .highlight .ow { font-weight: bold } /* Operator.Word */
 .highlight .w { color: #bbbbbb } /* Text.Whitespace */
@@ -58,3 +57,116 @@
 .highlight .vg { color: #008080 } /* Name.Variable.Global */
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+/* Dark theme syntax highlighting */
+[data-theme="dark"] .highlight {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* Comments */
+[data-theme="dark"] .highlight .c,
+[data-theme="dark"] .highlight .cm,
+[data-theme="dark"] .highlight .c1 {
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* Errors */
+[data-theme="dark"] .highlight .err {
+  color: #f87171;
+  background-color: #7f1d1d;
+}
+
+/* Keywords */
+[data-theme="dark"] .highlight .k,
+[data-theme="dark"] .highlight .kc,
+[data-theme="dark"] .highlight .kd,
+[data-theme="dark"] .highlight .kp,
+[data-theme="dark"] .highlight .kr {
+  color: #93c5fd;
+  font-weight: bold;
+}
+
+/* Operators */
+[data-theme="dark"] .highlight .o,
+[data-theme="dark"] .highlight .ow {
+  color: #cbd5f5;
+  font-weight: bold;
+}
+
+/* Names */
+[data-theme="dark"] .highlight .na { color: #67e8f9; }
+[data-theme="dark"] .highlight .nb { color: #60a5fa; }
+[data-theme="dark"] .highlight .nc { color: #c4b5fd; font-weight: bold; }
+[data-theme="dark"] .highlight .no { color: #22d3ee; }
+[data-theme="dark"] .highlight .ni { color: #f0abfc; }
+[data-theme="dark"] .highlight .ne { color: #f87171; font-weight: bold; }
+[data-theme="dark"] .highlight .nf { color: #fca5a5; font-weight: bold; }
+[data-theme="dark"] .highlight .nn { color: #9ca3af; }
+[data-theme="dark"] .highlight .nv,
+[data-theme="dark"] .highlight .vc,
+[data-theme="dark"] .highlight .vg,
+[data-theme="dark"] .highlight .vi {
+  color: #5eead4;
+}
+
+/* Types */
+[data-theme="dark"] .highlight .kt {
+  color: #7dd3fc;
+  font-weight: bold;
+}
+
+/* Numbers */
+[data-theme="dark"] .highlight .m,
+[data-theme="dark"] .highlight .mf,
+[data-theme="dark"] .highlight .mh,
+[data-theme="dark"] .highlight .mi,
+[data-theme="dark"] .highlight .mo,
+[data-theme="dark"] .highlight .il {
+  color: #22d3ee;
+}
+
+/* Strings */
+[data-theme="dark"] .highlight .s,
+[data-theme="dark"] .highlight .s1,
+[data-theme="dark"] .highlight .s2,
+[data-theme="dark"] .highlight .sb,
+[data-theme="dark"] .highlight .sc,
+[data-theme="dark"] .highlight .sd,
+[data-theme="dark"] .highlight .se,
+[data-theme="dark"] .highlight .sh,
+[data-theme="dark"] .highlight .si,
+[data-theme="dark"] .highlight .sx {
+  color: #86efac;
+}
+
+[data-theme="dark"] .highlight .sr {
+  color: #4ade80;
+}
+
+[data-theme="dark"] .highlight .ss {
+  color: #f9a8d4;
+}
+
+/* Generic */
+[data-theme="dark"] .highlight .g { color: #e5e7eb; }
+[data-theme="dark"] .highlight .gp { color: #9ca3af; }
+[data-theme="dark"] .highlight .go { color: #6b7280; }
+[data-theme="dark"] .highlight .gu { color: #9ca3af; }
+[data-theme="dark"] .highlight .gt { color: #f87171; }
+
+/* Insert/Delete */
+[data-theme="dark"] .highlight .gi {
+  color: #bbf7d0;
+  background-color: #14532d;
+}
+
+[data-theme="dark"] .highlight .gd {
+  color: #fecaca;
+  background-color: #7f1d1d;
+}
+
+/* Whitespace */
+[data-theme="dark"] .highlight .w {
+  color: #374151;
+}

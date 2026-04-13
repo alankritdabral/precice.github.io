@@ -98,8 +98,7 @@ a[data-toggle="tooltip"] {
     border-color: #0A76BB;*/
 }
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse, .navbar-inverse .navbar-nav>li>a:focus{
-    color: #0A76BB;
-    /*color: white;*/
+    color: #0A76BB;  /*color: white;*/
 }
 
 .navbar-inverse .navbar-nav>li>a:hover, a.fa.fa-home.fa-lg.navbar-brand:hover {
@@ -314,4 +313,7 @@ h5 {
     footer nav {
       margin-bottom: 2em
     }
+}
+[data-theme="dark"] .highlight .nt {
+  color: #0a76bb !important;
 }

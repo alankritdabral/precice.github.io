@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         var h4 = document.createElement("h4");
         h4.style.cssText = "margin-bottom:8px;";
         var strong = document.createElement("strong");
+        strong.style.cssText = "color:#040606;";
         strong.textContent = t.title;
         h4.appendChild(strong);
 
@@ -121,7 +122,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         const btn = document.createElement("button");
         btn.textContent = "Load more";
         btn.style.cssText =
-          "padding:8px 16px;margin:12px 0 12px auto;display:block;border:1px solid #ccc;border-radius:8px;background:#f9f9f9;cursor:pointer;";
+          "padding:8px 16px;margin:12px 0 12px auto;display:block;border:1px solid #ccc;border-radius:8px;background:#f9f9f9;color:#040606;cursor:pointer;";
         btn.addEventListener("click", () => {
           visibleCount += 10;
           renderTopics();

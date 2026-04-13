@@ -4,10 +4,15 @@
 /* clear fixes */
 /* idea is to not touch the docs part of the website, but start from a clear state */
 
-h1[id], h2[id], h3[id], h4[id], h5[id], h6[id],
+h1[id],
+h2[id],
+h3[id],
+h4[id],
+h5[id],
+h6[id],
 dt[id] {
-padding-top: 0px;
-margin-top: 0px
+  padding-top: 0px;
+  margin-top: 0px;
 }
 .panel {
   margin-bottom: 0px;
@@ -16,10 +21,10 @@ margin-top: 0px
 /* general styles */
 
 @media (max-width: 992px) {
-  .panel{
+  .panel {
     margin-top: 10px;
   }
-  img.col-xs-12{
+  img.col-xs-12 {
     margin-top: 20px;
   }
 }
@@ -34,7 +39,6 @@ margin-top: 0px
   margin-bottom: 20px;
 }
 
-
 /* Jumbotron */
 
 .banner {
@@ -47,7 +51,7 @@ margin-top: 0px
 
 h1.title {
   margin-top: 0px;
-  color: #040606;
+  color: rgb(4, 6, 6);
 }
 h2.subtitle {
   padding-top: 0px;
@@ -94,10 +98,10 @@ a.adapter {
   text-decoration: none;
 }
 a.adapter > div.panel-primary {
-  border-color: rgba(10,118,187, .8);
+  border-color: rgba(10, 118, 187, 0.8);
 }
 a.adapter:hover > div.panel-primary {
-  background-color: rgba(10,118,187, .08);
+  background-color: rgba(10, 118, 187, 0.08);
 }
 img.adapter {
   height: 125px;
@@ -106,9 +110,9 @@ img.adapter {
   transition: all 400ms;
 }
 img.adapter:hover {
-   transform: scale(1.10);
+  transform: scale(1.1);
 }
-img.adapter.custom-logo{
+img.adapter.custom-logo {
   padding: 0;
 }
 .btn.adapter {
@@ -122,28 +126,32 @@ img.adapter.custom-logo{
   color: #040606;
   margin-top: 20px;
 }
+
 a.adapter {
   color: #040606;
 }
 
 /* Testimonials */
 
-i.fa-quote-left{
+i.fa-quote-left {
   color: darkgrey;
   padding-right: 0.5em;
 }
-i.fa-quote-left, i.fa-quote-right {
+i.fa-quote-left,
+i.fa-quote-right {
   color: darkgrey;
   padding-left: 0.5em;
 }
-p.quote, p.quote > a, p.quote > a:visited {
+p.quote,
+p.quote > a,
+p.quote > a:visited {
   font-size: 19px;
   font-weight: 400;
   color: #333;
 }
 p.quote > a:hover,
 p.quote > a:hover > i.fa-quote-left,
-p.quote > a:hover > i.fa-quote-right  {
+p.quote > a:hover > i.fa-quote-right {
   color: black;
   text-decoration: none;
 }
@@ -168,7 +176,8 @@ img.testimonial {
   height: 125px;
   width: 100px;
 }
-.github-link, .github-link:hover {
+.github-link,
+.github-link:hover {
   color: #333;
   text-decoration: none;
 }
@@ -189,28 +198,34 @@ img.testimonial {
 /* preCICE support */
 
 img.precice-support {
-  max-height: 200px
+  max-height: 200px;
 }
 
 /* Logowall */
 
-.logo, .logo > div, .logo > p {
+.logo,
+.logo > div,
+.logo > p {
   color: #333;
   opacity: 0.5;
   filter: grayscale(100%);
   transition: all 200ms;
 }
 @media (max-width: 992px) {
-   .logo, .logo > div, .logo > p {
-      opacity: 1;
-      filter: grayscale(0%);
-    }
+  .logo,
+  .logo > div,
+  .logo > p {
+    opacity: 1;
+    filter: grayscale(0%);
+  }
 }
 .logo > p {
   margin: 0;
   text-decoration: none;
 }
-.logo:hover, .logo:hover > div, .logo:hover > p {
+.logo:hover,
+.logo:hover > div,
+.logo:hover > p {
   opacity: 1;
   filter: grayscale(0%);
   text-decoration: none;
@@ -262,7 +277,7 @@ div.logo-holder > img {
   border-radius: 6px;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .news-card a.news-link {
@@ -295,7 +310,6 @@ div.logo-holder > img {
   -webkit-box-orient: vertical;
 }
 
-
 #news-container {
   display: flex;
   gap: 25px;
@@ -305,13 +319,12 @@ div.logo-holder > img {
   flex: 1;
 }
 
-
 @media (max-width: 768px) {
   #news-container {
-    flex-wrap: wrap;         
+    flex-wrap: wrap;
   }
   #news-container .col-md-4 {
-    flex: 1 1 100%;         
+    flex: 1 1 100%;
   }
 }
 
@@ -328,4 +341,143 @@ div.logo-holder > img {
     -webkit-line-clamp: 4;
     line-clamp: 4;
   }
+}
+/* =========================
+   DARK THEME OVERRIDES
+   ========================= */
+
+[data-theme="dark"] {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+
+[data-theme="dark"] p {
+  color: #d1d5db;
+}
+
+/* Banner */
+[data-theme="dark"] .banner {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] h1.title {
+  color: #f9fafb;
+}
+
+/* Adapter cards */
+[data-theme="dark"] a.adapter,
+[data-theme="dark"] .adapter p {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] a.adapter > div.panel-primary {
+  border-color: rgba(59, 130, 246, 0.6);
+}
+
+[data-theme="dark"] a.adapter:hover > div.panel-primary {
+  background-color: rgba(59, 130, 246, 0.15);
+}
+
+/* Panels / cards */
+[data-theme="dark"] .panel,
+[data-theme="dark"] .news-card {
+  background-color: #1e293b;
+  border-color: #334155;
+  color: #e2e8f0;
+}
+
+/* News section */
+[data-theme="dark"] #latest-news {
+  background-color: #020617 !important;
+}
+
+[data-theme="dark"] .news-card a.news-link {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .news-card h4 {
+  color: #f1f5f9;
+}
+
+/* Quotes */
+[data-theme="dark"] p.quote,
+[data-theme="dark"] p.quote a {
+  color: #cbd5f5;
+}
+
+[data-theme="dark"] p.quote a:hover {
+  color: #ffffff;
+}
+
+/* Logos */
+[data-theme="dark"] .logo,
+[data-theme="dark"] .logo > div,
+[data-theme="dark"] .logo > p {
+  color: #cbd5f5;
+  opacity: 0.7;
+}
+
+/* GitHub link */
+[data-theme="dark"] .github-link {
+  color: #cbd5f5;
+}
+
+/* Buttons (optional polish) */
+[data-theme="dark"] .btn {
+  background-color: #334155;
+  color: #e2e8f0;
+  border-color: #475569;
+}
+
+[data-theme="dark"] .btn:hover {
+  background-color: #475569;
+}
+
+[data-theme="dark"] .btn.btn-primary {
+  background-color: #0a76bb;
+  border-color: #0a76bb;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .btn.btn-primary:hover,
+[data-theme="dark"] .btn.btn-primary:focus,
+[data-theme="dark"] .btn.btn-primary:active {
+  background-color: #248ec2;
+  border-color: #347dbe;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .background-dark a.btn.btn-primary[href="community-projects.html"] {
+  background-color: #334155;
+  border-color: #475569;
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .background-dark a.btn.btn-primary[href="community-projects.html"]:hover,
+[data-theme="dark"] .background-dark a.btn.btn-primary[href="community-projects.html"]:focus,
+[data-theme="dark"] .background-dark a.btn.btn-primary[href="community-projects.html"]:active {
+  background-color: #475569;
+  border-color: #475569;
+  color: #e2e8f0;
+}
+
+.logo-dark {
+  display: none;
+}
+
+[data-theme="dark"] .logo-light {
+  display: none;
+}
+
+[data-theme="dark"] .logo-dark {
+  display: inline;
+}
+
+[data-theme="dark"] .background-dark .panel p {
+  color: #f9fafb;
+}
+
+[data-theme="dark"] .background-dark a {
+  color: #d1d5db;
 }
