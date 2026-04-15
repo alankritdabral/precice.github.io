@@ -10,7 +10,7 @@
   <!-- Parent menu item has url and no folderitems -->
   {% if page.url == folder.url %}
   <li class="active">
-    <a title="{{folder.title}}" href="#page-top" aria-current="page">{{folder.title}}</a>
+    <a title="{{folder.title}}" href="{{folder.url | remove: "/"}}">{{folder.title}}</a>
   </li>
   {% else %}
   <li>
@@ -27,7 +27,7 @@
       {% if folderitem.external_url %}
       <li><a title="{{folderitem.title}}" href="{{folderitem.external_url}}" target="_blank" rel="noopener">{{folderitem.title}}</a></li>
       {% elsif page.url == folderitem.url %}
-      <li {% if folderitem.link-only == nil or folderitem.link-only == false %} class="active" {% endif %} ><a title="{{folderitem.title}}" href="#page-top" aria-current="page">{{folderitem.title}}</a></li>
+      <li {% if folderitem.link-only == nil or folderitem.link-only == false %} class="active" {% endif %} ><a title="{{folderitem.title}}" href="{{folderitem.url | remove: "/"}}">{{folderitem.title}}</a></li>
       {% elsif folderitem.type == "empty" %}
       <li><a title="{{folderitem.title}}" href="{{folderitem.url | remove: "/"}}">{{folderitem.title}}</a></li>
 
@@ -44,7 +44,7 @@
           {% if subfolderitem.external_url %}
           <li><a title="{{subfolderitem.title}}" href="{{subfolderitem.external_url}}" target="_blank" rel="noopener">{{subfolderitem.title}}</a></li>
           {% elsif page.url == subfolderitem.url %}
-          <li class="active"><a title="{{subfolderitem.title}}" href="#page-top" aria-current="page">{{subfolderitem.title}}</a></li>
+          <li class="active"><a title="{{subfolderitem.title}}" href="{{subfolderitem.url | remove: "/"}}">{{subfolderitem.title}}</a></li>
           {% else %}
           <li><a title="{{subfolderitem.title}}" href="{{subfolderitem.url | remove: "/"}}">{{subfolderitem.title}}</a></li>
           {% endif %}
