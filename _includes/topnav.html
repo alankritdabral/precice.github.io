@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand no-icon" href="{{ site.url }}">
+            <a class="navbar-brand no-icon" href="{% if page.url == '/index.html' or page.url == '/' %}#page-top{% else %}{{ site.url }}{% endif %}"{% if page.url == '/index.html' or page.url == '/' %} aria-current="page"{% endif %}>
             <span class="navbar-brand-icon">
             <img class="navbar-brand-text" src="images/preCICE_text_28px.svg" alt="preCICE"></span>
             </a>
@@ -34,7 +34,7 @@
                 {% if item.external_url %}
                 <li><a href="{{item.external_url}}" target="_blank" rel="noopener">{{item.title}}</a></li>
                 {% elsif page.url contains item.url %}
-                <li class="active"><a href="{{item.url | remove: "/"}}">{{item.title}}</a></li>
+                <li class="active"><a href="#page-top" aria-current="page">{{item.title}}</a></li>
                 {% elsif page.sidebar == section_sidebar %}
                 <li class="active"><a href="{{item.url | remove: "/"}}">{{item.title}}</a></li>
                 {% else %}
@@ -53,7 +53,7 @@
                         {% if folderitem.external_url %}
                         <li><a href="{{folderitem.external_url}}" target="_blank" rel="noopener">{{folderitem.title}}</a></li>
                         {% elsif page.url contains folderitem.url %}
-                        <li class="dropdownActive"><a href="{{folderitem.url |  remove: "/"}}">{{folderitem.title}}</a></li>
+                        <li class="dropdownActive"><a href="#page-top" aria-current="page">{{folderitem.title}}</a></li>
                         {% else %}
                         <li><a href="{{folderitem.url | remove: "/"}}">{{folderitem.title}}</a></li>
                         {% endif %}
