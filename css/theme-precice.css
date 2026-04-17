@@ -84,7 +84,7 @@ div.navbar-collapse .dropdown-menu > li > a:hover {
     font-weight: bold;
 }
 
-a[data-toggle="tooltip"] {
+a[data-bs-toggle="tooltip"] {
     color: #649345;
     font-style: italic;
     cursor: default;
@@ -114,8 +114,14 @@ a[data-toggle="tooltip"] {
     color: #ED762C;
 }
 
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-    color: #015CAE;
+.navbar-inverse .navbar-nav .nav-item.active > .nav-link, 
+.navbar-inverse .navbar-nav .nav-item.active > .nav-link:hover, 
+.navbar-inverse .navbar-nav .nav-item.active > .nav-link:focus,
+.navbar-inverse .navbar-nav .nav-item > .nav-link:hover,
+.navbar-inverse .navbar-nav .nav-item > .nav-link:focus,
+.navbar-inverse .navbar-nav .nav-item.show > .nav-link {
+    background-color: #347DBE;
+    color: white !important;
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
