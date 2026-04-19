@@ -39,7 +39,6 @@ a:hover > .navbar-brand-icon:before{
     line-height: 20px;
     padding: 4px 10px;
     font-weight: 500;
-    margin-top: 11px;
 }
 .nav > li > a {
     font-size: 14px;
@@ -47,11 +46,13 @@ a:hover > .navbar-brand-icon:before{
     padding: 4px 10px;
 }
 /* rightmost icons */
-.nav > li > a.nav-external {
-    font-size: 24px;
+.navbar-nav .nav-external {
+    font-size: 30px;
     line-height: 20px;
-    padding: 2px 0px;
-    margin-top: 11px;
+    padding: 2px 5px;
+}
+.navbar-nav .nav-external i {
+    font-size: 30px !important;
 }
 @media (max-width: 1200px) {
     .nav > li > a.nav-external {
@@ -152,6 +153,7 @@ div.col-flex {
     border: 1px solid #ccc;
     padding: 4px 8px;
 }
+#search-results {
   max-height: calc(100vh - 80px);
   overflow: auto;
 }

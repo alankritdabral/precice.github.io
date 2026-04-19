@@ -37,15 +37,17 @@ a[data-bs-toggle="tooltip"] {
     cursor: default;
 }
 
-.navbar-inverse {
+.navbar {
     background-color: #347DBE;
     border-color: #015CAE;
+    padding: 0 !important;
+    margin: 0 0 20px 0;
 }
-.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
+.navbar .navbar-nav>li>a, .navbar .navbar-brand {
     color: white;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover, a.fa.fa-home.fa-lg.navbar-brand:hover {
+.navbar .navbar-nav>li>a:hover, a.fa.fa-home.fa-lg.navbar-brand:hover {
      color: #f0f0f0;
 }
 
@@ -53,16 +55,16 @@ a.navbar-brand:hover {
   color: #f0f0f0;
 }
 
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+.navbar .navbar-nav > .show > a, .navbar .navbar-nav > .show > a:hover, .navbar .navbar-nav > .show > a:focus {
     color: #015CAE;
 }
 
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+.navbar .navbar-nav > .show > a, .navbar .navbar-nav > .show > a:hover, .navbar .navbar-nav > .show > a:focus {
     background-color: #015CAE;
     color: #ffffff;
 }
 
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+.navbar .navbar-collapse, .navbar .navbar-form {
     border-color: #248ec2 !important;
 }
 
@@ -72,7 +74,7 @@ a.navbar-brand:hover {
     border-color: #347DBE;
 }
 
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus {
     background-color: #347DBE;
 }
 
@@ -80,7 +82,7 @@ a.navbar-brand:hover {
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
-.open .dropdown-toggle.btn-primary {
+.show .dropdown-toggle.btn-primary {
     background-color: #248ec2;
     border-color: #347DBE;
 }
@@ -112,10 +114,26 @@ li.sidebarTitle {
 
 }
 
-.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+.navbar .navbar-toggler:focus, .navbar .navbar-toggler:hover {
     background-color: #015CAE;
 }
 
-.navbar-inverse .navbar-toggle {
+.navbar .navbar-toggler {
     border-color: #015CAE;
+    border: 1px solid #015CAE;
+    padding: 9px 10px;
+}
+
+.navbar-toggler .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+.navbar-toggler .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
+
+.navbar .navbar-toggler .icon-bar {
+    background-color: white;
 }
