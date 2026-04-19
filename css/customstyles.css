@@ -199,7 +199,20 @@ p.post-meta {font-size: 80%; color: #777;}
 
 .entry-date{font-size:14px;font-size:0.875rem;line-height:1.71429;margin-bottom:0;text-transform:uppercase;}
 
-/* search area */
+.navbar-nav .nav-item {
+    padding: 0;
+}
+.navbar-nav .nav-link {
+    padding: 0.5rem 0.5rem;
+}
+.navbar-nav .nav-link.no-icon {
+    padding-left: 0.3rem !important;
+    padding-right: 0.3rem !important;
+}
+#search-demo-container {
+    padding-top: 5px;
+    margin-left: 10px;
+}
 #search-demo-container ul#results-container {
     list-style: none;
     font-size: 12px;
@@ -289,7 +302,7 @@ li.dropdownActive a {
 }
 
 
-.navbar-inverse .navbar-nav > li > a {
+.navbar .navbar-nav > li > a {
     background-color: transparent;
     margin-top:10px;
 }
@@ -315,6 +328,10 @@ a.accordion-toggle, a.accordion-collapsed {
 /* navgoco sidebar styles (customized) */
 .nav, .nav ul, .nav li {
     list-style: none;
+}
+
+.affix {
+    position: fixed;
 }
 
 .nav ul {
@@ -389,7 +406,12 @@ background-color: #347DBE;
 }
 
 ul#mysidebar {
-    border-radius:0px;
+    border-radius: 0px;
+    display: block !important;
+}
+
+ul#mysidebar li {
+    display: block !important;
 }
 
 .nav ul li ul li a {
@@ -422,11 +444,11 @@ ul#mysidebar {
 }
 /* end sidebar */
 
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus {
     border-radius:4px;
 }
 
-.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+.navbar .navbar-nav>.show>a, .navbar .navbar-nav>.show>a:focus, .navbar .navbar-nav>.show>a:hover {
     border-radius: 4px;
 }
 
@@ -543,7 +565,7 @@ button.cursorNorm {
     cursor: default;
 }
 
-a.dropdown-toggle, .navbar-inverse .navbar-nav > li > a  {
+a.dropdown-toggle, .navbar .navbar-nav > li > a  {
     margin-left: 10px;
 }
 
@@ -576,7 +598,7 @@ i.border {
     background-color: whitesmoke;
 }
 
-a[data-toggle] {
+a[data-bs-toggle] {
     color: #248EC2;
 }
 
@@ -678,7 +700,7 @@ span.otherProgrammingLanguages {
     font-style: normal;
 }
 
-a[data-toggle="tooltip"] {
+a[data-bs-toggle="tooltip"] {
     color: #649345;
     font-style: italic;
     cursor: default;
@@ -720,7 +742,7 @@ ol.series li {
 }
 
 /* not sure if using this ...*/
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+.navbar .navbar-collapse, .navbar .navbar-form {
     border-color: #248ec2 !important;
 }
 
@@ -858,7 +880,7 @@ span.soft {
 }
 
 @media (max-width: 767px) {
-    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    .navbar .navbar-nav .show .dropdown-menu > li > a {
         color: #444;
     }
 }
@@ -883,7 +905,7 @@ span.soft {
     }
 }
 
-.col-md-9 img {
+.col-lg-9 img {
     max-width: 100%;
     max-height: 100%;
 }
@@ -896,7 +918,7 @@ span.soft {
     max-width: 100%;
     max-height: 100%;
 }
-.col-md-9 img {
+.col-lg-9 img {
     max-width: 100%;
     max-height: 100%;
 }
@@ -1005,11 +1027,11 @@ p.post-meta time {
     margin-right: 0px;
 }
 
-span.label.label-default {
+span.badge.text-bg-secondary {
     background-color: gray;
 }
 
-span.label.label-primary {
+span.badge.text-bg-primary {
     background-color: #f0ad4e;
 }
 .col-lg-12 .nav li a {background-color: white}
@@ -1181,8 +1203,9 @@ h4.panel-title {
     .navbar-left,.navbar-right {
         float: none !important;
     }
-    .navbar-toggle {
+    .navbar-toggler {
         display: block;
+        padding: 9px 10px;
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
@@ -1191,8 +1214,8 @@ h4.panel-title {
         top: 0;
         border-width: 0 0 1px;
     }
-    .navbar-collapse.collapse {
-        display: none!important;
+    .navbar-collapse.collapse.show {
+        display: block !important;
     }
     .navbar-nav {
         float: none!important;
@@ -1204,9 +1227,6 @@ h4.panel-title {
     .navbar-nav>li>a {
         padding-top: 10px;
         padding-bottom: 10px;
-    }
-    .collapse.in{
-        display:block !important;
     }
 }
 
