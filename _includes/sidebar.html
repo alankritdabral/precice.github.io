@@ -1,59 +1,83 @@
 {% assign sidebar = site.data.sidebars[page.sidebar].entries %}
 
 <nav aria-label="{{sidebar[0].product}}">
-<ul id="mysidebar" class="nav">
+<ul id="mysidebar" class="nav flex-column">
   <li class="sidebarTitle">{{sidebar[0].product}} {{sidebar[0].version}}</li>
   {% for entry in sidebar %}
   {% for folder in entry.folders %}
   {% if folder.output contains "web" %}
   {% if folder.url %}
   <!-- Parent menu item has url and no folderitems -->
-  {% if page.url == folder.url %}
-  <li class="active">
-    <a title="{{folder.title}}" href="{{folder.url | remove: "/"}}">{{folder.title}}</a>
+  <li class="nav-item">
+    <a class="nav-link {% if page.url == folder.url %}active{% endif %}" title="{{folder.title}}" href="{{folder.url | remove: "/"}}">{{folder.title}}</a>
   </li>
-  {% else %}
-  <li>
-    <a title="{{folder.title}}" href="{{folder.url | remove: "/"}}">{{folder.title}}</a>
-  </li>
-  {% endif %}
   {% else %}
   <!-- Parent menu item has folderitems -->
-  <li>
-    <a title="{{folder.title}}" href="#">{{folder.title}}</a>
-    <ul>
+  {% assign folder_id = forloop.index | prepend: "collapse-" %}
+  {% assign any_active = false %}
+  {% for folderitem in folder.folderitems %}
+    {% if page.url == folderitem.url %}{% assign any_active = true %}{% endif %}
+    {% for subfolders in folderitem.subfolders %}
+      {% for subfolderitem in subfolders.subfolderitems %}
+        {% if page.url == subfolderitem.url %}{% assign any_active = true %}{% endif %}
+      {% endfor %}
+    {% endfor %}
+  {% endfor %}
+  
+  <li class="nav-item">
+    <a class="nav-link {% unless any_active %}collapsed{% endunless %}" title="{{folder.title}}" 
+       data-bs-toggle="collapse" href="#{{folder_id}}" role="button" aria-expanded="{% if any_active %}true{% else %}false{% endif %}">
+       {{folder.title}}
+    </a>
+    <ul class="collapse {% if any_active %}show{% endif %} nav flex-column" id="{{folder_id}}">
       {% for folderitem in folder.folderitems %}
       {% if folderitem.output contains "web" %}
       {% if folderitem.external_url %}
-      <li><a title="{{folderitem.title}}" href="{{folderitem.external_url}}" target="_blank" rel="noopener">{{folderitem.title}}</a></li>
-      {% elsif page.url == folderitem.url %}
-      <li {% if folderitem.link-only == nil or folderitem.link-only == false %} class="active" {% endif %} ><a title="{{folderitem.title}}" href="{{folderitem.url | remove: "/"}}">{{folderitem.title}}</a></li>
+      <li class="nav-item"><a class="nav-link" title="{{folderitem.title}}" href="{{folderitem.external_url}}" target="_blank" rel="noopener">{{folderitem.title}}</a></li>
       {% elsif folderitem.type == "empty" %}
-      <li><a title="{{folderitem.title}}" href="{{folderitem.url | remove: "/"}}">{{folderitem.title}}</a></li>
-
+      <li class="nav-item"><a class="nav-link" title="{{folderitem.title}}" href="{{folderitem.url | remove: "/"}}">{{folderitem.title}}</a></li>
       {% else %}
-      <li><a title="{{folderitem.title}}" href="{{folderitem.url | remove: "/"}}">{{folderitem.title}}</a></li>
-      {% endif %}
-      {% for subfolders in folderitem.subfolders %}
-      {% if subfolders.output contains "web" %}
-      <li class="subfolders">
-        <a title="{{subfolders.title}}" href="#">{{ subfolders.title }}</a>
-        <ul>
+      <li class="nav-item">
+        {% assign subfolder_id = folder_id | append: "-" | append: forloop.index %}
+        {% assign sub_active = false %}
+        {% if page.url == folderitem.url %}{% assign sub_active = true %}{% endif %}
+        {% for subfolders in folderitem.subfolders %}
           {% for subfolderitem in subfolders.subfolderitems %}
-          {% if subfolderitem.output contains "web" %}
-          {% if subfolderitem.external_url %}
-          <li><a title="{{subfolderitem.title}}" href="{{subfolderitem.external_url}}" target="_blank" rel="noopener">{{subfolderitem.title}}</a></li>
-          {% elsif page.url == subfolderitem.url %}
-          <li class="active"><a title="{{subfolderitem.title}}" href="{{subfolderitem.url | remove: "/"}}">{{subfolderitem.title}}</a></li>
-          {% else %}
-          <li><a title="{{subfolderitem.title}}" href="{{subfolderitem.url | remove: "/"}}">{{subfolderitem.title}}</a></li>
-          {% endif %}
-          {% endif %}
+            {% if page.url == subfolderitem.url %}{% assign sub_active = true %}{% endif %}
           {% endfor %}
-        </ul>
+        {% endfor %}
+
+        {% if folderitem.subfolders.size > 0 %}
+          <a class="nav-link {% unless sub_active %}collapsed{% endunless %}" title="{{folderitem.title}}" 
+             data-bs-toggle="collapse" href="#{{subfolder_id}}" role="button" aria-expanded="{% if sub_active %}true{% else %}false{% endif %}">
+             {{folderitem.title}}
+          </a>
+          <ul class="collapse {% if sub_active %}show{% endif %} nav flex-column" id="{{subfolder_id}}">
+            {% if folderitem.url %}
+              <li class="nav-item"><a class="nav-link {% if page.url == folderitem.url %}active{% endif %}" title="{{folderitem.title}}" href="{{folderitem.url | remove: "/"}}">{{folderitem.title}} Overview</a></li>
+            {% endif %}
+            {% for subfolders in folderitem.subfolders %}
+            {% if subfolders.output contains "web" %}
+              <li class="nav-item subfolders">
+                <span class="nav-link disabled text-uppercase small">{{ subfolders.title }}</span>
+                <ul class="nav flex-column ps-3">
+                  {% for subfolderitem in subfolders.subfolderitems %}
+                  {% if subfolderitem.output contains "web" %}
+                  <li class="nav-item">
+                    <a class="nav-link {% if page.url == subfolderitem.url %}active{% endif %}" title="{{subfolderitem.title}}" href="{{subfolderitem.url | remove: "/"}}">{{subfolderitem.title}}</a>
+                  </li>
+                  {% endif %}
+                  {% endfor %}
+                </ul>
+              </li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        {% else %}
+          <a class="nav-link {% if page.url == folderitem.url %}active{% endif %}" title="{{folderitem.title}}" href="{{folderitem.url | remove: "/"}}">{{folderitem.title}}</a>
+        {% endif %}
       </li>
       {% endif %}
-      {% endfor %}
       {% endif %}
       {% endfor %}
     </ul>
@@ -62,13 +86,5 @@
   {% endif %}
   {% endfor %}
   {% endfor %}
-  <!-- if you aren't using the accordion, uncomment this block:
-  <p class="external">
-  <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
-  </p>
-  -->
 </ul>
 </nav>
-
-<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
-<script>$("li.active").parents('li').toggleClass("active");</script>

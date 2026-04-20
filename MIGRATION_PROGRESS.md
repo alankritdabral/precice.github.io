@@ -23,7 +23,22 @@ The migration from Bootstrap 3.x to Bootstrap 5.3.8 is currently in progress. Th
     - Updated dropdowns to use BS5 `data-bs-toggle="dropdown"`.
     - Removed redundant `role` and `aria` attributes to let BS5 manage state natively.
 
-### 3. Landing Page Updates (`content/index.html`)
+### 3. Sidebar Migration (`_includes/sidebar.html` & JS)
+- **Modernization**: Replaced `navgoco` jQuery plugin with Bootstrap 5 `collapse`.
+- **Logic**:
+    - Re-implemented the sidebar using nested `ul.collapse` and `data-bs-toggle="collapse"`.
+    - Added Liquid logic to automatically expand (`show`) the parent sections of the current active page.
+    - Updated `js/customscripts.js` to handle tooltips and tabs using BS5 data attributes (`data-bs-*`).
+    - Replaced legacy `affix` with a custom `sticky-top` implementation for modern positioning.
+- **Styling**:
+    - Added comprehensive BS5 sidebar styles to `css/customstyles-precice.css`.
+    - Included interactive indicators (rotating triangles) for collapsed/expanded states using CSS pseudo-elements.
+- **Cleanup**:
+    - Removed `navgoco` initialization from `_layouts/default.html`.
+    - Removed `navgoco` script reference from `_includes/head.html`.
+    - Removed legacy `navgoco` height calculation from `js/customscripts.js`.
+
+### 4. Landing Page Updates (`content/index.html`)
 - **Full Card Migration**: Converted all remaining `.panel` elements to `.card` elements in `content/index.html`.
 - **Styling**: 
     - Added `.card-precice` and `.card-header-precice` to `css/customstyles-precice.css` to maintain preCICE aesthetics.
@@ -48,15 +63,22 @@ The migration from Bootstrap 3.x to Bootstrap 5.3.8 is currently in progress. Th
 
 ## Modified Files
 - `_includes/topnav.html`
+- `_includes/sidebar.html`
+- `_layouts/default.html`
+- `_includes/head.html`
 - `content/index.html`
+- `js/customscripts.js`
+- `js/news-collect.js`
 - `css/customstyles.css`
 - `css/customstyles-precice.css`
 - `css/theme-precice.css`
 - `css/theme-blue.css`
 - `css/theme-green.css`
-- `_includes/head.html`
+- `css/landing-page.css`
+- `content/docs/fundamentals/fundamentals-literature-guide.md`
+- `content/docs/adapters/fenics/adapter-fenics.md`
+- `content/community/workshops/precice-workshop-organizing.md`
 
 ## Known Issues / Next Steps
-1. **Sidebar Migration**: Replace `navgoco` jQuery plugin with Bootstrap 5 Collapse or native sticky positioning in `_includes/sidebar.html`.
-2. **Global Attribute Update**: Finalize the migration of all remaining `data-toggle` attributes to `data-bs-toggle` in various documentation and tutorial files.
-3. **CSS Cleanup**: Systematic removal or renaming of legacy `.panel` selectors in `css/` files once conversion is fully verified.
+1. **Global Attribute Update**: Finalize the migration of all remaining `data-toggle` attributes to `data-bs-toggle` in various documentation and tutorial files.
+2. **CSS Cleanup**: Systematic removal or renaming of legacy `.panel` selectors in `css/` files once conversion is fully verified.
