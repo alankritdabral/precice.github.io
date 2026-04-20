@@ -93,10 +93,12 @@ div.image-holder.usp > img {
 a.adapter {
   text-decoration: none;
 }
-a.adapter > div.panel-primary {
+a.adapter > div.panel-primary,
+a.adapter > div.card-primary {
   border-color: rgba(10,118,187, .8);
 }
-a.adapter:hover > div.panel-primary {
+a.adapter:hover > div.panel-primary,
+a.adapter:hover > div.card-primary {
   background-color: rgba(10,118,187, .08);
 }
 img.adapter {
@@ -294,24 +296,19 @@ div.logo-holder > img {
   line-clamp: 5;
   -webkit-box-orient: vertical;
 }
-
+/* News section */
 
 #news-container {
-  display: flex;
-  gap: 25px;
 }
 
 #news-container .col-md-4 {
-  flex: 1;
 }
 
 
 @media (max-width: 768px) {
   #news-container {
-    flex-wrap: wrap;         
   }
   #news-container .col-md-4 {
-    flex: 1 1 100%;         
   }
 }
 

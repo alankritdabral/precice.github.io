@@ -69,12 +69,12 @@ If you are using our adapter, please consider citing our paper:
 {% if pub.title == "FEniCS–preCICE: Coupling FEniCS to other simulation software" %}
 
 <div class="row">
-<div class="col-md-10 col-md-offset-1">
-  <div class="panel panel-primary panel-precice">
-    <div class="panel-heading-precice">
+<div class="col-md-10 offset-md-1">
+  <div class="card card-primary card-precice">
+    <div class="card-header card-header-precice">
       <strong>{{ pub.title }}</strong>
     </div>
-    <div class="panel-body">
+    <div class="card-body">
       <p>
         <em>{{ pub.authors }}</em>,
         {{ pub.journal.name }},
@@ -102,12 +102,12 @@ If you are using our adapter, please consider citing our paper:
 <div class="row">
 {% for pub in year.items %}
 {% if pub.tag contains "fenics" %}
-<div class="col-md-10 col-md-offset-1">
-  <div class="panel panel-primary panel-precice">
-    <div class="panel-heading-precice">
+<div class="col-md-10 offset-md-1">
+  <div class="card card-primary card-precice">
+    <div class="card-header card-header-precice">
       <strong>{{ pub.title }}</strong>
     </div>
-    <div class="panel-body">
+    <div class="card-body">
       <p>
         <em>{{ pub.authors }}</em>
         {% if pub.journal.name %}{{ pub.journal.name }}, {% endif %}

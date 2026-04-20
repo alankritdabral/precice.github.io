@@ -78,15 +78,28 @@ h2.page-header {
 .panel-precice {
   padding-top: 5px;
 }
+.card-precice {
+  padding-top: 0px;
+}
 .panel-heading-precice {
+  margin-bottom: -15px;
+}
+.card-header-precice {
+  margin-bottom: 0px;
+}
+.panel-heading-precice,
+.card-header-precice {
   position: relative;
   /*left: -5px;
   padding: 10px 15px 10px 18px;
   border-left: 2px solid #ED762C;*/
-  margin-bottom: -15px;
   padding: 10px 15px;
+  min-height: 4em;
+  display: flex;
+  align-items: center;
 }
-.panel-heading-precice strong {
+.panel-heading-precice strong,
+.card-header-precice strong {
   font-size: 1.2em;
   line-height: 1.2em;
   font-weight: 500;

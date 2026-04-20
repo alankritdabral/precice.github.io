@@ -232,10 +232,12 @@ li.sidebarTitle {
 .nav li a:hover {
     background-color: #ED762C;
 }
-.panel-primary>panel-heading {
+.panel-primary>panel-heading,
+.card-primary>.card-header {
     background-color: #0A76BB;
 }
-.panel-primary{
+.panel-primary,
+.card-primary {
     border-color: #0A76BB;
 }
 a {

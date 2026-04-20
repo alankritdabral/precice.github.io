@@ -24,10 +24,10 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     for (const topic of topics.slice(0, 3)) {
       const col = document.createElement("div");
-      col.className = "col-md-4 col-sm-6 col-xs-12";
+      col.className = "col-md-4 col-sm-6 col-12 d-flex";
 
       const card = document.createElement("div");
-      card.className = "news-card";
+      card.className = "news-card h-100 d-flex flex-column";
 
       const date = new Date(topic.created_at || topic.last_posted_at).toLocaleDateString("en-GB");
 
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       }
       link.setAttribute("target", "_blank");
       link.setAttribute("rel", "noopener noreferrer");
-      link.className = "news-link no-external-marker";
+      link.className = "news-link no-external-marker d-flex flex-column flex-grow-1";
 
       const h4 = document.createElement("h4");
       const strong = document.createElement("strong");
@@ -45,10 +45,11 @@ document.addEventListener("DOMContentLoaded", async function () {
       h4.appendChild(strong);
 
       const descP = document.createElement("p");
+      descP.className = "flex-grow-1";
       descP.textContent = topic.description;
 
       const dateP = document.createElement("p");
-      dateP.className = "text-muted";
+      dateP.className = "text-muted mt-auto";
       const small = document.createElement("small");
       small.textContent = date;
       dateP.appendChild(small);
