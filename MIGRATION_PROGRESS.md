@@ -27,16 +27,17 @@ The migration from Bootstrap 3.x to Bootstrap 5.3.8 is currently in progress. Th
 - **Modernization**: Replaced `navgoco` jQuery plugin with Bootstrap 5 `collapse`.
 - **Logic**:
     - Re-implemented the sidebar using nested `ul.collapse` and `data-bs-toggle="collapse"`.
-    - Added Liquid logic to automatically expand (`show`) the parent sections of the current active page.
+    - Added `data-bs-parent` to ensure accordion behavior (only one Level 1 section open at a time).
+    - Fixed highlighting logic:
+        - **Level 1 (Open)**: Blue (`#347DBE`).
+        - **Level 2 (Open)**: Orange (`#ED762C`).
+        - **Hover (All Levels)**: Orange (`#ED762C`).
+        - **Active (Collapsed or non-toggler)**: Gray (`#8D8D8D`).
     - Updated `js/customscripts.js` to handle tooltips and tabs using BS5 data attributes (`data-bs-*`).
-    - Replaced legacy `affix` with a custom `sticky-top` implementation for modern positioning.
-- **Styling**:
-    - Added comprehensive BS5 sidebar styles to `css/customstyles-precice.css`.
-    - Included interactive indicators (rotating triangles) for collapsed/expanded states using CSS pseudo-elements.
 - **Cleanup**:
-    - Removed `navgoco` initialization from `_layouts/default.html`.
-    - Removed `navgoco` script reference from `_includes/head.html`.
-    - Removed legacy `navgoco` height calculation from `js/customscripts.js`.
+    - Removed all legacy `navgoco` scripts and CSS overrides.
+    - Decoupled sidebar from `.nav` class to avoid legacy CSS conflicts, using unique `.sidebar-nav` class instead.
+    - Reset `ul` padding and margins for clean nesting.
 
 ### 4. Landing Page Updates (`content/index.html`)
 - **Full Card Migration**: Converted all remaining `.panel` elements to `.card` elements in `content/index.html`.
@@ -61,6 +62,14 @@ The migration from Bootstrap 3.x to Bootstrap 5.3.8 is currently in progress. Th
     - `content/docs/adapters/fenics/adapter-fenics.md`
     - `content/community/workshops/precice-workshop-organizing.md`
 
+### 5. Global Attribute Update
+- **Attribute Migration**: Systematically replaced legacy Bootstrap data attributes with BS5-compliant versions project-wide.
+    - `data-toggle` -> `data-bs-toggle`
+    - `data-target` -> `data-bs-target`
+    - `data-placement` -> `data-bs-placement`
+- **Scope**: Applied to all `.html`, `.md`, `.js`, and `.css` files in `content/`, `_includes/`, `_layouts/`, `js/`, and `css/`.
+- **Verification**: Confirmed that all tooltips, tabs, and collapses in documentation and tutorials now use the modern BS5 naming convention.
+
 ## Modified Files
 - `_includes/topnav.html`
 - `_includes/sidebar.html`
@@ -75,10 +84,11 @@ The migration from Bootstrap 3.x to Bootstrap 5.3.8 is currently in progress. Th
 - `css/theme-blue.css`
 - `css/theme-green.css`
 - `css/landing-page.css`
+- `css/printstyles.css`
 - `content/docs/fundamentals/fundamentals-literature-guide.md`
 - `content/docs/adapters/fenics/adapter-fenics.md`
 - `content/community/workshops/precice-workshop-organizing.md`
+- `content/docs/couple-your-code/step-by-step/*.md` (multiple files)
 
 ## Known Issues / Next Steps
-1. **Global Attribute Update**: Finalize the migration of all remaining `data-toggle` attributes to `data-bs-toggle` in various documentation and tutorial files.
-2. **CSS Cleanup**: Systematic removal or renaming of legacy `.panel` selectors in `css/` files once conversion is fully verified.
+1. **CSS Cleanup**: Systematic removal or renaming of legacy `.panel` selectors in `css/` files once conversion is fully verified.

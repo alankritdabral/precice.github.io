@@ -8,8 +8,8 @@ summary: "If you want to couple your own code you need to properly understand it
 Let's say you want to prepare a fluid solver for fluid-structure interaction and that your code looks like this:
 
 <ul id="apiTabs" class="nav nav-tabs">
-    <li class="active"><a href="#cpp" data-toggle="tab">C++</a></li>
-    <li><a href="#python" data-toggle="tab">Python</a></li>
+    <li class="active"><a href="#cpp" data-bs-toggle="tab">C++</a></li>
+    <li><a href="#python" data-bs-toggle="tab">Python</a></li>
 </ul>
 <div class="tab-content">
   <div role="tabpanel" class="tab-pane active" id="cpp" markdown="1">

@@ -17,8 +17,8 @@ Enable it using `<precice-configuration experimental="true">` and do not conside
 When using `nearest-neighbor-gradient` mapping, we require coupling data and additional gradient data. We have seen in [Step 3](couple-your-code-mesh-and-data-access.html) how to write data to the mesh.
 Now, we will learn how to write gradient data to the mesh. For this purpose, we use the following API method:
 <ul id="apiTabs" class="nav nav-tabs">
-    <li class="active"><a href="#cpp-1" data-toggle="tab">C++</a></li>
-    <li><a href="#python-1" data-toggle="tab">Python</a></li>
+    <li class="active"><a href="#cpp-1" data-bs-toggle="tab">C++</a></li>
+    <li><a href="#python-1" data-bs-toggle="tab">Python</a></li>
 </ul>
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="cpp-1" markdown="1">
@@ -52,8 +52,8 @@ The values are passed as following:
 
 Let's add gradient data to our example code:
 <ul id="apiTabs" class="nav nav-tabs">
-    <li class="active"><a href="#cpp-2" data-toggle="tab">C++</a></li>
-    <li><a href="#python-2" data-toggle="tab">Python</a></li>
+    <li class="active"><a href="#cpp-2" data-bs-toggle="tab">C++</a></li>
+    <li><a href="#python-2" data-bs-toggle="tab">Python</a></li>
 </ul>
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="cpp-2" markdown="1">
