@@ -1,80 +1,34 @@
-/* (Material) changes to the customstyles.css start here */
+/*******************************************************************************
+ * Custom styles for preCICE site (BS5 migration)
+ ******************************************************************************/
 
-body {
-    font-size: 16px;
-    font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    padding-top: 70px;      /* https://getbootstrap.com/docs/3.4/components/#navbar-fixed-top */
-}
-
-.banner-container {
-  margin-top:-20px;
-}
-a.navbar-brand {
-    padding-top: 12px;
-}
-.navbar-brand-text {
-    height: 28px;
-    padding-left: 1px; /* 1px */
-    display: inline;
-    vertical-align: top;
-}
-/* use :before pseudo-class to rotate icon independent of text */
-.navbar-brand-icon:before {
-    width: 25px;
-    height: 25px;
-    content: '';
-    display: inline-block;
-    background: url('../images/icon.svg');
-    background-size: 25px 25px;
-    background-repeat: no-repeat;
-    background-position: top left;
-    transition: all 400ms;
-}
-a:hover > .navbar-brand-icon:before{
-    transform: rotate(180deg);
-}
-/* .nav styles both topnav and sidenav, so use .nav.navbar-nav */
-.nav.navbar-nav > li > a {
-    font-size: 14px;
-    line-height: 20px;
-    padding: 4px 10px;
-    font-weight: 500;
-}
-.nav > li > a {
-    font-size: 14px;
-    line-height: 20px;
-    padding: 4px 10px;
-}
-/* rightmost icons */
-.navbar-nav .nav-external {
-    font-size: 30px;
-    line-height: 20px;
-    padding: 2px 5px;
-}
-.navbar-nav .nav-external i {
-    font-size: 30px !important;
-}
-@media (max-width: 1200px) {
-    .nav > li > a.nav-external {
-        float: left;
-    }
-}
-/* Fix Firefox/normalize.css bug https://github.com/necolas/normalize.css/issues/740 */
-details > summary {
-  display: list-item;
-  margin-bottom: 10px;
+/* Brand colors */
+:root {
+  --precice-blue: #0A76BB;
+  --precice-orange: #ED762C;
+  --precice-light-blue: #347DBE;
+  --precice-dark-blue: #015CAE;
 }
 
-/* General layout classes */
+/* Navbar */
+.navbar-brand-icon {
+  height: 30px;
+  margin-right: 10px;
+}
 
-h2.page-header {
-  /*border-bottom: 1px solid #0A76BB;*/
-  border-bottom: 1px solid rgba(10,118,187, 0);
+/* Landing page specific */
+.section-header {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: 500;
   font-size: 28px;
 }
+
 .row {
   margin-bottom: 0px;
 }
+
+/* Panels to Cards */
 .panel-precice {
   padding-top: 5px;
 }
@@ -90,9 +44,6 @@ h2.page-header {
 .panel-heading-precice,
 .card-header-precice {
   position: relative;
-  /*left: -5px;
-  padding: 10px 15px 10px 18px;
-  border-left: 2px solid #ED762C;*/
   padding: 10px 15px;
   min-height: 4em;
   display: flex;
@@ -113,7 +64,8 @@ h2.page-header {
     margin: 0 !important;
 }
 
-.sidebar-nav .nav-link {
+/* Level 1 Base */
+.sidebar-nav a.nav-link {
     font-size: 14px;
     line-height: 20px;
     padding: 4px 10px !important;
@@ -129,14 +81,6 @@ h2.page-header {
     color: #ffffff !important;
 }
 
-/* Non-open Active items (including collapsed togglers): Gray */
-.sidebar-nav a.nav-link.active.collapsed,
-.sidebar-nav a.nav-link.active:not([data-bs-toggle="collapse"]) {
-    background-color: #8D8D8D !important;
-    background: #8D8D8D !important;
-    color: #ffffff !important;
-}
-
 /* Level 1 Toggler (Open): Blue */
 .sidebar-nav > li.nav-item > a.nav-link:not(.collapsed)[data-bs-toggle="collapse"] {
     background-color: #347DBE !important;
@@ -144,21 +88,38 @@ h2.page-header {
     color: #ffffff !important;
 }
 
-/* Level 2 Toggler (Open): Orange */
+/* Level 2, 3, 4 Toggler (Open): Orange */
 .sidebar-nav li.nav-item .collapse a.nav-link:not(.collapsed)[data-bs-toggle="collapse"] {
     background-color: #ED762C !important;
     background: #ED762C !important;
     color: #ffffff !important;
 }
 
-.sidebar-nav .collapse .nav-link {
-    padding: 4px 10px 4px 20px !important;
-    background-color: #FAFAFA !important;
-    background: #FAFAFA !important;
+/* Active Leaf or Collapsed Active Toggler: Gray */
+.sidebar-nav a.nav-link.active:not([data-bs-toggle="collapse"]),
+.sidebar-nav a.nav-link.active.collapsed[data-bs-toggle="collapse"] {
+    background-color: #8D8D8D !important;
+    background: #8D8D8D !important;
+    color: #ffffff !important;
 }
 
+/* Level 2+ Base colors */
+.sidebar-nav .collapse a.nav-link {
+    background-color: #FAFAFA !important;
+}
+
+/* Progressive Indentation */
+.sidebar-nav .collapse .nav-link {
+    padding-left: 20px !important;
+}
 .sidebar-nav .collapse .collapse .nav-link {
-    padding: 4px 10px 4px 40px !important;
+    padding-left: 30px !important;
+}
+.sidebar-nav .collapse .collapse .collapse .nav-link {
+    padding-left: 40px !important;
+}
+.sidebar-nav .collapse .collapse .collapse .collapse .nav-link {
+    padding-left: 50px !important;
 }
 
 .sidebar-nav .nav-link[data-bs-toggle="collapse"]::after {
@@ -177,7 +138,7 @@ h2.page-header {
     font-weight: bold;
     border-top: 2px solid #ddd;
     margin-top: 10px;
-    padding: 10px 15px;
+    padding: 10px 15px !important;
 }
 
 /* General utility classes */
@@ -191,319 +152,12 @@ h2.page-header {
 .less-bottom-margin {
   margin-bottom: -20px;
 }
-.citation-link {
-  margin-top: 15px;
+
+.full-height {
+  height: 100%;
 }
-.vertical-align { /* https://stackoverflow.com/questions/20547819/vertical-align-with-bootstrap-3/25517025#25517025 */
-    display: flex;
-    align-items: center;
-}
-/* https://stackoverflow.com/questions/19695784/how-can-i-make-bootstrap-columns-all-the-same-height */
-/* https://stackoverflow.com/questions/20503064/twitter-bootstrap-3-panels-of-equal-height-in-a-fluid-row */
-/*.equal {
+
+.col-flex {
   display: flex;
-  display: -webkit-flex;
-  flex-wrap: wrap;
-}*/
-@media (min-width: 992px) {
-   .equal{
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-    }
-}
-/* add horizontal scoll on code blocks */
-pre > code {
-  overflow: auto;
-  word-wrap: normal;
-  white-space: pre;
-}
-div.col-flex {
-  display: flex;
-  flex-flow: column;
-  align-content: stretch;  /* file up remaining space */
-}
-/* Search bar and results */
-#search-demo-container div#search-results {
-  list-style: none;
-  font-size: 12px;
-  background-color: white;
-  position: absolute;
-  top: 55px; /* if you change anything about the nav, you'll prob. need to reset the top and left values here.*/
-  left: -200px;
-  z-index: 69;
-  width: 380px;
-  border: 1px solid #dedede;
-  box-shadow: 2px 3px 2px #dedede;
-}
-#search-input input {
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    padding: 4px 8px;
-}
-#search-results {
-  max-height: calc(100vh - 80px);
-  overflow: auto;
-}
-.result-item {
-  /*margin-bottom: 30px;*/
-  border-top: 1px solid whitesmoke;
-}
-a.result-link {
-  font-size: 14px;
-}
-.result-link .ais-Highlight {
-  color: #111;
-  font-style: normal;
-  text-decoration: underline;
-}
-.nav li #search-results a.result-breadcrumbs {
-  color: #424242;
-  font-size: 15px;
-  display: block;
-  padding-left: 10px;
-}
-.result-breadcrumb {
-  /*font-size: 18px;*/
-  color: #424242;
-}
-.result-breadcrumb .ais-Highlight {
-  font-weight: bold;
-  font-style: normal;
-
-}
-.result-snippet .ais-Highlight {
-  color: #2a7ae2;
-  font-style: normal;
-  font-weight: bold;
-}
-.result-snippet img {
-  display: none;
-}
-.result-snippet {
-  color: #333;
-  padding-left: 10px;
-}
-#search-results h2 {
-  font-size: 18px;
-  margin: 0;
-  line-height: 1.2em;
-  margin-top: 5px;
-  padding-left: 10px;
-}
-#search-results a {
-  background-color: transparent;
-  display: inline;
-}
-#search-results a:hover {
-  color: #333;
-}
-.nav li #search-results a {
-  line-height: 1em;
-  font-size: 1em;
-  display: inline;
-  padding: 0px;
-}
-#search-results p {
-  margin-bottom: 5px;
-}
-
-/* Contributors section */
-.devlist {
-  border: 1px solid #0a76bb;
-  border-radius: 5px;
-  padding: 0;
-}
-.devlist>li.devlist-first {
-  border-top: 1px solid transparent;
-}
-ul.devlist>li {
-  display: flex;
-  flex-flow: row wrap;
-  border-top: 1px solid #0a76bb;
-  border-radius: 5px;
-  padding: 8px 16px;
-  margin: 0;
-}
-
-.devlist>li .devlist-img {
-  flex: 0 0 auto;
-  width: auto;
-  width: 50px;
-  margin-right: 1rem;
-
-}
-.devlist>li .devlist-img>img {
-  border-radius: 5px;
-  width: 100%;
-  margin: 0;
-  border: 1px solid lightgrey;
-}
-.devlist>li .devlist-left {
-  flex: 1 1 0px;
-  width: auto;
-  align-items: center;
-  display: flex;
-}
-.devlist>li .devlist-right {
-  flex: 0 0 auto;
-  width: auto;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  font-size: larger;
-}
-.devlist>li .devlist-right li+li {
-  margin-left: 16px;
-}
-.devlist-left > p {
-  margin-bottom: 0;
-}
-
-/* preCICE workshop 2021 */
-.workshop-event {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 9.5px;
-  margin-bottom: 10px;
-}
-.workshop-event p:first-of-type {
-  margin-top: 10px;
-}
-/**:focus
-{
-  outline: none;
-}*/
-@media screen and (max-width: 767px) {
-  .table-responsive > .table > thead > tr > th,
-  .table-responsive > .table > tbody > tr > th,
-  .table-responsive > .table > tfoot > tr > th,
-  .table-responsive > .table > thead > tr > td,
-  .table-responsive > .table > tbody > tr > td,
-  .table-responsive > .table > tfoot > tr > td {
-    white-space: normal;
-  }
-}
-
-/* print styles */
-@media print {
-  /* https://www.matuzo.at/blog/i-totally-forgot-about-print-style-sheets/ */
-  #tg-sb-sidebar,
-  .githubEditButton {
-    display: none;
-  }
-  body {
-    padding-top: 0;
-  }
-}
-
-/* Testimonials == community stories */
-@media (max-width: 767px) {
-  .testimonials h2{
-    padding-top: 80px;
-  }
-}
-
-/* 
-  Let the sidebar scroll up some amount, then fix in place
-  Uses 'position: sticky' which offsets relative to its nearest scrolling ancestor and containing block
-  see https://developer.mozilla.org/en-US/docs/Web/CSS/position
-*/
-ul.nav.affix { 
-  position: static; /* override 'position: fixed' for <ul> */
-}
-div#tg-sb-sidebar {
-  position: sticky; /* set for <div> instead of <ul> */
-  top: 40px;
-}
-/* Unstick the sidebar if window is too small */
-@media (max-height: 850px) { /* this value may need to be updated if sidebar height increases */
-  div#tg-sb-sidebar  {
-    position: static;
-  }
-}
-/* Unstick on mobile */
-@media (max-width: 991px) {
-  div#tg-sb-sidebar  {
-    position: static;
-  }
-  /* style navtabs */
-  .post-content ol li, .post-content ul li {
-    margin: 0px;
-  }
-  div.tab-content {
-    padding: 0px;
-    background-color: white;
-    }
-  div.tab-content div.tab-pane pre {
-    margin-top: 0px;
-  }
-}
-
-/* Hide default marker Chromium/WebKit */
-details > summary::-webkit-details-marker {
-  display: none !important;
-}
-
-/* Hide default marker in Firefox */
-details > summary {
-  list-style: none;
-  cursor: pointer;
-  position: relative;
-  padding-right: 1.2em;
-}
-
-/* closed */
-details > summary::after {
-  content: "▼";
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 0.9em;
-}
-
-/* open */
-details[open] > summary::after {
-  content: "▲";
-}
-
-/* Copy to Clipboard Button Styles */
-div.highlighter-rouge {
-    position: relative;
-}
-
-.copy-code-btn {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    padding: 4px 8px;
-    font-size: 12px;
-    color: #555;
-    background-color: #f8f9fa;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.2s, background-color 0.2s, color 0.2s;
-    z-index: 10;
-}
-
-div.highlighter-rouge:hover .copy-code-btn {
-    opacity: 1;
-}
-
-.copy-code-btn:hover {
-    background-color: #e2e6ea;
-    color: #333;
-}
-
-.copy-code-btn.copied {
-    background-color: #28a745;
-    color: white;
-    border-color: #28a745;
+  flex-direction: column;
 }

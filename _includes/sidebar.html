@@ -3,99 +3,13 @@
 <nav aria-label="{{sidebar[0].product}}">
 <ul id="mysidebar" class="sidebar-nav flex-column">
   <li class="sidebarTitle">{{sidebar[0].product}} {{sidebar[0].version}}</li>
-  {% for entry in sidebar %}
-  {% for folder in entry.folders %}
-  {% if folder.output contains "web" %}
   
-  {% assign page_url_clean = page.url | remove_first: "/" %}
-  {% if folder.url %}
-    {% assign folder_url_clean = folder.url | remove_first: "/" %}
-    <!-- Parent menu item has url and no folderitems -->
-    <li class="nav-item">
-      <a class="nav-link {% if page_url_clean == folder_url_clean %}active{% endif %}" title="{{folder.title}}" href="{{folder.url | remove_first: "/"}}">{{folder.title}}</a>
-    </li>
-  {% else %}
-    <!-- Parent menu item has folderitems -->
-    {% assign folder_id = folder.title | slugify | prepend: "sb-" %}
-    {% if folder_id == "sb-" %}{% assign folder_id = forloop.index | prepend: "sb-folder-" %}{% endif %}
-    
-    {% assign any_active = false %}
-    {% for folderitem in folder.folderitems %}
-      {% assign f_item_url_clean = folderitem.url | remove_first: "/" %}
-      {% if page_url_clean == f_item_url_clean %}{% assign any_active = true %}{% endif %}
-      {% for subfolders in folderitem.subfolders %}
-        {% for subfolderitem in subfolders.subfolderitems %}
-          {% assign s_item_url_clean = subfolderitem.url | remove_first: "/" %}
-          {% if page_url_clean == s_item_url_clean %}{% assign any_active = true %}{% endif %}
-        {% endfor %}
-      {% endfor %}
+  {% for entry in sidebar %}
+    {% for folder in entry.folders %}
+      {% if folder.output contains "web" %}
+        {% include sidebar_recursive.html item=folder level=1 parent_id="mysidebar" %}
+      {% endif %}
     {% endfor %}
-    
-    <li class="nav-item">
-      <a class="nav-link {% if any_active %}active{% else %}collapsed{% endif %}" title="{{folder.title}}" 
-         data-bs-toggle="collapse" href="#{{folder_id}}" role="button" aria-expanded="{% if any_active %}true{% else %}false{% endif %}">
-         {{folder.title}}
-      </a>
-      <ul class="collapse {% if any_active %}show{% endif %} sidebar-nav flex-column" id="{{folder_id}}" data-bs-parent="#mysidebar">
-        {% for folderitem in folder.folderitems %}
-        {% if folderitem.output contains "web" %}
-        
-        {% if folderitem.external_url %}
-          <li class="nav-item"><a class="nav-link" title="{{folderitem.title}}" href="{{folderitem.external_url}}" target="_blank" rel="noopener">{{folderitem.title}}</a></li>
-        {% elsif folderitem.type == "empty" %}
-          <li class="nav-item"><a class="nav-link" title="{{folderitem.title}}" href="{{folderitem.url | remove_first: "/"}}">{{folderitem.title}}</a></li>
-        {% else %}
-          <li class="nav-item">
-            {% assign f_item_url_clean = folderitem.url | remove_first: "/" %}
-            {% assign subfolder_id = folder_id | append: "-" | append: forloop.index %}
-            {% assign sub_active = false %}
-            {% if page_url_clean == f_item_url_clean %}{% assign sub_active = true %}{% endif %}
-            {% for subfolders in folderitem.subfolders %}
-              {% for subfolderitem in subfolders.subfolderitems %}
-                {% assign s_item_url_clean = subfolderitem.url | remove_first: "/" %}
-                {% if page_url_clean == s_item_url_clean %}{% assign sub_active = true %}{% endif %}
-              {% endfor %}
-            {% endfor %}
-
-            {% if folderitem.subfolders.size > 0 %}
-              <a class="nav-link {% if sub_active %}active{% else %}collapsed{% endif %}" title="{{folderitem.title}}" 
-                 data-bs-toggle="collapse" href="#{{subfolder_id}}" role="button" aria-expanded="{% if sub_active %}true{% else %}false{% endif %}">
-                 {{folderitem.title}}
-              </a>
-              <ul class="collapse {% if sub_active %}show{% endif %} sidebar-nav flex-column" id="{{subfolder_id}}" data-bs-parent="#{{folder_id}}">
-                {% if folderitem.url %}
-                  <li class="nav-item"><a class="nav-link {% if page_url_clean == f_item_url_clean %}active{% endif %}" title="{{folderitem.title}}" href="{{folderitem.url | remove_first: "/"}}">{{folderitem.title}} Overview</a></li>
-                {% endif %}
-                {% for subfolders in folderitem.subfolders %}
-                {% if subfolders.output contains "web" %}
-                  <li class="nav-item subfolders">
-                    <span class="nav-link disabled text-uppercase small">{{ subfolders.title }}</span>
-                    <ul class="sidebar-nav flex-column">
-                      {% for subfolderitem in subfolders.subfolderitems %}
-                      {% if subfolderitem.output contains "web" %}
-                        {% assign s_item_url_clean = subfolderitem.url | remove_first: "/" %}
-                        <li class="nav-item">
-                          <a class="nav-link {% if page_url_clean == s_item_url_clean %}active{% endif %}" title="{{subfolderitem.title}}" href="{{subfolderitem.url | remove_first: "/"}}">{{subfolderitem.title}}</a>
-                        </li>
-                      {% endif %}
-                      {% endfor %}
-                    </ul>
-                  </li>
-                {% endif %}
-                {% endfor %}
-              </ul>
-            {% else %}
-              <a class="nav-link {% if page_url_clean == f_item_url_clean %}active{% endif %}" title="{{folderitem.title}}" href="{{folderitem.url | remove_first: "/"}}">{{folderitem.title}}</a>
-            {% endif %}
-          </li>
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-      </ul>
-    </li>
-  {% endif %}
-  {% endif %}
-  {% endfor %}
   {% endfor %}
 </ul>
 </nav>

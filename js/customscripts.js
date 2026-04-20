@@ -15,6 +15,14 @@ $( document ).ready(function() {
      */
     anchors.add('main h2:not(.no-anchor),main h3:not(.no-anchor),main h4:not(.no-anchor),main h5:not(.no-anchor)');
 
+    /**
+     * Sidebar accordion for leaf items
+     */
+    $('.sidebar-nav a.nav-link:not([data-bs-toggle="collapse"])').on('click', function() {
+        var $parentUl = $(this).closest('ul');
+        $parentUl.find('.collapse.show').collapse('hide');
+    });
+
 });
 
 // needed for nav tabs on pages.

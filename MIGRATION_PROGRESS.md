@@ -23,21 +23,21 @@ The migration from Bootstrap 3.x to Bootstrap 5.3.8 is currently in progress. Th
     - Updated dropdowns to use BS5 `data-bs-toggle="dropdown"`.
     - Removed redundant `role` and `aria` attributes to let BS5 manage state natively.
 
-### 3. Sidebar Migration (`_includes/sidebar.html` & JS)
-- **Modernization**: Replaced `navgoco` jQuery plugin with Bootstrap 5 `collapse`.
-- **Logic**:
-    - Re-implemented the sidebar using nested `ul.collapse` and `data-bs-toggle="collapse"`.
-    - Added `data-bs-parent` to ensure accordion behavior (only one Level 1 section open at a time).
-    - Fixed highlighting logic:
-        - **Level 1 (Open)**: Blue (`#347DBE`).
-        - **Level 2 (Open)**: Orange (`#ED762C`).
-        - **Hover (All Levels)**: Orange (`#ED762C`).
-        - **Active (Collapsed or non-toggler)**: Gray (`#8D8D8D`).
-    - Updated `js/customscripts.js` to handle tooltips and tabs using BS5 data attributes (`data-bs-*`).
+### 3. Sidebar Migration (`_includes/sidebar.html`, `_includes/sidebar_recursive.html` & JS)
+- **Modernization**: Replaced `navgoco` jQuery plugin with a custom recursive Bootstrap 5 `collapse` implementation.
+- **Recursive Logic**:
+    - Introduced `sidebar_recursive.html` to handle arbitrary nesting depths (Level 1 to 4+).
+    - Implemented a robust `any_active` check to ensure the correct path is expanded on page load.
+    - Used unique ID generation and nested `div` containers to ensure perfect accordion behavior across all levels.
+- **Highlighting & Logic**:
+    - **Level 1 (Open)**: Blue (`#347DBE`).
+    - **Level 2, 3, 4 (Open)**: Orange (`#ED762C`).
+    - **Hover (All Levels)**: Orange (`#ED762C`).
+    - **Active Page (Leaf or Collapsed)**: Gray (`#8D8D8D`).
+    - Added JS to ensure that clicking a leaf link automatically collapses open siblings, maintaining "exclusive focus."
 - **Cleanup**:
-    - Removed all legacy `navgoco` scripts and CSS overrides.
-    - Decoupled sidebar from `.nav` class to avoid legacy CSS conflicts, using unique `.sidebar-nav` class instead.
-    - Reset `ul` padding and margins for clean nesting.
+    - Decoupled sidebar from the legacy `.nav` class to prevent CSS conflicts.
+    - Removed all `navgoco` dependencies.
 
 ### 4. Landing Page Updates (`content/index.html`)
 - **Full Card Migration**: Converted all remaining `.panel` elements to `.card` elements in `content/index.html`.
