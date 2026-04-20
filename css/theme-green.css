@@ -25,11 +25,11 @@ div.navbar-collapse .dropdown-menu > li > a:hover {
     background-color: #72ac4a;
 }
 
-.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
+.navbar .navbar-nav>li>a, .navbar .navbar-brand {
     color: white;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover, a.fa.fa-home.fa-lg.navbar-brand:hover {
+.navbar .navbar-nav>li>a:hover, a.fa.fa-home.fa-lg.navbar-brand:hover {
      color: #f0f0f0;
 }
 
@@ -39,28 +39,30 @@ div.navbar-collapse .dropdown-menu > li > a:hover {
     font-weight: bold;
 }
 
-a[data-toggle="tooltip"] {
+a[data-bs-toggle="tooltip"] {
     color: #649345;
     font-style: italic;
     cursor: default;
 }
 
-.navbar-inverse {
+.navbar {
     background-color: #72ac4a;
     border-color: #5b893c;
+    padding: 0 !important;
+    margin: 0 0 20px 0;
 }
 
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+.navbar .navbar-nav > .show > a, .navbar .navbar-nav > .show > a:hover, .navbar .navbar-nav > .show > a:focus {
     color: #5b893c;
 }
 
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+.navbar .navbar-nav > .show > a, .navbar .navbar-nav > .show > a:hover, .navbar .navbar-nav > .show > a:focus {
     background-color: #5b893c;
     color: #ffffff;
 }
 
 /* not sure if using this ...*/
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+.navbar .navbar-collapse, .navbar .navbar-form {
     border-color: #72ac4a !important;
 }
 
@@ -74,7 +76,7 @@ a[data-toggle="tooltip"] {
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
-.open .dropdown-toggle.btn-primary {
+.show .dropdown-toggle.btn-primary {
     background-color: #72ac4a;
     border-color: #5b893c;
 }
@@ -105,6 +107,26 @@ li.sidebarTitle {
     margin-left: 5px;
 }
 
-.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+.navbar .navbar-toggler:focus, .navbar .navbar-toggler:hover {
     background-color: #E50E51;
+}
+
+.navbar .navbar-toggler {
+    border-color: #5b893c;
+    border: 1px solid #5b893c;
+    padding: 9px 10px;
+}
+
+.navbar-toggler .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+.navbar-toggler .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
+
+.navbar .navbar-toggler .icon-bar {
+    background-color: white;
 }

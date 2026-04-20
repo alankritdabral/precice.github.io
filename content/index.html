@@ -18,7 +18,7 @@ layout: landing_page
         <h2 class="subtitle no-anchor">The coupling library for partitioned multi-physics simulations.</h2>
         <div class="action-button-container">
           <span id="github-button">
-            <a href="https://github.com/precice/precice/" class="btn btn-default no-icon action-button" role="button">Star on Github &nbsp;<i class="fas fa-star"></i></a>
+            <a href="https://github.com/precice/precice/" class="btn btn-outline-secondary no-icon action-button" role="button">Star on Github &nbsp;<i class="fas fa-star"></i></a>
           </span>
           <span id="latest-release">
             <!-- This will be replaced by the handleResponse() when the page is loaded -->
@@ -30,7 +30,7 @@ layout: landing_page
     </div>
 
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-lg-6">
         <p>
           preCICE is an <strong>open-source coupling library and ecosystem</strong> for general partitioned multi-physics and multi-scale simulations, including surface and volume coupling.
         </p>
@@ -41,8 +41,8 @@ layout: landing_page
           The software offers convenient methods for transient equation coupling, communication, time interpolation, and data mapping.
         </p>
       </div>
-      <div class="col-md-6">
-        <img class="img-responsive col-xs-12" src="images/lead-image-precice.svg" alt="visualisation of how preCICE couples different solvers">
+      <div class="col-lg-6">
+        <img class="img-fluid col-12" src="images/lead-image-precice.svg" alt="visualisation of how preCICE couples different solvers">
         <!-- https://stackoverflow.com/questions/21943108/bootstrap-3-img-responsive-images-are-not-responsive-inside-fieldset-in-firefox -->
       </div>
     </div>
@@ -55,7 +55,7 @@ layout: landing_page
   <div class="container">
     <h2 class="section-header text-center">Latest news</h2>
 
-    <div id="news-container" class="row equal">
+    <div id="news-container" class="row g-4">
       <!-- News cards will be inserted dynamically -->
       <p id="loading-news">Loading latest news...</p>
     </div>
@@ -87,15 +87,15 @@ layout: landing_page
     </div>
 
     <div class="row equal">
-      <div class="col-md-3 col-sm-6 col-flex">
-        <div class="image-holder usp">
-          <img class="img-responsive center-block" src="images/usp/usp-minimal.svg" alt="non-invasive integration">
+      <div class="col-lg-3 col-md-6 col-flex">
+        <div class="image-holder usp mb-3">
+          <img class="img-fluid mx-auto d-block" src="images/usp/usp-minimal.svg" alt="non-invasive integration">
         </div>
-        <div class="panel panel-primary panel-precice usp">
-          <div class="panel-heading-precice text-left">
+        <div class="card card-primary card-precice usp h-100">
+          <div class="card-header card-header-precice text-left">
             <strong>Minimally invasive integration</strong>
           </div>
-          <div class="panel-body">
+          <div class="card-body">
             <ul class="usp">
               <li class="usp">Elegant library approach</li>
               <li class="usp">High-level API in C++, C, Fortran, Python, Matlab</li>
@@ -104,15 +104,15 @@ layout: landing_page
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6 col-flex">
-        <div class="image-holder usp">
-          <img class="img-responsive center-block" src="images/usp/usp-arbitrary.svg" alt="Coupling of programs">
+      <div class="col-lg-3 col-md-6 col-flex">
+        <div class="image-holder usp mb-3">
+          <img class="img-fluid mx-auto d-block" src="images/usp/usp-arbitrary.svg" alt="Coupling of programs">
         </div>
-        <div class="panel panel-primary panel-precice usp">
-          <div class="panel-heading-precice text-left">
+        <div class="card card-primary card-precice usp h-100">
+          <div class="card-header card-header-precice text-left">
             <strong>Coupling of arbitrary many programs</strong>
           </div>
-          <div class="panel-body">
+          <div class="card-body">
             <ul class="usp">
               <li class="usp">Arbitrary combinations of strong and weak interactions</li>
               <li class="usp">Arbitrary many solvers</li>
@@ -121,15 +121,15 @@ layout: landing_page
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6 col-flex">
-        <div class="image-holder usp">
-          <img class="img-responsive center-block" src="images/usp/usp-numerics.svg" alt="numerical methods">
+      <div class="col-lg-3 col-md-6 col-flex">
+        <div class="image-holder usp mb-3">
+          <img class="img-fluid mx-auto d-block" src="images/usp/usp-numerics.svg" alt="numerical methods">
         </div>
-        <div class="panel panel-primary panel-precice usp">
-          <div class="panel-heading-precice text-left">
+        <div class="card card-primary card-precice usp h-100">
+          <div class="card-header card-header-precice text-left">
             <strong>State-of-the-art numerical methods</strong>
           </div>
-          <div class="panel-body">
+          <div class="card-body">
             <ul class="usp">
               <li class="usp">Robust quasi-Newton acceleration</li>
               <li class="usp">Radial-basis function data mapping</li>
@@ -138,15 +138,15 @@ layout: landing_page
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6 col-flex">
-        <div class="image-holder usp">
-          <img class="img-responsive center-block" src="images/usp/usp-scalability.svg" alt="scalability">
+      <div class="col-lg-3 col-md-6 col-flex">
+        <div class="image-holder usp mb-3">
+          <img class="img-fluid mx-auto d-block" src="images/usp/usp-scalability.svg" alt="scalability">
         </div>
-        <div class="panel panel-primary panel-precice usp">
-          <div class="panel-heading-precice text-left">
+        <div class="card card-primary card-precice usp h-100">
+          <div class="card-header card-header-precice text-left">
             <strong>Scalability up to complete supercomputers</strong>
           </div>
-          <div class="panel-body">
+          <div class="card-body">
             <ul class="usp">
               <li class="usp">Pure peer-to-peer approach</li>
               <li class="usp">Support of heterogenous hardware (CPU/GPU)</li>
@@ -178,40 +178,40 @@ layout: landing_page
     </div>
 
     <div class="row equal">
-      <div class="col-md-2 col-md-4 col-xs-6 col-flex">
-        <a class="adapter" href="adapter-openfoam-overview.html"><div class="panel panel-primary panel-body full-height text-center">
-          <img class="img-responsive adapter center-block" src="images/logo/logo-openfoam.png" alt="openFOAM logo" title="Couple with openFOAM">
+      <div class="col-lg-2 col-md-4 col-6 col-flex">
+        <a class="adapter" href="adapter-openfoam-overview.html"><div class="card card-primary card-body full-height text-center">
+          <img class="img-fluid adapter mx-auto d-block" src="images/logo/logo-openfoam.png" alt="openFOAM logo" title="Couple with openFOAM">
           <p>OpenFOAM &nbsp;<i class="fas fa-chevron-right"></i></p>
         </div></a>
       </div>
-      <div class="col-md-2 col-md-4 col-xs-6 col-flex">
-        <a class="adapter" href="adapter-calculix-overview.html"><div class="panel panel-primary panel-body full-height text-center">
-          <img class="img-responsive adapter center-block" src="images/logo/logo-calculix.png" alt="CalculiX logo" title="Couple with CalculiX">
+      <div class="col-lg-2 col-md-4 col-6 col-flex">
+        <a class="adapter" href="adapter-calculix-overview.html"><div class="card card-primary card-body full-height text-center">
+          <img class="img-fluid adapter mx-auto d-block" src="images/logo/logo-calculix.png" alt="CalculiX logo" title="Couple with CalculiX">
           <p>CalculiX &nbsp;<i class="fas fa-chevron-right"></i></p>
         </div></a>
       </div>
-      <div class="col-md-2 col-md-4 col-xs-6 col-flex">
-        <a class="adapter" href="adapter-fenics.html"><div class="panel panel-primary panel-body full-height text-center">
-          <img class="img-responsive adapter center-block" src="images/logo/logo-fenics.png" alt="FEniCS logo" title="Couple with FEniCS">
+      <div class="col-lg-2 col-md-4 col-6 col-flex">
+        <a class="adapter" href="adapter-fenics.html"><div class="card card-primary card-body full-height text-center">
+          <img class="img-fluid adapter mx-auto d-block" src="images/logo/logo-fenics.png" alt="FEniCS logo" title="Couple with FEniCS">
           <p>FEniCS &nbsp;<i class="fas fa-chevron-right"></i></p>
         </div></a>
       </div>
-      <div class="col-md-2 col-md-4 col-xs-6 col-flex">
-        <a class="adapter" href="adapter-dealii-overview.html"><div class="panel panel-primary panel-body full-height text-center">
-          <img class="img-responsive adapter center-block" src="images/logo/logo-dealii.png" alt="deal.II logo" title="Couple with deal.II">
+      <div class="col-lg-2 col-md-4 col-6 col-flex">
+        <a class="adapter" href="adapter-dealii-overview.html"><div class="card card-primary card-body full-height text-center">
+          <img class="img-fluid adapter mx-auto d-block" src="images/logo/logo-dealii.png" alt="deal.II logo" title="Couple with deal.II">
           <p>deal.II &nbsp;<i class="fas fa-chevron-right"></i></p>
         </div></a>
       </div>
-      <div class="col-md-2 col-md-4 col-xs-6 col-flex">
-        <a class="adapter" href="adapter-nutils.html"><div class="panel panel-primary panel-body full-height text-center">
-          <img class="img-responsive adapter center-block" src="images/logo/logo-nutils.png" alt="Nutils logo" title="Couple with Nutils">
+      <div class="col-lg-2 col-md-4 col-6 col-flex">
+        <a class="adapter" href="adapter-nutils.html"><div class="card card-primary card-body full-height text-center">
+          <img class="img-fluid adapter mx-auto d-block" src="images/logo/logo-nutils.png" alt="Nutils logo" title="Couple with Nutils">
           <p>Nutils &nbsp;<i class="fas fa-chevron-right"></i></p>
         </div></a>
       </div>
-      <div class="col-md-2 col-md-4 col-xs-6 text-center">
+      <div class="col-lg-2 col-md-4 col-6 text-center">
         <a class="adapter" href="adapters-overview.html">
-          <div class="img-equivalent vertical-align center-block">
-            <i class="fas fa-chevron-right fa-4x blue center-block"></i>
+          <div class="img-equivalent vertical-align mx-auto d-block">
+            <i class="fas fa-chevron-right fa-4x blue mx-auto d-block"></i>
           </div>
         </a>
         <a href="adapters-overview.html" class="adapter" role="button">All adapters &nbsp;<i class="fas fa-chevron-right"></i></a>
@@ -235,8 +235,8 @@ layout: landing_page
       </div>
 
       <div class="row equal">
-        <div class="col-md-4 col-flex">
-          <div class="panel panel-primary panel-body full-height">
+        <div class="col-lg-4 col-flex">
+          <div class="card card-primary card-body full-height">
             <p class="quote"><a href="community-projects.html#evaluation-of-heart-balve-biomechanics"><i class="fas fa-quote-left"></i>We are using preCICE as it can handle numerical simulations of large sizes with ease as opposed to previous in-house couplers.<i class="fas fa-quote-right"></i></a></p>
             <div class="vertical-align">
               <img class="testimonial" src="images/testimonial_kyle_square.jpg" alt="simulation biomechanics">
@@ -247,8 +247,8 @@ layout: landing_page
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-flex">
-          <div class="panel panel-primary panel-body full-height">
+        <div class="col-lg-4 col-flex">
+          <div class="card card-primary card-body full-height">
             <p class="quote"><a href="community-projects.html#fluid-structure-interaction-on-flapping-wings"><i class="fas fa-quote-left"></i>The large number of coupling functionalities in preCICE gives the user the opportunity to build advanced and scalable simulations with ease.<i class="fas fa-quote-right"></i></a></p>
             <div class="vertical-align">
               <img class="testimonial" src="images/testimonial_derek_square.jpg" alt="simulation aerodynamics">
@@ -259,8 +259,8 @@ layout: landing_page
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-flex">
-          <div class="panel panel-primary panel-body full-height">
+        <div class="col-lg-4 col-flex">
+          <div class="card card-primary card-body full-height">
             <p class="quote"><a href="community-projects.html#hybrid-simulation-methods-for-wind-modelling-in-urban-areas"><i class="fas fa-quote-left"></i>With preCICE, we could realize an efficient CPU-GPU coupling of our in-house lattice Boltzmann solver and OpenFOAM.<i class="fas fa-quote-right"></i></a></p>
             <div class="vertical-align">
               <img class="testimonial" src="images/testimonial_manchester_square.jpg" alt="simulation cpu-gpu">
@@ -295,20 +295,20 @@ layout: landing_page
     </div>
 
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-lg-6">
         <p>preCICE has been developed by three generations of doctoral candidates from the <a href="https://www.cs.cit.tum.de/en/sccs/home/">Chair of Scientific Computing</a> at the <strong>Technical University of Munich</strong> and from the <a href="https://www.ipvs.uni-stuttgart.de/">Institute for Parallel and Distributed Systems</a> at the <strong>University of Stuttgart</strong>. We develop everything openly on GitHub, the preCICE library is licensed under LGPLv3, and every other component is developed under compatible free software licenses. <a href="fundamentals-license.html">More information.</a></p>
         <p>You can <strong>cite the preCICE library</strong> using the following paper. Please also consider citing the adapters you use, as well as the <a href="installation-distribution.html">preCICE Distribution</a> for <strong>reproducibility</strong>. You can find the respective references in our <a href="fundamentals-literature-guide.html">literature guide</a>.</p>
       </div>
-      <div class="col-md-6 equal vertical-align">
-        <div class="col-md-4 col-xs-4 col-flex">
-          <a class="no-icon" href="https://www.cs.cit.tum.de/en/sccs/home/"><img class="img-responsive center-block uni-logo" src="images/logo/logo_tum_400px.png" alt="TUM logo"></a>
+      <div class="col-lg-6 equal vertical-align">
+        <div class="col-lg-4 col-4 col-flex">
+          <a class="no-icon" href="https://www.cs.cit.tum.de/en/sccs/home/"><img class="img-fluid mx-auto d-block uni-logo" src="images/logo/logo_tum_400px.png" alt="TUM logo"></a>
         </div>
-        <div class="col-md-4 col-xs-4 col-flex">
-          <a class="no-icon" href="https://www.ipvs.uni-stuttgart.de/"><img class="img-responsive center-block uni-logo" src="images/logo/logo_stuttgart_400px.png" alt="Uni Stuttgart logo"></a>
+        <div class="col-lg-4 col-4 col-flex">
+          <a class="no-icon" href="https://www.ipvs.uni-stuttgart.de/"><img class="img-fluid mx-auto d-block uni-logo" src="images/logo/logo_stuttgart_400px.png" alt="Uni Stuttgart logo"></a>
         </div>
-        <div class="col-md-4 col-xs-4 col-flex">
+        <div class="col-lg-4 col-4 col-flex">
           <a class="no-icon github-link" href="https://github.com/precice/precice">
-            <div class="img-equivalent-uni-logo text-center center-block">
+            <div class="img-equivalent-uni-logo text-center mx-auto d-block">
               <i class="fab fa-github fa-4x"></i>
               <p><strong>preCICE on Github</strong></p>
             </div>
@@ -318,26 +318,26 @@ layout: landing_page
     </div>
 
     <div class="row">
-      <div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-0 hidden-xs text-center">
+      <div class="col-lg-3 offset-lg-1 col-md-3 offset-md-0 d-none d-sm-block text-center">
         <a class="book-container no-icon" href="https://doi.org/10.12688/openreseurope.14445.2" target="_blank" rel="noreferrer noopener">
-          <div class="book center-block">
+          <div class="book mx-auto d-block">
             <img class="no-margin" alt="preCICE reference paper" src="images/paper-v2-thumbnail.jpg" title="preCICE v2: A sustainable and user-friendly coupling library">
           </div>
         </a>
       </div>
-      <div class="col-md-7 col-sm-9 col-xs-12">
-        <div class="panel panel-primary panel-precice">
-          <div class="panel-heading-precice">
+      <div class="col-lg-7 col-md-9 col-12">
+        <div class="card card-primary card-precice">
+          <div class="card-header card-header-precice">
             <strong>preCICE v2: A sustainable and user-friendly coupling library</strong>
           </div>
-          <div class="panel-body">
+          <div class="card-body">
             <p><em>Gerasimos Chourdakis, Kyle Davis, Benjamin Rodenberg, Miriam Schulte, Frédéric Simonis, Benjamin Uekermann et al.</em>, <strong>2022</strong>. In Open Research Europe, 2:51.</p>
             <a href="https://doi.org/10.12688/openreseurope.14445.2">Publisher's Site</a>&nbsp;&nbsp;
             <a href="assets/precice-v2.bib">Download BibTeX &nbsp;<i class="fas fa-download"></i></a>
           </div>
         </div>
-        <a href="{{ site.precice_v2_citations_url }}" class="btn btn-default no-icon literature-link" role="button">Citations of preCICE v2 paper ({{ site.precice_v2_citations }}) &nbsp;<i class="fas fa-chevron-right"></i></a>
-        <a href="{{ site.precice_v1_citations_url }}" class="btn btn-default no-icon literature-link" role="button">preCICE v1 ({{ site.precice_v1_citations }}) &nbsp;<i class="fas fa-chevron-right"></i></a>
+        <a href="{{ site.precice_v2_citations_url }}" class="btn btn-outline-secondary no-icon literature-link" role="button">Citations of preCICE v2 paper ({{ site.precice_v2_citations }}) &nbsp;<i class="fas fa-chevron-right"></i></a>
+        <a href="{{ site.precice_v1_citations_url }}" class="btn btn-outline-secondary no-icon literature-link" role="button">preCICE v1 ({{ site.precice_v1_citations }}) &nbsp;<i class="fas fa-chevron-right"></i></a>
         <a href="fundamentals-literature-guide.html" class="btn btn-primary literature-link" role="button">Literature guide &nbsp;<i class="fas fa-chevron-right"></i></a>
       </div>
     </div>
@@ -358,7 +358,7 @@ layout: landing_page
       </div>
 
       <div class="row equal">
-        <div class="col-md-8 col-flex">
+        <div class="col-lg-8 col-flex">
           <p>We develop everything in the open, with continuous feedback by a vivid community. Be part of it:</p>
           <ul>
             <li><strong>Ask for help and help others</strong> in the <a href="https://precice.discourse.group/">preCICE forum</a> and register to receive news.</li>
@@ -377,7 +377,7 @@ layout: landing_page
             </li>
           </ul>
         </div>
-        <div class="col-md-4 col-flex">
+        <div class="col-lg-4 col-flex">
           <b>The quarterly preCICE newsletter</b>
           {% include newsletter.html %}
         </div>
@@ -399,7 +399,7 @@ layout: landing_page
       </div>
 
       <div class="row equal">
-        <div class="col-md-8 col-flex">
+        <div class="col-lg-8 col-flex">
           <p>As the developers of preCICE, we enjoy supporting our academic and industry users, but due to the growing demand, we are not able to service all support requests any more. We are introducing <strong>preCICE support</strong> as a way to contribute to sustainable open-source software development and to ensure preCICE is developed and maintained in the future. Supporting preCICE comes with several benefits:</p>
           <ul>
             <li><strong>Increased success rate</strong> for your research proposal (include preCICE as a partner, software provider, or sub-contractor)</li>
@@ -409,10 +409,10 @@ layout: landing_page
           <p>We offer different levels of support for industry and academia.</p>
         </div>
 
-        <div class="col-md-4 col-flex">
-          <div class="panel panel-primary panel-body full-height">
+        <div class="col-lg-4 col-flex">
+          <div class="card card-primary card-body full-height">
             <div class="vertical-align">
-              <img class="img-responsive center-block precice-support" src="images/precice-support.svg" alt="precice support program logo">
+              <img class="img-fluid mx-auto d-block precice-support" src="images/precice-support.svg" alt="precice support program logo">
             </div>
           </div>
         </div>
@@ -441,34 +441,34 @@ layout: landing_page
       </div>
 
       <div class="row equal">
-        <div class="col-md-4 col-sm-6 col-flex">
-          <div class="panel panel-primary panel-precice usp">
-            <div class="panel-heading-precice text-left">
+        <div class="col-lg-4 col-md-6 col-flex">
+          <div class="card card-primary card-precice usp h-100">
+            <div class="card-header card-header-precice text-left">
               <strong>Can preCICE be used for volume coupling?</strong>
             </div>
-            <div class="panel-body">
+            <div class="card-body">
               <p>Yes. In preCICE v3 there have been many changes and improvements regarding large meshes. The following has ...</p>
               <a class="no-icon" href="https://precice.discourse.group/t/can-precice-be-used-for-volume-coupling/27/9">Learn more &nbsp;<i class="fas fa-chevron-right"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 col-flex">
-          <div class="panel panel-primary panel-precice usp">
-            <div class="panel-heading-precice text-left">
+        <div class="col-lg-4 col-md-6 col-flex">
+          <div class="card card-primary card-precice usp h-100">
+            <div class="card-header card-header-precice text-left">
               <strong>What are best practices to write a new adapter?</strong>
             </div>
-            <div class="panel-body">
+            <div class="card-body">
               <p>There are <a href="community-guidelines-adapters.html">guidelines for adapters</a>, as well as for <a href="community-guidelines-application-cases.html">application cases</a>, as part of the ecosystem standardization ...</p>
               <a class="no-icon" href="https://precice.discourse.group/t/what-are-best-practices-to-write-a-new-adapter/44/3">Learn more &nbsp;<i class="fas fa-chevron-right" ></i></a>
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 col-flex">
-          <div class="panel panel-primary panel-precice usp">
-            <div class="panel-heading-precice text-left">
+        <div class="col-lg-4 col-md-6 col-flex">
+          <div class="card card-primary card-precice usp h-100">
+            <div class="card-header card-header-precice text-left">
               <strong>Can preCICE be used for one-way coupling?</strong>
             </div>
-            <div class="panel-body">
+            <div class="card-body">
               <p>Yes! Several people are doing this already. Even though there may be other ways to do one-way coupling, it may ...</p>
               <a class="no-icon" href="https://precice.discourse.group/t/can-precice-be-used-for-one-way-coupling/28/2">Learn more &nbsp;<i class="fas fa-chevron-right"></i></a>
             </div>
@@ -503,28 +503,23 @@ layout: landing_page
       </div>
     </div>
 
-    {% assign logowall = site.data.logowall %}
-
-    {% for row in logowall %}
-    <div class="row no-margin">
-    {% for column in row.columns %}
-      <div class="col-md-6 col-xs-12 no-padding">
-    {% for logo in column.logos %}
-        <div class="col-md-3 col-sm-3 col-xs-3 text-center"> <!--  vertical-align -->
-          <a href="{{logo.link}}" class="logo no-icon">
-            <div class="logo-holder vertical-align "> <!-- center-block -->
-              <img class="img-responsive center-block" src="images/logo/{{logo.logo}}" alt="{{logo.name}}, {{logo.country}}"
-             loading="lazy">
-            </div>
-            <p class="institution">{{logo.name}}</p>
-            <p class="country">{{logo.country}}</p>
-          </a>
-        </div>
-    {% endfor %}
-      </div>
+    <div class="d-flex flex-wrap justify-content-center">
+    {% for r in site.data.logowall %}
+      {% for c in r.columns %}
+        {% for l in c.logos %}
+          <div style="width: 150px; margin: 10px;" class="text-center">
+            <a href="{{ l.link }}" class="logo no-icon">
+              <div class="logo-holder vertical-align">
+                <img class="img-fluid mx-auto d-block" src="images/logo/{{ l.logo }}" alt="{{ l.name }}, {{ l.country }}" loading="lazy">
+              </div>
+              <p class="institution">{{ l.name }}</p>
+              <p class="country">{{ l.country }}</p>
+            </a>
+          </div>
+        {% endfor %}
+      {% endfor %}
     {% endfor %}
     </div>
-    {% endfor %}
 
     <div class="row">
       <div class="col-lg-12">
@@ -560,20 +555,20 @@ layout: landing_page
 
       <div class="row">
         <div class="col-lg-12">
-          <div class="hidden-sm hidden-xs">
+          <div class="d-none d-md-block">
             <script id="asciicast-RqGhiiS8jf2fKTaXgiNn73B1G" src="https://asciinema.org/a/RqGhiiS8jf2fKTaXgiNn73B1G.js" data-size="small" async></script>
           </div>
-          <div class="visible-sm visible-xs" style="margin-bottom: 5px;">
-            <a class="no-icon" href="https://asciinema.org/a/RqGhiiS8jf2fKTaXgiNn73B1G" target="_blank"><img class="img-responsive center-block" src="https://asciinema.org/a/RqGhiiS8jf2fKTaXgiNn73B1G.svg" alt="code animation"/></a>
+          <div class="d-block d-md-none" style="margin-bottom: 5px;">
+            <a class="no-icon" href="https://asciinema.org/a/RqGhiiS8jf2fKTaXgiNn73B1G" target="_blank"><img class="img-fluid mx-auto d-block" src="https://asciinema.org/a/RqGhiiS8jf2fKTaXgiNn73B1G.svg" alt="code animation"/></a>
           </div>
         </div>
       </div>
 
       <div class="row">
         <div class="col-lg-12">
-          <a href="community-channels.html" class="btn btn-default next-steps-link no-icon"
+          <a href="community-channels.html" class="btn btn-outline-secondary next-steps-link no-icon"
             role="button">Follow preCICE &nbsp;<i class="fas fa-chevron-right"></i></a>
-          <a href="https://precice.discourse.group/c/what-is/9" class="btn btn-default next-steps-link no-icon"
+          <a href="https://precice.discourse.group/c/what-is/9" class="btn btn-outline-secondary next-steps-link no-icon"
             role="button">Is preCICE for me? &nbsp;<i class="fas fa-chevron-right"></i></a>
           <a href="quickstart.html" class="btn btn-primary next-steps-link no-icon"
             role="button">Run this tutorial yourself &nbsp;<i class="fas fa-chevron-right"></i></a>
