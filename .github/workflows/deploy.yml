@@ -108,3 +108,5 @@ jobs:
         with:
           github_token: ${{ secrets.JEKYLL_PAT }}
           publish_dir: ./public
+          keep_files: false
+          exclude_assets: pr-preview

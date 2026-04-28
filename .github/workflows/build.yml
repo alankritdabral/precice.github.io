@@ -13,20 +13,23 @@ jobs:
       - name: Setup python
         uses: actions/setup-python@v6
         with:
-         python-version: '3.x'
+          python-version: '3.x'
       - name: Run pre-commit
         uses: pre-commit/action@v3.0.1
 
   build:
     needs: pre-commit
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
+      - name: Checkout (root) # Checkout at root (for git + deploy actions)
+        uses: actions/checkout@v4
+      - name: Checkout (website folder) # Second checkout into /website (for build)
+        uses: actions/checkout@v4
         with:
+          path: website
           submodules: true
           lfs: false
-          path: website
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
@@ -42,3 +45,10 @@ jobs:
           name: site
           path: website/_site
           if-no-files-found: error
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: website/_site
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview
+          qr-code: true
