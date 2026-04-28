@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="This tutorial describes how to run a fluid-structure interaction using preCICE and any fluid-solid solver combination of our officially provided adapter codes.">
+
+<meta name="keywords" content=" fluid-structure interaction, FSI, OpenFOAM, FEniCS, Nutils, deal.II, Calculix, SU2,">
+<meta name="theme-color" content="#0A76BB">
+<meta name="msapplication-square310x310logo" content="images/icon-310x310.png">
+
+<title>Perpendicular flap | preCICE - The Coupling Library</title>
+<link rel="alternate" type="application/rss+xml" title="" href="https://precice.org/feed.xml">
+
+<!-- OpenGraph metadata -->
+<meta property="og:title" content="Perpendicular flap" />
+<meta property="og:site_name" content="preCICE.org" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://precice.org/tutorials-perpendicular-flap.html" />
+<meta property="og:image" content="https://precice.org/images/icon-310x310.png" />
+<meta property="og:description" content="This tutorial describes how to run a fluid-structure interaction using preCICE and any fluid-solid solver combination of our officially provided adapter codes.">
+
+<!-- Twitter Card metadata -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Perpendicular flap" />
+<meta name="twitter:description" content="This tutorial describes how to run a fluid-structure interaction using preCICE and any fluid-solid solver combination of our officially provided adapter codes.">
+<meta name="twitter:image" content="https://precice.org/images/icon-310x310.png" />
+
+<!-- Canonical link -->
+<link rel="canonical" href="https://precice.org/tutorials-perpendicular-flap" >
+
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/syntax.css">
+<link rel="icon" sizes="192x192" href="images/icon.png">
+<link rel="apple-touch-icon" sizes="310x310" href="images/icon-310x310.png">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<!-- Bootstrap -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Local CSS -->
+<link rel="stylesheet" href="css/modern-business.css">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/customstyles-precice.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<link rel="stylesheet" href="css/bookcover.css">
+<!-- Color styles -->
+<link rel="stylesheet" href="css/theme-precice.css">
+<!-- Styling for landing page -->
+
+
+<!-- Jquery, Ajax -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<!-- Anchor.js -->
+<script src="https://cdn.jsdelivr.net/npm/anchor-js@4.2.0/anchor.min.js" integrity="sha256-m1eTvwEHwmsw4+XKF7BshClVJEPwTVycveNl0CS0Mkk=" crossorigin="anonymous"></script>
+
+<!-- Bootstrap JavaScript (requires jquery) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Local JS -->
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<!-- Algolia search -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.20.1/moment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+
+<!-- QR code for printed pages -->
+<script defer src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var qrDiv = document.createElement("div");
+    qrDiv.id = "print-qr-code";
+    var qr = qrcode(0, "M");
+    qr.addData("https://precice.org/tutorials-perpendicular-flap.html");
+    qr.make();
+    qrDiv.innerHTML = qr.createImgTag(3, 0);
+    document.body.appendChild(qrDiv);
+  });
+</script>
+<style>
+  #print-qr-code {
+    display: none;
+  }
+  @media print {
+    #print-qr-code {
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+    }
+  }
+</style>
+
+<!-- Plausible Analytics -->
+<script async defer data-domain="precice.org" src="https://plausible.io/js/plausible.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    <script>
+        // wrap tables into a div to make them scrollable on small viewports
+        // https://getbootstrap.com/docs/3.4/css/#tables-responsive
+        $(document).ready(function() {
+            $('table').addClass('table');
+            $('table').wrap('<div class="table-responsive"></div>');
+        });
+    </script>
+    
+</head>
+<body>
+    <header>
+        <!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" aria-label="Main">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand no-icon" href="https://precice.org">
+            <span class="navbar-brand-icon">
+            <img class="navbar-brand-text" src="images/preCICE_text_28px.svg" alt="preCICE"></span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                
+                <!-- entries without drop-downs appear here -->
+
+                
+                
+
+                
+                
+                
+                
+                
+                <li><a href="quickstart.html">Quickstart</a></li>
+                
+                
+                
+                
+                
+                <li><a href="docs.html">Docs</a></li>
+                
+                
+                
+                
+                
+                <li class="active"><a href="tutorials.html">Tutorials</a></li>
+                
+                
+                
+                
+                
+                <li><a href="community.html">Community</a></li>
+                
+                
+                
+                
+                
+                <li><a href="https://precice.discourse.group/c/news" target="_blank" rel="noopener">Blog</a></li>
+                
+                
+                
+                
+                
+                <li><a href="about.html">About</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <div id="search-input"></div>
+                        <div id="search-results"></div>
+                        <script>
+const algoliaSearch = instantsearch({
+  appId: 'LIT6P0EW26',
+  apiKey: '760ed6be3e165d08b4a798ac4aa82fe4',
+  indexName: 'jekyll',
+  searchFunction: function(helper) {          // hide search result in init query
+    var searchResults = $('#search-results');
+    if (helper.state.query === '') {
+      searchResults.hide();
+      return;
+    }
+    helper.search();
+    searchResults.show();
+  }
+});
+
+const hitTemplate = function(hit) {
+  let date = '';
+  if (hit.date) {
+    date = moment.unix(hit.date).format('MMM D, YYYY');
+  }
+
+  let url = `${hit.url}#${hit.anchor}`;
+
+  const title = hit._highlightResult.title.value;
+
+  let breadcrumbs = '';
+  if (hit._highlightResult.headings) {
+    breadcrumbs = hit._highlightResult.headings.map(match => {
+      return `<span class="result-breadcrumb">${match.value}</span>`
+    }).join(' > ')
+  }
+
+  const content = hit._highlightResult.html.value;
+
+  return `
+    <div class="result-item">
+    <h2><a class="result-link" href="${url}">${title}</a></h2>
+    <a href="${url}" class="result-breadcrumbs">${breadcrumbs}</a>
+    <div class="result-snippet">${content}</div>
+    </div>
+  `;
+}
+
+algoliaSearch.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '#search-input',
+    placeholder: 'Search (' + (/Mac|iPhone|iPad/.test(navigator.platform) ? '⌘K' : 'Ctrl+K') + ')',
+    poweredBy: true, // This is required if you're on the free Community plan
+    magnifier: false,
+    autofocus: false,
+    searchOnEnterKeyPressOnly: false,
+    reset: true
+  })
+);
+
+algoliaSearch.addWidget(
+  instantsearch.widgets.hits({
+    container: '#search-results',
+    templates: {
+      item: hitTemplate
+    }
+  })
+);
+
+algoliaSearch.start();
+
+// Patch the style of the search input bar generated by the above script
+// The equivalent CSS is below, however, including <style> in <body> is against the W3C commandments
+// Chrome and Firefox had baby called scope, but it didn't make it
+// https://stackoverflow.com/questions/2830296/using-style-tags-in-the-body-with-other-html
+var elem = document.querySelector('.ais-search-box--powered-by');
+elem.style.marginTop = '-15px';
+elem.style.paddingRight = '5px';
+
+var elem = document.querySelector('.nav li a.ais-search-box--powered-by-link');
+elem.style.padding = '0';
+elem.style.backgroundColor = 'transparent';
+elem.style.display = "inline-block";
+
+var elem = document.querySelector('.ais-search-box--input');
+elem.style.paddingLeft = '10px';
+elem.style.borderColor = '#0A76BB';
+
+var elem = document.querySelector('.ais-search-box');
+elem.style.padding = '.5em';
+elem.style.marginBottom = '0px';
+elem.style.marginLeft = '10px';
+elem.style.marginTop = '0px';
+elem.style.width = '20em';
+elem.style.fontSize = '0.8em';
+elem.style.height = '50px';
+elem.style.boxSizing = 'border-box';
+
+/*<style type="text/css">
+.ais-search-box--powered-by {
+  margin-top: -15px;
+  padding-right: 5px;
+}
+.nav li a.ais-search-box--powered-by-link {
+  padding: 0;
+  background-color: transparent;
+  display: inline-block;
+}
+.ais-search-box--input {
+  padding-left: 10px;
+  border-color: #0A76BB;
+}
+.ais-search-box {
+  padding: .5em;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-top: 0px;
+  width: 20em;
+  font-size: 0.8em;
+  box-sizing: border-box;
+  height: 50px;
+}
+</style>*/
+
+// some hacky JS to hide the search results until we move to docsearch (which is a true autocomplete-type search)
+document.addEventListener('mouseup', function(e) {
+  var results = document.getElementById('search-results');
+  if (!results.contains(e.target)) {
+    results.style.display = 'none';
+  }
+});
+document.addEventListener('mouseup', function(e) {
+  var input = document.getElementById('search-input');
+  var results = document.getElementById('search-results');
+  if (input.contains(e.target)) {
+    results.style.display = 'block';
+  }
+});
+
+// Cmd+K / Ctrl+K keyboard shortcut to focus search, Escape to dismiss
+document.addEventListener('keydown', function(e) {
+  var isMac = /Mac|iPhone|iPad|iPod/.test(navigator.platform);
+  if ((isMac ? e.metaKey : e.ctrlKey) && e.key === 'k') {
+    e.preventDefault();
+    var input = document.querySelector('.ais-search-box--input');
+    if (input) {
+      input.focus();
+      input.select();
+    }
+  }
+
+  if (e.key === 'Escape' || e.keyCode === 27) {
+    var results = document.getElementById('search-results');
+    var inputContainer = document.getElementById('search-input');
+    var activeElement = document.activeElement;
+
+    if (results) {
+      results.style.display = 'none';
+    }
+
+    if (inputContainer && inputContainer.contains(activeElement)) {
+      activeElement.blur();
+    } else if (results && results.contains(activeElement)) {
+      var algoliaInput = document.querySelector('#search-input .ais-search-box--input');
+      if (algoliaInput) {
+        algoliaInput.focus();
+      } else {
+        activeElement.blur();
+      }
+    }
+  }
+});
+
+</script>
+                    </div>
+                    <!--end search-->
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://precice.discourse.group" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Join the discourse community"><i class="fab fa-discourse"></i></a>
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://github.com/precice" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Star precice/precice on GitHub"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://www.linkedin.com/company/precice" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <!-- rel="me" required by Mastodon for verification -->
+                    <a rel="me noopener noreferrer" class="no-icon nav-external" href="https://fosstodon.org/@precice" target="_blank" data-show-count="false" aria-label="Follow us on Mastodon"><i class="fab fa-mastodon"></i></a>
+                </li>
+                <li>
+                    <a class="no-icon nav-external" href="https://www.youtube.com/c/preCICECoupling/" target="_blank" rel="noopener noreferrer" data-show-count="false" aria-label="Subscribe on Youtube"><i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+          <!-- News banner -->
+          
+
+
+
+    </header>
+    <div class="container" style="margin-bottom:50px">
+        
+        <div class="row">
+          <div class="col-md-3" id="tg-sb-sidebar">
+            
+
+<nav aria-label="Tutorials">
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">Tutorials </li>
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Introduction" href="#">Introduction</a>
+    <ul>
+      
+      
+      
+      <li><a title="Overview" href="tutorials.html">Overview</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Visualization" href="tutorials-visualization.html">Visualization</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="Basic cases" href="#">Basic cases</a>
+    <ul>
+      
+      
+      
+      <li><a title="Quickstart" href="quickstart.html">Quickstart</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Flow over heated plate" href="tutorials-flow-over-heated-plate.html">Flow over heated plate</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Partitioned heat conduction" href="tutorials-partitioned-heat-conduction.html">Partitioned heat conduction</a></li>
+      
+      
+      
+      
+      
+      
+      <li  ><a title="Perpendicular flap" href="tutorials-perpendicular-flap.html">Perpendicular flap</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <!-- Parent menu item has folderitems -->
+  <li>
+    <a title="All tutorials" href="#">All tutorials</a>
+    <ul>
+      
+      
+      
+      <li><a title="ASTE turbine" href="tutorials-aste-turbine.html">ASTE turbine</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Breaking dam with flexible pillar 2D" href="tutorials-breaking-dam-2d.html">Breaking dam with flexible pillar 2D</a></li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="Channel transport" href="#">Channel transport</a>
+        <ul>
+          
+          
+          
+          <li><a title="Basic variant" href="tutorials-channel-transport.html">Basic variant</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Reaction" href="tutorials-channel-transport-reaction.html">Reaction</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Particles" href="tutorials-channel-transport-particles.html">Particles</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Elastic tube 1D" href="tutorials-elastic-tube-1d.html">Elastic tube 1D</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Elastic tube 3D" href="tutorials-elastic-tube-3d.html">Elastic tube 3D</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Flow around controlled moving cylinder" href="tutorials-flow-around-controlled-moving-cylinder.html">Flow around controlled moving cylinder</a></li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="Flow over a heated plate" href="#">Flow over a heated plate</a>
+        <ul>
+          
+          
+          
+          <li><a title="Basic variant" href="tutorials-flow-over-heated-plate.html">Basic variant</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Nearest-projection mapping" href="tutorials-flow-over-heated-plate-nearest-projection.html">Nearest-projection mapping</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Steady state" href="tutorials-flow-over-heated-plate-steady-state.html">Steady state</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Two meshes" href="tutorials-flow-over-heated-plate-two-meshes.html">Two meshes</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Free flow over porous media" href="tutorials-free-flow-over-porous-media.html">Free flow over porous media</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Heat exchanger" href="tutorials-heat-exchanger.html">Heat exchanger</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Heat exchanger simplified" href="tutorials-heat-exchanger-simplified.html">Heat exchanger simplified</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Multiple perpendicular flaps" href="tutorials-multiple-perpendicular-flaps.html">Multiple perpendicular flaps</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Oscillator" href="tutorials-oscillator.html">Oscillator</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Oscillator overlap" href="tutorials-oscillator-overlap.html">Oscillator overlap</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Partitioned elastic beam" href="tutorials-partitioned-elastic-beam.html">Partitioned elastic beam</a></li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="Partitioned flow" href="#">Partitioned flow</a>
+        <ul>
+          
+          
+          
+          <li><a title="Partitioned flow over a b.f. step" href="tutorials-partitioned-backwards-facing-step.html">Partitioned flow over a b.f. step</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Partitioned flow over heated plate" href="tutorials-flow-over-heated-plate-partitioned-flow.html">Partitioned flow over heated plate</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Partitioned pipe" href="tutorials-partitioned-pipe.html">Partitioned pipe</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Partitioned pipe two-phase" href="tutorials-partitioned-pipe-two-phase.html">Partitioned pipe two-phase</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Partitioned pipe multiscale" href="tutorials-partitioned-pipe-multiscale.html">Partitioned pipe multiscale</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Water hammer" href="tutorials-water-hammer.html">Water hammer</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="Partitioned heat conduction" href="#">Partitioned heat conduction</a>
+        <ul>
+          
+          
+          
+          <li><a title="Basic variant" href="tutorials-partitioned-heat-conduction.html">Basic variant</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Complex variant" href="tutorials-partitioned-heat-conduction-complex.html">Complex variant</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Direct mesh access" href="tutorials-partitioned-heat-conduction-direct.html">Direct mesh access</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Overlapping Schwarz" href="tutorials-partitioned-heat-conduction-overlap.html">Overlapping Schwarz</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      <li class="subfolders">
+        <a title="Perpendicular flap" href="#">Perpendicular flap</a>
+        <ul>
+          
+          
+          
+          <li class="active"><a title="Basic variant" href="tutorials-perpendicular-flap.html">Basic variant</a></li>
+          
+          
+          
+          
+          
+          <li><a title="Stress variant" href="tutorials-perpendicular-flap-stress.html">Stress variant</a></li>
+          
+          
+          
+        </ul>
+      </li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Quickstart" href="quickstart.html">Quickstart</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Resonant circuit" href="tutorials-resonant-circuit.html">Resonant circuit</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Two-scale heat conduction" href="tutorials-two-scale-heat-conduction.html">Two-scale heat conduction</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Turek-Hron FSI3" href="tutorials-turek-hron-fsi3.html">Turek-Hron FSI3</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Volume-coupled diffusion" href="tutorials-volume-coupled-diffusion.html">Volume-coupled diffusion</a></li>
+      
+      
+      
+      
+      
+      
+      <li><a title="Volume-coupled flow" href="tutorials-volume-coupled-flow.html">Volume-coupled flow</a></li>
+      
+      
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  <!-- if you aren't using the accordion, uncomment this block:
+  <p class="external">
+  <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+  </p>
+  -->
+</ul>
+</nav>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+          </div>
+          <main class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Perpendicular flap</h1>
+</div>
+
+
+
+<div class="post-content">
+
+    
+    <div class="summary">
+        <!-- https://github.com/jekyll/jekyll/issues/3571 -->
+        This tutorial describes how to run a fluid-structure interaction using preCICE and any fluid-solid solver combination of our <a href="adapters-overview.html">officially provided adapter codes</a>.
+
+    </div>
+    
+
+    <div class="row">
+        <div class="col-md-9 col-sm-8">
+          
+          <nav aria-label="table of contents">
+          
+          
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+    $('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers:  'h2,h3,h4'  });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+          
+          </nav>
+          
+        </div>
+
+        <div class="col-md-3 col-sm-4">
+          
+          <aside>
+            
+                
+                
+                
+                
+                <div class="text-right">
+                    <a target="_blank" rel="noopener" href="https://github.com/precice/tutorials/edit/develop/perpendicular-flap/README.md" class="btn btn-default githubEditButton" role="button"><i class="fab fa-github fa-lg"></i> Edit me</a>
+                </div>
+            
+            <div class="text-right">
+              <small>Updated 15 Apr 26</small>
+            </div>
+          </aside>
+          
+        </div>
+    </div>
+
+   <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> 
+Get the <a href="https://github.com/precice/tutorials/tree/develop/perpendicular-flap">case files of this tutorial</a>, as continuously rendered here, or see the <a href="https://github.com/precice/tutorials/tree/master/perpendicular-flap">latest released version</a> (if there is already one). Read how in the <a href="https://precice.org/tutorials.html">tutorials introduction</a>.
+</div>
+
+<h2 id="setup">Setup</h2>
+
+<p>We model a two-dimensional fluid flowing through a channel. A solid, elastic flap is fixed to the floor of this channel. The flap oscillates due to the fluid pressure building up on its surface. The setup is shown schematically here:</p>
+
+<p><img src="images/tutorials-perpendicular-flap-setup-drawing.png" alt="Flap setup" /></p>
+
+<p>The simulated flow domain is 6 units long (x) and 4 units tall (y). The flap is located at the center of the bottom (x=0) and is 1 unit long (y) and 0.1 units thick (x). We set the fluid density \(\rho_F= 1.0kg/m^{3}\), the kinematic viscosity \(\nu_f= 1.0m^{2}/s\), the solid density \(\rho_s= 3.0·10^{3}kg/m^{3}\), the Young’s modulus to \(E= 4.0·10^{6} kg/ms^{2}\) and the Poisson ratio \(\nu_s = 0.3\). On the left boundary a constant inflow profile in x-direction of 10m/s is prescribed. The right boundary is an outflow and the top and bottom of the channel as well as the surface of the flap are no-slip walls.</p>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>preCICE configuration (image generated using the <a href="https://precice.org/tooling-config-visualization.html">precice-config-visualizer</a>):</p>
+
+<p><img src="images/tutorials-perpendicular-flap-precice-config.png" alt="preCICE configuration visualization" /></p>
+
+<h2 id="available-solvers">Available solvers</h2>
+
+<p>Fluid participant:</p>
+
+<ul>
+  <li>
+    <p>OpenFOAM (pimpleFoam). In case you are using a very old OpenFOAM version, you will need to adjust the solver to <code class="language-plaintext highlighter-rouge">pimpleDyMFoam</code> in the <code class="language-plaintext highlighter-rouge">Fluid/system/controlDict</code> file. For more information, have a look at the <a href="https://precice.org/adapter-openfoam-overview.html">OpenFOAM adapter documentation</a>.</p>
+  </li>
+  <li>
+    <p>SU2. As opposed to the other two fluid codes, SU2 is in particular specialized for compressible flow. Therefore the default simulation parameters haven been adjusted in order to pull the setup into the compressible flow regime. For more information, have a look at the <a href="https://precice.org/adapter-su2-overview.html">SU2 adapter documentation</a>.</p>
+  </li>
+  <li>
+    <p>Nutils. For more information, have a look at the <a href="https://precice.org/adapter-nutils.html">Nutils adapter documentation</a>. This Nutils solver requires at least Nutils v6.0. This case currently takes orders of magnitude longer than the OpenFOAM and SU2 cases, see <a href="https://github.com/precice/tutorials/issues/506">related issue</a>.</p>
+  </li>
+  <li>
+    <p>Fake. A simple python script that acts as a fake solver and provides an arbitrary force, linearly-increasing per length of the flap. This solver can be used for debugging of the solid participant and its adapter. It also technically works with implicit coupling, thus no changes to the preCICE configuration are necessary. Note that <a href="https://precice.org/tooling-aste.html#replay-mode">ASTE’s replay mode</a> has a similar use case and could also feed artificial or previously recorded real data, replacing an actual solver.</p>
+  </li>
+</ul>
+
+<p>Solid participant:</p>
+
+<ul>
+  <li>
+    <p>FEniCS. The structural model is currently limited to linear elasticity. For more information, have a look at the <a href="https://precice.org/adapter-fenics.html">FEniCS adapter documentation</a>.</p>
+  </li>
+  <li>
+    <p>CalculiX. In order to allow a reasonable comparison to all solid codes, the geometrically non-linear solver has been disabled and only a linear model is used by default. For more information, have a look at the <a href="https://precice.org/adapter-calculix-overview.html">CalculiX adapter documentation</a>. Two cases are provided: one as a regular simulation, and one with modal dynamic simulations where a few eigenmodes are computed, and then used to simulate a reduced model. In that case, the <code class="language-plaintext highlighter-rouge">run.sh</code> script runs the frequency analysis, renames the output file to match with the actual input file, and then runs it. For more details, see the <a href="https://precice.org/adapter-calculix-config.html">adapter configuration documentation</a>. To run the modal dynamic version, add the <code class="language-plaintext highlighter-rouge">-modal</code> argument to the <code class="language-plaintext highlighter-rouge">run.sh</code> script.</p>
+  </li>
+  <li>
+    <p>deal.II. This tutorial works only with <code class="language-plaintext highlighter-rouge">Model = linear</code> since the deal.II codes were developed with read data <code class="language-plaintext highlighter-rouge">Stress</code> instead of <code class="language-plaintext highlighter-rouge">Force</code> as applied here (example given in Turek-Hron-FSI) in the first place. The <code class="language-plaintext highlighter-rouge">./run.sh</code> script takes the compiled executable <code class="language-plaintext highlighter-rouge">elasticity</code> as input argument (<code class="language-plaintext highlighter-rouge">run.sh -e=/path/to/elasticity</code>) and is required in case the executable is not discoverable at runtime (e.g. has been added to the system <code class="language-plaintext highlighter-rouge">PATH</code>). For more information, have a look at the <a href="https://precice.org/adapter-dealii-overview.html">deal.II adapter documentation</a>.</p>
+  </li>
+  <li>
+    <p>DUNE. For more information, have a look at the <a href="https://github.com/precice/dune-adapter">experimental DUNE adapter</a> and send us your feedback.</p>
+  </li>
+  <li>
+    <p>Nutils. The structural model is currently limited to linear elasticity. For more information, have a look at the <a href="https://precice.org/adapter-nutils.html">Nutils adapter documentation</a>. This Nutils solver requires at least Nutils v8.0.</p>
+  </li>
+  <li>
+    <p>solids4foam. Like for CalculiX, the geometrically non-linear solver is used by default. For more information, see the <a href="https://solids4foam.github.io/documentation/overview.html">solids4foam documentation</a> and a <a href="https://www.solids4foam.com/tutorials/more-tutorials/fluid-solid-interaction/flexibleOversetCylinder.html">related tutorial</a>. This case works with solids4foam v2.0, which is compatible with up to OpenFOAM v2012 and OpenFOAM 9 (as well as foam-extend, with which the OpenFOAM-preCICE adapter is not compatible), as well as the OpenFOAM-preCICE adapter v1.2.0 or later.</p>
+  </li>
+  <li>
+    <p>OpenFOAM (solidDisplacementFoam). For more information, have a look at the <a href="https://www.openfoam.com/documentation/tutorial-guide/5-stress-analysis/5.1-stress-analysis-of-a-plate-with-a-hole">OpenFOAM plateHole tutorial</a>. The solidDisplacementFoam solver only supports linear geometry and this case is only provided for quick testing purposes, leading to outlier results. For general solid mechanics procedures in OpenFOAM, see solids4foam.</p>
+  </li>
+  <li>
+    <p>Fake. A simple Python script that acts as a fake solver and provides an arbitrary time-dependent flap displacement in the x-direction, i.e., it performs a shear mapping on the resting flap. This solver can be used for debugging of the fluid participant and its adapter. It also technically works with implicit coupling, thus no changes to the preCICE configuration are necessary. Note that <a href="https://precice.org/tooling-aste.html#replay-mode">ASTE’s replay mode</a> has a similar use case and could also feed artificial or previously recorded real data, replacing an actual solver.</p>
+  </li>
+</ul>
+
+<h2 id="running-the-simulation">Running the Simulation</h2>
+
+<p>All listed solvers can be used in order to run the simulation. OpenFOAM can be executed in parallel using <code class="language-plaintext highlighter-rouge">run.sh -parallel</code>. The default setting uses 4 MPI ranks. Open two separate terminals and start the desired fluid and solid participant by calling the respective run script <code class="language-plaintext highlighter-rouge">run.sh</code> located in the participant directory. For example:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>fluid-openfoam
+./run.sh
+</code></pre></div></div>
+
+<p>and</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>solid-fenics
+./run.sh
+</code></pre></div></div>
+
+<p>in order to use OpenFOAM and FEniCS for this test case.</p>
+
+<h2 id="post-processing">Post-processing</h2>
+
+<p>How to visualize the simulation results depends on the selected solvers. Most of the solvers generate <code class="language-plaintext highlighter-rouge">vtk</code> files which can visualized using, e.g., ParaView.</p>
+
+<p>CalculiX exports results in <code class="language-plaintext highlighter-rouge">.frd</code> format, which you can visualize in CGX (<code class="language-plaintext highlighter-rouge">cgx flap.frd</code>). In the CGX window, you can click-and-hold to select different times and fields, or to animate the geometry. If you prefer to work with VTK files, you can also use tools such as <a href="https://github.com/calculix/ccx2paraview">ccx2paraview</a> or a converter included in the <a href="https://github.com/precice/calculix-adapter/tree/master/tools">calculix-adapter/tools</a> directory.</p>
+
+<p>As we defined a watchpoint on the ‘Solid’ participant at the flap tip (see <code class="language-plaintext highlighter-rouge">precice-config.xml</code>), we can plot it with gnuplot using the script <code class="language-plaintext highlighter-rouge">plot-displacement.sh.</code> You need to specify the directory of the selected solid participant as a command line argument, so that the script can pick-up the desired watchpoint file, e.g. <code class="language-plaintext highlighter-rouge">plot-displacement.sh solid-fenics</code>. The resulting graph shows the x displacement of the flap tip. You can modify the script to plot the force instead.</p>
+
+<p><img src="images/tutorials-perpendicular-flap-displacement-watchpoint.png" alt="Flap watchpoint" /></p>
+
+<p>There is moreover a script <code class="language-plaintext highlighter-rouge">plot-all-displacements.sh</code> to plot and compare all possible variants. This script expects all watchpoint logs to be available in a subfolder <code class="language-plaintext highlighter-rouge">watchpoints</code> in the format <code class="language-plaintext highlighter-rouge">openfoam-dealii-version.log</code> or similar. If you want to use this script, you need to edit it to exclude combinations you want to exclude and copy the files over accordingly.</p>
+
+<p>You should get results similar to this one:</p>
+
+<p><img src="images/tutorials-perpendicular-flap-displacement-selected-watchpoints.png" alt="Selected flap watchpoints" /></p>
+
+<p>Reasons for the differences:</p>
+
+<ul>
+  <li>The CalculiX mesh uses the linear element <a href="https://web.mit.edu/calculix_v2.7/CalculiX/ccx_2.7/doc/ccx/node28.html">C3D8I</a>, as opposed to FEniCS using a quadratic element, and deal.II using a 4th order element.</li>
+  <li>SU2 models a compressible fluid, OpenFOAM and Nutils an incompressible one.</li>
+</ul>
+
+<h3 id="looking-closer">Looking closer</h3>
+
+<p>Excluding the <code class="language-plaintext highlighter-rouge">solid-openfoam</code> (outlier, provided mainly for technical testing), let’s look at an overview of different combinations.</p>
+
+<p>Comparison of the different flow solvers (incompressible <code class="language-plaintext highlighter-rouge">fluid-openfoam</code> and <code class="language-plaintext highlighter-rouge">fluid-nutils</code>, compressible <code class="language-plaintext highlighter-rouge">fluid-su2</code>, dummy <code class="language-plaintext highlighter-rouge">fluid-fake</code>):</p>
+
+<p><img src="images/tutorials-perpendicular-flap-displacement-flow-comparison-watchpoints.png" alt="Flap watchpoints using solid-calculix" /></p>
+
+<p>Combinations using the incompressible <code class="language-plaintext highlighter-rouge">fluid-openfoam</code> case:</p>
+
+<p><img src="images/tutorials-perpendicular-flap-displacement-openfoam-watchpoints.png" alt="Flap watchpoints using fluid-openfoam" /></p>
+
+<p>Combinations (excerpt) using the incompressible <code class="language-plaintext highlighter-rouge">fluid-nutils</code> case:</p>
+
+<p><img src="images/tutorials-perpendicular-flap-displacement-nutils-watchpoints.png" alt="Flap watchpoints using fluid-nutils" /></p>
+
+<p>Combinations (excerpt) using the compressible <code class="language-plaintext highlighter-rouge">fluid-su2</code> case:</p>
+
+<p><img src="images/tutorials-perpendicular-flap-displacement-su2-watchpoints.png" alt="Flap watchpoints using fluid-su2" /></p>
+
+<p>Combinations (excerpt) using the dummy <code class="language-plaintext highlighter-rouge">fluid-fake</code> case:</p>
+
+<p><img src="images/tutorials-perpendicular-flap-displacement-fake-watchpoints.png" alt="Flap watchpoints using fluid-fake" /></p>
+
+<h2 id="try-the-case-with-a-stronger-coupling">Try the case with a stronger coupling</h2>
+
+<p>In this case, the coupling between the fluid flow and the flap becomes stronger when the fluid is heavier relative to the flap. We can try out this setting by decreasing the density of the solid participant.</p>
+
+<p>With the default value of \(\rho_s= 3.0·10^{3}kg/m^{3}\), the simulation will also converge with an explicit coupling scheme. With \(\rho_s= 1kg/m^{3}\), the simulation will only converge with implicit coupling, with an acceleration method such as the IQN-ILS in the current configuration.</p>
+
+<p>See <a href="https://makish.github.io/vki-training/#/17">how this tutorial behaves with different coupling algorithms</a>.
+This talk varies the <a href="https://precice.org/configuration-coupling.html">coupling scheme configuration</a> and demonstrates explicit and implicit coupling schemes, the latter with constant, Aitken, and Anderson acceleration.
+Even though this is not a rigorous study, it demonstrates the effect that different coupling algorithms can have.
+Find more thorough studies in the <a href="https://precice.org/fundamentals-literature-guide.html#precice-features">literature guide</a>.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-hands-wash"></i> <b>Disclaimer:</b> 
+This offering is not approved or endorsed by OpenCFD Limited, producer and distributor of the OpenFOAM software via www.openfoam.com, and owner of the OPENFOAM®  and OpenCFD®  trade marks.
+</div>
+
+
+    
+
+
+
+<!-- Breadcrumb metadata -->
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "@type": "ListItem",
+  "position": 1,
+  "name": "Tutorials",
+  "item": "https://precice.org/tutorials.html"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,{
+  "@type": "ListItem",
+  "position": 2,
+  "name": "Perpendicular flap",
+  "item": "https://precice.org/tutorials-perpendicular-flap.html"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]}
+</script>
+
+
+</div>
+
+
+          </main>
+        </div>
+        
+    </div>
+    <footer class="background-dark">
+  <div class="container">
+
+
+    <div class="row equal">
+      <div class="col-md-4" style="background:white;border-radius:1rem;padding:0 3rem;margin:0 auto 50px auto;">
+        <h2> The preCICE newsletter </h2>
+        <script charset="utf-8" type="text/javascript" src="https://js.mailercloud.com/form/form.js"></script>
+<script>
+(function() {
+  mcform.create({
+    formId: "V3dEdUAzMTQ0NkAwMDAwMA==",
+    targetElement: "form_element_id"
+  })
+})();
+</script>
+
+        </div>
+    </div>
+
+
+    <div class="row equal text-center">
+      <div class="col-md-4">
+        <nav aria-label="Footer left">
+          <ul class="list-unstyled">
+            <li>
+              <a href="fundamentals-literature-guide.html">Cite preCICE</a>
+            </li>
+            <li>
+              <a href="community-contribute-to-precice.html">Contribute</a>
+            </li>
+            <li>
+              <a href="community-support-precice.html">Get support</a>
+            </li>
+            <li>
+              <a href="community-training.html">Get training</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-md-4">
+        <nav aria-label="Footer right">
+          <ul class="list-unstyled">
+            <li>
+              <a class="no-icon" href="https://precice.discourse.group">Forum on Discourse</a>
+            </li>
+            <li>
+              <a class="no-icon" href="https://github.com/precice">preCICE on GitHub</a>
+            </li>
+            <li>
+              <a href="fundamentals-license.html">License</a>
+            </li>
+            <li>
+              <a href="about.html">Impressum / Legal</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-md-4">
+        <p>
+        <a class="no-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+          <img alt="This work is licensed under a Creative Commons Attribution 4.0 International License." src="images/licensebutton-by-40_88x31.png" />
+        </a>
+        </p>
+        <p>
+        Page last updated: Apr 15, 2026<br>
+        Site last updated: Apr 28, 2026
+        </p>
+        <p>
+        <i class="fas fa-shield-halved" aria-hidden="true"></i> This website does not use cookies
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="/js/copy-code.js"></script>
+</footer>
+
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
+  <i class="fa fa-chevron-up"></i>
+</button>
+
+<style>
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, background-color 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-to-top:hover {
+  background-color: #0052a3;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .scroll-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-to-top {
+    bottom: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
+</style>
+
+<script>
+(function() {
+  const scrollBtn = document.getElementById('scroll-to-top');
+  const scrollThreshold = 300; // Show button after scrolling 300px
+
+  // Show/hide button on scroll
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset > scrollThreshold) {
+      scrollBtn.classList.add('visible');
+    } else {
+      scrollBtn.classList.remove('visible');
+    }
+  });
+
+  // Scroll to top on click
+  scrollBtn.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+})();
+</script>
+
+
+</body>
+
+</html>
