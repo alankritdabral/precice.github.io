@@ -58,12 +58,17 @@ document.addEventListener("DOMContentLoaded", async function () {
       renderTopics();
     }
 
-    function renderTopics() {
-      list.replaceChildren();
+    function renderTopics(append) {
+      if (append) {
+        list.lastElementChild?.remove(); // Remove 'Load more' button
+      } else {
+        list.replaceChildren();
+      }
 
-      const shown = filteredTopics.slice(0, visibleCount);
+      const start = append ? list.childElementCount : 0;
+      const shown = filteredTopics.slice(start, visibleCount);
 
-      if (!shown.length) {
+      if (!shown.length && !append) {
         empty.style.display = "block";
         return;
       } else {
@@ -124,7 +129,7 @@ document.addEventListener("DOMContentLoaded", async function () {
           "padding:8px 16px;margin:12px 0 12px auto;display:block;border:1px solid #ccc;border-radius:8px;background:#f9f9f9;cursor:pointer;";
         btn.addEventListener("click", () => {
           visibleCount += 10;
-          renderTopics();
+          renderTopics(true);
         });
         list.appendChild(btn);
       }
