@@ -1709,7 +1709,7 @@ $('#toc').on('click', 'a', function() {
                 </div>
             
             <div class="text-right">
-              <small>Updated 04 Apr 26</small>
+              <small>Updated 28 Apr 26</small>
             </div>
           </aside>
           
@@ -1726,7 +1726,7 @@ Then use the <a href="#dependencies">dependencies</a> section to install all mis
 <p>After all dependencies are ready to use, proceed with <a href="installation-source-configuration">configuring the preCICE build</a>.</p>
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square"></i> <b>Tip:</b> 
-This documentation concerns preCICE v3.4.0.
+This documentation concerns preCICE v3.4.1.
 Read about <a href="fundamentals-previous-versions.html">previous versions</a> or <a href="couple-your-code-porting-overview.html">how to upgrade</a>.
 </div>
 
@@ -1806,6 +1806,12 @@ If you find a problem with preCICE and a latest versions of these dependencies, 
       <td><a href="configuration-mapping.html#execution-backends">Some RBF mappings</a></td>
       <td>&gt;= 1.8, with Kokkos &gt;= 4.1</td>
       <td><a href="https://repology.org/project/ginkgo-linear-algebra/versions" class="no-icon"><img src="https://img.shields.io/repology/repositories/ginkgo-linear-algebra" alt="Repology - Ginkgo" /></a> <a href="https://pkgs.org/search/?q=ginkgo" class="no-icon"><img src="https://img.shields.io/badge/pkgs.org-ginkgo-blue" alt="pkgs.org" /></a></td>
+    </tr>
+    <tr>
+      <td><a href="#kokkos-kernels">Kokkos-Kernels</a> (opt-in)</td>
+      <td><a href="configuration-mapping.html#execution-backends">Some RBF mappings</a></td>
+      <td>&gt;= 4.1, with Kokkos &gt;= 4.1</td>
+      <td><a href="https://repology.org/project/kokkos-kernels/versions" class="no-icon"><img src="https://img.shields.io/repology/repositories/kokkos-kernels" alt="Repology - Kokkos-Kernels" /></a> <a href="https://pkgs.org/search/?q=kokkos-kernels" class="no-icon"><img src="https://img.shields.io/badge/pkgs.org-kokkos-kernels" alt="pkgs.org" /></a></td>
     </tr>
     <tr>
       <td><a href="#python">Python</a> (opt-out)</td>
@@ -2195,6 +2201,35 @@ For Kokkos, system packages might be available through your package manager as w
       <td>3.3.0</td>
       <td>same as above</td>
       <td>same as above</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="kokkos-kernels">Kokkos-Kernels</h3>
+
+<p>preCICE optionally uses <a href="https://kokkos.org/kokkos-kernels/docs/">Kokkos-Kernels</a> (and <a href="https://kokkos.org/">Kokkos</a>) for GPU- and OpenMP-accelerated <a href="configuration-mapping.html#execution-backends">PU-RBF radial-basis function mappings</a>. To enable the feature in preCICE, use the CMake option <code class="language-plaintext highlighter-rouge">-DPRECICE_FEATURE_KOKKOS_KERNELS_MAPPING=ON</code>. When building preCICE, it inherits the enabled execution backend from Kokkos automatically. preCICE accepts the backends <code class="language-plaintext highlighter-rouge">CUDA</code>, <code class="language-plaintext highlighter-rouge">HIP</code>, <code class="language-plaintext highlighter-rouge">SYCL</code>, and <code class="language-plaintext highlighter-rouge">OpenMP</code> from Kokkos. Further backend-specific parameters are runtime-configurable through the XML configuration, as usual. After compiling preCICE and its tests, you can check that the backend operates as expected using <code class="language-plaintext highlighter-rouge">ctest -R Cuda</code> (or <code class="language-plaintext highlighter-rouge">Hip</code>, <code class="language-plaintext highlighter-rouge">Sycl</code>, <code class="language-plaintext highlighter-rouge">OpenMP</code>).</p>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square"></i> <b>Tip:</b> 
+preCICE can be compiled with Kokkos-kernels through <a href="installation-spack.html"><code class="language-plaintext highlighter-rouge">spack</code></a>. Example: <code class="language-plaintext highlighter-rouge">spack install precice +kokkos-kernels +cuda ^kokkos cuda_arch=80</code>.
+</div>
+
+<p><a href="https://github.com/kokkos/kokkos/releases">Kokkos-Kernels</a> and <a href="https://github.com/kokkos/kokkos/releases">Kokkos</a> follow the usual CMake build instructions. For Kokkos, system packages might be available through your package manager as well.</p>
+
+<p>History of required versions:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>preCICE</th>
+      <th>Kokkos-Kernels required</th>
+      <th>Kokkos required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3.4.1</td>
+      <td>4.1.0</td>
+      <td>4.1.0</td>
     </tr>
   </tbody>
 </table>
@@ -2753,8 +2788,8 @@ Contributions to this section would be particularly helpful.</p>
         </a>
         </p>
         <p>
-        Page last updated: Apr 4, 2026<br>
-        Site last updated: Apr 4, 2026
+        Page last updated: Apr 28, 2026<br>
+        Site last updated: Apr 28, 2026
         </p>
         <p>
         <i class="fas fa-shield-halved" aria-hidden="true"></i> This website does not use cookies
@@ -2765,6 +2800,81 @@ Contributions to this section would be particularly helpful.</p>
   <script src="/js/copy-code.js"></script>
 </footer>
 
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
+  <i class="fa fa-chevron-up"></i>
+</button>
+
+<style>
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, background-color 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-to-top:hover {
+  background-color: #0052a3;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .scroll-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-to-top {
+    bottom: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
+</style>
+
+<script>
+(function() {
+  const scrollBtn = document.getElementById('scroll-to-top');
+  const scrollThreshold = 300; // Show button after scrolling 300px
+
+  // Show/hide button on scroll
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset > scrollThreshold) {
+      scrollBtn.classList.add('visible');
+    } else {
+      scrollBtn.classList.remove('visible');
+    }
+  });
+
+  // Scroll to top on click
+  scrollBtn.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+})();
+</script>
 
 
 </body>

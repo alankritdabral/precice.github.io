@@ -1713,7 +1713,7 @@ $('#toc').on('click', 'a', function() {
                 </div>
             
             <div class="text-right">
-              <small>Updated 01 Apr 26</small>
+              <small>Updated 15 Apr 26</small>
             </div>
           </aside>
           
@@ -1818,6 +1818,16 @@ $('#toc').on('click', 'a', function() {
       <td><code class="language-plaintext highlighter-rouge">[1, 1, 1]</code> or <code class="language-plaintext highlighter-rouge">[1, 1]</code></td>
     </tr>
     <tr>
+      <td><code class="language-plaintext highlighter-rouge">decomposition_type</code></td>
+      <td>Type of domain decomposition. Either <code class="language-plaintext highlighter-rouge">uniform</code> or <code class="language-plaintext highlighter-rouge">nonuniform</code>.</td>
+      <td><code class="language-plaintext highlighter-rouge">uniform</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">minimum_access_region_size</code></td>
+      <td>If <code class="language-plaintext highlighter-rouge">nonuniform</code> decomposition, optionally set a minimum domain width in each axis. Format <code class="language-plaintext highlighter-rouge">[xmin, ymin, zmin]</code></td>
+      <td>-</td>
+    </tr>
+    <tr>
       <td><code class="language-plaintext highlighter-rouge">micro_dt</code></td>
       <td>Initial time window size (dt) of the micro simulation.</td>
       <td>-</td>
@@ -1836,6 +1846,8 @@ $('#toc').on('click', 'a', function() {
 </table>
 
 <p>The total number of partitions ranks in the <code class="language-plaintext highlighter-rouge">decomposition</code> list should be the same as the number of ranks in the <code class="language-plaintext highlighter-rouge">mpirun</code> or <code class="language-plaintext highlighter-rouge">mpiexec</code> command.</p>
+
+<p>Non-uniform domain decomposition is based on a geometric progression.</p>
 
 <h2 id="diagnostics">Diagnostics</h2>
 
@@ -2484,8 +2496,8 @@ The following parameters can be set</p>
         </a>
         </p>
         <p>
-        Page last updated: Apr 1, 2026<br>
-        Site last updated: Apr 4, 2026
+        Page last updated: Apr 15, 2026<br>
+        Site last updated: Apr 28, 2026
         </p>
         <p>
         <i class="fas fa-shield-halved" aria-hidden="true"></i> This website does not use cookies
@@ -2496,6 +2508,81 @@ The following parameters can be set</p>
   <script src="/js/copy-code.js"></script>
 </footer>
 
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
+  <i class="fa fa-chevron-up"></i>
+</button>
+
+<style>
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, background-color 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-to-top:hover {
+  background-color: #0052a3;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .scroll-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-to-top {
+    bottom: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
+</style>
+
+<script>
+(function() {
+  const scrollBtn = document.getElementById('scroll-to-top');
+  const scrollThreshold = 300; // Show button after scrolling 300px
+
+  // Show/hide button on scroll
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset > scrollThreshold) {
+      scrollBtn.classList.add('visible');
+    } else {
+      scrollBtn.classList.remove('visible');
+    }
+  });
+
+  // Scroll to top on click
+  scrollBtn.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+})();
+</script>
 
 
 </body>
