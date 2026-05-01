@@ -1,18 +1,6 @@
 {
-  "generated_at": "2026-04-30T08:14:11.978205",
+  "generated_at": "2026-05-01T08:07:37.636845",
   "topics": [
-    {
-      "id": 2861,
-      "title": "Save the date: preCICE online training (Americas), October 5-9, 2026",
-      "slug": "save-the-date-precice-online-training-americas-october-5-9-2026",
-      "url": "https://precice.discourse.group/t/save-the-date-precice-online-training-americas-october-5-9-2026/2861",
-      "created_at": "2026-03-19T11:39:12.705Z",
-      "last_posted_at": "2026-04-13T12:16:37.039Z",
-      "like_count": 6,
-      "posts_count": 3,
-      "views": 74,
-      "description": "In October 5-9, 2026, we are organizing the first online preCICE training, mainly targeting participants in the US, Canada, and Latin America (time: 12\u20133 pm EDT (UTC-4)) that cannot easily..."
-    },
     {
       "id": 217,
       "title": "About the News category",
@@ -34,7 +22,7 @@
       "last_posted_at": "2026-04-23T10:59:00.361Z",
       "like_count": 9,
       "posts_count": 1,
-      "views": 67,
+      "views": 72,
       "description": "Summary: With preCICE v3.4, we pushed features on several fronts. We made quasi-Newton acceleration bounds-aware as a first step toward fully supporting bounded coupling variables, such as density or volume..."
     },
     {
@@ -48,6 +36,18 @@
       "posts_count": 3,
       "views": 67,
       "description": "Earlier this year, we started a quarterly Newsletter, highlighting the most important updates in the preCICE universe, including: New publications New features New adapters, bindings, tools, tutorials, and more Upcoming..."
+    },
+    {
+      "id": 2861,
+      "title": "Save the date: preCICE online training (Americas), October 5-9, 2026",
+      "slug": "save-the-date-precice-online-training-americas-october-5-9-2026",
+      "url": "https://precice.discourse.group/t/save-the-date-precice-online-training-americas-october-5-9-2026/2861",
+      "created_at": "2026-03-19T11:39:12.705Z",
+      "last_posted_at": "2026-04-13T12:16:37.039Z",
+      "like_count": 6,
+      "posts_count": 3,
+      "views": 74,
+      "description": "In October 5-9, 2026, we are organizing the first online preCICE training, mainly targeting participants in the US, Canada, and Latin America (time: 12\u20133 pm EDT (UTC-4)) that cannot easily..."
     },
     {
       "id": 2795,
@@ -154,7 +154,7 @@
       "last_posted_at": "2025-05-06T06:24:30.728Z",
       "like_count": 8,
       "posts_count": 1,
-      "views": 141,
+      "views": 142,
       "description": "Dear preCICE community, We are happy to share the final publication of our research article titled \u201cEfficient Partition-of-Unity Radial-Basis-Function Interpolation for Coupled Problems\u201d in the SIAM Journal on Scientific Computing...."
     },
     {
